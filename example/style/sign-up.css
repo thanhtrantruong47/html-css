@@ -1,0 +1,23 @@
+.sign-up-box{
+	height: 38px;
+	width: 1440px;
+	background-color: black;
+	display: inline-flex;
+	align-items: center;
+	font-family: Satoshi;
+}
+
+p.sign-up{
+	color: #fff;
+	padding: 9px 425px 9px 544px;
+}
+
+a.sign-up{
+	color: #fff;
+}
+
+button.sign-up{
+	background-color: black;
+	border: none;
+	float: right;
+}
