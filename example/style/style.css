@@ -1,0 +1,8 @@
+@import url("../style/sign-up.css");
+@import url("../style/menu.css");
+@import url("../style/home.css");
+body {
+	width: 1440px;
+	height: 4370px;
+}
+
