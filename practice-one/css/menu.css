@@ -1,0 +1,77 @@
+.menu-box {
+	/* background-color: aquamarine; */
+	margin-left: 100px;
+	margin-right: 100px;
+	display: flex;
+	width: 1240px;
+	height: 48px;
+	align-items: center;
+	margin-top: 22px;
+	margin-bottom: 22px;
+
+}
+
+.shop-co {
+	color: #000;
+
+	leading-trim: both;
+
+	text-edge: cap;
+	font-family: Integral CF;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+li.menu {
+	margin-right: 24px;
+	display: inline-flex;
+	color: #000;
+
+	font-family: Satoshi;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+li.menu1 {
+	display: inline-flex;
+	margin-right: 40px;
+}
+
+input.menu {
+
+	background-color: #F0F0F0;
+	width: 480px;
+	height: 48px;
+	max-height: 48px;
+	border-radius: 62px;
+	border: 2px none #F0F0F0;
+	background-image: url("../assets/images/search.svg");
+	background-repeat: no-repeat;
+	background-position: 12px 12px;
+	padding: 2px 52px;
+	position: 662px;
+}
+
+img.cart {
+	height: 24px;
+	width: 24px;
+	margin-left: 40px;
+	margin-right: 14px;
+}
+
+img.login {
+	height: 24px;
+	width: 24px;
+	float: right;
+}
+
+select {
+	height: 16px;
+	width: 16px;
+	border: #F0F0F0;
+}
