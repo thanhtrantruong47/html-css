@@ -13,11 +13,8 @@
 
 .shop-co {
 	color: #000;
-
-	leading-trim: both;
-
-	text-edge: cap;
-	font-family: Integral CF;
+	font-weight: bold;
+	font-family: "Integral CF";
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 700;
@@ -29,7 +26,7 @@ li.menu {
 	display: inline-flex;
 	color: #000;
 
-	font-family: Satoshi;
+	font-family: "Satoshi";
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -40,6 +37,7 @@ li.menu {
 li.menu1 {
 	display: inline-flex;
 	margin-right: 40px;
+	font-family: "Satoshi";
 }
 
 input.menu {
@@ -75,3 +73,4 @@ select {
 	width: 16px;
 	border: #F0F0F0;
 }
+
