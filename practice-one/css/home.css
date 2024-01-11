@@ -1,0 +1,28 @@
+.home-box {
+
+	/* background-color: aquamarine; */
+
+	display: flex;
+	height: 663px;
+	width: 1440px;
+	/* border: 1px solid #c3c3c3; */
+	background:  lightgray 714px -46.048px / 46.659% 152.049% no-repeat, #F2F0F1;
+
+
+}
+
+.home-box1{
+	margin-left: 100px;
+	flex-basis: 620px;
+	/* border: 1px solid #c3c3c3; */
+}
+
+.home-box2{
+	margin-right: 100px;
+	flex-basis: 620px;
+	/* border: 1px solid #c3c3c3; */
+}
+
+li.home{
+	display: inline-block;
+}
