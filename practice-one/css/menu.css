@@ -1,5 +1,4 @@
 .menu-box {
-	/* background-color: aquamarine; */
 	margin-left: 100px;
 	margin-right: 100px;
 	display: flex;
@@ -9,67 +8,59 @@
 	margin-top: 22px;
 	margin-bottom: 22px;
   flex-shrink: 0;
-
 }
 
 .shop-co {
-	color: #000;
 	font-weight: bold;
-	font-family: "Integral CF";
+	font-family: Integral CF;
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	margin-right: 40px;
 }
 
-li.menu {
+.li-menu {
 	margin-right: 24px;
 	display: inline-flex;
-	color: #000;
-	font-family: "Satoshi";
+	font-family: Satoshi;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 }
 
-
-li.menu1 {
+.li-menu-brand {
 	display: inline-flex;
 	margin-right: 40px;
-	font-family: "Satoshi";
+	font-family: Satoshi;
 }
 
-input.menu {
-
-	background-color: #F0F0F0;
+.input-menu {
 	width: 480px;
 	height: 48px;
 	border-radius: 62px;
-	border: 1px none #F0F0F0;
 	background-image: url("../assets/images/search.svg");
 	background-repeat: no-repeat;
 	background-position: 12px 12px;
 	padding: 2px 52px;
 	position: 662px;
-
 }
 
-img.cart {
+.img-cart {
 	height: 24px;
 	width: 24px;
 	margin-left: 40px;
 	margin-right: 14px;
 }
 
-img.login {
+.img-login {
 	height: 24px;
 	width: 24px;
 }
 
-select {
+.select-home {
 	height: 16px;
 	width: 16px;
-	border: #F0F0F0;
 }
 
