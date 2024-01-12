@@ -1,0 +1,72 @@
+/* color for sign up */
+
+.sign-up-box {
+    background-color: black;
+}
+
+.text-sign-up {
+    color: #FFF;
+}
+
+.a-sign-up {
+    color: #fff;
+    box-shadow: 0 1px white;
+}
+
+.button-sign-up {
+    background-color: black;
+}
+
+.select-home {
+    border: #F0F0F0;
+}
+
+/* color for menu */
+
+.text-find {
+    color: #000;
+}
+
+.button-home {
+    background-color: black;
+}
+
+.text-put {
+    color: #FFF;
+}
+
+.th-home {
+    color: #000;
+}
+
+.td-home {
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.input-menu {
+    border: 1px none #F0F0F0;
+    background-color: #F0F0F0;
+}
+
+/* color for home */
+
+.text-find {
+    color: #000;
+}
+
+.button-home {
+   
+    background-color: black;
+}
+
+.text-put {
+    color: #FFF;
+}
+
+.th-home {
+    color: #000;
+}
+
+.td-home {
+    color: rgba(0, 0, 0, 0.60);
+}
