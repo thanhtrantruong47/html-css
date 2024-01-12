@@ -1,15 +1,12 @@
 .sign-up-box {
   height: 38px;
   width: 1440px;
-  background-color: black;
   display: flex;
   align-items: center;
   font-family: Satoshi;
-
 }
 
-p.sign-up {
-  color: #FFF;
+.text-sign-up {
   font-family: Satoshi;
   font-size: 14px;
   font-style: normal;
@@ -19,22 +16,12 @@ p.sign-up {
   margin-right: 425px;
 }
 
-a.sign-up {
-  color: #fff;
-  box-shadow: 0 1px white;
+.a-sign-up {
   text-decoration-line: none;
 }
 
-
-
-button.sign-up {
-  background-color: black;
+.button-sign-up {
   border: none;
   width: 20px;
   height: 20px;
 }
-
-/* div.sign-up{
-  margin-left: 100px;
-  margin-right: 100px;
-} */
