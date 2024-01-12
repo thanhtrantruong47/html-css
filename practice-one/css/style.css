@@ -1,6 +1,8 @@
 @import url("../css/sign-up.css");
 @import url("../css/menu.css");
 @import url("../css/home.css");
+@import url("../css/color.css");
+@import url("../css/reset.css");
 
 body {
 	width: 1440px;
@@ -16,7 +18,6 @@ body {
     url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
 }
-
 
 @font-face {
     font-family: "Satoshi";
