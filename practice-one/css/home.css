@@ -24,7 +24,7 @@
 
 .text-find {
   font-size: 64px;
-  font-family: "Integral CF";
+  font-family: Integral CF;
   font-weight: bold;
   width: 577px;
   height: 173px;
@@ -39,7 +39,7 @@
   margin-top: 32px;
   width: 545px;
   height: 33px;
-  font-family: "Satoshi";
+  font-family: Satoshi;
 }
 
 .button-home {
