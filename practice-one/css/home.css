@@ -1,54 +1,97 @@
 .home-box {
 
-	/* background-color: aquamarine; */
+  /* background-color: aquamarine; */
 
-	display: flex;
-	height: 663px;
-	width: 1440px;
-	/* border: 1px solid #c3c3c3; */
-	background-image: url("../assets/images/Rectangle.png");
+  display: flex;
+  height: 663px;
+  width: 1440px;
+  /* border: 1px solid #c3c3c3; */
+  background-image: url("../assets/images/Rectangle.png");
 
 }
 
 .home-box1 {
-	margin-left: 100px;
-	flex-basis: 620px;
-	/* border: 1px solid #c3c3c3; */
+  margin-left: 100px;
+  flex-basis: 620px;
+  margin-top: 103px;
+  margin-bottom: 103px;
+  /* border: 1px solid #c3c3c3; */
 }
+
 li.home {
-	display: inline-block;
-	margin-left: 0px;
+  display: inline-block;
+  margin-left: 0px;
 }
+
 p.find {
-	margin-top: 103px;
-	color: #000;
-	font-size: 64px;
-	font-family: "Integral CF";
-	font-weight: bold;
-	
+  color: #000;
+  font-size: 64px;
+  font-family: "Integral CF";
+  font-weight: bold;
+  width: 577px;
+  height: 173px;
+  margin: 0;
+  padding: 0;
+
 }
 
 p.bowser {
-	margin-top: 32px;
-	width: 545px;
-	height: 33px;
-	font-family: "Satoshi";
+  margin-top: 32px;
+  width: 545px;
+  height: 33px;
+  font-family: "Satoshi";
 
-	
+
 }
 
 button.home {
-	width: 210px;
-	height: 52px;
-	margin-top: 47px;
+  width: 210px;
+  height: 52px;
+  margin-top: 31px;
+  background-color: #000;
+  border-radius: 62px;
 }
 
+p.put {
+  color: #FFF;
+
+  font-family: "Satoshi";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: auto;
+  position: 16px 54px;
+}
+
+
 table.home {
-	margin-top: 63px;
-	width: 596px;
+  margin-top: 48px;
+  width: 596px;
+}
+
+th.home {
+  color: #000;
+
+  font-family: "Satoshi";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+td.home {
+  color: rgba(0, 0, 0, 0.60);
+
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 137.5% */
 }
 
 tr.home {
-	text-align: left;
-	margin-right: 32px;
+  text-align: left;
+  margin-right: 32px;
 }

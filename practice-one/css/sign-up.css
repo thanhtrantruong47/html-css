@@ -1,24 +1,40 @@
-.sign-up-box{
-	height: 38px;
-	width: 1440px;
-	background-color: black;
-	display: inline-flex;
-	align-items: center;
-	font-family: Satoshi;
-}
-
-p.sign-up{
-	color: #fff;
-	padding: 9px 425px 9px 544px;
-}
-
-a.sign-up{
-	color: #fff;
+.sign-up-box {
+  height: 38px;
+  width: 1440px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  font-family: Satoshi;
 
 }
 
-button.sign-up{
-	background-color: black;
-	border: none;
-	float: right;
+p.sign-up {
+  color: #FFF;
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 544px;
+  margin-right: 425px;
 }
+
+a.sign-up {
+  color: #fff;
+  box-shadow: 0 1px white;
+  text-decoration-line: none;
+}
+
+
+
+button.sign-up {
+  background-color: black;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+/* div.sign-up{
+  margin-left: 100px;
+  margin-right: 100px;
+} */
