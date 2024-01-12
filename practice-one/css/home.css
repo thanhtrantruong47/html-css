@@ -1,34 +1,28 @@
 .home-box {
-
-  /* background-color: aquamarine; */
-
   display: flex;
   height: 663px;
   width: 1440px;
-  /* border: 1px solid #c3c3c3; */
-  background-image: url("../assets/images/Rectangle.png");
-
+  background-image: url("../assets/images/rectangle.png");
 }
 
-.home-box1 {
+.home-box-text {
   margin-left: 100px;
   flex-basis: 620px;
   margin-top: 103px;
   margin-bottom: 103px;
-  /* border: 1px solid #c3c3c3; */
 }
-.home-box2 {
+
+.home-box-icon {
   flex-basis: 620px;
   display: flex;
-  /* border: 1px solid #c3c3c3; */
 } 
-li.home {
+
+.li-home {
   display: inline-block;
   margin-left: 0px;
 }
 
-p.find {
-  color: #000;
+.text-find {
   font-size: 64px;
   font-family: "Integral CF";
   font-weight: bold;
@@ -41,30 +35,23 @@ p.find {
   line-height: 57px
 }
 
-
-
-p.bowser {
+.text-bowser {
   margin-top: 32px;
   width: 545px;
   height: 33px;
   font-family: "Satoshi";
-
-
 }
 
-button.home {
+.button-home {
   width: 210px;
   height: 52px;
   margin-top: 32px;
-  background-color: #000;
   border-radius: 62px;
-  background-color: black;
   border: none;
 }
 
-p.put {
-  color: #FFF;
-  font-family: "Satoshi";
+.text-put {
+  font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -73,15 +60,13 @@ p.put {
   position: 16px 54px;
 }
 
-
-table.home {
+.table-home {
   margin-top: 48px;
   width: 596px;
 }
 
-th.home {
-  color: #000;
-  font-family: "Satoshi";
+.th-home {
+  font-family: Satoshi;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -89,41 +74,31 @@ th.home {
   line-height: 30px
 }
 
-div.home-browws
-
-td.home {
-  color: rgba(0, 0, 0, 0.60);
-
-  font-family: "Satoshi";
+.td-home {
+  font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  /* 137.5% */
 }
 
-tr.home {
+.tr-home {
   text-align: left;
   margin-right: 32px;
 }
 
-img.star1 {
+.img-star-left {
   width: 56px;
   height: 56px;
   margin-left: 30px;
   margin-top: 310px;
 }
 
-.home-box3 {
+.box-icon {
   flex-basis: 310px;
-  /* border: 1px solid #c3c3c3; */
-}
-.home-box4 {
-  flex-basis: 310px;
-  /* border: 1px solid #c3c3c3; */
 }
 
-img.star2 {
+.img-star-right {
   margin-left: 225px;
   margin-top: 86px;
 }
