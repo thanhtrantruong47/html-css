@@ -1,16 +1,21 @@
 .sign-up{
   max-height: 38px;
   width: 1440px;
-}
-
-.sign-up .container {
-  width: 1240px;
   margin-left: 100px;
   margin-right: 100px;
   height: 38px;
   display: flex;
   align-items: center;
 }
+
+/* .sign-up .container {
+  width: 1240px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+} */
 
 .text {
   font-family: Satoshi;
