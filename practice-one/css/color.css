@@ -1,38 +1,38 @@
 /* color for sign up */
 
-.sign-up_section  {
+.sign-up {
   background-color: black;
 }
 
-.sign-up_section p {
+.text{
   color: #FFF;
 }
 
-.sign-up_section a {
+.link {
   color: #fff;
   box-shadow: 0 1px white;
 }
 
-.sign-up_section button {
+.button-sign-up {
   background-color: black;
 }
 
 
 /* color for header */
 
-.header_section .search {
+.search {
   border: 1px none #F0F0F0;
   background-color: #F0F0F0;
 }
 
 
-.header_section select {
+.drop-list {
   border: #F0F0F0;
 }
 
 /* color for banner */
 
-.banner_section .container button {
+.button-primary {
   background-color: black;
   color: #FFF;
 }

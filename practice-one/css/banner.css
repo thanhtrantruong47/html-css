@@ -1,20 +1,20 @@
-.banner_section {
+.banner {
   display: flex;
   height: 663px;
   width: 1440px;
   background-image: url("../assets/images/rectangle.png");
 }
 
-.banner_section .container {
+.container {
   flex-basis: 720px;
 }
 
-.banner_section .container .icon {
+.icon {
   flex-basis: 620px;
   display: flex;
 }
 
-.banner_section .container .find {
+.caption {
   font-size: 64px;
   font-family: Integral CF;
   font-weight: bold;
@@ -28,7 +28,7 @@
   margin-left: 100px;
 }
 
-.banner_section .container .bowser {
+.content {
   margin-top: 32px;
   width: 550px;
   height: 33px;
@@ -36,7 +36,7 @@
   margin-left: 100px;
 }
 
-.banner_section .container button {
+.button-primary {
   font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
@@ -50,13 +50,13 @@
   margin-left: 100px;
 }
 
-.banner_section .container table {
+.tbl {
   margin-top: 48px;
   width: 596px;
   margin-left: 100px;
 }
 
-.banner_section .container th {
+.tbl-th {
   font-family: Satoshi;
   font-size: 40px;
   font-style: normal;
@@ -65,7 +65,7 @@
   line-height: 30px
 }
 
-.banner_section .container td {
+.tbl-td {
   font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
@@ -73,24 +73,20 @@
   line-height: 22px;
 }
 
-.banner_section .container tr {
+.tbl-tr {
   text-align: left;
   margin-right: 32px;
 }
 
-.banner_section .icon-left {
+.icon-left {
   width: 56px;
   height: 56px;
   margin-left: 30px;
   margin-top: 297px;
 }
 
-.banner_section  .icon {
-  flex-basis: 310px;
-  align-items: flex-start;
-}
 
-.banner_section .icon-right {
+.icon-right {
   float: right;
   margin-top: 86px;
   margin-left: 490px;

@@ -1,15 +1,15 @@
-.header_section {
+.nav-bar {
   margin-left: 100px;
   margin-right: 100px;
   display: flex;
   width: 1250px;
   height: 48px;
-  align-items: center;
+  align-items: center; 
   margin-top: 22px;
   margin-bottom: 22px;
 }
 
-.header_section .logo {
+.logo {
   font-weight: bold;
   font-family: Integral CF;
   font-size: 32px;
@@ -19,7 +19,7 @@
   margin-right: 40px;
 }
 
-.header_section li {
+.nav-item {
   margin-right: 24px;
   display: inline-flex;
   font-family: Satoshi;
@@ -29,7 +29,7 @@
   line-height: normal;
 }
 
-.header_section .search {
+.search {
   width: 480px;
   height: 48px;
   border-radius: 62px;
@@ -41,19 +41,19 @@
   margin-left: 12px;
 }
 
-.header_section .cart {
+.cart {
   height: 24px;
   width: 24px;
   margin-left: 40px;
   margin-right: 20px;
 }
 
-.header_section .login {
+.login {
   height: 24px;
   width: 24px;
 }
 
-.header_section select {
+.drop-list {
   height: 16px;
   width: 16px;
 }
