@@ -30,39 +30,9 @@
   border: #F0F0F0;
 }
 
-/* color for home */
+/* color for banner */
 
 .banner_section .container button {
   background-color: black;
   color: #FFF;
-}
-
-.brand {
-  background-color: black;
-}
-
-/* color for arivals & top selling */
-
-
-.arrival-sell {
-  color: rgba(0, 0, 0, 0.40);
-}
-
-.arrival-percent {
-  color: #F33;
-  background: rgba(255, 51, 51, 0.10);
-}
-
-.arrival-span {
-  color: rgba(0, 0, 0, 0.60);
-}
-
-.arrival-button {
-  border: 1px solid rgba(0, 0, 0, 0.10);
-}
-
-/* color for brower */
-
-.browse {
-  background-color: #F0F0F0;
 }
