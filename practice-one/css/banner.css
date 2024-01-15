@@ -1,71 +1,62 @@
-.home-box {
+.banner_section {
   display: flex;
   height: 663px;
   width: 1440px;
   background-image: url("../assets/images/rectangle.png");
 }
 
-.home-box-text {
-  margin-left: 100px;
-  flex-basis: 620px;
-  margin-top: 103px;
-  margin-bottom: 103px;
+.banner_section .container {
+  flex-basis: 720px;
 }
 
-.home-box-icon {
+.banner_section .container .icon {
   flex-basis: 620px;
   display: flex;
-} 
-
-.li-home {
-  display: inline-block;
-  margin-left: 0px;
 }
 
-.text-find {
+.banner_section .container .find {
   font-size: 64px;
   font-family: Integral CF;
   font-weight: bold;
   width: 577px;
   height: 173px;
-  margin: 0;
+  margin-top: 103px;
   padding: 0;
   text-indent: cap alphabetic;
   padding-bottom: both;
-  line-height: 57px
+  line-height: 57px;
+  margin-left: 100px;
 }
 
-.text-bowser {
+.banner_section .container .bowser {
   margin-top: 32px;
-  width: 545px;
+  width: 550px;
   height: 33px;
   font-family: Satoshi;
+  margin-left: 100px;
 }
 
-.button-home {
+.banner_section .container button {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding: auto;
   width: 210px;
   height: 52px;
   margin-top: 32px;
   border-radius: 62px;
   border: none;
+  margin-left: 100px;
 }
 
-.text-put {
-  font-family: Satoshi;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  padding: auto;
-  position: 16px 54px;
-}
-
-.table-home {
+.banner_section .container table {
   margin-top: 48px;
   width: 596px;
+  margin-left: 100px;
 }
 
-.th-home {
+.banner_section .container th {
   font-family: Satoshi;
   font-size: 40px;
   font-style: normal;
@@ -74,7 +65,7 @@
   line-height: 30px
 }
 
-.td-home {
+.banner_section .container td {
   font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
@@ -82,23 +73,26 @@
   line-height: 22px;
 }
 
-.tr-home {
+.banner_section .container tr {
   text-align: left;
   margin-right: 32px;
 }
 
-.img-star-left {
+.banner_section .icon-left {
   width: 56px;
   height: 56px;
   margin-left: 30px;
-  margin-top: 310px;
+  margin-top: 297px;
 }
 
-.box-icon {
+.banner_section  .icon {
   flex-basis: 310px;
+  align-items: flex-start;
 }
 
-.img-star-right {
-  margin-left: 225px;
+.banner_section .icon-right {
+  float: right;
   margin-top: 86px;
+  margin-left: 490px;
+  margin-right: 81px;
 }

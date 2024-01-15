@@ -1,0 +1,59 @@
+.header_section {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  width: 1250px;
+  height: 48px;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.header_section .logo {
+  font-weight: bold;
+  font-family: Integral CF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 40px;
+}
+
+.header_section li {
+  margin-right: 24px;
+  display: inline-flex;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header_section .search {
+  width: 480px;
+  height: 48px;
+  border-radius: 62px;
+  background-image: url("../assets/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  padding: 2px 52px;
+  position: 662px;
+  margin-left: 12px;
+}
+
+.header_section .cart {
+  height: 24px;
+  width: 24px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.header_section .login {
+  height: 24px;
+  width: 24px;
+}
+
+.header_section select {
+  height: 16px;
+  width: 16px;
+}

@@ -1,0 +1,16 @@
+.brand {
+  height: 122px;
+}
+
+.brand ul {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.brand img {
+  margin-top: 44px;
+}

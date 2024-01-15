@@ -1,0 +1,79 @@
+.browse {
+  width: 1240px;
+  height: 866px;
+  border-radius: 40px;
+  margin-top: 95px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.browse h2 {
+  height: 58px;
+  display: flex;
+  margin-left: 276px;
+  margin-right: 276px;
+  font-family: Integral CF;
+  font-size: 48px;
+  padding-top: 70px;
+}
+
+.browse-box {
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 40px;
+}
+
+
+.browse img {
+  border-radius: 40px;
+  padding: 8px;
+}
+
+.browse-container {
+  position: relative;
+  text-align: center;
+}
+
+.top-left {
+  position: absolute;
+  top: 19px;
+  left: 100px;
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.top-right {
+  position: absolute;
+  top: 19px;
+  left: 500px;
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bot-left {
+  position: absolute;
+  top: 340px;
+  left: 100px;
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bot-right {
+  position: absolute;
+  top: 340px;
+  left: 740px;
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

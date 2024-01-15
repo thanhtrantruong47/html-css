@@ -1,30 +1,25 @@
 @import url("../css/sign-up.css");
-@import url("../css/menu.css");
-@import url("../css/home.css");
+@import url("../css/header.css");
+@import url("../css/banner.css");
 @import url("../css/color.css");
 @import url("../css/reset.css");
+@import url("../css/brand.css");
+@import url("../css/arrivals.css");
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url("../css/browse.css");
+
 
 body {
-	width: 1440px;
-	height: 4370px;
+    width: 1440px;
+    height: 4370px;
 }
 
 @font-face {
     font-family: "Integral CF";
     src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
     src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
-}
-
-@font-face {
-    font-family: "Satoshi";
-    src: url("https://db.onlinewebfonts.com/t/02d43df8e0b9f0acb1d1c6b40aaa5b7e.eot");
-    src: url("https://db.onlinewebfonts.com/t/02d43df8e0b9f0acb1d1c6b40aaa5b7e.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/02d43df8e0b9f0acb1d1c6b40aaa5b7e.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/02d43df8e0b9f0acb1d1c6b40aaa5b7e.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/02d43df8e0b9f0acb1d1c6b40aaa5b7e.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/02d43df8e0b9f0acb1d1c6b40aaa5b7e.svg#Satoshi Light")format("svg");
+        url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
 }
