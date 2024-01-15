@@ -1,3 +1,8 @@
+:root {
+  --button-primary-background: black;
+  --button-primary-color: #FFF;
+}
+
 .banner {
   display: flex;
   height: 663px;
@@ -48,6 +53,8 @@
   border-radius: 62px;
   border: none;
   margin-left: 100px;
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-color);
 }
 
 .tbl {
