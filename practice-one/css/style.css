@@ -23,6 +23,23 @@
 
 
 
+/*  DEFINE COLOR VARIABLE */
+
+:root {
+  --background-color: black;
+  --text-color: #fff;
+  --link-color: #fff;
+  --link-box-shadow: 0 1px white;
+  --button-sign-up-background: black;
+  --search-border: 1px none #f0f0f0;
+  --search-background: #f0f0f0;
+  --drop-list-border: #f0f0f0;
+}
+
+
+
+
+
 /* COMPONENTS */
 
 body {
@@ -67,23 +84,6 @@ p {
   font-family: Satoshi;
   font-style: normal;
   line-height: normal;
-}
-
-
-
-
-
-/*  DEFINE COLOR VARIABLE */
-
-:root {
-  --background-color: black;
-  --text-color: #fff;
-  --link-color: #fff;
-  --link-box-shadow: 0 1px white;
-  --button-sign-up-background: black;
-  --search-border: 1px none #f0f0f0;
-  --search-background: #f0f0f0;
-  --drop-list-border: #f0f0f0;
 }
 
 
