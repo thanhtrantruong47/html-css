@@ -2,71 +2,79 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Demo HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
+    rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+  <title>Demo HTML</title>
 </head>
 
 <body>
-	<div class="sign-up-box">
-		<div class=>
-			<p class="sign-up">Sign up and get 20% off to your first order. <a href="/" class="sign-up">Sign Up Now</a>
-			</p>
-		</div>
-		<button class="sign-up">
-			<img src="./assets/images/off.svg" alt="">
-		</button>
-	</div>
-	<div class="menu-box">
-		<p class="shop-co"><b>SHOP.CO</b></p>
-		<ul class="menu">
-			<li class="menu">
-				<p>Shop <select name="" id="">
-						<option value="q"></option>
-						<option value="q">ajsdsjad</option>
-						<option value="s">xzcasd</option>
-						<option value="q"></option>
-						<option value="q">ajsdsjad</option>
-						<option value="s">xzcasd</option>
-					</select></p>
+  <!-- SIGN UP SECTION START -->
+  <div class="sign-up">
+    <p class="text">Sign up and get 20% off to your first order. <a href="/" class="link">Sign Up Now</a></p>
+    <img src="./assets/images/off.svg" alt="">
+  </div>
+  <!-- SIGN UP SECTION END -->
 
-			</li>
-			<li class="menu">On Sale</li>
-			<li class="menu">New Arrivals</li>
-			<li class="menu1">Brand</li>
-		</ul>
-		<form>
-			<input class="menu" type="text" name="search" placeholder="Search for products...">
-		</form>
-		<img class="cart" src="./assets/images/cart.svg" alt="">
-		<img class="login" src="./assets/images/login.svg" alt="">
-	</div>
-	<div class="home-box">
-		<div class="home-box1">
-			<p>FIND CLOTHES THAT MATCHES YOUR STYLE</p>
-			<p>Browse through our diverse range of meticulously crafted garments, designed to bring out your
-				individuality and
-				cater to your sense of style.</p>
-			<button>Shop now</button>
-			<ul>
-				<li class="home">
-					<p>200+</p>
-					<p>International Brands</p>
-				</li>
-				<li class="home">
-					<p>2,000+</p>
-					<p>High-Quality Products</p>
-				</li>
-				<li class="home">
-					<p>30,000+</p>
-					<p>Happy Customers</p>
-				</li>
-			</ul>
-		</div>
-		<div class="home-box2">
-			<img src="./assets/images/anh.png" alt="">
-		</div>
-	</div>
+  <!-- HEADER SECTION START -->
+  <div class="nav-bar">
+    <div class="container">
+      <ul>
+        <li class="nav-item"><b class="nav-logo">SHOP.CO</b></li>
+        <li class="nav-item">
+          Shop
+          <select class="drop-list" name="test" id="1">
+            <option value="q">ajsdsjad</option>
+            <option value="s">xzcasd</option>
+          </select>
+
+        </li>
+        <li class="nav-item">On Sale</li>
+        <li class="nav-item">New Arrivals</li>
+        <li class="nav-item">Brand</li>
+        <li class="nav-item">
+          <form>
+            <input class="nav-search" type="text" name="search" placeholder="Search for products...">
+          </form>
+        </li>
+        <li class="nav-icon"> <img src="./assets/images/cart.svg" alt=""></li>
+        <li class="nav-icon"> <img src="./assets/images/login.svg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <!-- HEADER SECTION END -->
+
+  <!-- BANNER SECTION START -->
+  <div class="banner-section">
+    <div class="container">
+      <h1><b>FIND CLOTHES THAT MATCHES YOUR STYLE</b></h1>
+      <p class="banner-content">Browse through our diverse range of meticulously crafted garments, designed to bring
+        out
+        your individuality and cater to your sense of style.</p>
+      <button class="btn btn-primary">
+        Shop now
+      </button>
+      <table class="tbl">
+        <tr class="tbl-tr">
+          <th class="tbl-th"><b>200+</b></th>
+          <th class="tbl-th"><b>2,000+</b></th>
+          <th class="tbl-th"><b>30,000+</b></th>
+        </tr>
+        <tr>
+          <td class="tbl-td">International Brands</td>
+          <td class="tbl-td">High-Quality Products</td>
+          <td class="tbl-td">Happy Customers</td>
+        </tr>
+      </table>
+      <img src="./assets/images/star.svg" class="icon-left" alt="">
+      <img src="./assets/images/star.svg" class="icon-right" alt="">
+    </div>
+  </div>
+  <!-- BANNER SECTION END -->
 </body>
+
 </html>
