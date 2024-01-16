@@ -64,7 +64,7 @@ body {
   border: none;
 }
 
-.tle {
+.title {
   font-family: Integral CF;
 }
 
@@ -180,7 +180,7 @@ p {
   margin-top: 24px;
 }
 
-.primary-tle {
+.primary-title {
   position: absolute;
   top: 237px;
   font-size: 64px;
@@ -283,7 +283,7 @@ p {
   height: 745px;
 }
 
-.secondary-tle {
+.secondary-title {
   height: 58px;
   display: flex;
   margin-top: 70px;
