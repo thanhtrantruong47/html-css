@@ -1,8 +1,13 @@
-@import url("../css/sign-up.css");
-@import url("../css/header.css");
-@import url("../css/banner.css");
+/* LINK */
+
 @import url("../css/reset.css");
 @import url('https://fonts.cdnfonts.com/css/satoshi');
+
+
+
+
+
+/* url font  */
 
 @font-face {
   font-family: "Integral CF";
@@ -14,7 +19,231 @@
     url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
 }
 
+
+
+
+
+/* COMPONENTS */
+
 body {
   width: 1440px;
   height: 4370px;
+}
+
+.container {
+  width: 1240px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.btn {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding: auto;
+  width: 210px;
+  height: 52px;
+  border-radius: 62px;
+  border: none;
+}
+
+h1 {
+  position: absolute;
+  top: 237px;
+  font-size: 64px;
+  font-family: Integral CF;
+  font-weight: bold;
+  width: 577px;
+  height: 173px;
+  padding: 0;
+  text-indent: cap alphabetic;
+  padding-bottom: both;
+  line-height: 57px;
+  position: 662px;
+}
+
+p {
+  font-family: Satoshi;
+  font-style: normal;
+  line-height: normal;
+}
+
+
+
+
+
+/*  DEFINE COLOR VARIABLE */
+
+:root {
+  --background-color: black;
+  --text-color: #fff;
+  --link-color: #fff;
+  --link-box-shadow: 0 1px white;
+  --button-sign-up-background: black;
+  --search-border: 1px none #f0f0f0;
+  --search-background: #f0f0f0;
+  --drop-list-border: #f0f0f0;
+}
+
+
+
+
+
+/* SECTION SIGN UP */
+
+.sign-up {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 535px;
+  margin-right: 430px;
+  width: 351px;
+  color: var(--text-color);
+}
+
+.link {
+  text-decoration-line: none;
+  color: var(--link-color);
+  box-shadow: var(--link-box-shadow);
+}
+
+
+
+
+
+/* SECTION HEADER  */
+
+.nav-bar {
+  display: block;
+  height: 48px;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-family: Integral CF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 40px;
+}
+
+.nav-item {
+  margin-right: 24px;
+  display: inline-flex;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-search {
+  width: 440px;
+  height: 44px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 62px;
+  background-image: url("../assets/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  padding: 2px 52px;
+  position: 662px;
+  margin-left: 0px;
+  border: var(--search-border);
+  background-color: var(--search-background);
+}
+
+.nav-icon {
+  height: 24px;
+  width: 24px;
+  float: right;
+  margin-top: 12px;
+  margin-left: 14px;
+}
+
+.drop-list {
+  margin-top: 5px;
+  height: 16px;
+  width: 16px;
+  border: var(--drop-list-border);
+}
+
+
+
+
+
+/* SECTION BANNER  */
+
+.banner-section {
+  background-image: url("../assets/images/rectangle.png");
+  height: 663px;
+  margin-top: 24px;
+}
+
+.banner-content {
+  position: absolute;
+  top: 442px;
+  width: 550px;
+  height: 33px;
+}
+
+.btn-primary {
+  position: absolute;
+  top: 507px;
+  background-color: var(--background-color);
+  color: var(--text-color)
+}
+
+.tbl {
+  position: absolute;
+  top: 607px;
+  margin-top: 48px;
+  width: 596px;
+}
+
+.tbl-th {
+  font-family: Satoshi;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px
+}
+
+.tbl-td {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.tbl-tr {
+  text-align: left;
+  margin-right: 32px;
+}
+
+.icon-left {
+  position: absolute;
+  left: 750px;
+  top: 431;
+  width: 56px;
+  height: 56px;
+}
+
+.icon-right {
+  position: absolute;
+  left: 1255px;
+  float: right;
+  top: 220px;
 }
