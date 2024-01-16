@@ -31,6 +31,8 @@
   --link-box-shadow: 0 1px white;
   --search-border: 1px none #f0f0f0;
   --secondary-color: #f0f0f0;
+  --third-color: rgba(0, 0, 0, 0.40);
+  --fourth-color: #f33;
 }
 
 
@@ -62,25 +64,15 @@ body {
   border: none;
 }
 
-h1 {
-  position: absolute;
-  top: 237px;
-  font-size: 64px;
+.title {
   font-family: Integral CF;
-  font-weight: bold;
-  width: 577px;
-  height: 173px;
-  padding: 0;
-  text-indent: cap alphabetic;
-  padding-bottom: both;
-  line-height: 57px;
-  position: 662px;
 }
 
 p {
   font-family: Satoshi;
   font-style: normal;
   line-height: normal;
+  margin: 1px 1px 1px 1px;
 }
 
 
@@ -188,6 +180,20 @@ p {
   margin-top: 24px;
 }
 
+.primary-title {
+  position: absolute;
+  top: 237px;
+  font-size: 64px;
+  font-weight: bold;
+  width: 577px;
+  height: 173px;
+  padding: 0;
+  text-indent: cap alphabetic;
+  padding-bottom: both;
+  line-height: 57px;
+  position: 662px;
+}
+
 .banner-content {
   position: absolute;
   top: 442px;
@@ -243,4 +249,121 @@ p {
   left: 1255px;
   float: right;
   top: 220px;
+}
+
+
+
+
+
+/* SECTION BRAND */
+
+.brand-section {
+  height: 122px;
+  background-color: var(--primary-color);
+}
+
+.brand-bar {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.brand-item {
+  margin-top: 44px;
+}
+
+
+
+
+
+/* SECTION ARRIVAL */
+
+.arrival-section {
+  height: 745px;
+}
+
+.secondary-title {
+  height: 58px;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 418px;
+  margin-right: 418px;
+  font-size: 48px;
+}
+
+.arrival-item {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 444px;
+  padding: 10px;
+}
+
+.arrival-img {
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 296px;
+  height: 299px;
+}
+
+.name {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.evaluate {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.evaluate-num {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 13px;
+}
+
+.span-num {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--third-color);
+}
+
+.arrival-desc {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sell {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: var(--third-color)
+}
+
+.percent {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 62px;
+  color: var(--fourth-color)
+}
+
+.btn-secondary {
+  margin-top: 20px;
+  margin-left: 510px;
+  margin-right: 510px;
+  font-size: 16px;
 }
