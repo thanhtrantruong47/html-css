@@ -31,8 +31,8 @@
   --link-box-shadow: 0 1px white;
   --search-border: 1px none #f0f0f0;
   --secondary-color: #f0f0f0;
-  --third-color : rgba(0, 0, 0, 0.40);
-  --fourth-color : #F33;
+  --third-color: rgba(0, 0, 0, 0.40);
+  --fourth-color: #f33;
 }
 
 
@@ -64,42 +64,15 @@ body {
   border: none;
 }
 
-h1 {
-  position: absolute;
-  top: 237px;
-  font-size: 64px;
+.tle {
   font-family: Integral CF;
-  font-weight: bold;
-  width: 577px;
-  height: 173px;
-  padding: 0;
-  text-indent: cap alphabetic;
-  padding-bottom: both;
-  line-height: 57px;
-  position: 662px;
-}
-
-h2 {
-  height: 58px;
-  display: flex;
-  margin-top: 70px;
-  margin-left: 418px;
-  margin-right: 418px;
-  font-family: Integral CF;
-  font-size: 48px;
 }
 
 p {
   font-family: Satoshi;
   font-style: normal;
   line-height: normal;
-}
-
-hr {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 79px;
-  margin-bottom: 54px;
+  margin: 1px 1px 1px 1px;
 }
 
 
@@ -207,6 +180,20 @@ hr {
   margin-top: 24px;
 }
 
+.primary-tle {
+  position: absolute;
+  top: 237px;
+  font-size: 64px;
+  font-weight: bold;
+  width: 577px;
+  height: 173px;
+  padding: 0;
+  text-indent: cap alphabetic;
+  padding-bottom: both;
+  line-height: 57px;
+  position: 662px;
+}
+
 .banner-content {
   position: absolute;
   top: 442px;
@@ -275,7 +262,7 @@ hr {
   background-color: var(--primary-color);
 }
 
-.brand-ul {
+.brand-bar {
   display: flex;
   align-items: center;
   margin: auto;
@@ -294,6 +281,15 @@ hr {
 
 .arrival-section {
   height: 745px;
+}
+
+.secondary-tle {
+  height: 58px;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 418px;
+  margin-right: 418px;
+  font-size: 48px;
 }
 
 .arrival-item {
