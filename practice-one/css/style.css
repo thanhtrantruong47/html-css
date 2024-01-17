@@ -518,3 +518,70 @@ p {
   margin-top: -40px;
   margin-left: 1184px;
 }
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+  margin-top: 82px;
+  height: 1440px;
+}
+
+.footer-fielset {
+  border: 5px solid var(--inline-color);
+  height: 500px;
+}
+
+.foot-legend {
+  width: 1240px;
+  height: 180px;
+  background-color: var(--primary-color);
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-title {
+  color: var(--text-color);
+  font-family: Integral CF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  width: 550px;
+  height: 90px;
+  padding: 36px 64px 36px 64px;
+}
+
+.contact-email {
+  width: 245px;
+  height: 42px;
+  display: flex;
+  border-radius: 62px;
+  margin-right: 64px;
+  background-image: url("../assets/images/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  padding: 2px 52px;
+  border: var(--search-border);
+  margin-bottom: 14px;
+}
+
+.contact-desc {
+  width: 245px;
+  height: 42px;
+  font-family: Satoshi;
+  color: var(--primary-color);
+  font-size: 16px;
+  border-radius: 62px;
+  padding: 2px 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
