@@ -13,50 +13,49 @@
 </head>
 
 <body>
-  <!-- SIGN UP SECTION START -->
-  <div class="sign-up">
-    <p class="text">Sign up and get 20% off to your first order. <a href="/" class="link">Sign Up Now</a></p>
-    <img src="./assets/images/off.svg" alt="off">
-  </div>
-  <!-- SIGN UP SECTION END -->
+  <!-- SIGN UP START -->
+  <aside class="sign-up">
+    <p class="text">Sign up and get 20% off to your first order. <a href="/" class="link link-secondary">Sign Up Now</a></p>
+    <a href="/"><img src="./assets/images/off.svg" alt="off"></a>
+  </aside>
+  <!-- SIGN UP END -->
 
-  <!-- HEADER SECTION START -->
-  <div class="nav-bar">
-    <div class="container">
+  <!-- HEADER START -->
+  <header class="nav-bar">
+    <nav class="container">
       <ul>
-        <li class="nav-item"><b class="nav-logo">SHOP.CO</b></li>
+        <li class="nav-item"><a class="link-primany" href="/"><b class="nav-logo">SHOP.CO</b></a></li>
         <li class="nav-item">
-          Shop
+          <a class="link-primany" href="">Shop</a>
           <select class="drop-list" name="test" id="1">
-            <option value="q">ajsdsjad</option>
-            <option value="s">xzcasd</option>
+            <option value="q"><a class="link-primany" href="/">ajsdsjad</a></option>
+            <option value="s"><a class="link-primany" href="/">xzcasd</a></option>
           </select>
-
         </li>
-        <li class="nav-item">On Sale</li>
-        <li class="nav-item">New Arrivals</li>
-        <li class="nav-item">Brand</li>
+        <li class="nav-item"><a class="link-primany" href="/">On Sale</a></li>
+        <li class="nav-item"><a class="link-primany" href="/">New Arrivals</a></li>
+        <li class="nav-item"><a class="link-primany" href="/">Brand</a></li>
         <li class="nav-item">
           <form>
             <input class="nav-search" type="text" name="search" placeholder="Search for products...">
           </form>
         </li>
-        <li class="nav-icon"> <img src="./assets/images/cart.svg" alt="cart"></li>
-        <li class="nav-icon"> <img src="./assets/images/login.svg" alt="login"></li>
+        <li class="nav-icon"><a class="link-primany" href="/"> <img src="./assets/images/cart.svg" alt="cart"></a></li>
+        <li class="nav-icon"><a class="link-primany" href="/"> <img src="./assets/images/login.svg" alt="login"></a></li>
       </ul>
-    </div>
-  </div>
-  <!-- HEADER SECTION END -->
+    </nav>
+  </header>
+  <!-- HEADER END -->
 
   <!-- BANNER SECTION START -->
-  <div class="banner-section">
+  <section class="banner-section">
     <div class="container">
       <h1 class="title primary-title"><b>FIND CLOTHES THAT MATCHES YOUR STYLE</b></h1>
       <p class="banner-content">Browse through our diverse range of meticulously crafted garments, designed to bring
         out
         your individuality and cater to your sense of style.</p>
       <button class="btn btn-primary">
-        Shop now
+        <a class="link-secondary" href="/">Shop now</a>
       </button>
       <table class="tbl">
         <tr class="tbl-tr">
@@ -73,11 +72,11 @@
       <img src="./assets/images/star.svg" class="icon-left" alt="star">
       <img src="./assets/images/star.svg" class="icon-right" alt="star">
     </div>
-  </div>
+  </section>
   <!-- BANNER SECTION END -->
 
   <!-- BRAND SECTION START -->
-  <div class="brand-section">
+  <section class="brand-section">
     <div class="container">
       <ul class="brand-bar">
         <li class="brand-item"><img src="./assets/images/versace.svg" alt="versace"></li>
@@ -87,99 +86,172 @@
         <li class="brand-item"><img src="./assets/images/calvin.svg" alt="calvin"></li>
       </ul>
     </div>
-  </div>
+  </section>
   <!-- BRAND SECTION END -->
 
   <!-- ARRIVAL SECTION START -->
-  <div class="arrival-section">
+  <section class="arrival-section">
     <div class="container">
       <h2 class="title secondary-title">NEW ARRIVALS</h2>
       <ul>
-        <li class="arrival-item">
-          <img class="arrival-img" src="./assets/images/tapede-tails.png" alt="tapede-tails">
+        <li class="product-item">
+          <img class="product-img" src="./assets/images/tapede-tails.png" alt="tapede-tails">
           <p class="name">T-shirt With Tape Details</p>
           <div class="evaluate">
-            <div>
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-half.svg" class="arrival-star" alt="star-half">
-            </div>
-            <div class="evaluate-num">
-              <p>4.5/<span class="span-num">5</span></p>
-            </div>
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-half.svg" alt="star-half">
+              <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
           </div>
-          <div class="arrival-desc">
+          <div class="product-desc">
             <p class="price">&#36;120</p>
           </div>
-        </li >
-        <li   class="arrival-item"><img class="arrival-img" src="./assets/images/fit-jeans.png" alt="fit-jeans">
+        </li>
+        <li class="product-item"><img class="product-img" src="./assets/images/fit-jeans.png" alt="fit-jeans">
           <p class="name">Skinny Fit Jeans</p>
           <div class="evaluate">
-            <div>
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-half">
-            </div>
-            <div class="evaluate-num">
-              <p>3.5/<span class="span-num">5</span></p>
-            </div>
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-half">
+              <p class="evaluate-num">3.5/<span class="span-num">5</span></p>
           </div>
-          <div class="arrival-desc">
+          <div class="product-desc">
             <p class="price">&#36;240</p>
             <p class="sell">&#36;260</p>
             <p class="percent">-20%</p>
           </div>
         </li>
-        <li  class="arrival-item">
-          <img class="arrival-img" src="./assets/images/checkered-shirt.png" alt="checkered-shirt">
+        <li class="product-item">
+          <img class="product-img" src="./assets/images/checkered-shirt.png" alt="checkered-shirt">
           <p class="name">Checkered Shirt</p>
           <div class="evaluate">
-            <div>
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-half.svg" class="arrival-star" alt="star-half">
-            </div>
-            <div class="evaluate-num">
-              <p>4.5/<span class="span-num">5</span></p>
-            </div>
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-half.svg" alt="star-half">
+              <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
           </div>
-          <div class="arrival-desc">
+          <div class="product-desc">
             <p class="price">&#36;180</p>
           </div>
         </li>
-        <li  class="arrival-item">
-          <img class="arrival-img" src="./assets/images/striped-t-shirt.png" alt="striped-t-shirt">
+        <li class="product-item">
+          <img class="product-img" src="./assets/images/striped-t-shirt.png" alt="striped-t-shirt">
           <p class="name">Sleeve Striped T-shirt</p>
           <div class="evaluate">
-            <div>
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-full.svg" class="arrival-star" alt="star-full">
-              <img src="./assets/images/star-half.svg" class="arrival-star" alt="star-half">
-            </div>
-            <div class="evaluate-num">
-              <p>4.5/<span class="span-num">5</span></p>
-            </div>
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-half.svg" alt="star-half">
+              <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
           </div>
-          <div class="arrival-desc">
-            <p class="price">&#36;130</p>
-            <p class="sell">&#36;160</p>
-            <p class="percent">-30%</p>
+          <div class="product-desc">
+            <p class="product-desc price">&#36;130</p>
+            <p class=" product-desc sell">&#36;160</p>
+            <p class=" product-desc percent">-30%</p>
           </div>
         </li>
       </ul>
       <button class="btn btn-secondary">
-        View All
+        <a class="link-primany" href="#">View All</a>
+    </div>
+  </section>
+  <!-- ARRIVAL SECTION END -->
+  <hr class="line">
+  <!-- TOP SELLING SECTION START -->
+  <section class="topsell-section">
+    <div class="container">
+      <h2 class="title secondary-title">TOP SELLING</h2>
+      <ul>
+        <li class="product-item">
+          <img class="product-img" src="./assets/images/veritical.png" alt="veritical">
+          <p class="name">Veritical Striped Shirt</p>
+          <div class="evaluate">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <p class="evaluate-num">5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;212</p>
+            <p class="sell">&#36;232</p>
+            <p class="percent">-20%</p>
+          </div>
+        </li>
+        <li class="product-item"><img class="product-img" src="./assets/images/courage.png" alt="courage">
+          <p class="name">Courage Graphic T-shirt</p>
+          <div class="evaluate">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-half.svg" alt="star-half">
+              <p class="evaluate-num">4/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;145</p>
+          </div>
+        </li>
+        <li class="product-item">
+          <img class="product-img" src="./assets/images/loose-fit.png" alt="loose-fit">
+          <p class="name">Loose Fit Bermuda Short</p>
+          <div class="evaluate">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <p  class="evaluate-num">5/<span class="product-span">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;80</p>
+          </div>
+        </li>
+        <li class="product-item">
+          <img class="product-img" src="./assets/images/faded-skinny.png" alt="faded-skinny">
+          <p class="name">Faded Skinny Jeans</p>
+          <div class="evaluate">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-full.svg" alt="star-full">
+              <img src="./assets/images/star-half.svg" alt="star-half">
+              <p  class="evaluate-num">4.5/<span class="span-num">5</span></p>
+            </div>
+          <div class="product-desc">
+            <p class="price">&#36;210</p>
+          </div>
+        </li>
+      </ul>
+      <button class="btn btn-secondary">
+        <a class="link-primany" href="/">View All</a>
       </button>
     </div>
-  </div>
-  <!-- ARRIVAL SECTION END -->
+  </section>
+  <!-- TOP SELLING SECTION END -->
+
+  <!-- BROWES SECTION START -->
+  <section class="browse-section">
+    <h2 class="title third-title">BROWSE BY DRESS STYLE</h2>
+    <div class="browse-item">
+      <img class="browes-img" src="./assets/images/casual.png" alt="casual">
+      <p class="desc top-left">Casual</p>
+      <img class="browes-img" src="./assets/images/formal.png" alt="formal">
+      <p class="desc top-right">Formal</p>
+      <img class="browes-img" src="./assets/images/party.png" alt="party">
+      <p class="desc bot-left">Party</p>
+      <img class="browes-img" src="./assets/images/gym.png" alt="gym">
+      <p class="desc bot-right">Gym</p>
+    </div>
+  </section>
+  <!-- BROWES SECTION END -->
 </body>
 
 </html>

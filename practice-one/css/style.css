@@ -28,11 +28,12 @@
 :root {
   --primary-color: black;
   --text-color: #fff;
-  --link-box-shadow: 0 1px white;
+  --link-box: 0 1px white;
   --search-border: 1px none #f0f0f0;
   --secondary-color: #f0f0f0;
   --third-color: rgba(0, 0, 0, 0.40);
-  --fourth-color: #f33;
+  --fourth-color: #ff3333;
+  --inline-color: rgba(0, 0, 0, 0.10);
 }
 
 
@@ -44,6 +45,7 @@
 body {
   width: 1440px;
   height: 4370px;
+  margin: auto;
 }
 
 .container {
@@ -100,7 +102,24 @@ p {
 .link {
   text-decoration-line: none;
   color: var(--text-color);
-  box-shadow: var(--link-box-shadow);
+  box-shadow: var(--link-box);
+  text-decoration: none;
+}
+
+.link-primany {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.link-secondary {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.line {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: var(--inline-color);
 }
 
 
@@ -238,7 +257,7 @@ p {
 
 .icon-left {
   position: absolute;
-  left: 750px;
+  margin-left: 650px;
   top: 431;
   width: 56px;
   height: 56px;
@@ -246,7 +265,7 @@ p {
 
 .icon-right {
   position: absolute;
-  left: 1255px;
+  margin-left: 1155px;
   float: right;
   top: 220px;
 }
@@ -280,7 +299,7 @@ p {
 /* SECTION ARRIVAL */
 
 .arrival-section {
-  height: 745px;
+  height: 650px;
 }
 
 .secondary-title {
@@ -292,7 +311,7 @@ p {
   font-size: 48px;
 }
 
-.arrival-item {
+.product-item {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
@@ -301,7 +320,7 @@ p {
   padding: 10px;
 }
 
-.arrival-img {
+.product-img {
   border-radius: 20px;
   margin-top: 30px;
   margin-left: auto;
@@ -335,7 +354,7 @@ p {
   color: var(--third-color);
 }
 
-.arrival-desc {
+.product-desc {
   display: flex;
   align-items: center;
   width: 180px;
@@ -366,4 +385,77 @@ p {
   margin-left: 510px;
   margin-right: 510px;
   font-size: 16px;
+}
+
+
+
+
+
+/* TOP SELLING SECTION*/
+
+.topsell-section {
+  height: 621px;
+}
+
+
+
+
+
+/* BROWES SECTION */
+
+.browse-section {
+  border-radius: 40px;
+  margin-top: 80px;
+  background-color: var(--secondary-color);
+  height: 866px;
+  width: 1240px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.third-title {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 687px;
+  height: 58px;
+  margin-left: 276px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.browse-item {
+  margin-left: 100px;
+  margin-right: 80px;
+}
+
+.browes-img {
+  border-radius: 40px;
+  padding: 5px;
+}
+
+.desc {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 700;
+  display: block;
+}
+
+.top-left {
+  margin-top: -270px;
+  margin-left: 40px;
+}
+
+.top-right {
+  margin-top: -270px;
+  margin-left: 420px;
+}
+
+.bot-left {
+  margin-top: -270px;
+  margin-left: 40px;
+}
+
+.bot-right {
+  margin-top: -270px;
+  margin-left: 700px;
 }
