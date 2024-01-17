@@ -34,6 +34,7 @@
   --third-color: rgba(0, 0, 0, 0.40);
   --fourth-color: #ff3333;
   --inline-color: rgba(0, 0, 0, 0.10);
+  --fiveth-color: rgba(0, 0, 0, 0.60);
 }
 
 
@@ -409,8 +410,8 @@ p {
   background-color: var(--secondary-color);
   height: 866px;
   width: 1240px;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .third-title {
@@ -458,4 +459,62 @@ p {
 .bot-right {
   margin-top: -270px;
   margin-left: 700px;
+}
+
+
+
+
+
+/* SECTION OUR HAPPY CUSTOMERS */
+
+.customer {
+  height: 400px;
+}
+
+.fourth-title {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.customer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-item {
+  padding: 28px 32px 28px 32px;
+  width: 333px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid var(--inline-color);
+}
+
+.customer-desc {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.customer-comments {
+  display: block;
+  color: var(--fiveth-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 12px;
+}
+
+.next-btn {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 1220px;
+}
+
+.prev-btn {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 1184px;
 }
