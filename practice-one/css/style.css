@@ -507,13 +507,13 @@ p {
   margin-top: 12px;
 }
 
-.prev-left {
+.next-btn {
   position: absolute;
   margin-top: -40px;
   margin-left: 1220px;
 }
 
-.prev-right {
+.prev-btn {
   position: absolute;
   margin-top: -40px;
   margin-left: 1184px;
