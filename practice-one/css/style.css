@@ -486,7 +486,7 @@ p {
 .customer-item {
   padding: 28px 32px 28px 32px;
   width: 333px;
-  height: 200 px;
+  height: 200px;
   border-radius: 20px;
   border: 1px solid var(--inline-color);
 }
