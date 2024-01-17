@@ -116,7 +116,7 @@ p {
   color: var(--text-color);
 }
 
-hr {
+.line {
   margin-left: 100px;
   margin-right: 100px;
   color: var(--inline-color);
