@@ -45,7 +45,7 @@
 body {
   width: 1440px;
   height: 4370px;
-  margin: auto auto ;
+  margin: auto auto;
 }
 
 .container {
@@ -78,7 +78,6 @@ p {
 }
 
 a {
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   color: var(--primary-color);
@@ -112,7 +111,7 @@ a {
   box-shadow: var(--link-box-shadow);
 }
 
-hr{
+hr {
   margin-left: 100px;
   margin-right: 100px;
   color: var(--inline-color);
@@ -253,7 +252,7 @@ hr{
 
 .icon-left {
   position: absolute;
-  left: 750px;
+  margin-left: 650px;
   top: 431;
   width: 56px;
   height: 56px;
@@ -261,7 +260,7 @@ hr{
 
 .icon-right {
   position: absolute;
-  left: 1255px;
+  margin-left: 1155px;
   float: right;
   top: 220px;
 }
@@ -307,7 +306,7 @@ hr{
   font-size: 48px;
 }
 
-.arrival-item {
+.product-item {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
@@ -316,7 +315,7 @@ hr{
   padding: 10px;
 }
 
-.arrival-img {
+.product-img {
   border-radius: 20px;
   margin-top: 30px;
   margin-left: auto;
@@ -350,7 +349,7 @@ hr{
   color: var(--third-color);
 }
 
-.arrival-desc {
+.product-desc {
   display: flex;
   align-items: center;
   width: 180px;
@@ -402,11 +401,11 @@ hr{
 .browse-section {
   border-radius: 40px;
   margin-top: 80px;
-  background-color: #F0F0F0;
+  background-color: var(--secondary-color);
   height: 866px;
   width: 1240px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .third-title {
@@ -420,37 +419,38 @@ hr{
 }
 
 .browse-item {
-  margin-left: 80px;
+  margin-left: 100px;
   margin-right: 80px;
 }
 
 .browes-img {
   border-radius: 40px;
-  padding: 5px ;
+  padding: 5px;
 }
 
 .desc {
   position: absolute;
   font-size: 36px;
   font-weight: 700;
+  display: block;
 }
 
 .top-left {
-  top: 2650px;
-  left: 230px;
+  margin-top: -270px;
+  margin-left: 40px;
 }
 
 .top-right {
-  top: 2650px;
-  left: 657px;
+  margin-top: -270px;
+  margin-left: 420px;
 }
 
 .bot-left {
-  top: 2950px;
-  left: 230px;
+  margin-top: -270px;
+  margin-left: 40px;
 }
 
 .bot-right {
-  top: 2950px;
-  left: 860px;
+  margin-top: -270px;
+  margin-left: 700px;
 }
