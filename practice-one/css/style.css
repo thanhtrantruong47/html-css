@@ -35,6 +35,8 @@
   --fourth-color: #ff3333;
   --inline-color: rgba(0, 0, 0, 0.10);
   --fiveth-color: rgba(0, 0, 0, 0.60);
+  --btn-primary: #e7e7e7;
+  --btn-secondary: #82b6c2;
 }
 
 
@@ -147,6 +149,15 @@ p {
   margin-right: 40px;
 }
 
+.nav-item-link {
+  color: var(--fiveth-color);
+  text-decoration: none;
+}
+
+.nav-item-link:hover {
+	text-decoration: underline;
+}
+
 .nav-item {
   margin-right: 24px;
   display: inline-flex;
@@ -225,7 +236,13 @@ p {
   position: absolute;
   top: 507px;
   background-color: var(--primary-color);
-  color: var(--text-color)
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-secondary);
+  color: var(--primary-color);
 }
 
 .tbl {
@@ -233,6 +250,9 @@ p {
   top: 607px;
   margin-top: 48px;
   width: 596px;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tbl-th {
@@ -249,11 +269,6 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-}
-
-.tbl-tr {
-  text-align: left;
-  margin-right: 32px;
 }
 
 .icon-left {
@@ -386,6 +401,12 @@ p {
   margin-left: 510px;
   margin-right: 510px;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-primary);
+  color: var(--primary-color);
 }
 
 
@@ -507,6 +528,11 @@ p {
   margin-top: 12px;
 }
 
+.customer-icon {
+  position: absolute;
+  margin-top: 1px;
+}
+
 .next-btn {
   position: absolute;
   margin-top: -40px;
@@ -517,4 +543,184 @@ p {
   position: absolute;
   margin-top: -40px;
   margin-left: 1184px;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+  height: 600px;
+  margin-top: 82px;
+  background-color: var(--secondary-color);
+}
+
+.footer-legend {
+  width: 1112px;
+  height: 108px;
+  background-color: var(--primary-color);
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 64px 36px 64px;
+}
+
+.fiveth-title {
+  color: var(--text-color);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  width: 551px;
+  height: 94px;
+}
+
+.contact-email {
+  width: 245px;
+  height: 42px;
+  display: flex;
+  border-radius: 62px;
+  margin-right: 64px;
+  background-image: url("../assets/images/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  padding: 2px 52px;
+  border: var(--search-border);
+  margin-bottom: 14px;
+}
+
+.contact-desc {
+  width: 242.5px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 62px;
+  padding: 2px 53.5px;
+  text-align: center;
+  border: var(--search-border);
+}
+
+.footer-th {
+  padding-top: 50px;
+  text-align: left;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact {
+  position: absolute;
+  margin-left: 930px;
+  margin-top: -142px;
+
+}
+
+.footer-desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.footer-tbl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  color: var(--primary-color);
+  font-family: Integral CF;
+  font-size: 33.455px;
+  font-weight: 700;
+  position: absolute;
+  margin-top: 19px;
+}
+
+.list-item {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.item-primary {
+  margin-bottom: 23px;
+  color: var(--fiveth-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.item-secondary {
+  width: 288px;
+  color: var(--fiveth-color);
+  margin-bottom: 35px;
+  margin-top: 72px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: flex-start;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+.payment-icon {
+  float: right;
+  width: 46px;
+  height: 30px;
+  margin-right: 12px;
+}
+
+#social {
+  position: relative;
+  margin-bottom: 54px;
+}
+
+.social-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  height: 28px;
+  display: block;
+}
+
+.social-link {
+  display: block;
+  height: 20px;
+}
+
+#twitter {
+  left: 0px;
+  width: 30px;
+  background: url('../assets/images/social.svg') 0 0;
+}
+
+#fb {
+  left: 40px;
+  width: 30px;
+  background: url('../assets/images/social.svg') -40px 0;
+}
+
+#instagram {
+  left: 80px;
+  width: 30px;
+  background: url('../assets/images/social.svg') -80px 0;
+}
+
+#github {
+  left: 120px;
+  width: 28px;
+  background: url('../assets/images/social.svg') -120px 0;
 }
