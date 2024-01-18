@@ -531,11 +531,8 @@ p {
 /* FOOTER */
 
 .footer {
-  margin-top: 82px;
-}
-
-.footer-fielset {
   height: 620px;
+  margin-top: 82px;
   background-color: var(--secondary-color);
 }
 
@@ -551,9 +548,8 @@ p {
   justify-content: space-between;
 }
 
-.footer-title {
+.fiveth-title {
   color: var(--text-color);
-  font-family: Integral CF;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -585,29 +581,23 @@ p {
   font-size: 16px;
   border-radius: 62px;
   padding: 2px 52px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-th {
   padding-top: 50px;
   text-align: left;
   margin-bottom: 25px;
-  color: var(--primary-color);
 }
 
 .footer-desc {
-  font-family: Satoshi;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
-.footer-nav {
+.footer-tbl {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -622,28 +612,24 @@ p {
   margin-top: -35px;
 }
 
-.item-logo {
-  width: 248px;
-  color: var(--fiveth-color);
-  margin-bottom: 50px;
-  margin-top: 25px;
-}
-
-.list {
-  color: var(--fiveth-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
+.list-item {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.item-list {
+.item-primary {
   margin-bottom: 23px;
   color: var(--fiveth-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.item-secondary {
+  width: 248px;
+  color: var(--fiveth-color);
+  margin-bottom: 51px;
+  margin-top: 25px;
 }
 
 .footer-copyright {
@@ -652,14 +638,13 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   align-items: flex-start;
-
 }
 
 .copyright {
   margin-top: 10px;
 }
 
-.payment {
+.payment-icon {
   float: right;
   width: 46px;
   height: 30px;
