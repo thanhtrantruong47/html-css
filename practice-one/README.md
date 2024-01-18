@@ -31,7 +31,7 @@
 ```
 git clone https://github.com/thanhtrantruong47/html-css-training.git
 ```
-- Checkout to branch feature/html-css-practice-two:
+- Checkout to branch feature/html-css-practice-one:
 ```
 git checkout feature/practice-one
 ```
