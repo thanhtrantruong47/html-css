@@ -37,6 +37,7 @@ git checkout feature/practice-one
 ```
 - Install Parcel
 ```
+cd practice-one
 npm install --save-dev parcel
 ```
 - Run project:
