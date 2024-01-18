@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "leading-trim": "^1.0.2"
+  }
+}
