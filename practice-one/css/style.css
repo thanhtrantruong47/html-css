@@ -507,6 +507,11 @@ p {
   margin-top: 12px;
 }
 
+.customer-icon {
+  position: absolute;
+  margin-top: 1px;
+}
+
 .next-btn {
   position: absolute;
   margin-top: -40px;
@@ -527,15 +532,14 @@ p {
 
 .footer {
   margin-top: 82px;
-  height: 1440px;
 }
 
 .footer-fielset {
-  border: 5px solid var(--inline-color);
-  height: 500px;
+  height: 620px;
+  background-color: var(--secondary-color);
 }
 
-.foot-legend {
+.footer-legend {
   width: 1240px;
   height: 180px;
   background-color: var(--primary-color);
@@ -584,4 +588,80 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-th {
+  padding-top: 50px;
+  text-align: left;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+
+.footer-desc {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  color: var(--primary-color);
+  font-family: Integral CF;
+  font-size: 33.455px;
+  font-weight: 700;
+  position: absolute;
+  margin-top: -35px;
+}
+
+.item-logo {
+  width: 248px;
+  color: var(--fiveth-color);
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.list {
+  color: var(--fiveth-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.item-list {
+  margin-bottom: 23px;
+  color: var(--fiveth-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: flex-start;
+
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+.payment {
+  float: right;
+  width: 46px;
+  height: 30px;
+  margin-right: 12px;
 }
