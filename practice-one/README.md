@@ -35,6 +35,11 @@ git clone https://github.com/thanhtrantruong47/html-css-training.git
 ```
 git checkout feature/practice-one
 ```
+- Install Parcel
+```
+yarn add --dev parcel
+npm install --save-dev parcel
+```
 - Run project:
 ```
 npx parcel practice-one/index.html

@@ -36,6 +36,7 @@
   --inline-color: rgba(0, 0, 0, 0.10);
   --fiveth-color: rgba(0, 0, 0, 0.60);
   --btn-primary: #e7e7e7;
+  --btn-secondary: #82b6c2;
 }
 
 
@@ -148,6 +149,15 @@ p {
   margin-right: 40px;
 }
 
+.nav-item-link {
+  color: var(--fiveth-color);
+  text-decoration: none;
+}
+
+.nav-item-link:hover {
+	text-decoration: underline;
+}
+
 .nav-item {
   margin-right: 24px;
   display: inline-flex;
@@ -231,7 +241,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--btn-primary);
+  background-color: var(--btn-secondary);
   color: var(--primary-color);
 }
 
@@ -240,6 +250,9 @@ p {
   top: 607px;
   margin-top: 48px;
   width: 596px;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tbl-th {
@@ -256,11 +269,6 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-}
-
-.tbl-tr {
-  text-align: left;
-  margin-right: 32px;
 }
 
 .icon-left {
@@ -648,7 +656,7 @@ p {
 }
 
 .item-secondary {
-  width: 248px;
+  width: 288px;
   color: var(--fiveth-color);
   margin-bottom: 35px;
   margin-top: 72px;
@@ -690,7 +698,7 @@ p {
 
 .social-link {
   display: block;
-  height: 44px;
+  height: 20px;
 }
 
 #twitter {
