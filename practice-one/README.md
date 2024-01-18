@@ -37,7 +37,6 @@ git checkout feature/practice-one
 ```
 - Install Parcel
 ```
-yarn add --dev parcel
 npm install --save-dev parcel
 ```
 - Run project:
