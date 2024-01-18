@@ -544,14 +544,14 @@ p {
 /* FOOTER */
 
 .footer {
-  height: 550px;
+  height: 600px;
   margin-top: 82px;
   background-color: var(--secondary-color);
 }
 
 .footer-legend {
-  width: 1240px;
-  height: 90px;
+  width: 1112px;
+  height: 108px;
   background-color: var(--primary-color);
   margin-left: 100px;
   margin-right: 100px;
@@ -600,12 +600,14 @@ p {
   padding-top: 50px;
   text-align: left;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-contact {
   position: absolute;
-  margin-left: 990px;
-  margin-top: -135px;
+  margin-left: 930px;
+  margin-top: -142px;
 
 }
 
@@ -629,7 +631,7 @@ p {
   font-size: 33.455px;
   font-weight: 700;
   position: absolute;
-  margin-top: -48px;
+  margin-top: 19px;
 }
 
 .list-item {
@@ -649,7 +651,7 @@ p {
   width: 248px;
   color: var(--fiveth-color);
   margin-bottom: 35px;
-  margin-top: 26px;
+  margin-top: 72px;
 }
 
 .footer-copyright {
