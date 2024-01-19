@@ -1,7 +1,6 @@
 
 # HTML-CSS-PRACTICE-ONE
 
-- 2024/01/11
 
 ## OVERVIEW
 - This document provides the estimation for the HTML/CSS practice
@@ -38,9 +37,9 @@ git checkout feature/practice-one
 - Install Parcel
 ```
 cd practice-one
-npm install --save-dev parcel
+npm install
 ```
 - Run project:
 ```
-npx parcel practice-one/index.html
+start
 ```
