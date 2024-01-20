@@ -4,8 +4,8 @@
 
 ## OVERVIEW
 - This document provides the estimation for the HTML/CSS practice
-- plan: [estimation](https://docs.google.com/document/d/1J6tL0kNOBe5DPiJhiqhWy2PeKGCvCwMi/edit)
-- design: [figma](https://www.figma.com/file/q2xRhMCyIeQs0nxiew6Wk9/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0%3A1&mode=dev)
+- Plan: [estimation](https://docs.google.com/document/d/1J6tL0kNOBe5DPiJhiqhWy2PeKGCvCwMi/edit)
+- Design: [figma](https://www.figma.com/file/q2xRhMCyIeQs0nxiew6Wk9/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0%3A1&mode=dev)
 
 ## Requirements
 - Work fine on Chrome browser's latest version
