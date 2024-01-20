@@ -41,5 +41,5 @@ npm install
 ```
 - Run project:
 ```
-start
+npm start
 ```
