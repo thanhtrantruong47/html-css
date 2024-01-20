@@ -302,7 +302,7 @@ input[type=text]:focus {
 .icon-left {
   position: absolute;
   margin-left: 650px;
-  top: 431;
+  margin-top: 300px;
   width: 56px;
   height: 56px;
 }
