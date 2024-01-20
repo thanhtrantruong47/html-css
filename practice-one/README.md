@@ -32,6 +32,7 @@ git clone https://github.com/thanhtrantruong47/html-css-training.git
 ```
 - Checkout to branch feature/html-css-practice-one:
 ```
+cd html-css-training
 git checkout feature/practice-one
 ```
 - Install Parcel
