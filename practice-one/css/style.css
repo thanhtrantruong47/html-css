@@ -31,14 +31,11 @@
 
 :root {
   --primary-color: black;
-  --text-color: #fff;
-  --link-box: 0 1px white;
-  --search-border: 1px none #f0f0f0;
   --secondary-color: #f0f0f0;
-  --third-color: rgba(0, 0, 0, 0.40);
-  --fourth-color: #ff3333;
-  --inline-color: rgba(0, 0, 0, 0.10);
-  --fiveth-color: rgba(0, 0, 0, 0.60);
+  --text-color: #fff;
+  --num-color: rgba(0, 0, 0, 0.40);
+  --product-color: #ff3333;
+  --nav-color: rgba(0, 0, 0, 0.60);
   --btn-primary: #e7e7e7;
   --btn-secondary: #82b6c2;
 }
@@ -87,7 +84,7 @@ p {
 }
 
 input[type=text]:focus {
-  border: none solid var(--search-border) ;
+  border: none none var(--btn-secondary) ;
 }
 
 
@@ -115,7 +112,7 @@ input[type=text]:focus {
 .link {
   text-decoration-line: none;
   color: var(--text-color);
-  box-shadow: var(--link-box);
+  box-shadow: 0 1px var(--text-color);
   text-decoration: none;
 }
 
@@ -132,7 +129,6 @@ input[type=text]:focus {
 .line {
   margin-left: 100px;
   margin-right: 100px;
-  color: var(--inline-color);
 }
 
 
@@ -212,7 +208,7 @@ input[type=text]:focus {
 }
 
 .drop-list {
-  margin-top: 5px;
+  margin-top: 4px;
   height: 16px;
   width: 16px;
   border: var(--secondary-color);
@@ -404,7 +400,7 @@ input[type=text]:focus {
 .span-num {
   font-size: 14px;
   font-weight: 400;
-  color: var(--third-color);
+  color: var(--nav-color);
 }
 
 .product-desc {
@@ -423,14 +419,14 @@ input[type=text]:focus {
   font-size: 24px;
   font-weight: 700;
   text-decoration: line-through;
-  color: var(--third-color)
+  color: var(--num-color)
 }
 
 .percent {
   font-size: 12px;
   font-weight: 500;
   border-radius: 62px;
-  color: var(--fourth-color)
+  color: var(--product-color)
 }
 
 .btn-secondary {
@@ -649,7 +645,7 @@ input[type=text]:focus {
 
 .btn-contact {
   width: 349px;
-  height: 40px;
+  height: 46px;
   font-size: 16px;
   border-radius: 62px;
   padding: 2px 53.5px;
@@ -697,7 +693,7 @@ input[type=text]:focus {
   font-size: 33.455px;
   font-weight: 700;
   position: absolute;
-  margin-top: 19px;
+  margin-top: 16px;
 }
 
 .list-item {
@@ -707,7 +703,7 @@ input[type=text]:focus {
 
 .item-primary {
   margin-bottom: 23px;
-  color: var(--fiveth-color);
+  color: var(--nav-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -715,13 +711,13 @@ input[type=text]:focus {
 
 .item-secondary {
   width: 288px;
-  color: var(--fiveth-color);
+  color: var(--nav-color);
   margin-bottom: 35px;
   margin-top: 72px;
 }
 
 .nav-item-link {
-  color: var(--fiveth-color);
+  color: var(--nav-color);
   text-decoration: none;
 }
 
