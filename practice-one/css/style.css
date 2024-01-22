@@ -84,7 +84,7 @@ p {
 }
 
 input[type=text]:focus {
-  border: none none var(--btn-secondary);
+  border: none none var(--btn-secondary) ;
 }
 
 
