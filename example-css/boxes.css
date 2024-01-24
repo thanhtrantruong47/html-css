@@ -1,0 +1,44 @@
+.container {
+  border: 2px  dashed black;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  padding: 40px;
+}
+
+.nav {
+  display: flex;
+  margin: 0px auto 0px auto;
+  width: 800px;
+  justify-content: space-between;
+  padding: 40px 0 40px 0 ;
+  border-bottom: 2px solid black;
+  border-top: 4px solid black;
+}
+
+.nav-item {
+  display: inline;
+  margin: 0px 3px;
+  text-transform:uppercase;
+}
+
+.product {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.product-img {
+  width: 250px;
+  height: 300px;
+}
+
+.text {
+  width: 800px;
+  margin-top: 40px;
+  margin: auto;
+}
