@@ -66,7 +66,6 @@ body {
 }
 
 .btn {
-  font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -151,7 +150,6 @@ input[type=text]:focus {
 }
 
 .nav-item {
-  font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -199,7 +197,6 @@ input[type=text]:focus {
 .banner-content {
   width: 545px;
   color: var(--nav-color);
-  font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -235,7 +232,6 @@ input[type=text]:focus {
 }
 
 .info-num {
-  font-family: Satoshi;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -490,7 +486,7 @@ input[type=text]:focus {
 }
 
 .customer-comments {
-  color: var(--fiveth-color);
+  color: var(--nav-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -593,8 +589,7 @@ input[type=text]:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.60);
-  font-family: Satoshi;
+  color: var(--nav-color);
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -606,6 +601,7 @@ input[type=text]:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--nav-color);
 }
 
 .footer-icon {
