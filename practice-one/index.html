@@ -8,81 +8,75 @@
   <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
     rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-
   <title>Demo HTML</title>
 </head>
 
 <body>
   <!-- SIGN UP START -->
-  <aside class="sign-up">
+  <div class="sign-up">
     <p class="text">Sign up and get 20% off to your first order. <a href="/" class="link link-secondary">Sign Up Now</a>
     </p>
-    <a href="/"><img src="./assets/images/off.svg" alt="off"></a>
-  </aside>
+    <img src="./assets/images/off.svg" alt="off">
+  </div>
   <!-- SIGN UP END -->
 
   <!-- HEADER START -->
-  <header class="nav-bar">
-    <nav class="container">
-      <h1><a class="link-primany" href="#"><b class="nav-logo">SHOP.CO</b></a></h1>
+  <header class="container">
+    <nav class="nav-bar">
+      <h1 class="nav-logo"><a class="link-primany" href="#">SHOP.CO</a></h1>
       <ul class="nav">
         <li class="nav-item">
-          <a class="link-primany nav-link" href="/">Shop</a>
+          shop
           <select class="drop-list" name="test" id="1">
             <option value="q">Casual</option>
             <option value="s">Gym</option>
           </select>
         </li>
-        <li class="nav-item"><a class="link-primany nav-link" href="#">On Sale</a></li>
-        <li class="nav-item"><a class="link-primany nav-link" href="/">New Arrivals</a></li>
-        <li class="nav-item"><a class="link-primany nav-link" href="/">Brand</a></li>
-        <li class="nav-item">
-          <form>
-            <input class="nav-search" type="text" name="search" placeholder="Search for products...">
-          </form>
-        </li>
-        <li class="nav-icon"><a class="link-primany" href="/"> <img src="./assets/images/cart.svg" alt="cart"></a></li>
-        <li class="nav-icon"><a class="link-primany" href="/"> <img src="./assets/images/login.svg" alt="login"></a>
-        </li>
+        <li class="nav-item">On Sale</li>
+        <li class="nav-item">New Arrivals</li>
+        <li class="nav-item">Brand</li>
       </ul>
+      <form>
+        <input class="nav-search" type="text" name="search" placeholder="Search for products...">
+      </form>
+      <div>
+        <a class="link-primany" href="/"> <img src="./assets/images/cart.svg" alt="cart"></a>
+        <a class="link-primany" href="/"> <img src="./assets/images/login.svg" alt="login"></a>
+      </div>
     </nav>
   </header>
   <!-- HEADER END -->
 
   <!-- BANNER SECTION START -->
   <section class="banner-section">
-    <div class="container">
-      <h2 class="title primary-title"><b>FIND CLOTHES THAT MATCHES YOUR STYLE</b></h2>
-      <p class="banner-content">Browse through our diverse range of meticulously crafted garments, designed to bring
-        out
-        your individuality and cater to your sense of style.</p>
-      <button class="btn btn-primary">
-        Shop now
-      </button>
-      <div class="tbl">
-        <ul>
-          <li class="tbl-th"><b>200+</b></li>
-          <li class="tbl-td">International Brands <img class="line-primary" src="./assets/images/line.png" alt="line">
-          </li>
-        </ul>
-        <ul>
-          <li class="tbl-th"><b>2,000+</b></li>
-          <li class="tbl-td">High-Quality Products <img class="line-primary" src="./assets/images/line.png" alt="line">
-          </li>
-        </ul>
-        <ul>
-          <li class="tbl-th"><b>30,000+</b></li>
-          <li class="tbl-td">Happy Customers</li>
-        </ul>
+    <div class="banner-item">
+      <div>
+        <h2 class="title primary-title">FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+        <p class="banner-content">Browse through our diverse range of meticulously crafted garments, designed to bring
+          out
+          your individuality and cater to your sense of style</p>
+        <button class="btn btn-primary">
+          Shop now
+        </button>
+        <div class="info">
+          <p class="info-num">200+ <span class="info-desc">International Brands </span></p>
+          <img src="./assets/images/line.png" alt="">
+          <p class="info-num">2,000+ <span class="info-desc"> High-Quality Products </span></p>
+          <img src="./assets/images/line.png" alt="">
+          <p class="info-num">30,000+ <span class="info-desc">Happy Customers</span></p>
+        </div>
       </div>
-      <img src="./assets/images/star.svg" class="icon-left" alt="star">
-      <img src="./assets/images/star.svg" class="icon-right" alt="star">
+      <div>
+        <img class="icon-left" src="./assets/images/star.svg" alt="">
+        <img class="icon-right" src="./assets/images/star.svg" alt="">
+      </div>
     </div>
   </section>
   <!-- BANNER SECTION END -->
 
   <!-- BRAND SECTION START -->
-  <div class="brand-section">
+
+  <section class="brand-section">
     <div class="container">
       <ul class="brand-bar">
         <li class="brand-item"><img src="./assets/images/versace.svg" alt="versace"></li>
@@ -92,15 +86,15 @@
         <li class="brand-item"><img src="./assets/images/calvin.svg" alt="calvin"></li>
       </ul>
     </div>
-  </div>
+  </section>
   <!-- BRAND SECTION END -->
 
   <!-- ARRIVAL SECTION START -->
-  <section class="arrival-section">
-    <div class="container">
+  <div class="container">
+    <section class="arrival-section">
       <h2 class="title secondary-title">NEW ARRIVALS</h2>
-      <ul>
-        <li class="product-item">
+      <div class="product">
+        <div class="product-item">
           <img class="product-img" src="./assets/images/tapede-tails.png" alt="tapede-tails">
           <p class="name">T-shirt With Tape Details</p>
           <div class="evaluate">
@@ -114,8 +108,9 @@
           <div class="product-desc">
             <p class="price">&#36;120</p>
           </div>
-        </li>
-        <li class="product-item"><img class="product-img" src="./assets/images/fit-jeans.png" alt="fit-jeans">
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/fit-jeans.png" alt="fit-jeans">
           <p class="name">Skinny Fit Jeans</p>
           <div class="evaluate">
             <img src="./assets/images/star-full.svg" alt="star-full">
@@ -129,8 +124,8 @@
             <p class="sell">&#36;260</p>
             <p class="percent">-20%</p>
           </div>
-        </li>
-        <li class="product-item">
+        </div>
+        <div class="product-item">
           <img class="product-img" src="./assets/images/checkered-shirt.png" alt="checkered-shirt">
           <p class="name">Checkered Shirt</p>
           <div class="evaluate">
@@ -144,8 +139,8 @@
           <div class="product-desc">
             <p class="price">&#36;180</p>
           </div>
-        </li>
-        <li class="product-item">
+        </div>
+        <div class="product-item">
           <img class="product-img" src="./assets/images/striped-t-shirt.png" alt="striped-t-shirt">
           <p class="name">Sleeve Striped T-shirt</p>
           <div class="evaluate">
@@ -161,21 +156,19 @@
             <p class=" product-desc sell">&#36;160</p>
             <p class=" product-desc percent">-30%</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
       <button class="btn btn-secondary">
         View All
       </button>
-    </div>
-  </section>
-  <!-- ARRIVAL SECTION END -->
-  <hr class="line">
-  <!-- TOP SELLING SECTION START -->
-  <section class="topsell-section">
-    <div class="container">
+    </section>
+    <!-- ARRIVAL SECTION END  -->
+
+    <!-- TOP SELLING SECTION START -->
+    <section class="topsell-section">
       <h2 class="title secondary-title">TOP SELLING</h2>
-      <ul>
-        <li class="product-item">
+      <div class="product">
+        <div class="product-item">
           <img class="product-img" src="./assets/images/veritical.png" alt="veritical">
           <p class="name">Veritical Striped Shirt</p>
           <div class="evaluate">
@@ -191,8 +184,8 @@
             <p class="sell">&#36;232</p>
             <p class="percent">-20%</p>
           </div>
-        </li>
-        <li class="product-item"><img class="product-img" src="./assets/images/courage.png" alt="courage">
+        </div>
+        <div class="product-item"><img class="product-img" src="./assets/images/courage.png" alt="courage">
           <p class="name">Courage Graphic T-shirt</p>
           <div class="evaluate">
             <img src="./assets/images/star-full.svg" alt="star-full">
@@ -205,8 +198,8 @@
           <div class="product-desc">
             <p class="price">&#36;145</p>
           </div>
-        </li>
-        <li class="product-item">
+        </div>
+        <div class="product-item">
           <img class="product-img" src="./assets/images/loose-fit.png" alt="loose-fit">
           <p class="name">Loose Fit Bermuda Short</p>
           <div class="evaluate">
@@ -220,8 +213,8 @@
           <div class="product-desc">
             <p class="price">&#36;80</p>
           </div>
-        </li>
-        <li class="product-item">
+        </div>
+        <div class="product-item">
           <img class="product-img" src="./assets/images/faded-skinny.png" alt="faded-skinny">
           <p class="name">Faded Skinny Jeans</p>
           <div class="evaluate">
@@ -235,80 +228,92 @@
           <div class="product-desc">
             <p class="price">&#36;210</p>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
       <button class="btn btn-secondary">
         View All
       </button>
-    </div>
-  </section>
-  <!-- TOP SELLING SECTION END -->
 
-  <!-- BROWES SECTION START -->
-  <section class="browse-section">
-    <h2 class="title third-title">BROWSE BY DRESS STYLE</h2>
-    <div class="browse-item">
-      <img class="browes-img" src="./assets/images/casual.png" alt="casual">
-      <p class="desc top-left">Casual</p>
-      <img class="browes-img" src="./assets/images/formal.png" alt="formal">
-      <p class="desc top-right">Formal</p>
-      <img class="browes-img" src="./assets/images/party.png" alt="party">
-      <p class="desc bot-left">Party</p>
-      <img class="browes-img" src="./assets/images/gym.png" alt="gym">
-      <p class="desc bot-right">Gym</p>
-    </div>
-  </section>
-  <!-- BROWES SECTION END -->
+    </section>
+    <!-- TOP SELLING SECTION END -->
 
-  <!-- OUR HAPPY CUSTOMER START -->
-  <article class="customer">
-    <div class="container">
-      <h2 class="title fourth-title">OUR HAPPY CUSTOMERS</h2>
-      <a href="/"><img class="next-btn" src="./assets/images/prev-icon.svg" alt="next-icon"></a>
-      <a href="/"><img class="prev-btn  " src="./assets/images/next-icon.svg" alt="prev-icon"></a>
-      <ul class="customer-list">
-        <li class="customer-item">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <p class="customer-desc">Sarah M.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
-              alt="blue-check-mark"><span class="customer-comments">
-              "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
-              elegant dresses, every piece I've bought has exceeded my expectations.”</span></p>
-        </li>
-        <li class="customer-item">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <p class="customer-desc">Alex K.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
-              alt="blue-check-mark"><span class="customer-comments">"Finding clothes that align with my personal style
-              used to be a challenge until I
-              discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes
-              and occasions.”</span></p>
-        </li>
-        <li class="customer-item">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <img src="./assets/images/star-full.svg" alt="star-full">
-          <p class="customer-desc">James L.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
-              alt="blue-check-mark"><span class="customer-comments">
-              "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
-              Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
-            </span></p>
-        </li>
-      </ul>
-    </div>
-  </article>
+    <!-- BROWES SECTION START -->
+    <section class="browse-section">
+      <h2 class="title third-title">BROWSE BY DRESS STYLE</h2>
+        <div class="product">
+          <div class="product-item">
+              thanh
+          </div>
+          <div class="product-item">
+            thanh123
+        </div>
+          <!-- <img class="browes-img" src="./assets/images/casual.png" alt="casual"> -->
+          <!-- <p class="desc top-left">Casual</p> -->
+
+
+          <!-- <img class="browes-img" src="./assets/images/formal.png" alt="formal"> -->
+          <!-- <p class="desc top-right">Formal</p> -->
+        </div>
+
+          <!-- <img class="browes-img" src="./assets/images/party.png" alt="party"> -->
+          <!-- <p class="desc bot-left">Party</p> -->
+
+          <!--  <img class="browes-img" src="./assets/images/gym.png" alt="gym"> -->
+          <!-- <p class="desc bot-right">Gym</p> -->
+
+    </section>
+    <!-- BROWES SECTION END -->
+
+    <!-- OUR HAPPY CUSTOMER START -->
+    <article class="customer">
+      <div class="container">
+        <h2 class="title fourth-title">OUR HAPPY CUSTOMERS</h2>
+        <a href="/"><img class="next-btn" src="./assets/images/prev-icon.svg" alt="next-icon"></a>
+        <a href="/"><img class="prev-btn  " src="./assets/images/next-icon.svg" alt="prev-icon"></a>
+        <ul class="customer-list">
+          <li class="customer-item">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <p class="customer-desc">Sarah M.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
+                alt="blue-check-mark"><span class="customer-comments">
+                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
+                elegant dresses, every piece I've bought has exceeded my expectations.”</span></p>
+          </li>
+          <li class="customer-item">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <p class="customer-desc">Alex K.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
+                alt="blue-check-mark"><span class="customer-comments">"Finding clothes that align with my personal style
+                used to be a challenge until I
+                discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes
+                and occasions.”</span></p>
+          </li>
+          <li class="customer-item">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <p class="customer-desc">James L.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
+                alt="blue-check-mark"><span class="customer-comments">
+                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+              </span></p>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
   <!-- OUR HAPPY CUSTOMER END -->
 
   <!-- FOOTER START -->
-  <footer>
+  <!-- <footer>
     <fieldset class="footer">
       <legend class="footer-legend">
         <h2 class="title fiveth-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
@@ -453,7 +458,8 @@
         </ul>
       </div>
     </fieldset>
-  </footer>
+  </footer> -->
+  </div>
   <!-- FOOTER END -->
 </body>
 

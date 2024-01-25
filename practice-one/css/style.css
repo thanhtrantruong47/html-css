@@ -38,6 +38,7 @@
   --nav-color: rgba(0, 0, 0, 0.60);
   --btn-primary: #e7e7e7;
   --btn-secondary: #82b6c2;
+  --line-color: rgba(0, 0, 0, 0.10);
 }
 
 
@@ -48,16 +49,20 @@
   # COMPONENTS
 \*------------------------------------*/
 
+
+*{
+  box-sizing: border-box;
+}
+
 body {
   width: 1440px;
-  height: 4370px;
-  margin: auto;
+  margin: 0 auto;
+  font-family: Satoshi;
 }
 
 .container {
   width: 1240px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -76,13 +81,6 @@ body {
   font-family: Integral CF;
 }
 
-p {
-  font-family: Satoshi;
-  font-style: normal;
-  line-height: normal;
-  margin: 1px 1px 1px 1px;
-}
-
 input[type=text]:focus {
   border: none none var(--btn-secondary);
 }
@@ -94,19 +92,16 @@ input[type=text]:focus {
 \*------------------------------------*/
 
 .sign-up {
-  height: 38px;
   display: flex;
-  align-items: center;
   background-color: var(--primary-color);
 }
 
 .text {
   font-size: 14px;
   font-weight: 300;
-  margin-left: 535px;
-  margin-right: 430px;
-  width: 351px;
+  margin: 0 415px 0 544px;
   color: var(--text-color);
+  padding: 9px;
 }
 
 .link {
@@ -126,10 +121,6 @@ input[type=text]:focus {
   color: var(--text-color);
 }
 
-.line {
-  margin-left: 100px;
-  margin-right: 100px;
-}
 
 
 
@@ -140,42 +131,26 @@ input[type=text]:focus {
 \*------------------------------------*/
 
 .nav-bar {
-  height: 48px;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 24px 0;
+  gap: 40px;
+  align-items: center;
 }
 
 .nav-logo {
-  font-weight: bold;
   font-family: Integral CF;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  margin-right: 40px;
-
 }
 
 .nav {
-  margin-left: 200px;
-  width: 1037px;
-  margin-top: -37px;
-}
-
-.nav-link:hover {
-  color: var(--primary-color);
-  text-decoration: none;
-  text-decoration: underline;
-}
-
-.nav-item-link:hover {
-  text-decoration: underline;
+  display: flex;
+  width: 321px;
+  justify-content: space-between;
 }
 
 .nav-item {
-  margin-right: 24px;
-  display: inline-flex;
   font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
@@ -184,32 +159,19 @@ input[type=text]:focus {
 }
 
 .nav-search {
-  width: 470px;
-  height: 44px;
-  margin-left: 45px;
-  margin-right: 0px;
+  width: 577px;
+  height: 48px;
   border-radius: 62px;
   background-image: url("../assets/images/search.svg");
   background-repeat: no-repeat;
   background-position: 12px 12px;
   padding: 2px 52px;
-  position: 662px;
-  margin-left: 0px;
   border: var(--search-border);
   background-color: var(--secondary-color);
 }
 
-.nav-icon {
-  height: 24px;
-  width: 24px;
-  float: right;
-  margin-top: 12px;
-  margin-left: 14px;
-}
-
 .drop-list {
   margin-top: 4px;
-  height: 16px;
   width: 16px;
   border: var(--secondary-color);
 }
@@ -225,33 +187,36 @@ input[type=text]:focus {
 .banner-section {
   background-image: url("../assets/images/rectangle.png");
   height: 663px;
-  margin-top: 24px;
 }
 
-.primary-title {
-  position: absolute;
-  top: 237px;
-  font-size: 64px;
-  font-weight: bold;
-  width: 577px;
-  height: 173px;
-  padding: 0;
-  text-indent: cap alphabetic;
-  padding-bottom: both;
-  line-height: 57px;
-  position: 662px;
+.banner-item {
+  width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
 }
 
 .banner-content {
-  position: absolute;
-  top: 442px;
-  width: 550px;
-  height: 33px;
+  width: 545px;
+  color: var(--nav-color);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 16px;
+}
+
+.primary-title {
+  padding: 103px 0 16px 0;
+  font-size: 64px;
+  font-weight: bold;
+  width: 577px;
+  padding-bottom: both;
+  line-height: 57px;
 }
 
 .btn-primary {
-  position: absolute;
-  top: 520px;
   background-color: var(--primary-color);
   color: var(--text-color);
   cursor: pointer;
@@ -262,52 +227,44 @@ input[type=text]:focus {
   color: var(--primary-color);
 }
 
-.line-primary {
-  margin-left: 175px;
-  color: var(--inline-color);
-  margin-top: -100px;
-}
-
-.tbl {
-  position: absolute;
-  top: 570px;
+.info {
   margin-top: 48px;
-  padding-top: 25px;
-  width: 596px;
-  height: 74px;
   display: flex;
+  width: 596px;
   justify-content: space-between;
+  padding-bottom: 103px;
 }
 
-.tbl-th {
+.info-num {
   font-family: Satoshi;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px
+  line-height: normal;
 }
 
-.tbl-td {
+.info-desc {
+  display: block;
+  color: var(--nav-color);
   font-family: Satoshi;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+
 }
 
 .icon-left {
-  position: absolute;
-  margin-left: 650px;
-  margin-top: 300px;
   width: 56px;
   height: 56px;
+  margin-top: 297px;
 }
 
 .icon-right {
-  position: absolute;
-  margin-left: 1155px;
   float: right;
-  top: 220px;
+  width: 104px;
+  height: 104px;
+  margin-top: 86px;
 }
 
 
@@ -319,19 +276,16 @@ input[type=text]:focus {
 \*------------------------------------*/
 
 .brand-section {
-  height: 122px;
   background-color: var(--primary-color);
 }
 
 .brand-bar {
   display: flex;
-  align-items: center;
-  margin: auto;
   justify-content: space-between;
 }
 
 .brand-item {
-  margin-top: 44px;
+  padding: 43px 0;
 }
 
 
@@ -343,43 +297,37 @@ input[type=text]:focus {
 \*------------------------------------*/
 
 .arrival-section {
-  height: 650px;
+  text-align: center;
+  border-bottom: 1px solid  var(--line-color);
 }
 
 .secondary-title {
-  height: 58px;
-  display: flex;
-  margin-top: 70px;
-  margin-left: 418px;
-  margin-right: 418px;
   font-size: 48px;
+  margin-top: 72px;
+  margin-bottom: 55px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .product-item {
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  height: 444px;
-  padding: 10px;
+  text-align: left;
 }
 
 .product-item:hover {
-  color: var(--primary-color);
   cursor: pointer;
 }
 
 .product-img {
   border-radius: 20px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   width: 296px;
   height: 299px;
 }
 
 .name {
-  color: var(--primary-color);
   font-size: 20px;
   font-weight: 700;
 }
@@ -391,7 +339,6 @@ input[type=text]:focus {
 }
 
 .evaluate-num {
-  color: var(--primary-color);
   font-weight: 400;
   font-size: 14px;
   margin-left: 13px;
@@ -430,16 +377,14 @@ input[type=text]:focus {
 }
 
 .btn-secondary {
-  margin-top: 20px;
-  margin-left: 510px;
-  margin-right: 510px;
+  margin-top: 36px;
+  margin-bottom: 64px;
   font-size: 16px;
   cursor: pointer;
 }
 
 .btn-secondary:hover {
   background-color: var(--btn-primary);
-  color: var(--primary-color);
 }
 
 
@@ -451,7 +396,7 @@ input[type=text]:focus {
 \*------------------------------------*/
 
 .topsell-section {
-  height: 621px;
+  text-align: center;
 }
 
 
@@ -462,27 +407,18 @@ input[type=text]:focus {
 
 .browse-section {
   border-radius: 40px;
-  margin-top: 80px;
   background-color: var(--secondary-color);
-  height: 866px;
-  width: 1240px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .third-title {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  width: 687px;
-  height: 58px;
-  margin-left: 276px;
+  padding: 70px 0;
   font-size: 48px;
   font-weight: 700;
+  text-align: center;
 }
 
-.browse-item {
-  margin-left: 100px;
-  margin-right: 80px;
+.browes-item {
+  display: grid;
 }
 
 .browes-img {
@@ -507,25 +443,6 @@ input[type=text]:focus {
   cursor: pointer;
 }
 
-.top-left {
-  margin-top: -270px;
-  margin-left: 40px;
-}
-
-.top-right {
-  margin-top: -270px;
-  margin-left: 420px;
-}
-
-.bot-left {
-  margin-top: -270px;
-  margin-left: 40px;
-}
-
-.bot-right {
-  margin-top: -270px;
-  margin-left: 700px;
-}
 
 
 
