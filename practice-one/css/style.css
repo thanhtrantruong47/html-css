@@ -58,6 +58,7 @@ body {
   width: 1440px;
   margin: 0 auto;
   font-family: Satoshi;
+  font-style: normal;
 }
 
 .container {
@@ -67,7 +68,6 @@ body {
 
 .btn {
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   padding: auto;
   width: 210px;
@@ -151,7 +151,6 @@ input[type=text]:focus {
 
 .nav-item {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -192,7 +191,6 @@ input[type=text]:focus {
   width: 545px;
   color: var(--nav-color);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 16.5px;
   margin: 32px 0 32px 0px;
@@ -227,7 +225,6 @@ input[type=text]:focus {
 
 .info-num {
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
@@ -236,7 +233,6 @@ input[type=text]:focus {
   display: block;
   color: var(--nav-color);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
 
@@ -411,15 +407,20 @@ input[type=text]:focus {
   text-align: center;
 }
 
-.browes{
+.browes {
   width: 1020px;
   display: flex;
-  margin: 20px auto;
+  margin: 0 auto;
   justify-content: space-between;
+  padding: 10px 0;
 }
 
 .browes-desc {
-
+  position: absolute;
+  margin: 20px 20px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .browse-img {
@@ -499,7 +500,6 @@ input[type=text]:focus {
 .fiveth-title {
   color: var(--text-color);
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: 45px;
   width: 551px;
@@ -512,7 +512,7 @@ input[type=text]:focus {
   border-radius: 62px;
   background-image: url("../assets/images/email-icon.svg");
   background-repeat: no-repeat;
-  background-position: 12px 8px;
+  background-position: 12px 12px;
   margin-bottom: 7px;
   border: var(--search-border);
   padding: 2px 52px;
@@ -545,7 +545,6 @@ input[type=text]:focus {
 .footer-nav-head {
   color: var(--primary-color);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 3px;
