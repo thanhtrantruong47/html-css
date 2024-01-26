@@ -183,6 +183,22 @@ body {
   line-height: 22px;
 }
 
+/* components for link  */
+
+.link-primany {
+  text-decoration: none;
+  color: var(--bg-color);
+}
+
+.link-primany:hover {
+  text-decoration: underline;
+}
+
+.link-secondary {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 
 
 
@@ -211,20 +227,6 @@ body {
   text-decoration: none;
 }
 
-.link-primany {
-  text-decoration: none;
-  color: var(--bg-color);
-}
-
-.link-primany:hover {
-  text-decoration: underline;
-}
-
-.link-secondary {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
 
 
 
@@ -233,7 +235,7 @@ body {
   #SECTION HEADER
 \*------------------------------------*/
 
-.nav-bar {
+.header {
   display: flex;
   justify-content: space-between;
   margin: 24px 0;
@@ -241,25 +243,25 @@ body {
   align-items: center;
 }
 
-.nav-logo {
+.header__logo {
   font-family: Integral CF;
   font-size: 32px;
   font-weight: 700;
 }
 
-.nav {
+.header__nav {
   display: flex;
   width: 321px;
   justify-content: space-between;
 }
 
-.nav-item {
+.header__nav--item {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
 }
 
-.nav-search {
+.header__search {
   width: 577px;
   height: 48px;
   border-radius: 62px;
@@ -279,19 +281,19 @@ body {
   #SECTION BANNER
 \*------------------------------------*/
 
-.banner-section {
+.banner{
   background-image: url("../assets/images/rectangle.png");
   height: 663px;
 }
 
-.banner-item {
+.banner__item {
   width: 1240px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
 }
 
-.banner-item__content {
+.banner__item--content {
   width: 545px;
   color: var(--primary-color);
   font-size: 16px;
@@ -319,7 +321,7 @@ body {
   color: var(--bg-color);
 }
 
-.banner-item__info {
+.banner__item--info {
   margin-top: 48px;
   display: flex;
   width: 596px;
@@ -327,19 +329,19 @@ body {
   margin: 48px 0px 116px 0;
 }
 
-.banner-item__info-num {
+.banner__item--num {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
 }
 
-.banner-item__info-box {
+.banner__item--box {
   padding: 0 32px;
   border-left: 1px solid var(--line-color);
   border-right: 1px solid var(--line-color);
 }
 
-.banner-item__info-desc {
+.banner__item--desc {
   display: block;
   color: var(--primary-color);
   font-size: 16px;
@@ -347,13 +349,13 @@ body {
   line-height: 22px;
 }
 
-.banner-icon__left {
+.banner__icon--left {
   width: 56px;
   height: 56px;
   margin-top: 297px;
 }
 
-.banner-icon__right {
+.banner__icon--right {
   float: right;
   width: 104px;
   height: 104px;
@@ -368,16 +370,16 @@ body {
   #SECTION BRAND
 \*------------------------------------*/
 
-.brand-section {
+.brand {
   background-color: var(--bg-color);
 }
 
-.brand-bar {
+.brand__bar {
   display: flex;
   justify-content: space-between;
 }
 
-.brand-item {
+.brand__bar--item {
   padding: 43px 0;
 }
 
