@@ -196,7 +196,7 @@ body {
   background-color: var(--bg-color);
 }
 
-.text {
+.sign-up__text {
   font-size: 14px;
   font-weight: 300;
   margin: 0 415px 0 544px;
@@ -204,7 +204,7 @@ body {
   padding: 9px;
 }
 
-.link {
+.sign-up__link {
   text-decoration-line: none;
   color: var(--text-color);
   box-shadow: 0 1px var(--text-color);
@@ -291,7 +291,7 @@ body {
   margin: 0 auto;
 }
 
-.banner-content {
+.banner-item__content {
   width: 545px;
   color: var(--primary-color);
   font-size: 16px;
@@ -319,7 +319,7 @@ body {
   color: var(--bg-color);
 }
 
-.info {
+.banner-item__info {
   margin-top: 48px;
   display: flex;
   width: 596px;
@@ -327,19 +327,19 @@ body {
   margin: 48px 0px 116px 0;
 }
 
-.info-num {
+.banner-item__info-num {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
 }
 
-.banner-num {
+.banner-item__info-box {
   padding: 0 32px;
   border-left: 1px solid var(--line-color);
   border-right: 1px solid var(--line-color);
 }
 
-.info-desc {
+.banner-item__info-desc {
   display: block;
   color: var(--primary-color);
   font-size: 16px;
@@ -347,13 +347,13 @@ body {
   line-height: 22px;
 }
 
-.icon-left {
+.banner-icon__left {
   width: 56px;
   height: 56px;
   margin-top: 297px;
 }
 
-.icon-right {
+.banner-icon__right {
   float: right;
   width: 104px;
   height: 104px;
