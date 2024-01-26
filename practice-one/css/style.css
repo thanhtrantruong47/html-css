@@ -30,14 +30,13 @@
 \*------------------------------------*/
 
 :root {
-  --primary-color: black;
+  --bg-color: black;
   --secondary-color: #f0f0f0;
   --text-color: #fff;
-  --num-color: rgba(0, 0, 0, 0.40);
+  --decs-color: rgba(0, 0, 0, 0.40);
   --product-color: #ff3333;
-  --nav-color: rgba(0, 0, 0, 0.60);
+  --primary-color: rgba(0, 0, 0, 0.60);
   --btn-primary: #e7e7e7;
-  --btn-secondary: #82b6c2;
   --line-color: rgba(0, 0, 0, 0.10);
 }
 
@@ -48,7 +47,6 @@
 /*------------------------------------*\
   # COMPONENTS
 \*------------------------------------*/
-
 
 * {
   box-sizing: border-box;
@@ -80,9 +78,112 @@ body {
   font-family: Integral CF;
 }
 
-input[type=text]:focus {
-  border: none none var(--btn-secondary);
+/* components for product  */
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
+
+.product-item {
+  text-align: left;
+}
+
+.secondary-title {
+  font-size: 48px;
+  margin-top: 72px;
+  margin-bottom: 55px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-item:hover {
+  cursor: pointer;
+}
+
+.product-img {
+  border-radius: 20px;
+  width: 296px;
+  height: 299px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0 4px 0;
+}
+
+.evaluate {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0 5px 0;
+}
+
+.evaluate-num {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 13px;
+}
+
+.span-num {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.product-desc {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+  padding: 5px 0 0 0;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sell {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: var(--decs-color)
+}
+
+.percent {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 62px;
+  color: var(--product-color)
+}
+
+.btn-secondary {
+  margin-top: 36px;
+  margin-bottom: 64px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-primary);
+}
+
+/* component for footer */
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
 
 
 
@@ -92,7 +193,7 @@ input[type=text]:focus {
 
 .sign-up {
   display: flex;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
 }
 
 .text {
@@ -112,14 +213,17 @@ input[type=text]:focus {
 
 .link-primany {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.link-primany:hover {
+  text-decoration: underline;
 }
 
 .link-secondary {
   text-decoration: none;
   color: var(--text-color);
 }
-
 
 
 
@@ -189,7 +293,7 @@ input[type=text]:focus {
 
 .banner-content {
   width: 545px;
-  color: var(--nav-color);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 16.5px;
@@ -205,14 +309,14 @@ input[type=text]:focus {
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   color: var(--text-color);
   cursor: pointer;
 }
 
 .btn-primary:hover {
   background-color: var(--btn-secondary);
-  color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 .info {
@@ -229,13 +333,18 @@ input[type=text]:focus {
   line-height: normal;
 }
 
+.banner-num {
+  padding: 0 32px;
+  border-left: 1px solid var(--line-color);
+  border-right: 1px solid var(--line-color);
+}
+
 .info-desc {
   display: block;
-  color: var(--nav-color);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-
 }
 
 .icon-left {
@@ -260,7 +369,7 @@ input[type=text]:focus {
 \*------------------------------------*/
 
 .brand-section {
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
 }
 
 .brand-bar {
@@ -283,97 +392,6 @@ input[type=text]:focus {
 .arrival-section {
   text-align: center;
   border-bottom: 1px solid var(--line-color);
-}
-
-.secondary-title {
-  font-size: 48px;
-  margin-top: 72px;
-  margin-bottom: 55px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.product {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.product-item {
-  text-align: left;
-}
-
-.product-item:hover {
-  cursor: pointer;
-}
-
-.product-img {
-  border-radius: 20px;
-  width: 296px;
-  height: 299px;
-}
-
-.name {
-  font-size: 20px;
-  font-weight: 700;
-  padding: 10px 0 4px 0;
-}
-
-.evaluate {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 0 5px 0;
-}
-
-.evaluate-num {
-  font-weight: 400;
-  font-size: 14px;
-  margin-left: 13px;
-}
-
-.span-num {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--nav-color);
-}
-
-.product-desc {
-  display: flex;
-  align-items: center;
-  width: 180px;
-  justify-content: space-between;
-  padding: 5px 0 0 0;
-}
-
-.price {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.sell {
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: line-through;
-  color: var(--num-color)
-}
-
-.percent {
-  font-size: 12px;
-  font-weight: 500;
-  border-radius: 62px;
-  color: var(--product-color)
-}
-
-.btn-secondary {
-  margin-top: 36px;
-  margin-bottom: 64px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.btn-secondary:hover {
-  background-color: var(--btn-primary);
 }
 
 
@@ -459,6 +477,13 @@ input[type=text]:focus {
   border: 1px solid var(--secondary-color);
 }
 
+.customer-item__img {
+  width: 120px;
+  height: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .customer-desc {
   display: flex;
   align-items: center;
@@ -468,7 +493,7 @@ input[type=text]:focus {
 }
 
 .customer-comments {
-  color: var(--nav-color);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -489,7 +514,7 @@ input[type=text]:focus {
 
 .footer-legend {
   width: 1240px;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -530,20 +555,20 @@ input[type=text]:focus {
 
 .btn-contact:hover {
   background-color: var(--btn-primary);
-  color: var(--primary-color);
+  color: var(--bg-color);
+  cursor: pointer;
 }
 
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  margin: 50px auto 25px auto;
-  width: 1240px;
+  margin: 50px  auto 25px auto;
   padding-bottom: 50px;
   border-bottom: 1px solid var(--line-color);
 }
 
 .footer-nav-head {
-  color: var(--primary-color);
+  color: var(--bg-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -559,20 +584,10 @@ input[type=text]:focus {
 }
 
 .footer-logo {
-  color: var(--primary-color);
+  color: var(--bg-color);
   font-family: Integral CF;
   font-size: 33.455px;
   font-weight: 700;
-}
-
-.footer-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: var(--nav-color);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
 }
 
 .footer-link {
@@ -581,7 +596,6 @@ input[type=text]:focus {
 }
 
 .footer-link:hover {
-  color: #82b6c2;
   text-decoration: underline;
 }
 
@@ -591,7 +605,7 @@ input[type=text]:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--nav-color);
+  color: var(--primary-color);
 }
 
 .footer-icon {
