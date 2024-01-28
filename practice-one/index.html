@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
   <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
     rel="stylesheet">
@@ -15,15 +16,16 @@
 <body>
   <!-- SIGN UP START -->
   <div class="sign-up">
-    <p class="sign-up__text">Sign up and get 20% off to your first order.<a href="javascript:void(0)" class="sign-up__link link-secondary">Sign Up Now</a>
+    <p class="sign-up__text">Sign up and get 20% off to your first order. <a href="javascript:void(0)" class="sign-up__link link-secondary">Sign Up Now</a>
     </p>
-    <img src="./assets/images/off.svg" alt="off">
+    <img class="sign-up__img" src="./assets/images/off.svg" alt="off">
   </div>
   <!-- SIGN UP END -->
 
   <!-- HEADER START -->
   <header class="container">
     <nav class="header">
+      <img class="header-icon-nav" src="./assets/images/nav.svg" alt="">
       <h1 class="header__logo"><a class="link-primany" href="javascript:void(0)">SHOP.CO</a></h1>
       <ul class="header__nav">
         <li class="header__nav--item"><a class="link-primany" href="javascript:void(0)">Shop</a></li>
@@ -34,7 +36,8 @@
       <form>
         <input class="header__search" type="text" name="search" placeholder="Search for products...">
       </form>
-      <div>
+      <div class="header__icon">
+        <a href=""><img class="header-icon-nav" src="./assets/images/icon-search.svg" alt=""></a>
         <a class="link-primany" href="javascript:void(0)"><img src="./assets/images/cart.svg" alt="cart"></a>
         <a class="link-primany" href="javascript:void(0)"><img src="./assets/images/login.svg" alt="login"></a>
       </div>
@@ -55,14 +58,15 @@
         </button>
         <div class="banner__item--info">
           <p class="banner__item--num">200+<span class="banner__item--desc">International Brands</span></p>
-          <p class="banner__item--num banner__item--box">2,000+<span class="banner__item--desc">High-Quality Products</span></p>
+          <p class="banner__item--num banner__item--box-left banner__item--box-right">2,000+<span class="banner__item--desc">High-Quality Products</span></p>
           <p class="banner__item--num">30,000+<span class="banner__item--desc">Happy Customers</span></p>
         </div>
       </div>
-      <div>
+      <div class="banner__icon">
         <img class="banner__icon--left" src="./assets/images/star.svg" alt="star">
         <img class="banner__icon--right" src="./assets/images/star.svg" alt="star">
       </div>
+      <img class="banner__img" src="./assets/images/rectang.png" alt="">
     </div>
   </section>
   <!-- BANNER SECTION END -->
@@ -79,6 +83,14 @@
         <li class="brand__bar--item"><img src="./assets/images/calvin.svg" alt="calvin"></li>
       </ul>
     </div>
+    <ul class="brand__respon">
+      <li class="brand__respon--item"><img src="./assets/images/versace-respon.png" alt="versace"></li>
+      <li class="brand__respon--item"><img src="./assets/images/zara-respon.svg" alt="zara"></li>
+      <li class="brand__respon--item"><img src="./assets/images/gucci-respon.svg" alt="gucci"></li>
+      <li class="brand__respon--item"><img src="./assets/images/prada-respon.svg" alt="prada"></li>
+      <li class="brand__respon--item"><img src="./assets/images/caivin-respon.svg" alt="calvin"></li>
+    </ul>
+  </div>
   </section>
   <!-- BRAND SECTION END -->
 
@@ -91,11 +103,11 @@
           <img class="product-img" src="./assets/images/tapede-tails.png" alt="tapede-tails">
           <p class="name">T-shirt With Tape Details</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-half.svg" alt="star-half">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-half.svg" alt="star-half">
             <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -106,10 +118,10 @@
           <img class="product-img" src="./assets/images/fit-jeans.png" alt="fit-jeans">
           <p class="name">Skinny Fit Jeans</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-half">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-half">
             <p class="evaluate-num">3.5/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -122,11 +134,11 @@
           <img class="product-img" src="./assets/images/checkered-shirt.png" alt="checkered-shirt">
           <p class="name">Checkered Shirt</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-half.svg" alt="star-half">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-half.svg" alt="star-half">
             <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -137,11 +149,11 @@
           <img class="product-img" src="./assets/images/striped-t-shirt.png" alt="striped-t-shirt">
           <p class="name">Sleeve Striped T-shirt</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-half.svg" alt="star-half">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-half.svg" alt="star-half">
             <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -165,11 +177,11 @@
           <img class="product-img" src="./assets/images/veritical.png" alt="veritical">
           <p class="name">Veritical Striped Shirt</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
             <p class="evaluate-num">5/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -181,11 +193,11 @@
         <div class="product-item"><img class="product-img" src="./assets/images/courage.png" alt="courage">
           <p class="name">Courage Graphic T-shirt</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-half.svg" alt="star-half">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-half.svg" alt="star-half">
             <p class="evaluate-num">4/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -196,11 +208,11 @@
           <img class="product-img" src="./assets/images/loose-fit.png" alt="loose-fit">
           <p class="name">Loose Fit Bermuda Short</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
             <p class="evaluate-num">5/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -211,11 +223,11 @@
           <img class="product-img" src="./assets/images/faded-skinny.png" alt="faded-skinny">
           <p class="name">Faded Skinny Jeans</p>
           <div class="evaluate">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-full.svg" alt="star-full">
-            <img src="./assets/images/star-half.svg" alt="star-half">
+            <img class="evaluate-icon"  src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-full.svg" alt="star-full">
+            <img class="evaluate-icon" src="./assets/images/star-half.svg" alt="star-half">
             <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
           </div>
           <div class="product-desc">
@@ -259,7 +271,7 @@
     <section>
       <div class="customer">
         <h2 class="title fourth-title">OUR HAPPY CUSTOMERS</h2>
-        <div>
+        <div class="btn-prev">
           <a href="javascript:void(0)"><img class="prev-btn" src="./assets/images/next-icon.svg" alt="prev-icon"></a>
           <a href="javascript:void(0)"><img class="next-btn" src="./assets/images/prev-icon.svg" alt="next-icon"></a>
         </div>
@@ -331,6 +343,7 @@
             men.</p>
           <img class="footer-icon" src="./assets/images/social.svg" alt="">
         </div>
+        <div class="footer-nav-item">
         <ul class="footer-item">
           <h3 class="footer-nav-head">Company</h3>
           <li><a class="footer-link" href="javascript:void(0)">About</a></li>
@@ -360,8 +373,9 @@
           <li><a class="footer-link" href="javascript:void(0)">Youtube Playlist</a></li>
         </ul>
       </div>
+    </div>
       <div class="copyright">
-        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <p class="copyright-desc">Shop.co © 2000-2023, All Rights Reserved</p>
         <div>
           <a href="javascript:void(0)"><img class="icon-payment" src="./assets/images/visa.svg" alt="visa"></a>
           <a href="javascript:void(0)"> <img class="icon-payment" src="./assets/images/badge.svg" alt="badge"></a>
