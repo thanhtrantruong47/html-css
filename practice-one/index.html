@@ -2,71 +2,377 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Demo HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
+    rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+  <title>Shop.co</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
 </head>
 
 <body>
-	<div class="sign-up-box">
-		<div class=>
-			<p class="sign-up">Sign up and get 20% off to your first order. <a href="/" class="sign-up">Sign Up Now</a>
-			</p>
-		</div>
-		<button class="sign-up">
-			<img src="./assets/images/off.svg" alt="">
-		</button>
-	</div>
-	<div class="menu-box">
-		<p class="shop-co"><b>SHOP.CO</b></p>
-		<ul class="menu">
-			<li class="menu">
-				<p>Shop <select name="" id="">
-						<option value="q"></option>
-						<option value="q">ajsdsjad</option>
-						<option value="s">xzcasd</option>
-						<option value="q"></option>
-						<option value="q">ajsdsjad</option>
-						<option value="s">xzcasd</option>
-					</select></p>
+  <!-- SIGN UP START -->
+  <div class="sign-up">
+    <p class="sign-up__text">Sign up and get 20% off to your first order.<a href="javascript:void(0)" class="sign-up__link link-secondary">Sign Up Now</a>
+    </p>
+    <img src="./assets/images/off.svg" alt="off">
+  </div>
+  <!-- SIGN UP END -->
 
-			</li>
-			<li class="menu">On Sale</li>
-			<li class="menu">New Arrivals</li>
-			<li class="menu1">Brand</li>
-		</ul>
-		<form>
-			<input class="menu" type="text" name="search" placeholder="Search for products...">
-		</form>
-		<img class="cart" src="./assets/images/cart.svg" alt="">
-		<img class="login" src="./assets/images/login.svg" alt="">
-	</div>
-	<div class="home-box">
-		<div class="home-box1">
-			<p>FIND CLOTHES THAT MATCHES YOUR STYLE</p>
-			<p>Browse through our diverse range of meticulously crafted garments, designed to bring out your
-				individuality and
-				cater to your sense of style.</p>
-			<button>Shop now</button>
-			<ul>
-				<li class="home">
-					<p>200+</p>
-					<p>International Brands</p>
-				</li>
-				<li class="home">
-					<p>2,000+</p>
-					<p>High-Quality Products</p>
-				</li>
-				<li class="home">
-					<p>30,000+</p>
-					<p>Happy Customers</p>
-				</li>
-			</ul>
-		</div>
-		<div class="home-box2">
-			<p>thasnh 12345</p>
-		</div>
-	</div>
+  <!-- HEADER START -->
+  <header class="container">
+    <nav class="header">
+      <h1 class="header__logo"><a class="link-primany" href="javascript:void(0)">SHOP.CO</a></h1>
+      <ul class="header__nav">
+        <li class="header__nav--item"><a class="link-primany" href="javascript:void(0)">Shop</a></li>
+        <li class="header__nav--item"><a class="link-primany" href="javascript:void(0)">On Sale</a></li>
+        <li class="header__nav--item"><a class="link-primany" href="javascript:void(0)">New Arrivals</a></li>
+        <li class="header__nav--item"><a class="link-primany" href="javascript:void(0)">Brand</a></li>
+      </ul>
+      <form>
+        <input class="header__search" type="text" name="search" placeholder="Search for products...">
+      </form>
+      <div>
+        <a class="link-primany" href="javascript:void(0)"><img src="./assets/images/cart.svg" alt="cart"></a>
+        <a class="link-primany" href="javascript:void(0)"><img src="./assets/images/login.svg" alt="login"></a>
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- BANNER SECTION START -->
+  <section class="banner">
+    <div class="banner__item">
+      <div>
+        <h2 class="title primary-title">FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+        <p class="banner__item--content">Browse through our diverse range of meticulously crafted garments, designed to bring
+          out
+          your individuality and cater to your sense of style</p>
+        <button class="btn btn-primary">
+          Shop now
+        </button>
+        <div class="banner__item--info">
+          <p class="banner__item--num">200+<span class="banner__item--desc">International Brands</span></p>
+          <p class="banner__item--num banner__item--box">2,000+<span class="banner__item--desc">High-Quality Products</span></p>
+          <p class="banner__item--num">30,000+<span class="banner__item--desc">Happy Customers</span></p>
+        </div>
+      </div>
+      <div>
+        <img class="banner__icon--left" src="./assets/images/star.svg" alt="star">
+        <img class="banner__icon--right" src="./assets/images/star.svg" alt="star">
+      </div>
+    </div>
+  </section>
+  <!-- BANNER SECTION END -->
+
+  <!-- BRAND SECTION START -->
+
+  <section class="brand">
+    <div class="container">
+      <ul class="brand__bar">
+        <li class="brand__bar--item"><img src="./assets/images/versace.svg" alt="versace"></li>
+        <li class="brand__bar--item"><img src="./assets/images/zara.svg" alt="zara"></li>
+        <li class="brand__bar--item"><img src="./assets/images/gucci.svg" alt="gucci"></li>
+        <li class="brand__bar--item"><img src="./assets/images/prada.svg" alt="prada"></li>
+        <li class="brand__bar--item"><img src="./assets/images/calvin.svg" alt="calvin"></li>
+      </ul>
+    </div>
+  </section>
+  <!-- BRAND SECTION END -->
+
+  <!-- ARRIVAL SECTION START -->
+  <div class="container"> <!-- Container start -->
+    <section class="arrival-section">
+      <h2 class="title secondary-title">NEW ARRIVALS</h2>
+      <div class="product">
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/tapede-tails.png" alt="tapede-tails">
+          <p class="name">T-shirt With Tape Details</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-half.svg" alt="star-half">
+            <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;120</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/fit-jeans.png" alt="fit-jeans">
+          <p class="name">Skinny Fit Jeans</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-half">
+            <p class="evaluate-num">3.5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;240</p>
+            <p class="sell">&#36;260</p>
+            <p class="percent">-20%</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/checkered-shirt.png" alt="checkered-shirt">
+          <p class="name">Checkered Shirt</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-half.svg" alt="star-half">
+            <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;180</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/striped-t-shirt.png" alt="striped-t-shirt">
+          <p class="name">Sleeve Striped T-shirt</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-half.svg" alt="star-half">
+            <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="product-desc price">&#36;130</p>
+            <p class=" product-desc sell">&#36;160</p>
+            <p class=" product-desc percent">-30%</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-secondary">
+        View All
+      </button>
+    </section>
+    <!-- ARRIVAL SECTION END  -->
+
+    <!-- TOP SELLING SECTION START -->
+    <section class="topsell-section">
+      <h2 class="title secondary-title">TOP SELLING</h2>
+      <div class="product">
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/veritical.png" alt="veritical">
+          <p class="name">Veritical Striped Shirt</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <p class="evaluate-num">5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;212</p>
+            <p class="sell">&#36;232</p>
+            <p class="percent">-20%</p>
+          </div>
+        </div>
+        <div class="product-item"><img class="product-img" src="./assets/images/courage.png" alt="courage">
+          <p class="name">Courage Graphic T-shirt</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-half.svg" alt="star-half">
+            <p class="evaluate-num">4/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;145</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/loose-fit.png" alt="loose-fit">
+          <p class="name">Loose Fit Bermuda Short</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <p class="evaluate-num">5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;80</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="./assets/images/faded-skinny.png" alt="faded-skinny">
+          <p class="name">Faded Skinny Jeans</p>
+          <div class="evaluate">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-half.svg" alt="star-half">
+            <p class="evaluate-num">4.5/<span class="span-num">5</span></p>
+          </div>
+          <div class="product-desc">
+            <p class="price">&#36;210</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-secondary">
+        View All
+      </button>
+    </section>
+    <!-- TOP SELLING SECTION END -->
+
+    <!-- BROWES SECTION START -->
+    <section class="browse-section">
+      <h2 class="title third-title">BROWSE BY DRESS STYLE</h2>
+      <div class="browes">
+        <div>
+          <p class="browes-desc">Causal</p>
+          <img class="browse-img" src="./assets/images/casual.png" alt="casual">
+        </div>
+        <div>
+          <p class="browes-desc">Formal</p>
+          <img class="browse-img" src="./assets/images/formal.png" alt="formal">
+        </div>
+      </div>
+      <div class="browes">
+        <div>
+          <p class="browes-desc">Party</p>
+          <img class="browse-img" src="./assets/images/party.png" alt="party">
+        </div>
+        <div>
+          <p class="browes-desc">Gym</p>
+          <img class="browse-img" src="./assets/images/gym.png" alt="gym">
+        </div>
+      </div>
+    </section>
+    <!-- BROWES SECTION END -->
+
+    <!-- OUR HAPPY CUSTOMER START -->
+    <section>
+      <div class="customer">
+        <h2 class="title fourth-title">OUR HAPPY CUSTOMERS</h2>
+        <div>
+          <a href="javascript:void(0)"><img class="prev-btn" src="./assets/images/next-icon.svg" alt="prev-icon"></a>
+          <a href="javascript:void(0)"><img class="next-btn" src="./assets/images/prev-icon.svg" alt="next-icon"></a>
+        </div>
+      </div>
+      <div class="customer-list">
+        <div class="customer-item">
+          <div class="customer-item__img">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+          </div>
+          <p class="customer-desc">Sarah M.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
+              alt="blue-check-mark"></p>
+          <p class="customer-comments">
+            "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to
+            elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+        </div>
+        <div class="customer-item">
+          <div class="customer-item__img">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+          </div>
+          <p class="customer-desc">Alex K.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
+              alt="blue-check-mark"></p>
+          <p class="customer-comments">"Finding clothes that align with my personal style
+            used to be a challenge until I
+            discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes
+            and occasions.”</p>
+        </div>
+        <div class="customer-item">
+          <div class="customer-item__img">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+            <img src="./assets/images/star-full.svg" alt="star-full">
+          </div>
+          <p class="customer-desc">James L.<img class="customer-icon" src="./assets/images/blue-check-mark.svg"
+              alt="blue-check-mark"></p>
+          <p class="customer-comments">
+            "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+            Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+          </p>
+        </div>
+      </div>
+    </section>
+  </div> <!-- Container end -->
+  <!-- OUR HAPPY CUSTOMER END -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <fieldset class="footer">
+      <legend class="container footer-legend">
+        <h2 class="title fiveth-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+        <div class="footer-contact">
+          <input class="contact-email" type="text" name="email" placeholder="Enter your email address">
+          <button class="btn-contact">Subscribe to Newsletter</button>
+        </div>
+      </legend>
+      <div class="footer-nav container">
+        <div class="footer-item">
+          <h3 class="footer-logo">shop.co</h3>
+          <p class="footer-decs">We have clothes that suits your style and which you’re proud to wear. From women to
+            men.</p>
+          <img class="footer-icon" src="./assets/images/social.svg" alt="">
+        </div>
+        <ul class="footer-item">
+          <h3 class="footer-nav-head">Company</h3>
+          <li><a class="footer-link" href="javascript:void(0)">About</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Features</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Works</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Career</a></li>
+        </ul>
+        <ul class="footer-item">
+          <h3 class="footer-nav-head">Help</h3>
+          <li><a class="footer-link" href="javascript:void(0)">Customer Support</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Delivery Details</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Terms & Conditions</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer-item">
+          <h3 class="footer-nav-head">FAQ</h3>
+          <li><a class="footer-link" href="javascript:void(0)">Account</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Manage Deliveries</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Orders</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Payments</a></li>
+        </ul>
+        <ul class="footer-item">
+          <h3 class="footer-nav-head">Resources</h3>
+          <li><a class="footer-link" href="javascript:void(0)">Free eBooks</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Development Tutoria</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">How to - Blog</a></li>
+          <li><a class="footer-link" href="javascript:void(0)">Youtube Playlist</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div>
+          <a href="javascript:void(0)"><img class="icon-payment" src="./assets/images/visa.svg" alt="visa"></a>
+          <a href="javascript:void(0)"> <img class="icon-payment" src="./assets/images/badge.svg" alt="badge"></a>
+          <a href="javascript:void(0)"><img class="icon-payment" src="./assets/images/paypal.svg" alt="paypal"></a>
+          <a href="javascript:void(0)"><img class="icon-payment" src="./assets/images/ip-pay.svg" alt="ip-pay"></a>
+          <a href="javascript:void(0)"><img class="icon-payment" src="./assets/images/g-pay.svg" alt="g-pay"></a>
+        </div>
+      </div>
+    </fieldset>
+  </footer>
+  <!-- FOOTER END -->
 </body>
+
 </html>
