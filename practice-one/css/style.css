@@ -673,6 +673,11 @@ body {
   }
 
    /* sign-up section  */
+
+
+
+
+
   .sign-up {
     width: 390px;
   }
@@ -682,6 +687,10 @@ body {
   }
 
   /* header section  */
+
+
+
+
 
   .header {
     justify-content: space-between;
@@ -700,6 +709,9 @@ body {
   .header-icon-nav {
     display: block;
   }
+
+
+
 
 
   /* banner section  */
@@ -743,7 +755,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 24px auto 0 auto;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     justify-content: space-evenly;
   }
 
@@ -775,6 +787,10 @@ body {
     display: none;
   }
 
+
+
+
+
   /* brand section  */
 
   .brand__bar--item {
@@ -800,6 +816,10 @@ body {
     margin-bottom: 20px;
   }
 
+
+
+
+
   /* browes section  */
 
   .browes {
@@ -817,10 +837,13 @@ body {
     padding: 10px;
   }
 
-
   .browes-desc {
     font-size: 24px;
   }
+
+
+
+
 
   /* .product   */
 
@@ -863,6 +886,10 @@ body {
     height: 200px;
   }
 
+
+
+
+
   /* customer  */
 
   .customer-list {
@@ -897,6 +924,11 @@ body {
   .btn-prev {
     display: flex;
   }
+
+
+
+
+
   /* footer  */
 
   .footer-legend {
