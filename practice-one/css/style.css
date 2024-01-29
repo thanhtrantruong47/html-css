@@ -1,0 +1,619 @@
+/*------------------------------------*\
+  #LINK
+\*------------------------------------*/
+
+@import url("../css/reset.css");
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+
+
+
+
+/* url font  */
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
+  src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
+}
+
+
+
+
+
+/*------------------------------------*\
+  #DEFINE COLOR VARIABLE
+\*------------------------------------*/
+
+:root {
+  --primary-color: black;
+  --secondary-color: #f0f0f0;
+  --text-color: #fff;
+  --num-color: rgba(0, 0, 0, 0.40);
+  --product-color: #ff3333;
+  --nav-color: rgba(0, 0, 0, 0.60);
+  --btn-primary: #e7e7e7;
+  --btn-secondary: #82b6c2;
+  --line-color: rgba(0, 0, 0, 0.10);
+}
+
+
+
+
+
+/*------------------------------------*\
+  # COMPONENTS
+\*------------------------------------*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  font-family: Satoshi;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding: auto;
+  width: 210px;
+  height: 52px;
+  border-radius: 62px;
+  border: none;
+}
+
+.title {
+  font-family: Integral CF;
+}
+
+input[type=text]:focus {
+  border: none none var(--btn-secondary);
+}
+
+
+
+/*------------------------------------*\
+  #SECTION SIGN UP
+\*------------------------------------*/
+
+.sign-up {
+  display: flex;
+  background-color: var(--primary-color);
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 415px 0 544px;
+  color: var(--text-color);
+  padding: 9px;
+}
+
+.link {
+  text-decoration-line: none;
+  color: var(--text-color);
+  box-shadow: 0 1px var(--text-color);
+  text-decoration: none;
+}
+
+.link-primany {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.link-secondary {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION HEADER
+\*------------------------------------*/
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: Integral CF;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  width: 321px;
+  justify-content: space-between;
+}
+
+.nav-item {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-search {
+  width: 577px;
+  height: 48px;
+  border-radius: 62px;
+  background-image: url("../assets/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  padding: 2px 52px;
+  border: var(--search-border);
+  background-color: var(--secondary-color);
+}
+
+.drop-list {
+  margin-top: 4px;
+  width: 16px;
+  border: var(--secondary-color);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION BANNER
+\*------------------------------------*/
+
+.banner-section {
+  background-image: url("../assets/images/rectangle.png");
+  height: 663px;
+}
+
+.banner-item {
+  width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.banner-content {
+  width: 545px;
+  color: var(--nav-color);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.5px;
+  margin: 32px 0 32px 0px;
+}
+
+.primary-title {
+  margin: 103px 0 16px 0;
+  font-size: 64px;
+  font-weight: bold;
+  width: 577px;
+  line-height: 57.7px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-secondary);
+  color: var(--primary-color);
+}
+
+.info {
+  margin-top: 48px;
+  display: flex;
+  width: 596px;
+  justify-content: space-between;
+  margin: 48px 0px 116px 0;
+}
+
+.info-num {
+  font-family: Satoshi;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info-desc {
+  display: block;
+  color: var(--nav-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+}
+
+.icon-left {
+  width: 56px;
+  height: 56px;
+  margin-top: 297px;
+}
+
+.icon-right {
+  float: right;
+  width: 104px;
+  height: 104px;
+  margin-top: 86px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION BRAND
+\*------------------------------------*/
+
+.brand-section {
+  background-color: var(--primary-color);
+}
+
+.brand-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-item {
+  padding: 43px 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION ARRIVAL
+\*------------------------------------*/
+
+.arrival-section {
+  text-align: center;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.secondary-title {
+  font-size: 48px;
+  margin-top: 72px;
+  margin-bottom: 55px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.product-item {
+  text-align: left;
+}
+
+.product-item:hover {
+  cursor: pointer;
+}
+
+.product-img {
+  border-radius: 20px;
+  width: 296px;
+  height: 299px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0 4px 0;
+}
+
+.evaluate {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0 5px 0;
+}
+
+.evaluate-num {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 13px;
+}
+
+.span-num {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--nav-color);
+}
+
+.product-desc {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+  padding: 5px 0 0 0;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sell {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: var(--num-color)
+}
+
+.percent {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 62px;
+  color: var(--product-color)
+}
+
+.btn-secondary {
+  margin-top: 36px;
+  margin-bottom: 64px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-primary);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #TOP SELLING SECTION
+\*------------------------------------*/
+
+.topsell-section {
+  text-align: center;
+}
+
+
+
+
+
+/* BROWES SECTION */
+
+.browse-section {
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.third-title {
+  padding: 70px 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.browes-item {
+  width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.browes-img {
+  border-radius: 40px;
+  padding: 5px;
+}
+
+.browes-img:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.desc {
+  background-image: url("../assets/images/casual.png");
+  font-size: 36px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+}
+
+.desc:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION OUR HAPPY CUSTOMERS
+\*------------------------------------*/
+
+.customer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin: 80px 0px 40px 0px;
+}
+
+.fourth-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.customer-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.customer-item {
+  padding: 28px 32px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color);
+}
+
+.customer-desc {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.customer-comments {
+  color: var(--fiveth-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 12px;
+}
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer {
+  margin-top: 82px;
+  background-color: var(--secondary-color);
+}
+
+.footer-legend {
+  width: 1240px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 36px 64px;
+}
+
+.fiveth-title {
+  color: var(--text-color);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  width: 551px;
+}
+
+.contact-email {
+  width: 349px;
+  height: 48px;
+  display: flex;
+  border-radius: 62px;
+  background-image: url("../assets/images/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 8px;
+  margin-bottom: 7px;
+  border: var(--search-border);
+  padding: 2px 52px;
+}
+
+.btn-contact {
+  width: 349px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 62px;
+  text-align: center;
+  border: var(--search-border);
+  margin-top: 7px;
+}
+
+.btn-contact:hover {
+  background-color: var(--btn-primary);
+  color: var(--primary-color);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 25px auto;
+  width: 1240px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.footer-nav-head {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.footer-decs {
+  width: 248px;
+  margin: 25px 0 35px 0;
+  font-size: 14px;
+}
+
+.footer-logo {
+  color: var(--primary-color);
+  font-family: Integral CF;
+  font-size: 33.455px;
+  font-weight: 700;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.60);
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.copyright {
+  width: 1240px;
+  margin: 0 auto 86px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-icon {
+  height: 28px;
+  width: 148px;
+}
+
+.icon-payment {
+  width: 46px;
+  height: 33px;
+}
