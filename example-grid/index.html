@@ -4,45 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Example Grid CSS</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="example">
-        <div class="example__item">1</div>
-        <div class="example__item">2</div>
-        <div class="example__item">3</div>
-        <div class="example__item">4</div>
-        <div class="example__item">5</div>
-        <div class="example__item">6</div>
+
+    <div class="product">
+        <div class="product__item">item1</div>
+        <div class="product__item">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
     </div>
 
-    <div class="container">
-    <h2>Auto responsive grid</h2>
-    <div class="example_resposive">
-        <div class="example__item">1</div>
-        <div class="example__item">2</div>
-        <div class="example__item example_resposive--bot">3</div>
+    <h2>repeat</h2>
+    <div class="repeat">
+        <div class="product__item">item1</div>
+        <div class="product__item">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
+        <div class="product__item">item5</div>
+        <div class="product__item">item6</div>
+        <div class="product__item">item7</div>
     </div>
 
+    <h2>auto fill</h2>
+    <div class="auto-fill">
+        <div class="product__item">item1</div>
+        <div class="product__item">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
+    </div>
+
+    <h2>auto fit</h2>
+    <div class="auto-fit">
+        <div class="product__item">item1</div>
+        <div class="product__item">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
+    </div>
+    <h2>Placing items in columns</h2>
+    <div class="place-item">
+        <div class="product__item">item1</div>
+        <div class="product__item">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
+        <div class="product__item">item5</div>
+    </div>
     <h2>Spanning tracks</h2>
     <div class="span-track">
-        <div class="span-track--col-end">1</div>
-        <div class="span-track--row-end">2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
+        <div class="product__item span-track--col">item1</div>
+        <div class="product__item span-track--row">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
+        <div class="product__item">item5</div>
+        <!-- <div class="product__item">item4</div>
+        <div class="product__item">item5</div> -->
     </div>
-    <h2>grid area</h2>
-    <div class="grid-area">
-        <div class="grid-area__header">header</div>
-        <div class="grid-area__sidebar">sidebar</div>
-        <div class="grid-area__content">content </div>
-        <div class="grid-area__footer ">footer</div>
+    <h2>Negative line numbers</h2>
+    <div class="negative">
+        <div class="product__item negative__item">texxt</div>
+        <div class="product__item">item1</div>
+        <div class="product__item">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
+        <div class="product__item">item5</div>
     </div>
-</div>
-</body>
-
+    <h2>Sizing implicit tracks</h2>
+    <div class="size-implicit">
+        <div class="product__item">item1</div>
+        <div class="product__item">item2</div>
+        <div class="product__item">item3</div>
+        <div class="product__item">item4</div>
+        <div class="product__item">item5</div>
+    </div>
+    <h2>name grid</h2>
+    <div class="name-grid">
+        <div class="product__item name-grid__sidebar">aside</div>
+        <div class="product__item">item2</div>
+        <div class="product__item name-grid__footer">footer</div>
+    </div>
+    <h2>Grid Template Areas</h2>
 </html>
