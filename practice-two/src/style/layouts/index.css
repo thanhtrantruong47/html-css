@@ -1,5 +1,10 @@
-/* style for layouts */
+/* style for sections  */
 
 @import url(./header.css);
-@import url(./content.css);
+@import url(./sign-up.css);
+@import url(./banner.css);
+@import url(./brand.css);
+@import url(./product.css);
+@import url(./browse.css);
+@import url(./cmt.css);
 @import url(./footer.css);

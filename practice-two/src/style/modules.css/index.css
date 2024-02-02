@@ -1,8 +1,3 @@
-/* style for sections  */
+/* all style for modules  */
 
-@import url(./sign-up.css);
-@import url(./banner.css);
-@import url(./brand.css);
-@import url(./product.css);
-@import url(./browse.css);
-@import url(./cmt.css);
+@import url(./btn.css);
