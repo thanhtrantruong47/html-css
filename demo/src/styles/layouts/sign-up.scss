@@ -1,0 +1,49 @@
+@mixin size ($size: 12px) {
+  font-size: $size;
+  font-family: Satoshi;
+}
+
+.sign-up {
+  @include size;
+  background-color: $bg-color;
+
+  &__desc {
+    font-size: 1em;
+    color: $text-color;
+    text-align: center;
+    padding: 9px 0px;
+  }
+
+  &__link {
+    color: $text-color;
+  }
+
+  &__icon {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sign-up {
+    @include size($size: 14px);
+    display: flex;
+    justify-content: space-between;
+
+    &__desc {
+      margin: auto;
+    }
+
+    &__icon {
+      display: inline;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .sign-up {
+    &__icon {
+      margin-right: 100px;
+    }
+  }
+}
