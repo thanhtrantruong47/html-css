@@ -22,7 +22,7 @@
 
 @media (min-width: 1024px) {
   .sign-up {
-    padding: 9px 100px;
+    padding: 9px (99% - math.div(1240, 1440)*100%)/2;
     display: flex;
     line-height: normal;
 
