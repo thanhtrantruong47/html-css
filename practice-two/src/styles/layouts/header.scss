@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  font-family: Satoshi;
+  padding: 20px 0;
+
+  &__item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__nav {
+    display: none;
+  }
+}
+
+.search {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-columns: 160px 321px 1fr 62px;
+    gap:40px;
+
+    &__icon {
+      display: none;
+    }
+
+    &__nav {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__nav-item {
+      font-size: math.div(16, 20) * 1em;
+    }
+  }
+
+  .search {
+    display: block;
+    height: 48px;
+    border-radius: 62px;
+    width: 100%;
+    background-image: url('../assets/images/search.svg');
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    padding: 2px 52px;
+    border: 1px solid $secondary-color;
+  }
+}
