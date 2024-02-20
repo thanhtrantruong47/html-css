@@ -4,6 +4,11 @@
 
 body {
   font-family: Integral CF, Satoshi;
-  font-size: 20px;
-  max-width: 1440px;
+  font-size: math.div(20, 16) * 16px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: math.div(32, 16) * 1em;
+  }
 }

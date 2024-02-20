@@ -2,17 +2,15 @@
   background-color: $bg-secondary;
   font-family: Satoshi;
   min-width: 390px;
-  font-size: 20px;
 
   &__desc {
-    padding-top: 1em;
+    padding-top: 2rem;
   }
 
   &__content {
-    font-size: math.div(14, 20)*1em;
+    font-size: math.div(14, 20) * 1em;
     max-width: 380px;
-    padding-top: 20px;
-    padding-bottom: 24px;
+    padding: 1rem 0;
     color: $primary-color;
   }
 
@@ -49,7 +47,7 @@
 
   &__img {
     width: 100%;
-    max-width: 390px;
+    // max-width: 390px;
   }
 
   &__star {
@@ -74,8 +72,6 @@
     &__content {
       font-size: math.div(16, 20)*1em;
       max-width: 545px;
-      padding-top: 32px;
-      padding-bottom: 32px;
       color: $primary-color;
     }
 
