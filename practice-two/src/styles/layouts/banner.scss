@@ -110,12 +110,16 @@
     &__star {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 450px;
+      justify-content: end;
       margin-top: 86px;
     }
 
     &__star--center {
       margin-top: 211px;
+    }
+
+    &__star--right {
+      margin-left: auto;
     }
   }
 }
