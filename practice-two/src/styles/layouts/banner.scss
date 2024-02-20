@@ -11,8 +11,8 @@
   &__content {
     font-size: math.div(14, 20)*1em;
     max-width: 380px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 20px;
+    padding-bottom: 24px;
     color: $primary-color;
   }
 
@@ -49,13 +49,26 @@
 
   &__img {
     width: 100%;
+    max-width: 390px;
+  }
+
+  &__star {
+    display: none;
   }
 }
 
 @media (min-width: 1024px) {
   .banner {
+    background-image: url('../assets/images/banners/rectangle.png');
+    background-repeat: no-repeat;
+
     &__desc {
       padding-top: 103px;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 620px 1fr;
     }
 
     &__content {
@@ -69,7 +82,7 @@
     &__info {
       display: grid;
       grid-template-columns: auto auto auto;
-      padding: 48px 0px 116px 0px;
+      padding: 48px 0px 103px 0px;
       max-width: 596px;
       margin: 0;
     }
@@ -85,9 +98,24 @@
       text-align: left;
     }
 
+    &__img {
+      display: none;
+    }
+
     &--special {
       padding-right: 27.5px;
       border-right: 1px solid $line-color;
+    }
+
+    &__star {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 450px;
+      margin-top: 86px;
+    }
+
+    &__star--center {
+      margin-top: 211px;
     }
   }
 }
