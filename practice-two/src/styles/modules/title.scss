@@ -1,0 +1,15 @@
+.title {
+  font-family: Integral CF;
+}
+
+.title-primary {
+  font-weight: 700;
+  font-size: math.div(25.2, 20) * 1em;
+  line-height: 34px;
+}
+
+@media (min-width: 1024px) {
+  .title-primary {
+    font-size: math.div(32, 20) * 1em;
+  }
+}
