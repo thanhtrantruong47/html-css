@@ -2,13 +2,14 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: Integral CF, Satoshi;
-  font-size: math.div(20, 16) * 16px;
+  font-size: 20px !important;
 }
 
-@media (min-width: 1024px) {
-  body {
-    font-size: math.div(32, 16) * 1em;
+@media (min-width: 1440px) {
+  html {
+    max-width: 1440px;
+    font-size: 32px !important;
   }
 }

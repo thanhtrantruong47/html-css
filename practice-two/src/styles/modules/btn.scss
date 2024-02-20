@@ -12,11 +12,5 @@
 @media (min-width: 1024px) {
   .btn {
     width: 218px;
-    border-radius: 62px;
-
-    &__primary {
-      background-color: $bg-color;
-      color: $text-color;
-    }
   }
 }
