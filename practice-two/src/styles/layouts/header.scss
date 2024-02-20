@@ -1,15 +1,15 @@
 .navbar {
   display: flex;
   font-size: 20px;
-  justify-content: space-between;
   font-family: Satoshi;
   padding: 20px 0;
+  align-items: center;
+  gap: 12px;
 
-  &__logo,
-  &__icon {
+  &__option {
     display: flex;
-    gap: 12px;
-    align-items: center;
+    margin-left: auto;
+    gap: 10px;
   }
 
   &__list,
@@ -24,9 +24,13 @@
     grid-template-columns: 160px 321px 1fr 62px;
     gap: 40px;
 
-    &__icon-navbar,
-    &__icon-search {
+    &__nav,
+    &__option-search {
       display: none;
+    }
+
+    &__logo {
+      width: 100%;
     }
 
     &__list {
