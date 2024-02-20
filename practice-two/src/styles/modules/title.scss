@@ -1,8 +1,12 @@
 .title {
   font-family: Integral CF;
   font-weight: 700;
-  font-size: math.div(25.2, 20) * 1em;
-  line-height: 34px;
+}
+
+.title-secondary {
+  font-size: math.div(36, 20) * 1em;
+  font-weight: 700;
+  max-width: 380px;
 }
 
 @media (min-width: 1024px) {
