@@ -1,24 +1,28 @@
+@function ToRem($pxValue) {
+  @return math.div($pxValue, 16) * 1rem;
+}
+
 .banner {
   background-color: $bg-secondary;
   font-family: Satoshi;
-  min-width: 19.5rem;
+  min-width: ToRem(390);
 
   &__desc {
-    padding-top: 2em;
+    padding-top: ToRem(40);
   }
 
   &__content {
-    max-width: 18rem;
+    max-width: ToRem(315);
     font-size: 0.7em;
-    padding: 1rem 0;
+    padding: ToRem(20) 0;
     color: $primary-color;
   }
 
   &__info {
     display: flex;
     flex-wrap: wrap;
-    max-width: 15rem;
-    padding: 1rem 0;
+    max-width: ToRem(278);
+    padding: ToRem(20) 0;
     justify-content: space-between;
     margin: 0 auto;
   }
@@ -26,12 +30,12 @@
   &__info-num {
     font-size: 1.2em;
     font-weight: 700;
-    padding: 6px 0;
+    padding: ToRem(6) 0;
   }
 
   &__info-desc {
     display: block;
-    font-size: 0.6em;
+    font-size: 0.5em;
     color: $primary-color;
     font-weight: 400;
   }
@@ -42,12 +46,12 @@
 
   &--special {
     border-left: 1px solid $line-color;
-    padding-left: 1rem;
+    padding-left: ToRem(20);
   }
 
   &__img {
     width: 100%;
-    max-width: 19.5rem;
+    max-width: ToRem(390);
   }
 
   &__star {
@@ -61,7 +65,7 @@
     background-repeat: no-repeat;
 
     &__desc {
-      padding: 3.2rem 0 2.125rem 0;
+      padding: ToRem(103) 0;
     }
 
     &__item {
@@ -71,16 +75,18 @@
 
     &__content {
       font-size: 0.5em;
-      max-width: 17rem;
+      padding: ToRem(32) 0;
+      max-width: ToRem(545);
       color: $primary-color;
     }
 
     &__info {
       flex-wrap: nowrap;
-      margin-top: 0.5rem;
-      max-width: 20.75rem;
+      padding: ToRem(48) 0 0 0;
+      max-width: ToRem(596);
       text-align: left;
       gap: 1rem;
+      margin: 0;
     }
 
     &__info-num {
@@ -97,7 +103,7 @@
     }
 
     &--special {
-      padding-right: 1rem;
+      padding-right: ToRem(37.5);
       border-right: 1px solid $line-color;
     }
 
@@ -105,11 +111,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: end;
-      margin-top: math.div(86, 32) * 1rem;
+      margin-top: ToRem(86);
     }
 
     &__star--center {
-      margin-top: 6.6rem;
+      margin-top: ToRem(211);
     }
 
     &__star--right {
