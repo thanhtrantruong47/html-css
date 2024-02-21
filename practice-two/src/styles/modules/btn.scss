@@ -1,0 +1,36 @@
+.btn {
+  width: 358px;
+  height: 52px;
+  border-radius: 62px;
+  font-family: Satoshi;
+  border: none;
+  font-weight: 500;
+
+  &__primary {
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 62px;
+    width: 358px;
+    height: 52px;
+    font-size: 0.7em;
+  }
+
+  &__secondary {
+    color: $text-color;
+    border-radius: 62px;
+    width: 358px;
+    height: 52px;
+    margin: toRem(24) 0;
+    color: $bg-color;
+  }
+
+  &:hover {
+    background-color: $btn-primary;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    width: 218px;
+  }
+}

@@ -1,0 +1,69 @@
+.product {
+  margin: toRem(50) auto;
+  text-align: center;
+  font-family: Satoshi;
+
+  &__item {
+    margin-top: toRem(32);
+    display: flex;
+    gap: toRem(16);
+    overflow: auto;
+  }
+
+  &__card {
+    text-align: left;
+
+    &-img {
+      padding-bottom: toRem(10);
+      max-width: toRem(198);
+      border-radius: 13.42px;
+    }
+
+    &-name {
+      font-size: 0.8em;
+      font-weight: 700;
+    }
+  }
+
+  &__evaluate {
+    display: flex;
+    align-items: center;
+    gap: toRem(11);
+    padding: toRem(4) 0;
+
+    &-img {
+      max-height: toRem(15.47);
+      max-width: toRem(15.47);
+    }
+
+    &-num {
+      font-size: 0.6em;
+    }
+
+    &-desc {
+      color: $primary-color;
+    }
+  }
+
+  &__price {
+    display: flex;
+    font-size: 1em;
+    font-weight: 700;
+    gap: toRem(5);
+
+    &-sell {
+      color: $decs-color;
+      text-decoration: line-through;
+    }
+
+    &-precent {
+      min-width: toRem(42);
+      background-color: $bg-product;
+      font-size: 0.5em;
+      border-radius: 62px;
+      color: $product-color;
+      font-weight: 500;
+      padding: toRem(4)  toRem(8);
+    }
+  }
+}
