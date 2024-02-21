@@ -1,0 +1,35 @@
+.brand {
+  background-color: $bg-color;
+  padding: ToRem(39) 0;
+  min-width: ToRem(390);
+
+  &__item, &__item-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &--center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: math.div(37, 358) * 100%;
+    padding-top: ToRem(20);
+  }
+}
+
+@media (min-width: 1440px) {
+  .brand {
+    &__item {
+      display: none;
+    }
+  }
+
+  .brand__img {
+    display: block;
+  }
+}

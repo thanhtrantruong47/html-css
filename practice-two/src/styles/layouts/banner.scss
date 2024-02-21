@@ -24,7 +24,7 @@
     max-width: ToRem(278);
     padding: ToRem(20) 0;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 ToRem(40);
   }
 
   &__info-num {
