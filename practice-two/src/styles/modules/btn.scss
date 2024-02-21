@@ -1,5 +1,9 @@
 .btn {
-  border: none;
+  width: 358px;
+  height: 52px;
+  border-radius: 62px;
+  font-family: Satoshi;
+  border: 1px solid $primary-color;
 
   &__primary {
     background-color: $bg-color;
@@ -7,6 +11,10 @@
     border-radius: 62px;
     width: 358px;
     height: 52px;
+  }
+
+  &:hover {
+    background-color: $btn-primary;
   }
 }
 
