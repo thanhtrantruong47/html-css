@@ -1,11 +1,13 @@
 .container {
   width: math.div(358, 390) * 100%;
   margin: 0 auto;
-  min-width: 320px;
+  min-width: toRem(360);
+  font-size: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .container {
     width: math.div(1240, 1440) * 100%;
+    font-size: 32px;
   }
 }

@@ -1,0 +1,125 @@
+@function toRem($pxValue) {
+  @return math.div($pxValue, 16) * 1rem;
+}
+
+.banner {
+  background-color: $bg-secondary;
+  font-family: Satoshi;
+  min-width: toRem(390);
+
+  &__desc {
+    padding-top: toRem(40);
+  }
+
+  &__content {
+    max-width: toRem(315);
+    font-size: 0.7em;
+    padding: toRem(20) 0;
+    color: $primary-color;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: toRem(278);
+    padding: toRem(20) 0;
+    justify-content: space-between;
+    margin: 0 ToRem(40);
+  }
+
+  &__info-num {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: toRem(6) 0;
+  }
+
+  &__info-desc {
+    display: block;
+    font-size: 0.5em;
+    color: $primary-color;
+    font-weight: 400;
+  }
+
+  &__info--center {
+    margin: 0 auto;
+  }
+
+  &--special {
+    border-left: 1px solid $line-color;
+    padding-left: toRem(20);
+  }
+
+  &__img {
+    width: 100%;
+    max-width: toRem(390);
+  }
+
+  &__star {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner {
+    background-image: url('../assets/images/banners/rectangle.png');
+    background-repeat: no-repeat;
+
+    &__desc {
+      padding: toRem(103) 0;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__content {
+      font-size: 0.5em;
+      padding: toRem(32) 0;
+      max-width: toRem(545);
+      color: $primary-color;
+    }
+
+    &__info {
+      flex-wrap: nowrap;
+      padding: toRem(48) 0 0 0;
+      max-width: toRem(596);
+      text-align: left;
+      gap: 1rem;
+      margin: 0;
+    }
+
+    &__info-num {
+      font-size: 1.25em;
+      font-weight: 700;
+    }
+
+    &__info-desc {
+      font-size: 0.4em;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &--special {
+      padding-right: toRem(37.5);
+      border-right: 1px solid $line-color;
+    }
+
+    &__star {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: end;
+      margin-top: toRem(86);
+    }
+
+    &__star--center {
+      margin-top: toRem(211);
+    }
+
+    &__star--right {
+      margin-left: auto;
+    }
+  }
+}
