@@ -6,7 +6,7 @@
 .title-secondary {
   font-size: 1.8em;
   font-weight: 700;
-  max-width: ToRem(315);
+  max-width: toRem(315);
 }
 
 @media (min-width: 1440px) {
@@ -16,6 +16,6 @@
 
   .title-secondary {
     font-size: 2em;
-    max-width: ToRem(577);
+    max-width: toRem(577);
   }
 }

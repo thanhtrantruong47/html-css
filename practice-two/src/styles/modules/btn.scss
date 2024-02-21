@@ -8,6 +8,9 @@
   &__primary {
     background-color: $bg-color;
     color: $text-color;
+    border-radius: 62px;
+    width: 358px;
+    height: 52px;
   }
 
   &:hover {
