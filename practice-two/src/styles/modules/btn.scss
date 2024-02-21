@@ -2,10 +2,16 @@
   width: 358px;
   height: 52px;
   border-radius: 62px;
+  font-family: Satoshi;
+  border: 1px solid $primary-color;
 
   &__primary {
     background-color: $bg-color;
     color: $text-color;
+  }
+
+  &:hover {
+    background-color: $btn-primary;
   }
 }
 
