@@ -1,11 +1,12 @@
 .btn {
-  width: 358px;
-  height: 52px;
-  border-radius: 62px;
+  border: none;
 
   &__primary {
     background-color: $bg-color;
     color: $text-color;
+    border-radius: 62px;
+    width: 358px;
+    height: 52px;
   }
 }
 

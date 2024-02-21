@@ -1,27 +1,32 @@
 .navbar {
   display: flex;
   font-family: Satoshi;
-  padding: ToRem(20) 0;
+  padding: toRem(20) 0;
   align-items: center;
-  gap: ToRem(12);
+  gap: toRem(12);
 
   &__option {
     display: flex;
     margin-left: auto;
-    gap: ToRem(10);
+    gap: toRem(10);
   }
 
   &__list,
   &__search {
     display: none;
   }
+
+  &__nav {
+    border: none;
+    background-color: $text-color;
+  }
 }
 
 @media (min-width: 1440px) {
   .navbar {
     display: grid;
-    grid-template-columns: ToRem(160) ToRem(321) 1fr ToRem(62);
-    gap: ToRem(40);
+    grid-template-columns: toRem(160) toRem(321) 1fr toRem(62);
+    gap: toRem(40);
     font-size: math.div(16,32) * 1em;
 
     &__nav,
@@ -41,13 +46,13 @@
 
     &__search {
       display: block;
-      height: ToRem(48);
-      border-radius: ToRem(62);
+      height: toRem(48);
+      border-radius: toRem(62);
       width: 100%;
       background-image: url('../assets/images/headers/search.svg');
       background-repeat: no-repeat;
-      background-position: ToRem(12) ToRem(12);
-      padding: ToRem(2) ToRem(52);
+      background-position: toRem(12) toRem(12);
+      padding: toRem(2) toRem(52);
       border: 1px solid $secondary-color;
     }
   }

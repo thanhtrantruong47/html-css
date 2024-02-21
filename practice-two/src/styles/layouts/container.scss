@@ -1,7 +1,7 @@
 .container {
   width: math.div(358, 390) * 100%;
   margin: 0 auto;
-  min-width: ToRem(360);
+  min-width: toRem(360);
   font-size: 20px;
 }
 

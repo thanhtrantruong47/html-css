@@ -1,36 +1,36 @@
-@function ToRem($pxValue) {
+@function toRem($pxValue) {
   @return math.div($pxValue, 16) * 1rem;
 }
 
 .banner {
   background-color: $bg-secondary;
   font-family: Satoshi;
-  min-width: ToRem(390);
+  min-width: toRem(390);
 
   &__desc {
-    padding-top: ToRem(40);
+    padding-top: toRem(40);
   }
 
   &__content {
-    max-width: ToRem(315);
+    max-width: toRem(315);
     font-size: 0.7em;
-    padding: ToRem(20) 0;
+    padding: toRem(20) 0;
     color: $primary-color;
   }
 
   &__info {
     display: flex;
     flex-wrap: wrap;
-    max-width: ToRem(278);
-    padding: ToRem(20) 0;
+    max-width: toRem(278);
+    padding: toRem(20) 0;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 toRem(40);
   }
 
   &__info-num {
     font-size: 1.2em;
     font-weight: 700;
-    padding: ToRem(6) 0;
+    padding: toRem(6) 0;
   }
 
   &__info-desc {
@@ -46,12 +46,12 @@
 
   &--special {
     border-left: 1px solid $line-color;
-    padding-left: ToRem(20);
+    padding-left: toRem(20);
   }
 
   &__img {
     width: 100%;
-    max-width: ToRem(390);
+    max-width: toRem(390);
   }
 
   &__star {
@@ -65,7 +65,7 @@
     background-repeat: no-repeat;
 
     &__desc {
-      padding: ToRem(103) 0;
+      padding: toRem(103) 0;
     }
 
     &__item {
@@ -75,15 +75,15 @@
 
     &__content {
       font-size: 0.5em;
-      padding: ToRem(32) 0;
-      max-width: ToRem(545);
+      padding: toRem(32) 0;
+      max-width: toRem(545);
       color: $primary-color;
     }
 
     &__info {
       flex-wrap: nowrap;
-      padding: ToRem(48) 0 0 0;
-      max-width: ToRem(596);
+      padding: toRem(48) 0 0 0;
+      max-width: toRem(596);
       text-align: left;
       gap: 1rem;
       margin: 0;
@@ -103,7 +103,7 @@
     }
 
     &--special {
-      padding-right: ToRem(37.5);
+      padding-right: toRem(37.5);
       border-right: 1px solid $line-color;
     }
 
@@ -111,11 +111,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: end;
-      margin-top: ToRem(86);
+      margin-top: toRem(86);
     }
 
     &__star--center {
-      margin-top: ToRem(211);
+      margin-top: toRem(211);
     }
 
     &__star--right {
