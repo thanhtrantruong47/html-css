@@ -24,7 +24,7 @@
     }
 
     &-name {
-      font-size: 0.8em;
+      font-size: 0.8rem;
       font-weight: 700;
     }
   }
@@ -41,7 +41,7 @@
     }
 
     &-num {
-      font-size: 0.6em;
+      font-size: 0.6rem;
     }
 
     &-desc {
@@ -51,7 +51,7 @@
 
   &__price {
     display: flex;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
     gap: toRem(5);
     align-items: center;
@@ -63,7 +63,7 @@
 
     &-precent {
       background-color: $bg-product;
-      font-size: 0.5em;
+      font-size: 0.5rem;
       border-radius: toRem(62);
       color: $product-color;
       font-weight: 500;
@@ -78,12 +78,16 @@
 }
 
 @media (min-width: 1440px) {
+  @function toRem($pxValue) {
+    @return math.div($pxValue, 32) * 1rem;
+  }
   .product {
     margin: toRem(62) auto 0 ;
 
     &__item {
       margin-top: toRem(55);
       justify-content: space-between;
+      overflow: none;
     }
 
     &__card {
@@ -94,7 +98,7 @@
       }
 
       &-name {
-        font-size: math.div(20,32) * 1em;
+        font-size: math.div(20,32) * 1rem;
       }
     }
 
@@ -108,12 +112,12 @@
       }
 
       &-num {
-        font-size: math.div(14,32) * 1em;
+        font-size: math.div(14,32) * 1rem;
       }
     }
 
     &__price {
-      font-size: 0.75em;
+      font-size: 0.75rem;
     }
 
     &--bottom {

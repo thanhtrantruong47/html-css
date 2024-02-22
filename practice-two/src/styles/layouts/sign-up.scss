@@ -7,7 +7,7 @@
   min-width: toRem(390);
 
   &__text {
-    font-size: 0.6em;
+    font-size: 0.6rem;
     color: $text-color;
     text-align: center;
   }
@@ -22,13 +22,17 @@
 }
 
 @media (min-width: 1440px) {
+  @function toRem($pxValue) {
+    @return math.div($pxValue, 32) * 1rem;
+  }
+
   .sign-up {
     padding: toRem(9) (100% - math.div(1240, 1440)*100%)/2;
     display: flex;
     line-height: normal;
 
     &__text {
-      font-size: math.div(14, 20) * 1em;
+      font-size: toRem(14);
       margin: 0 auto;
     }
 
