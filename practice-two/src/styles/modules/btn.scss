@@ -1,7 +1,7 @@
 .btn {
-  width: 358px;
-  height: 52px;
-  border-radius: 62px;
+  width:  toRem(358);
+  height: toRem(52);
+  border-radius: toRem(62);
   font-family: Satoshi;
   border: none;
   font-weight: 500;
@@ -9,17 +9,10 @@
   &__primary {
     background-color: $bg-color;
     color: $text-color;
-    border-radius: 62px;
-    width: 358px;
-    height: 52px;
-    font-size: 0.7em;
   }
 
   &__secondary {
     color: $text-color;
-    border-radius: 62px;
-    width: 358px;
-    height: 52px;
     margin: toRem(24) 0;
     color: $bg-color;
   }
@@ -31,6 +24,10 @@
 
 @media (min-width: 1024px) {
   .btn {
-    width: 218px;
+    width:toRem(218);
+
+    &__secondary {
+      margin: toRem(36) 0;
+    }
   }
 }

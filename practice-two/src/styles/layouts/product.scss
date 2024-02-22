@@ -1,5 +1,5 @@
 .product {
-  margin: toRem(50) auto;
+  margin: toRem(40) auto 0 ;
   text-align: center;
   font-family: Satoshi;
 
@@ -8,15 +8,20 @@
     display: flex;
     gap: toRem(16);
     overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__card {
     text-align: left;
 
     &-img {
-      padding-bottom: toRem(10);
-      max-width: toRem(198);
-      border-radius: 13.42px;
+      margin-bottom: toRem(10);
+      width: toRem(198);
+      max-height: toRem(200);
+      border-radius: toRem(12.42);
     }
 
     &-name {
@@ -28,12 +33,12 @@
   &__evaluate {
     display: flex;
     align-items: center;
-    gap: toRem(11);
+    gap : toRem(4.44);
     padding: toRem(4) 0;
 
     &-img {
-      max-height: toRem(15.47);
-      max-width: toRem(15.47);
+      width: toRem(15.47);
+      height: toRem(15.47);
     }
 
     &-num {
@@ -50,6 +55,7 @@
     font-size: 1em;
     font-weight: 700;
     gap: toRem(5);
+    align-items: center;
 
     &-sell {
       color: $decs-color;
@@ -57,13 +63,62 @@
     }
 
     &-precent {
-      min-width: toRem(42);
       background-color: $bg-product;
       font-size: 0.5em;
-      border-radius: 62px;
+      border-radius: toRem(62);
       color: $product-color;
       font-weight: 500;
-      padding: toRem(4)  toRem(8);
+      padding: toRem(6) toRem(14);
+    }
+  }
+
+  &--bottom {
+    padding-bottom: toRem(15);
+    border-bottom: 1px solid $line-color;
+  }
+}
+
+@media (min-width: 1440px) {
+  .product {
+    margin: toRem(62) auto 0 ;
+
+    &__item {
+      margin-top: toRem(55);
+      justify-content: space-between;
+    }
+
+    &__card {
+      &-img {
+        width: toRem(295);
+        max-height: toRem(298);
+        border-radius: toRem(20);
+      }
+
+      &-name {
+        font-size: math.div(20,32) * 1em;
+      }
+    }
+
+    &__evaluate {
+      gap: toRem(5.31);
+      padding: toRem(8) 0;
+
+      &-img {
+        width: toRem(18.49);
+        height: toRem(18.49);
+      }
+
+      &-num {
+        font-size: math.div(14,32) * 1em;
+      }
+    }
+
+    &__price {
+      font-size: 0.75em;
+    }
+
+    &--bottom {
+      padding-bottom: toRem(18);
     }
   }
 }
