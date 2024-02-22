@@ -4,11 +4,19 @@
 }
 
 .title-primary {
+  @extend .title;
   font-size: 1.6rem;
   padding-top: toRem(10);
+
+  &--center {
+    max-width: toRem(246);
+    margin: 0 auto;
+    padding-top: toRem(40);
+  }
 }
 
 .title-secondary {
+  @extend .title;
   font-size: 1.8rem;
   font-weight: 700;
   max-width: toRem(315);

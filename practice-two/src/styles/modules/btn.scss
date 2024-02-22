@@ -8,13 +8,14 @@
   font-weight: 500;
 
   &__primary {
+    @extend .btn;
     background-color: $bg-color;
     color: $text-color;
   }
 
   &__secondary {
+    @extend .btn;
     color: $text-color;
-    margin: toRem(24) 0;
     color: $bg-color;
   }
 
@@ -23,7 +24,11 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
+  @function toRem($pxValue) {
+    @return math.div($pxValue, 32) * 1rem;
+  }
+
   .btn {
     width: 218px;
 
