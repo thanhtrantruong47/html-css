@@ -1,6 +1,7 @@
+
 .btn {
-  width:  toRem(358);
-  height: toRem(52);
+  width:  358px;
+  height: 52px;
   border-radius: toRem(62);
   font-family: Satoshi;
   border: none;
@@ -24,7 +25,7 @@
 
 @media (min-width: 1024px) {
   .btn {
-    width:toRem(218);
+    width: 218px;
 
     &__secondary {
       margin: toRem(36) 0;

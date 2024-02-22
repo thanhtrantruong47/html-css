@@ -1,11 +1,11 @@
 @use 'sass:math';
 
+@import 'container.scss';
+@import 'header';
 @import 'banner';
 @import 'brand';
 @import 'browse';
 @import 'cmt';
 @import 'footer';
-@import 'header';
 @import 'product';
 @import 'sign-up';
-@import 'container.scss';

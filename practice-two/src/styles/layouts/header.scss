@@ -1,3 +1,7 @@
+@function toRem($pxValue) {
+  @return math.div($pxValue, 16) * 0.8rem;
+}
+
 .navbar {
   display: flex;
   font-family: Satoshi;
@@ -23,15 +27,26 @@
 }
 
 @media (min-width: 1440px) {
+  @function toRem($pxValue) {
+    @return math.div($pxValue, 32) * 1rem;
+  }
+
   .navbar {
     display: grid;
     grid-template-columns: toRem(160) toRem(321) 1fr toRem(62);
     gap: toRem(40);
-    font-size: math.div(16,32) * 1em;
+    font-size: 0.5rem;
+    align-items: center;
 
     &__nav,
     &__option-search {
       display: none;
+    }
+
+    &__option {
+      margin-left: 0;
+      gap: 0;
+      justify-content: space-around;
     }
 
     &__logo {
