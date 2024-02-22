@@ -1,7 +1,44 @@
 .browse {
   background-color: $bg-secondary;
+  margin: toRem(25) auto;
+  text-align: center;
+  border-radius: 1rem;
+  padding: toRem(50) auto toRem(13) auto;
 
   &__item {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: toRem(8);
+    padding: toRem(28) 0 toRem(13);
+    justify-content: center;
+  }
+
+  &__desc {
+    position: absolute;
+    padding: toRem(16) toRem(24);
+  }
+
+  &__img {
+    border-radius: toRem(20);
+    min-width: toRem(310);
+    min-height: toRem(190);
+    max-width: toRem(310);
+    max-height: toRem(190);
+  }
+}
+
+@media (min-width: 1440px) {
+  @function toRem($pxValue) {
+    @return math.div($pxValue, 32) * 1rem;
+  }
+
+  .browse {
+    margin: toRem(44) auto;
+
+    &__img {
+      min-width: toRem(407);
+      max-width: toRem(684);
+      max-height: toRem(289);
+    }
   }
 }

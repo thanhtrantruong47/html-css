@@ -1,10 +1,11 @@
 .product {
-  margin: toRem(40) auto 0 ;
+  margin: toRem(40) auto 0;
   text-align: center;
   font-family: Satoshi;
 
   &__item {
     margin-top: toRem(32);
+    margin-bottom: toRem(24);
     display: flex;
     gap: toRem(16);
     overflow: auto;
@@ -16,23 +17,24 @@
 
   &__card {
     text-align: left;
+
     &-img {
       margin-bottom: toRem(10);
       width: toRem(198);
       max-height: toRem(200);
       border-radius: toRem(12.42);
     }
+  }
 
-    &-name {
-      font-size: 0.8rem;
-      font-weight: 700;
-    }
+  &__name {
+    font-size: 0.8rem;
+    font-weight: 700;
   }
 
   &__evaluate {
     display: flex;
     align-items: center;
-    gap : toRem(4.44);
+    gap: toRem(4.44);
     padding: toRem(4) 0;
 
     &-img {
@@ -72,56 +74,58 @@
   }
 
   &--bottom {
-    padding-bottom: toRem(15);
+    padding-bottom: toRem(40);
     border-bottom: 1px solid $line-color;
   }
 }
 
-@media (min-width: 1440px) {
-  @function toRem($pxValue) {
-    @return math.div($pxValue, 32) * 1rem;
+
+  @media (min-width: 1440px) {
+    // @function toRem($pxValue) {
+    //   @return math.div($pxValue, 32) * 1rem;
+    // }
+
+    .product {
+      margin: toRem(62) auto 0;
+
+      &__item {
+        margin-top: toRem(55);
+        justify-content: space-between;
+        overflow: none;
+      }
+
+      &__card {
+        &-img {
+          width: toRem(295);
+          max-height: toRem(298);
+          border-radius: toRem(20);
+        }
+
+        &-name {
+          font-size: math.div(20, 32) * 1rem;
+        }
+      }
+
+      &__evaluate {
+        gap: toRem(5.31);
+        padding: toRem(8) 0;
+
+        &-img {
+          width: toRem(18.49);
+          height: toRem(18.49);
+        }
+
+        &-num {
+          font-size: math.div(14, 32) * 1rem;
+        }
+      }
+
+      &__price {
+        font-size: 0.75rem;
+      }
+
+      &--bottom {
+        padding-bottom: toRem(18);
+      }
+    }
   }
-  .product {
-    margin: toRem(62) auto 0 ;
-
-    &__item {
-      margin-top: toRem(55);
-      justify-content: space-between;
-      overflow: none;
-    }
-
-    &__card {
-      &-img {
-        width: toRem(295);
-        max-height: toRem(298);
-        border-radius: toRem(20);
-      }
-
-      &-name {
-        font-size: math.div(20,32) * 1rem;
-      }
-    }
-
-    &__evaluate {
-      gap: toRem(5.31);
-      padding: toRem(8) 0;
-
-      &-img {
-        width: toRem(18.49);
-        height: toRem(18.49);
-      }
-
-      &-num {
-        font-size: math.div(14,32) * 1rem;
-      }
-    }
-
-    &__price {
-      font-size: 0.75rem;
-    }
-
-    &--bottom {
-      padding-bottom: toRem(18);
-    }
-  }
-}
