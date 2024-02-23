@@ -1,7 +1,7 @@
 .brand {
   background-color: $bg-color;
-  padding: toRem(39) 0;
-  min-width: toRem(390);
+  padding: toRem(39px) 0;
+  min-width: toRem(390px);
 
   &__item, &__item-desktop {
     display: flex;
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     gap: math.div(37, 358) * 100%;
-    padding-top: toRem(20);
+    padding-top: toRem(20px);
   }
 }
 

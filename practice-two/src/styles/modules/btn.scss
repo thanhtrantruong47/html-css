@@ -2,10 +2,11 @@
 .btn {
   width:  358px;
   height: 52px;
-  border-radius: toRem(62);
+  border-radius: toRem(62px);
   font-family: Satoshi;
   border: none;
   font-weight: 500;
+  font-size: toRem(14px);
 
   &__primary {
     @extend .btn;
@@ -25,15 +26,8 @@
 }
 
 @media (min-width: 1440px) {
-  @function toRem($pxValue) {
-    @return math.div($pxValue, 32) * 1rem;
-  }
-
   .btn {
+    font-size: toRem(16px);
     width: 218px;
-
-    &__secondary {
-      margin: toRem(36) 0;
-    }
   }
 }

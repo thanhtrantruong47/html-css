@@ -5,30 +5,32 @@
 
 .title-primary {
   @extend .title;
-  font-size: 1.6rem;
-  padding-top: toRem(10);
+  font-size: toRem(32px);
 
   &--center {
-    max-width: toRem(246);
+    max-width: toRem(246px);
     margin: 0 auto;
-    padding-top: toRem(40);
   }
 }
 
 .title-secondary {
   @extend .title;
-  font-size: 1.8rem;
+  font-size: toRem(36px);
   font-weight: 700;
-  max-width: toRem(315);
+  max-width: toRem(315px);
 }
 
 @media (min-width: 1440px) {
   .title-primary {
-    font-size: 1.5rem;
+    font-size: toRem(48px);
+
+    &--center {
+      max-width: 100%;
+    }
   }
 
   .title-secondary {
-    font-size: 2rem;
-    max-width: toRem(577);
+    font-size: toRem(64px);
+    max-width: toRem(577px);
   }
 }

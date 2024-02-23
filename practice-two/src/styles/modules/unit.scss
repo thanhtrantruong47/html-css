@@ -1,9 +1,5 @@
-@function toRem($pxValue) {
-  @return math.div($pxValue, 16) * 0.8rem;
-}
+@use 'sass:math';
 
-@media (min-width: 1440px) {
-  @function toRem($pxValue) {
-    @return math.div($pxValue, 32) * 1rem;
-  }
+@function toRem($pxValue) {
+  @return math.div($pxValue, $size) * 1rem;
 }

@@ -1,18 +1,14 @@
-@function toRem($pxValue) {
-  @return math.div($pxValue, 16) * 0.8rem;
-}
-
 .navbar {
   display: flex;
   font-family: Satoshi;
-  padding: toRem(20) 0;
+  padding: toRem(20px) 0;
   align-items: center;
-  gap: toRem(12);
+  gap: toRem(12px);
 
   &__option {
     display: flex;
     margin-left: auto;
-    gap: toRem(10);
+    gap: toRem(10px);
   }
 
   &__list,
@@ -27,15 +23,11 @@
 }
 
 @media (min-width: 1440px) {
-  @function toRem($pxValue) {
-    @return math.div($pxValue, 32) * 1rem;
-  }
-
   .navbar {
     display: grid;
-    grid-template-columns: toRem(160) toRem(321) 1fr toRem(62);
-    gap: toRem(40);
-    font-size: 0.5rem;
+    grid-template-columns: toRem(160px) toRem(321px) 1fr toRem(62px);
+    gap: toRem(40px);
+    font-size: toRem(16px);
     align-items: center;
 
     &__nav,
@@ -61,13 +53,13 @@
 
     &__search {
       display: block;
-      height: toRem(48);
-      border-radius: toRem(62);
+      height: toRem(48px);
+      border-radius: toRem(62px);
       width: 100%;
       background-image: url('../assets/images/headers/search.svg');
       background-repeat: no-repeat;
-      background-position: toRem(12) toRem(12);
-      padding: toRem(2) toRem(52);
+      background-position: toRem(12px) toRem(12px);
+      padding: toRem(2px) toRem(52px);
       border: 1px solid $secondary-color;
     }
   }

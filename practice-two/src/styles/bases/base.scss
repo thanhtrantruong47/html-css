@@ -4,20 +4,5 @@
 
 html {
   font-family: Integral CF, Satoshi;
-  font-size: 20px;
-}
-
-@function toRem($pxValue) {
-  @return math.div($pxValue, 16) * 0.8rem;
-}
-
-@media (min-width: 1440px) {
-  html {
-    max-width: 1440px;
-    font-size: 32px;
-  }
-
-  @function toRem($pxValue) {
-    @return math.div($pxValue, 32) * 1rem;
-  }
+  font-size: $size;
 }

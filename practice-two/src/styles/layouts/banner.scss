@@ -1,32 +1,32 @@
 .banner {
   background-color: $bg-secondary;
   font-family: Satoshi;
-  min-width: toRem(390);
+  min-width: toRem(390px);
 
   &__desc {
-    padding-top: toRem(40);
+    padding-top: toRem(40px);
   }
 
   &__content {
-    max-width: toRem(315);
+    max-width: toRem(315px);
     font-size: 0.7rem;
-    padding: toRem(20) 0;
+    padding: toRem(20px) 0;
     color: $primary-color;
   }
 
   &__info {
     display: flex;
     flex-wrap: wrap;
-    max-width: toRem(278);
-    padding: toRem(20) 0;
+    max-width: toRem(278px);
+    padding: toRem(20px) 0;
     justify-content: space-between;
-    margin: 0 toRem(40);
+    margin: 0 toRem(40px);
   }
 
   &__info-num {
     font-size: 1.2rem;
     font-weight: 700;
-    padding: toRem(6) 0;
+    padding: toRem(6px) 0;
   }
 
   &__info-desc {
@@ -42,12 +42,12 @@
 
   &--special {
     border-left: 1px solid $line-color;
-    padding-left: toRem(27.5);
+    padding-left: toRem(27.5px);
   }
 
   &__img {
     width: 100%;
-    max-width: toRem(390);
+    max-width: toRem(390px);
   }
 
   &__star {
@@ -56,15 +56,11 @@
 }
 
 @media (min-width: 1440px) {
-  @function toRem($pxValue) {
-    @return math.div($pxValue, 32) * 1rem;
-  }
-
-  .banner {
+ .banner {
     background-image: url('../assets/images/banners/rectangle.png');
     background-repeat: no-repeat;
     &__desc {
-      padding: toRem(103) 0;
+      padding: toRem(103px) 0;
     }
 
     &__item {
@@ -73,28 +69,28 @@
     }
 
     &__content {
-      font-size: 0.5rem;
-      padding: toRem(32) 0;
-      max-width: toRem(545);
+      font-size: toRem(16px);
+      padding: toRem(32px) 0;
+      max-width: toRem(545px);
       color: $primary-color;
     }
 
     &__info {
       flex-wrap: nowrap;
-      padding: toRem(48) 0 0 0;
-      max-width: toRem(596);
+      padding: toRem(48px) 0 0 0;
+      max-width: toRem(596px);
       text-align: left;
       gap: 1rem;
       margin: 0;
     }
 
     &__info-num {
-      font-size: 1.25rem;
+      font-size: toRem(40px);
       font-weight: 700;
     }
 
     &__info-desc {
-      font-size: 0.4rem;
+      font-size: toRem(16px);
     }
 
     &__img {
@@ -102,7 +98,7 @@
     }
 
     &--special {
-      padding-right: toRem(37.5);
+      padding-right: toRem(37.5px);
       border-right: 1px solid $line-color;
     }
 
@@ -110,11 +106,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: end;
-      margin-top: toRem(86);
+      margin-top: toRem(86px);
     }
 
     &__star--center {
-      margin-top: toRem(211);
+      margin-top: toRem(211px);
     }
 
     &__star--right {

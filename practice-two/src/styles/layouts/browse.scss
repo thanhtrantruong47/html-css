@@ -1,44 +1,55 @@
 .browse {
   background-color: $bg-secondary;
-  margin: toRem(25) auto;
+  margin: toRem(35px) auto;
   text-align: center;
   border-radius: 1rem;
-  padding: toRem(50) auto toRem(13) auto;
+  padding: toRem(40px) 0 toRem(13px) 0;
+  font-family: Satoshi;
+  font-weight: 700;
+
 
   &__item {
     display: flex;
     flex-wrap: wrap;
-    gap: toRem(8);
-    padding: toRem(28) 0 toRem(13);
+    gap: toRem(8px);
+    padding: toRem(28px) 0 toRem(13px);
     justify-content: center;
   }
 
   &__desc {
     position: absolute;
-    padding: toRem(16) toRem(24);
+    padding: toRem(16px) toRem(24px);
+    font-size: toRem(24px);
   }
 
   &__img {
-    border-radius: toRem(20);
-    min-width: toRem(310);
-    min-height: toRem(190);
-    max-width: toRem(310);
-    max-height: toRem(190);
+    border-radius: toRem(20px);
+    min-width: toRem(310px);
+    min-height: toRem(190px);
+    max-width: toRem(310px);
+    max-height: toRem(190px);
   }
 }
 
 @media (min-width: 1440px) {
-  @function toRem($pxValue) {
-    @return math.div($pxValue, 32) * 1rem;
-  }
-
   .browse {
-    margin: toRem(44) auto;
+    margin: toRem(65px) auto;
+    padding: toRem(70px) 0 toRem(74px) 0;
+
+    &__item {
+      padding-top: toRem(64px);
+      gap: toRem(20px);
+    }
 
     &__img {
-      min-width: toRem(407);
-      max-width: toRem(684);
-      max-height: toRem(289);
+      min-width: toRem(407px);
+      max-width: toRem(684px);
+      max-height: toRem(289px);
+    }
+
+    &__desc {
+      font-size: toRem(36px);
+      padding: toRem(25px) toRem(36px);
     }
   }
 }
