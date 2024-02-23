@@ -11,10 +11,6 @@
     max-width: toRem(246px);
     margin: 0 auto;
   }
-
-  &--left {
-    max-width: toRem(246px);
-  }
 }
 
 .title-secondary {
@@ -29,10 +25,6 @@
     font-size: toRem(48px);
 
     &--center {
-      max-width: 100%;
-    }
-
-    &--left {
       max-width: 100%;
     }
   }
