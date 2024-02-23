@@ -106,15 +106,15 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: end;
-      margin-top: toRem(86px);
     }
 
     &__star--center {
-      margin-top: toRem(211px);
+      margin-top: toRem(297px);
     }
 
     &__star--right {
       margin-left: auto;
+      margin-top: toRem(86px);
     }
   }
 }
