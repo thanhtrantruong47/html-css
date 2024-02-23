@@ -7,7 +7,7 @@
   &__item {
     margin-top: toRem(32px);
     margin-bottom: toRem(24px);
-    display: flex;
+    @extend %center;
     gap: toRem(16px);
     overflow: auto;
 
@@ -33,14 +33,12 @@
   }
 
   &__evaluate {
-    display: flex;
-    align-items: center;
+    @extend %center;
     gap: toRem(4.44px);
     padding: toRem(4px) 0;
 
     &-img {
-      width: toRem(15.47px);
-      height: toRem(15.47px);
+      @include img-size(toRem(15.47px));
     }
 
     &-num {
@@ -53,11 +51,10 @@
   }
 
   &__price {
-    display: flex;
+    @extend %center;
     font-size: 1rem;
     font-weight: 700;
     gap: toRem(5px);
-    align-items: center;
 
     &-sell {
       color: $decs-color;
@@ -108,8 +105,7 @@
         padding: toRem(8px) 0;
 
         &-img {
-          width: toRem(18.49px);
-          height: toRem(18.49px);
+          @include img-size(toRem(18.49px));
         }
 
         &-num {
