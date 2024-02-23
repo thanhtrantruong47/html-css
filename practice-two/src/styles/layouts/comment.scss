@@ -1,0 +1,9 @@
+.comment {
+  margin-top: toRem(15px);
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
