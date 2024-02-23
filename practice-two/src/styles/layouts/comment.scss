@@ -10,7 +10,7 @@
   }
 
   .comment__head {
-    @extend %space;
+    @extend %flexbox-items-space-between;
     align-items: flex-end;
   }
 
@@ -35,7 +35,7 @@
   }
 
   &__name {
-    @extend %center;
+    @extend %flexbox-items-centered;
     font-weight: 700;
     font-size: toRem(16px);
     padding: toRem(12px) 0 toRem(11.5px) 0;

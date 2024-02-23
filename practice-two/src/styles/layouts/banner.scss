@@ -15,7 +15,7 @@
   }
 
   &__info {
-    @extend %space;
+    @extend %flexbox-items-space-between;
     flex-wrap: wrap;
     max-width: toRem(278px);
     padding: toRem(20px) 0;

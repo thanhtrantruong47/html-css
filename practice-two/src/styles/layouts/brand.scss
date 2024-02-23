@@ -5,7 +5,7 @@
 
   &__item, &__item-desktop {
     flex-wrap: wrap;
-    @extend %space ;
+    @extend %flexbox-items-space-between ;
   }
 
   &__img {
@@ -14,7 +14,7 @@
 
   &--center {
     width: 100%;
-    @extend %center;
+    @extend %flexbox-items-centered;
     justify-content: center;
     gap: math.div(37, 358) * 100%;
     padding-top: toRem(20px);

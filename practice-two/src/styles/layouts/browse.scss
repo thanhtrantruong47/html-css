@@ -13,7 +13,7 @@
     gap: toRem(8px);
     padding: toRem(28px) 0 toRem(13px);
     justify-content: center;
-    @extend %center;
+    @extend %flexbox-items-centered;
   }
 
   &__desc {

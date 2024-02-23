@@ -2,7 +2,7 @@
   font-family: Satoshi;
   padding: toRem(20px) 0;
   gap: toRem(12px);
-  @extend %center;
+  @extend %flexbox-items-centered;
 
   &__option {
     display: flex;
