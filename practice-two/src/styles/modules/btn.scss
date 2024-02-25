@@ -23,11 +23,20 @@
   &:hover {
     background-color: $btn-primary;
   }
+
+  &__contact {
+    @extend .btn;
+    @include max-size(toRem(311px), toRem(42px));
+  }
 }
 
 @media (min-width: 1440px) {
   .btn {
     font-size: toRem(16px);
     width: 218px;
+
+    &__contact {
+      @include min-size(toRem(349px), toRem(48px));
+    }
   }
 }

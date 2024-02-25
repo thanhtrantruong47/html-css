@@ -1,0 +1,168 @@
+.footer {
+  background-color: $bg-secondary;
+  margin-top: toRem(49.81px);
+  min-width: toRem(390px);
+  font-family: Satoshi;
+
+  &__contact {
+    @extend %flexbox-items-space-between;
+    @extend %flexbox-items-centered;
+    flex-wrap: wrap;
+    width: math.div(1240, 1440) * 100%;
+    min-width: toRem(358px);
+    border-radius: toRem(20px);
+    margin: 0 auto;
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 32px 24px;
+
+    &-desc {
+      max-width: toRem(551px);
+      font-size: toRem(32px);
+      padding-bottom: toRem(32px);
+    }
+
+    &-box {
+      @extend %flexbox-items-space-between;
+      flex-wrap: wrap;
+      @include min-size(toRem(311px), toRem(96px));
+      @include max-size(toRem(349px), toRem(108px));
+      gap: toRem(12px);
+    }
+
+    &-form {
+      background-image: url("../assets/images/footers/email-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+      @include max-size(toRem(311px), toRem(42px));
+      padding: 2px 50px;
+    }
+  }
+
+  &__action {
+    @extend %flexbox-items-space-between;
+    flex-wrap: wrap;
+    padding: toRem(50px) toRem(0px) toRem(40px) toRem(0px);
+    gap: toRem(24px);
+    font-size: toRem(14px);
+    color: $primary-color;
+    border-bottom: 1px solid $line-color;
+  }
+
+  &__logo {
+    @include img-size(toRem(144px), toRem(20px))
+  }
+
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: toRem(146px) toRem(146px);
+    gap: toRem(24px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: toRem(14px);
+
+    &-decs {
+      width: 100%;
+    }
+
+    &-head {
+      font-weight: 500;
+      letter-spacing: toRem(3px);
+      text-transform: uppercase;
+      color: $bg-color;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: toRem(12px);
+  }
+
+  .footer__icon {
+    @include img-size(toRem(28px));
+  }
+
+  .copyright {
+    margin-top: toRem(16px);
+    margin-bottom: toRem(77.26px);
+    @extend %flexbox-items-centered;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: toRem(16px);
+    font-size: toRem(14px);
+    color: $primary-color;
+
+    &__img {
+      @include img-size(toRem(39.96px), toRem(25.74px))
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    margin-top: toRem(80.42px);
+
+    &__contact {
+      padding: toRem(43px) toRem(64px);
+
+      &-desc {
+        font-size: toRem(40px);
+      }
+
+      &-box {
+        @include min-size(toRem(349px), toRem(108px));
+        gap: toRem(14px);
+      }
+
+      &-form {
+        @include min-size(toRem(349px), toRem(48px))
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: toRem(14px);
+      max-width: toRem(248px);
+
+      &-desc {
+        font-size: toRem(14px);
+      }
+    }
+
+    &__logo {
+      @include img-size(toRem(167px), toRem(23px))
+    }
+
+    &__action {
+      flex-wrap: nowrap;
+      gap: toRem(113.15px);
+      font-size: toRem(16px);
+      padding-bottom: toRem(50px);
+    }
+
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: toRem(113.15px);
+    }
+
+    .copyright {
+      font-size: toRem(16px);
+      justify-content: space-between;
+      margin-top: toRem(25px);
+      margin-bottom: toRem(88px);
+
+      &__img {
+        @include img-size(toRem(46.61px), toRem(30.03px))
+      }
+    }
+  }
+}
