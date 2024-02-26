@@ -1,7 +1,11 @@
 .evaluate {
   @extend %flexbox-items-centered;
+}
+
+.evaluate-primary {
+  width: 100%;
   gap: toRem(4.44px);
-  padding: toRem(4px) 0;
+  // padding: toRem(4px) 0;
 
   &__img {
     @include img-size(toRem(15.47px));
@@ -16,8 +20,17 @@
   }
 }
 
+.evaluate-secondary {
+  min-width: toRem(118px);
+  justify-content: space-between;
+
+  &__img {
+    @include img-size(toRem(19.19px));
+  }
+}
+
 @media (min-width: 1440px) {
-  .evaluate {
+  .evaluate-primary {
     gap: toRem(5.31px);
     padding: toRem(8px) 0;
 
@@ -27,6 +40,14 @@
 
     &__num {
       font-size: toRem(14px);
+    }
+  }
+
+  .evaluate-secondary {
+    min-width: toRem(138.84px);
+
+    &__img {
+      @include img-size(toRem(22.58px));
     }
   }
 }
