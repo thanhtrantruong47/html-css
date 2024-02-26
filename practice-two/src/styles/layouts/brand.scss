@@ -4,9 +4,9 @@
   min-width: toRem(390px);
 
   &__item, &__item-desktop {
-    display: flex;
+    @extend .container;
     flex-wrap: wrap;
-    justify-content: space-between;
+    @extend %flexbox-items-space-between ;
   }
 
   &__img {
@@ -15,7 +15,7 @@
 
   &--center {
     width: 100%;
-    display: flex;
+    @extend %flexbox-items-centered;
     justify-content: center;
     gap: math.div(37, 358) * 100%;
     padding-top: toRem(20px);

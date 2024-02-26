@@ -1,11 +1,16 @@
 .sign-up {
   background-color: $bg-color;
   font-family: Satoshi;
-  text-align: center;
-  font-size: 20px;
   min-width: toRem(390px);
 
-  &__text {
+  &__item {
+    margin: 0 auto;
+    font-size: 20px;
+    min-width: toRem(390px);
+    width: math.div(1240, 1440) * 100%;
+  }
+
+  &__desc {
     font-size: 0.6rem;
     color: $text-color;
     text-align: center;
@@ -13,11 +18,11 @@
 
   }
 
-  &__link {
+  &__advertise {
     color: $text-color;
   }
 
-  &__icon {
+  &__off {
     display: none;
     padding: toRem(9px) 0;
   }
@@ -25,16 +30,19 @@
 
 @media (min-width: 1440px) {
   .sign-up {
-    display: flex;
-    line-height: normal;
 
-    &__text {
+    &__item {
+      display: flex;
+      line-height: normal;
+    }
+
+    &__desc {
       font-size: toRem(14px);
       margin: 0 auto;
 
     }
 
-    &__icon {
+    &__off {
       display: block;
     }
   }

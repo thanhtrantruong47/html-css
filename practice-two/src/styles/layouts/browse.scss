@@ -9,11 +9,11 @@
 
 
   &__item {
-    display: flex;
     flex-wrap: wrap;
     gap: toRem(8px);
     padding: toRem(28px) 0 toRem(13px);
     justify-content: center;
+    @extend %flexbox-items-centered;
   }
 
   &__desc {
@@ -24,15 +24,14 @@
 
   &__img {
     border-radius: toRem(20px);
-    min-width: toRem(310px);
-    min-height: toRem(190px);
-    max-width: toRem(310px);
-    max-height: toRem(190px);
+    @include min-size(toRem(310px),toRem(190px));
+    @include max-size(toRem(310px),toRem(190px));
   }
 }
 
 @media (min-width: 1440px) {
   .browse {
+    text-align: center;
     margin: toRem(65px) auto;
     padding: toRem(70px) 0 toRem(74px) 0;
 
@@ -42,9 +41,8 @@
     }
 
     &__img {
-      min-width: toRem(407px);
-      max-width: toRem(684px);
-      max-height: toRem(289px);
+      @include min-size(toRem(407px),toRem(190px));
+      @include max-size(toRem(684px),toRem(289px));
     }
 
     &__desc {
