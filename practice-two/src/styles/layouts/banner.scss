@@ -2,122 +2,55 @@
   background-color: $bg-secondary;
   font-family: Satoshi;
   min-width: toRem(390px);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
 
-  &__item {
-    @extend .container;
+  &__box {
+    min-height: toRem(405px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   &__desc {
     padding-top: toRem(40px);
-  }
-
-  &__content {
-    max-width: toRem(315px);
-    font-size: 0.7rem;
-    padding: toRem(20px) 0;
-    color: $primary-color;
-  }
-
-  &__info {
-    @extend %flexbox-items-space-between;
+    max-width: math.div(358, 390) * 100%;
+    display: flex;
     flex-wrap: wrap;
-    max-width: toRem(278px);
-    padding: toRem(20px) 0;
-    margin: 0 toRem(40px);
-  }
-
-  &__info-num {
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: toRem(6px) 0;
-
-    &--special {
-      border-left: 1px solid $line-color;
-      padding-left: toRem(27.5px);
-    }
-  }
-
-  &__info-desc {
-    display: block;
-    font-size: 0.6rem;
-    color: $primary-color;
-    font-weight: 400;
-  }
-
-  &__info--center {
-    margin: 0 auto;
+    gap: toRem(20px);
   }
 
   &__img {
     width: 100%;
-    max-width: toRem(390px);
-  }
-
-  &__star {
-    display: none;
+    min-width: toRem(390px);
   }
 }
 
 @media (min-width: 1440px) {
- .banner {
-    background-image: url('../assets/images/banners/rectangle.png');
-    background-repeat: no-repeat;
+  .banner {
+    width: 100%;
+    flex-wrap: nowrap;
+
+    &__box {
+      width: math.div(1240, 1440)*100%;
+      margin: 0 auto;
+      flex-wrap: nowrap;
+      max-height: toRem(663px);
+    }
+
     &__desc {
       padding: toRem(103px) 0;
-    }
-
-    &__item {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    &__content {
-      font-size: toRem(16px);
-      padding: toRem(32px) 0;
-      max-width: toRem(545px);
-      color: $primary-color;
-    }
-
-    &__info {
-      flex-wrap: nowrap;
-      padding: toRem(48px) 0 0 0;
-      max-width: toRem(596px);
-      text-align: left;
-      gap: 1rem;
+      min-width: toRem(596px);
+      max-width: toRem(650px);
       margin: 0;
-    }
-
-    &__info-num {
-      font-size: toRem(40px);
-      font-weight: 700;
-
-      &--special {
-        padding-right: toRem(37.5px);
-        border-right: 1px solid $line-color;
-      }
-    }
-
-    &__info-desc {
-      font-size: toRem(16px);
+      gap: toRem(32px);
     }
 
     &__img {
-      display: none;
-    }
-
-    &__star {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: end;
-    }
-
-    &__star--center {
-      margin-top: toRem(297px);
-    }
-
-    &__star--right {
-      margin-left: auto;
-      margin-top: toRem(86px);
+      max-height: 100%;
     }
   }
 }

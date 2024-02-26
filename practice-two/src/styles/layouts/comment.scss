@@ -19,11 +19,11 @@
   }
 
   &__item {
-      margin-top: toRem(24px);
-      padding: toRem(24px);
-      min-width: toRem(358px);
-      border: 1px solid $line-color;
-      border-radius: toRem(20px);
+    margin-top: toRem(24px);
+    padding: toRem(24px);
+    min-width: toRem(358px);
+    border: 1px solid $line-color;
+    border-radius: toRem(20px);
   }
 
   &__evaluate {
@@ -43,12 +43,6 @@
     &-img {
       @include img-size(toRem(15.44px));
     }
-  }
-
-  &__desc {
-    font-weight: 400;
-    font-size: toRem(14px);
-    color: $primary-color;
   }
 }
 
@@ -77,10 +71,6 @@
       &-img {
         @include img-size(toRem(24px));
       }
-    }
-
-    &__desc {
-      font-size: toRem(16px);
     }
   }
 }

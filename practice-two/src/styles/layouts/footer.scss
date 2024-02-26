@@ -69,10 +69,6 @@
     justify-content: space-around;
     gap: toRem(14px);
 
-    &-decs {
-      width: 100%;
-    }
-
     &-head {
       font-weight: 500;
       letter-spacing: toRem(3px);
@@ -134,10 +130,6 @@
       justify-content: space-around;
       gap: toRem(14px);
       max-width: toRem(248px);
-
-      &-desc {
-        font-size: toRem(14px);
-      }
     }
 
     &__logo {

@@ -4,7 +4,6 @@
 }
 
 .title-primary {
-  @extend .title;
   font-size: toRem(32px);
 
   &--center {
@@ -14,7 +13,6 @@
 }
 
 .title-secondary {
-  @extend .title;
   font-size: toRem(36px);
   font-weight: 700;
   max-width: toRem(315px);

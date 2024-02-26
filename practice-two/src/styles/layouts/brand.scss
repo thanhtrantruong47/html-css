@@ -3,13 +3,12 @@
   padding: toRem(39px) 0;
   min-width: toRem(390px);
 
-  &__item, &__item-desktop {
-    @extend .container;
+  &__box {
     flex-wrap: wrap;
-    @extend %flexbox-items-space-between ;
+    @extend %flexbox-items-space-between;
   }
 
-  &__img {
+  &__img-desktop {
     display: none;
   }
 
@@ -23,13 +22,11 @@
 }
 
 @media (min-width: 1440px) {
-  .brand {
-    &__item {
-      display: none;
-    }
+  .brand__img {
+    display: none;
   }
 
-  .brand__img {
+  .brand__img-desktop {
     display: block;
   }
 }

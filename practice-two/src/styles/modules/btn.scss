@@ -13,19 +13,16 @@
 }
 
 .btn-primary {
-  @extend .btn;
   background-color: $bg-color;
   color: $text-color;
 }
 
 .btn-secondary {
-  @extend .btn;
   color: $text-color;
   color: $bg-color;
 }
 
 .btn-contact {
-  @extend .btn;
   @include max-size(toRem(311px), toRem(42px));
 }
 
@@ -33,7 +30,6 @@
   .btn {
     font-size: toRem(16px);
     width: 218px;
-
   }
 
   .btn-contact {

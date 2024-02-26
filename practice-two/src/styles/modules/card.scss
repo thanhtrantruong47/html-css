@@ -1,0 +1,29 @@
+.card {
+  text-align: left;
+
+  &__img {
+    margin-bottom: toRem(10px);
+    width: toRem(198px);
+    max-height: toRem(200px);
+    border-radius: toRem(12.42px);
+  }
+
+  &__name {
+    font-size: toRem(16px);
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    &__img {
+      width: toRem(295px);
+      max-height: toRem(298px);
+      border-radius: toRem(20px);
+    }
+
+    &__name {
+      font-size: toRem(20px);
+    }
+  }
+}

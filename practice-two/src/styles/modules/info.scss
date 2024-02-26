@@ -1,0 +1,44 @@
+.info {
+  @extend %flexbox-items-space-between;
+  flex-wrap: wrap;
+  max-width: toRem(278px);
+  padding: toRem(20px) 0;
+  margin: 0 toRem(40px);
+
+  &__head {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: toRem(6px) 0;
+
+    &--special {
+      border-left: 1px solid $line-color;
+      padding-left: toRem(27.5px);
+    }
+  }
+
+  &--center {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .info {
+    flex-wrap: nowrap;
+    padding: toRem(16px) 0 0 0;
+    min-width: toRem(596px);
+    text-align: left;
+    gap: 1rem;
+    margin: 0;
+
+    &__head {
+      font-size: toRem(40px);
+      font-weight: 700;
+
+    }
+
+    &__head--special {
+      padding-right: toRem(37.5px);
+      border-right: 1px solid $line-color;
+    }
+  }
+}
