@@ -1,31 +1,42 @@
 .card {
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
   gap: toRem(4.44px);
+  margin-top: toRem(32px);
+  margin-bottom: toRem(24px);
+  @extend %flexbox-items-centered;
+  justify-content: space-between;
+  gap: toRem(16px);
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &__name {
     font-weight: 700;
     font-size: toRem(16px);
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flexbox-items-centered;
+    @extend %flexbox-items-wraped;
     width: 100%;
   }
 }
 
 .card-primary {
+  @extend %flexbox-items-wraped;
+  justify-content: space-between;
+  min-width: 198px;
+  min-height: toRem(283px);
+
   &__img {
-    margin-bottom: toRem(10px);
-    width: toRem(198px);
-    max-height: toRem(200px);
+    @include min-size(toRem(189px), toRem(200px));
+    width: 100%;
+    max-height: 200px;
     border-radius: toRem(12.42px);
   }
 }
 
 .card-secondary {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flexbox-items-wraped;
+  justify-content: space-between;
   margin-top: toRem(24px);
   padding: toRem(24px);
   min-width: toRem(358px);
@@ -41,6 +52,9 @@
 @media (min-width: 1440px) {
   .card {
     gap: toRem(8px);
+    margin-top: toRem(55px);
+    margin-bottom: toRem(36px);
+    overflow: none;
 
     &__name {
       font-size: toRem(20px);
@@ -48,10 +62,12 @@
   }
 
   .card-primary {
+    width: toRem(295px);
+    min-height: toRem(399px);
 
     &__img {
       border-radius: toRem(20px);
-      @include min-size(toRem(295px), toRem(298px))
+      min-height: 298px;
     }
   }
 
