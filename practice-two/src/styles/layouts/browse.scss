@@ -1,0 +1,53 @@
+.browse {
+  background-color: $bg-secondary;
+  margin: toRem(35px) auto;
+  text-align: center;
+  border-radius: 1rem;
+  padding: toRem(40px) 0 toRem(13px) 0;
+  font-family: Satoshi;
+  font-weight: 700;
+
+
+  &__item {
+    flex-wrap: wrap;
+    gap: toRem(8px);
+    padding: toRem(28px) 0 toRem(13px);
+    justify-content: center;
+    @extend %flexbox-items-centered;
+  }
+
+  &__desc {
+    position: absolute;
+    padding: toRem(16px) toRem(24px);
+    font-size: toRem(24px);
+  }
+
+  &__img {
+    border-radius: toRem(20px);
+    @include min-size(toRem(310px),toRem(190px));
+    @include max-size(toRem(310px),toRem(190px));
+  }
+}
+
+@media (min-width: 1440px) {
+  .browse {
+    text-align: center;
+    margin: toRem(65px) auto;
+    padding: toRem(70px) 0 toRem(74px) 0;
+
+    &__item {
+      padding-top: toRem(64px);
+      gap: toRem(20px);
+    }
+
+    &__img {
+      @include min-size(toRem(407px),toRem(190px));
+      @include max-size(toRem(684px),toRem(289px));
+    }
+
+    &__desc {
+      font-size: toRem(36px);
+      padding: toRem(25px) toRem(36px);
+    }
+  }
+}

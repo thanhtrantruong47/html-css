@@ -4,11 +4,5 @@
 
 html {
   font-family: Integral CF, Satoshi;
-  margin: 0 auto;
-}
-
-@media (min-width: 1440px) {
-  html {
-    max-width: 1440px;
-  }
+  font-size: $size;
 }

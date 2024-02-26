@@ -1,0 +1,86 @@
+.comment {
+  margin: toRem(15px) 0 toRem(50px) 0;
+  font-family: Satoshi;
+  overflow: hidden;
+
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: toRem(20px);
+  }
+
+  .comment__head {
+    @extend %flexbox-items-space-between;
+    align-items: flex-end;
+  }
+
+  &__action {
+    display: flex;
+  }
+
+  &__item {
+      margin-top: toRem(24px);
+      padding: toRem(24px);
+      min-width: toRem(358px);
+      border: 1px solid $line-color;
+      border-radius: toRem(20px);
+  }
+
+  &__evaluate {
+    min-width: toRem(118px);
+
+    &-img {
+      @include img-size(toRem(19.19px));
+    }
+  }
+
+  &__name {
+    @extend %flexbox-items-centered;
+    font-weight: 700;
+    font-size: toRem(16px);
+    padding: toRem(12px) 0 toRem(11.5px) 0;
+
+    &-img {
+      @include img-size(toRem(15.44px));
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: toRem(14px);
+    color: $primary-color;
+  }
+}
+
+@media (min-width: 1440px) {
+  .comment {
+    margin: toRem(10px) 0 toRem(80px) 0;
+
+    &__item {
+      margin-top: toRem(40px);
+      padding: toRem(28px) toRem(32px);
+      min-height: toRem(240px);
+    }
+
+    &__evaluate {
+      max-width: toRem(138.84px);
+
+      &-img {
+        @include img-size(toRem(22.58px));
+      }
+    }
+
+    &__name {
+      font-size: toRem(20px);
+      padding: toRem(15px) 0 toRem(12px) 0;
+
+      &-img {
+        @include img-size(toRem(24px));
+      }
+    }
+
+    &__desc {
+      font-size: toRem(16px);
+    }
+  }
+}
