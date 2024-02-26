@@ -3,6 +3,10 @@
   font-family: Satoshi;
   min-width: toRem(390px);
 
+  &__item {
+    @extend .container;
+  }
+
   &__desc {
     padding-top: toRem(40px);
   }
@@ -26,6 +30,11 @@
     font-size: 1.2rem;
     font-weight: 700;
     padding: toRem(6px) 0;
+
+    &--special {
+      border-left: 1px solid $line-color;
+      padding-left: toRem(27.5px);
+    }
   }
 
   &__info-desc {
@@ -37,11 +46,6 @@
 
   &__info--center {
     margin: 0 auto;
-  }
-
-  &--special {
-    border-left: 1px solid $line-color;
-    padding-left: toRem(27.5px);
   }
 
   &__img {
@@ -86,6 +90,11 @@
     &__info-num {
       font-size: toRem(40px);
       font-weight: 700;
+
+      &--special {
+        padding-right: toRem(37.5px);
+        border-right: 1px solid $line-color;
+      }
     }
 
     &__info-desc {
@@ -94,11 +103,6 @@
 
     &__img {
       display: none;
-    }
-
-    &--special {
-      padding-right: toRem(37.5px);
-      border-right: 1px solid $line-color;
     }
 
     &__star {

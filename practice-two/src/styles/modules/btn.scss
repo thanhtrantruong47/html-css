@@ -1,4 +1,3 @@
-
 .btn {
   width: 358px;
   height: 52px;
@@ -8,26 +7,26 @@
   font-weight: 500;
   font-size: toRem(14px);
 
-  &__primary {
-    @extend .btn;
-    background-color: $bg-color;
-    color: $text-color;
-  }
-
-  &__secondary {
-    @extend .btn;
-    color: $text-color;
-    color: $bg-color;
-  }
-
   &:hover {
     background-color: $btn-primary;
   }
+}
 
-  &__contact {
-    @extend .btn;
-    @include max-size(toRem(311px), toRem(42px));
-  }
+.btn-primary {
+  @extend .btn;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.btn-secondary {
+  @extend .btn;
+  color: $text-color;
+  color: $bg-color;
+}
+
+.btn-contact {
+  @extend .btn;
+  @include max-size(toRem(311px), toRem(42px));
 }
 
 @media (min-width: 1440px) {
@@ -35,8 +34,9 @@
     font-size: toRem(16px);
     width: 218px;
 
-    &__contact {
-      @include min-size(toRem(349px), toRem(48px));
-    }
+  }
+
+  .btn-contact {
+    @include min-size(toRem(349px), toRem(48px));
   }
 }

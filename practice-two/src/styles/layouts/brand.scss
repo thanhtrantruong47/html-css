@@ -4,6 +4,7 @@
   min-width: toRem(390px);
 
   &__item, &__item-desktop {
+    @extend .container;
     flex-wrap: wrap;
     @extend %flexbox-items-space-between ;
   }

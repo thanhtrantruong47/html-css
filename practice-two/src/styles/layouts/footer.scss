@@ -31,6 +31,7 @@
     }
 
     &-form {
+      @extend .btn;
       background-image: url("../assets/images/footers/email-icon.svg");
       background-repeat: no-repeat;
       background-position: 10px 10px;
@@ -40,6 +41,7 @@
   }
 
   &__action {
+    @extend .container;
     @extend %flexbox-items-space-between;
     flex-wrap: wrap;
     padding: toRem(50px) toRem(0px) toRem(40px) toRem(0px);
@@ -89,6 +91,7 @@
   }
 
   .copyright {
+    @extend .container;
     margin-top: toRem(16px);
     margin-bottom: toRem(77.26px);
     @extend %flexbox-items-centered;
