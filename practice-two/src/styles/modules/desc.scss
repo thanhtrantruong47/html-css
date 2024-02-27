@@ -10,6 +10,7 @@
     display: block;
     font-size: toRem(14px);
     max-width: toRem(358px);
+    margin-top: 8px;
 }
 
 .desc-secondary {
@@ -22,6 +23,7 @@
   }
 
   .desc-primary {
+      margin-top: 12px;
       font-size: toRem(16px);
       max-width: toRem(545px);
   }

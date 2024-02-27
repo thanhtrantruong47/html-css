@@ -18,36 +18,33 @@
     @extend %flexbox-items-wraped;
     width: 100%;
   }
-}
 
-.card-primary {
-  @extend %flexbox-items-wraped;
-  justify-content: space-between;
-  min-width: 198px;
-  min-height: toRem(283px);
+  &__primary {
+    @extend %flexbox-items-wraped;
+    justify-content: space-between;
+    min-width: 198px;
+    min-height: toRem(283px);
 
-  &__img {
-    @include min-size(toRem(189px), toRem(200px));
-    width: 100%;
-    max-height: 200px;
-    border-radius: toRem(12.42px);
+    &-img {
+      @include img-size(toRem(198px), toRem(200px));
+      // width: toRem(198px);
+      // height: toRRem(200px);
+      border-radius: toRem(12.42px);
+    }
+  }
+
+  &__secondary {
+    margin-top: toRem(24px);
+    padding: toRem(24px);
+    min-width: toRem(358px);
+    min-height: toRem(186.19px);
+    border: 1px solid $line-color;
+    border-radius: toRem(20px);
+    &-img {
+      @include img-size(toRem(15.44px));
+    }
   }
 }
-
-.card-secondary {
-  @extend %flexbox-items-wraped;
-  justify-content: space-between;
-  margin-top: toRem(24px);
-  padding: toRem(24px);
-  min-width: toRem(358px);
-  border: 1px solid $line-color;
-  border-radius: toRem(20px);
-
-  &__img {
-    @include img-size(toRem(15.44px));
-  }
-}
-
 
 @media (min-width: 1440px) {
   .card {
@@ -59,23 +56,23 @@
     &__name {
       font-size: toRem(20px);
     }
-  }
 
-  .card-primary {
-    width: toRem(295px);
-    min-height: toRem(399px);
-
-    &__img {
-      border-radius: toRem(20px);
-      min-height: 298px;
+    .card__primary {
+      width: toRem(295px);
+      min-height: toRem(399px);
+      &-img {
+        border-radius: toRem(20px);
+        @include img-size(toRem(295px),toRem(298px));
+      }
     }
-  }
 
-  .card-secondary {
-    min-height: toRem(240px);
+    &__secondary {
+      min-height: toRem(240px);
+      padding: toRem(28px) toRem(32px);
 
-    &__img {
-      @include img-size(toRem(24px));
+      &-img {
+        @include img-size(toRem(24px));
+      }
     }
   }
 }

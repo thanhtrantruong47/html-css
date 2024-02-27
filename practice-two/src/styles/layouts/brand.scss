@@ -22,6 +22,11 @@
 }
 
 @media (min-width: 1440px) {
+
+  .brand--center {
+    display: none;
+  }
+
   .brand__img {
     display: none;
   }

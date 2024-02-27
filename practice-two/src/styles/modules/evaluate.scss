@@ -1,8 +1,5 @@
-.evaluate {
+.evaluate-product {
   @extend %flexbox-items-centered;
-}
-
-.evaluate-primary {
   width: 100%;
   gap: toRem(4.44px);
 
@@ -19,7 +16,9 @@
   }
 }
 
-.evaluate-secondary {
+.evaluate-comment {
+  @extend %flexbox-items-centered;
+  margin-bottom: 12px;
   width: toRem(118px);
   justify-content: space-between;
 
@@ -29,7 +28,7 @@
 }
 
 @media (min-width: 1440px) {
-  .evaluate-primary {
+  .evaluate-product{
     gap: toRem(5.31px);
 
     &__img {
@@ -41,10 +40,10 @@
     }
   }
 
-  .evaluate-secondary {
-    width: toRem(118px);
+  .evaluate-comment {
     width: toRem(138.84px);
     height: 22.58px;
+    margin-bottom: 15px;
 
     &__img {
       @include img-size(toRem(22.58px));
