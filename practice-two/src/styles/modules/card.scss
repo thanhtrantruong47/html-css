@@ -22,13 +22,11 @@
   &__primary {
     @extend %flexbox-items-wraped;
     justify-content: space-between;
-    min-width: 198px;
+    min-width: toRem(198px);
     min-height: toRem(283px);
 
     &-img {
       @include img-size(toRem(198px), toRem(200px));
-      // width: toRem(198px);
-      // height: toRRem(200px);
       border-radius: toRem(12.42px);
     }
   }

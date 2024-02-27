@@ -18,7 +18,7 @@
 
 .evaluate-comment {
   @extend %flexbox-items-centered;
-  margin-bottom: 12px;
+  margin-bottom: toRem(12px);
   width: toRem(118px);
   justify-content: space-between;
 
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 1440px) {
-  .evaluate-product{
+  .evaluate-product {
     gap: toRem(5.31px);
 
     &__img {
@@ -42,8 +42,8 @@
 
   .evaluate-comment {
     width: toRem(138.84px);
-    height: 22.58px;
-    margin-bottom: 15px;
+    height: toRem(22.58px);
+    margin-bottom: toRem(5px);
 
     &__img {
       @include img-size(toRem(22.58px));

@@ -2,15 +2,15 @@
   font-family: Satoshi;
   color: $primary-color;
   font-weight: 400;
-  font-size: 12px;
+  font-size: toRem(12px);
   display: block;
 }
 
 .desc-primary {
-    display: block;
-    font-size: toRem(14px);
-    max-width: toRem(358px);
-    margin-top: 8px;
+  display: block;
+  font-size: toRem(14px);
+  max-width: toRem(358px);
+  margin-top: toRem(8px);
 }
 
 .desc-secondary {
@@ -19,12 +19,12 @@
 
 @media (min-width : 1440px) {
   .desc {
-    font-size: 16px;
+    font-size: toRem(16px);
   }
 
   .desc-primary {
-      margin-top: 12px;
-      font-size: toRem(16px);
-      max-width: toRem(545px);
+    margin-top: toRem(12px);
+    font-size: toRem(16px);
+    max-width: toRem(545px);
   }
 }

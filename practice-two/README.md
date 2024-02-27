@@ -36,3 +36,30 @@
 ## ANALYSIS DESIGN
 
 - View in this [Doc](https://docs.google.com/document/d/1NEBI53zzlQvvHg2HzKtzLFSGTdXausfx52Qx7hIh8Tw/edit#heading=h.30j0zll)
+
+## GETTING STARTED
+
+- Clone the repository:
+
+```
+git clone https://github.com/thanhtrantruong47/html-css-training.git
+```
+
+- Checkout to branch feature/practice-two:
+
+```
+cd html-css-training
+git checkout feature/practice-two
+```
+
+- Install Parcel
+
+```
+cd practice-two
+npm install
+```
+
+- Run project:
+
+```
+npm start
