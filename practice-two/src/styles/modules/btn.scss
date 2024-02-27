@@ -1,6 +1,4 @@
 .btn {
-  width: 358px;
-  height: 52px;
   border-radius: toRem(62px);
   font-family: Satoshi;
   border: none;
@@ -12,17 +10,21 @@
   }
 
   &--primary {
+    width: 358px;
+    height: 52px;
     background-color: $bg-color;
     color: $text-color;
   }
 
   &--secondary {
+    width: 358px;
+    height: 52px;
     color: $text-color;
     color: $bg-color;
   }
 
-  &---contact {
-    @include max-size(toRem(311px), toRem(42px));
+  &--contact {
+    @include min-size(toRem(311px), toRem(42px));
   }
 }
 

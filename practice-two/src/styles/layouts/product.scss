@@ -4,6 +4,17 @@
   font-family: Satoshi;
   padding-bottom: 15px;
 
+  &__list {
+    gap: toRem(16px);
+    margin-top: toRem(32px);
+    margin-bottom: toRem(24px);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   &--center {
     padding-bottom: toRem(40px);
     border-bottom: 1px solid $line-color;
@@ -16,6 +27,10 @@
 
     &--center {
       padding-bottom: toRem(64px);
+    }
+
+    &__list {
+      overflow: none;
     }
   }
 }

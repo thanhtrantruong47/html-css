@@ -13,10 +13,10 @@
     @extend %flexbox-items-wraped;
     padding: toRem(40px) toRem(12px) 0 toRem(12px);
     gap: toRem(20px);
-  }
+    }
 
   &__btn {
-   margin-top: toRem(4px);
+    margin-top: toRem(4px);
   }
 
   &__desc {
@@ -43,19 +43,21 @@
 @media (min-width: 1440px) {
   .banner {
     background-image: url('../assets/images/banners/rectangle.png');
-    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
     flex-wrap: nowrap;
 
     &__wrapper {
-      width: math.div(1240, 1440)*100%;
       margin: 0 auto;
       flex-wrap: nowrap;
       max-height: toRem(663px);
+      width: 1240px;
     }
 
     &__content {
       padding: toRem(103px) 0;
-      max-width: 596px;
+      min-width: 596px;
       margin: 0;
       gap: toRem(32px);
     }
@@ -63,22 +65,24 @@
     &__btn {
       margin-top: toRem(0px);
       margin-bottom: toRem(16px);
-     }
+    }
 
     &__img {
       background-image: none;
       max-height: 100%;
+      min-width: 744px;
+      width: 100%;
     }
 
     &__img-left {
       @include img-size(toRem(56px), toRem(56px));
-      margin: toRem(325px) toRem(443px) toRem(0px) toRem(54px);
+      margin-top: toRem(325px);
     }
 
     &__img-right {
       @include img-size(toRem(104px), toRem(104px));
       margin-top: toRem(86px);
-      margin-right: 0;
+      margin-right: math.div(137, 1440) * 100%;
     }
   }
 }

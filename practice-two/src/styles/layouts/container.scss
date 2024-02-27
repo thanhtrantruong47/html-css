@@ -1,10 +1,10 @@
 .container {
-  width: math.div(358, 390) * 100%;
+  width: 358px;
   margin: 0 auto;
 }
 
 @media (min-width: 1440px) {
   .container {
-    width: math.div(1240, 1440) * 100%;
+    width: 1240px;
   }
 }

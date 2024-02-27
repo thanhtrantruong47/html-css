@@ -6,5 +6,6 @@
 .link-primary {
   @extend .link ;
   color: $primary-color;
+  display: block;
 }
 

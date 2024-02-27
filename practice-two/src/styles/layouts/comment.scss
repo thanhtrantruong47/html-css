@@ -9,9 +9,19 @@
     gap: toRem(20px);
   }
 
-  .comment__head {
+  &__head {
     @extend %flexbox-items-space-between;
     align-items: flex-end;
+  }
+
+  &__list {
+    gap: toRem(20px);
+    margin-top: toRem(24px);
+  }
+
+  &__list-name {
+    margin-top: toRem(15.5px);
+    margin-bottom: toRem(11.5px);
   }
 
   &__action {
@@ -22,5 +32,15 @@
 @media (min-width: 1440px) {
   .comment {
     margin: toRem(10px) 0 toRem(80px) 0;
+
+    &__list {
+      gap: toRem(20px);
+      margin-top: toRem(40px);
+    }
+
+    &__list-name {
+      margin-top: toRem(15px);
+      margin-bottom: toRem(12px);
+    }
   }
 }

@@ -18,7 +18,6 @@
 
 .evaluate-comment {
   @extend %flexbox-items-centered;
-  margin-bottom: toRem(12px);
   width: toRem(118px);
   justify-content: space-between;
 
