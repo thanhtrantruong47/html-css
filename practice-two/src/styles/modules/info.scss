@@ -1,7 +1,7 @@
 .info {
   @extend %flexbox-items-space-between;
   flex-wrap: wrap;
-  width: toRem(278px);
+  padding: 0 40px;
   gap: toRem(12px);
   column-gap: auto;
   margin: 0 auto;
@@ -27,11 +27,12 @@
 @media (min-width: 1440px) {
   .info {
     flex-wrap: nowrap;
-    min-width: toRem(596px);
+    width: 100%;
     text-align: left;
     gap: 1rem;
     margin: 0;
     justify-content: space-between;
+    padding: 0 0px;
 
 
     &__center {
