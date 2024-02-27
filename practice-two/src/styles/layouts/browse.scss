@@ -7,6 +7,10 @@
   font-family: Satoshi;
   font-weight: 700;
 
+  &__title {
+    padding: 0 toRem(56px);
+  }
+
 
   &__wrapper {
     flex-wrap: wrap;
