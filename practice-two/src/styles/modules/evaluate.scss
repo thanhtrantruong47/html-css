@@ -43,7 +43,7 @@
   .evaluate-comment {
     width: toRem(138.84px);
     height: toRem(22.58px);
-    margin-bottom: toRem(5px);
+    margin-bottom: toRem(15px);
 
     &__img {
       @include img-size(toRem(22.58px));

@@ -49,7 +49,7 @@ git clone https://github.com/thanhtrantruong47/html-css-training.git
 
 ```
 cd html-css-training
-git checkout feature/practice-two
+git checkout fix/layout
 ```
 
 - Install Parcel
