@@ -2,43 +2,33 @@
   background-color: $bg-secondary;
   font-family: Satoshi;
   min-width: toRem(390px);
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 0 auto;
 
   &__wrapper {
-    min-height: toRem(405px);
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    @extend %flexbox-items-space-between;
+    @extend %flexbox-items-wraped;
     margin: 0 auto;
   }
 
   &__content {
-    padding-top: toRem(40px);
-    max-width: math.div(358, 390) * 100%;
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flexbox-items-wraped;
+    padding: toRem(40px) toRem(12px) 0 toRem(12px);
     gap: toRem(20px);
   }
 
   &__img {
     background-image: url('../assets/images/banners/bg-banner.svg');
-    min-width: 390px;
-    min-height: 448px;
-    display: flex;
-    justify-content: space-between
+    @include min-size(toRem(390px), toRem(448px));
+    @extend %flexbox-items-space-between;
   }
 
   &__img-left {
-    margin-top: 137px;
-    margin-left: 27px;
+    margin: toRem(137px) 0 0 toRem(27px);
+    @include img-size(toRem(44px), toRem(44px));
   }
 
   &__img-right {
-    margin-top: 40px;
-    margin-right: 21px;
+    @include img-size(toRem(76px), toRem(76px));
+    margin: toRem(40px) toRem(21px) 0 0;
   }
 }
 
@@ -57,8 +47,7 @@
 
     &__content {
       padding: toRem(103px) 0;
-      min-width: toRem(596px);
-      max-width: toRem(650px);
+      max-width: 50%;
       margin: 0;
       gap: toRem(32px);
     }
@@ -70,14 +59,12 @@
 
     &__img-left {
       @include img-size(toRem(56px), toRem(56px));
-      margin-top: 297px;
-      margin-left: 0px;
-      margin-right: 443px;
+      margin: toRem(325px) toRem(443px) toRem(0px) toRem(54px);
     }
 
     &__img-right {
       @include img-size(toRem(104px), toRem(104px));
-      margin-top: 86px;
+      margin-top: toRem(86px);
       margin-right: 0;
     }
   }

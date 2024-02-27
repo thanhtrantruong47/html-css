@@ -1,25 +1,26 @@
 .info {
   @extend %flexbox-items-space-between;
   flex-wrap: wrap;
-  max-width: toRem(278px);
-  padding: toRem(20px) 0;
-  margin: 0 toRem(40px);
+  width: toRem(278px);
+  gap: toRem(12px);
+  column-gap: auto;
   margin: 0 auto;
 
+  &__center {
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__line {
+    padding: 0 0 0 27.5px;
+      border-left: 1px solid $line-color;
+  }
+
   &__head {
-    flex-basis: auto;
     font-size: 1.2rem;
     font-weight: 700;
     padding: toRem(6px) 0;
-
-    &--special {
-      border-left: 1px solid $line-color;
-      padding-left: toRem(27.5px);
-    }
-
-    &--center {
-      justify-content: center;
-    }
+    margin-right: auto;
   }
 }
 
@@ -31,16 +32,21 @@
     text-align: left;
     gap: 1rem;
     margin: 0;
+    justify-content: space-between;
+
+
+    &__center {
+      margin: 0 0;
+    }
+
+    &__line {
+      padding: 0 32px;
+      border-right: 1px solid $line-color;
+    }
 
     &__head {
       font-size: toRem(40px);
       font-weight: 700;
-
-    }
-
-    &__head--special {
-      padding: 0 toRem(32px);
-      border-right: 1px solid $line-color;
     }
   }
 }

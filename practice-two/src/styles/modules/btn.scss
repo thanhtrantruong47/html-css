@@ -10,29 +10,29 @@
   &:hover {
     background-color: $btn-primary;
   }
-}
 
-.btn-primary {
-  background-color: $bg-color;
-  color: $text-color;
-}
+  &--primary {
+    background-color: $bg-color;
+    color: $text-color;
+  }
 
-.btn-secondary {
-  color: $text-color;
-  color: $bg-color;
-}
+  &--secondary {
+    color: $text-color;
+    color: $bg-color;
+  }
 
-.btn-contact {
-  @include max-size(toRem(311px), toRem(42px));
+  &---contact {
+    @include max-size(toRem(311px), toRem(42px));
+  }
 }
 
 @media (min-width: 1440px) {
   .btn {
     font-size: toRem(16px);
     width: 218px;
-  }
 
-  .btn-contact {
-    @include min-size(toRem(349px), toRem(48px));
+    &--contact {
+      @include min-size(toRem(349px), toRem(48px));
+    }
   }
 }

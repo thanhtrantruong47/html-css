@@ -4,27 +4,22 @@
   font-weight: 400;
   font-size: toRem(12px);
   display: block;
-}
 
-.desc-primary {
-  display: block;
-  font-size: toRem(14px);
-  max-width: toRem(358px);
-  margin-top: toRem(8px);
-}
+  &--primary {
+    font-size: toRem(14px);
+  }
 
-.desc-secondary {
-  font-size: toRem(14px);
+  &--secondary {
+    font-size: toRem(14px);
+  }
 }
 
 @media (min-width : 1440px) {
   .desc {
     font-size: toRem(16px);
-  }
 
-  .desc-primary {
-    margin-top: toRem(12px);
-    font-size: toRem(16px);
-    max-width: toRem(545px);
+    &--primary {
+      font-size: toRem(16px);
+    }
   }
 }

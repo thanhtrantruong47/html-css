@@ -1,34 +1,27 @@
 .title {
   font-family: Integral CF;
   font-weight: 700;
-}
 
-.title-primary {
-  font-size: toRem(32px);
-
-  &--center {
-    max-width: toRem(246px);
-    margin: 0 auto;
+  &--primary {
+    font-size: toRem(32px);
   }
-}
 
-.title-secondary {
-  font-size: toRem(36px);
-  font-weight: 700;
-  max-width: toRem(315px);
+  &--secondary {
+    font-size: toRem(36px);
+    font-weight: 700;
+  }
+
 }
 
 @media (min-width: 1440px) {
-  .title-primary {
-    font-size: toRem(48px);
+  .title {
 
-    &--center {
-      max-width: 100%;
+    &--primary {
+      font-size: toRem(48px);
     }
-  }
 
-  .title-secondary {
-    font-size: toRem(64px);
-    max-width: toRem(577px);
+    &--secondary {
+      font-size: toRem(64px);
+    }
   }
 }
