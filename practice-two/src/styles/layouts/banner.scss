@@ -15,6 +15,10 @@
     gap: toRem(20px);
   }
 
+  &__btn {
+   margin-top: toRem(4px);
+  }
+
   &__img {
     background-image: url('../assets/images/banners/bg-banner.svg');
     @include min-size(toRem(390px), toRem(448px));
@@ -51,6 +55,11 @@
       margin: 0;
       gap: toRem(32px);
     }
+
+    &__btn {
+      margin-top: toRem(0px);
+      margin-bottom: toRem(16px);
+     }
 
     &__img {
       background-image: none;
