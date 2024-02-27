@@ -3,7 +3,7 @@
   padding: toRem(39px) 0;
   min-width: toRem(390px);
 
-  &__box {
+  &__wrapper {
     flex-wrap: wrap;
     @extend %flexbox-items-space-between;
   }

@@ -8,7 +8,7 @@
   font-weight: 700;
 
 
-  &__item {
+  &__wrapper {
     flex-wrap: wrap;
     gap: toRem(8px);
     padding: toRem(28px) 0 toRem(13px);
@@ -35,7 +35,7 @@
     margin: toRem(65px) auto;
     padding: toRem(70px) 0 toRem(74px) 0;
 
-    &__item {
+    &__wrapper {
       padding-top: toRem(64px);
       gap: toRem(20px);
     }
