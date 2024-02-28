@@ -1,19 +1,20 @@
 .info {
   @extend %flexbox-items-space-between;
+  display: flex;
   flex-wrap: wrap;
   padding: 0 toRem(40px);
   gap: toRem(12px);
   column-gap: auto;
   margin: 0 auto;
 
-  &__center {
-    margin: 0 auto;
-    display: block;
-  }
+  &__item {
+    padding: auto;
+    margin: auto;
 
-  &__line {
-    padding: 0 0 0 27.5px;
-    border-left: 1px solid $line-color;
+    &--line {
+      float: right;
+      // border-right:1px solid $line-color;
+    }
   }
 
   &__head {
@@ -33,15 +34,6 @@
     margin: 0;
     justify-content: space-between;
     padding: 0 0px;
-
-    &__center {
-      margin: 0 0;
-    }
-
-    &__line {
-      padding: 0 toRem(36px);
-      border-right: 1px solid $line-color;
-    }
 
     &__head {
       font-size: toRem(40px);

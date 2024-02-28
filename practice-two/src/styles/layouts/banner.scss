@@ -6,7 +6,7 @@
   &__wrapper {
     @extend %flexbox-items-space-between;
     @extend %flexbox-items-wraped;
-    margin: 0 auto;
+    margin: auto;
   }
 
   &__title {

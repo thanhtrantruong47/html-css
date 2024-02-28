@@ -5,28 +5,24 @@
 
   &__wrapper {
     flex-wrap: wrap;
-    @extend %flexbox-items-space-between;
-    width: math.div(358, 390) * 100%;
+    @extend %flexbox-items-centered;
+    gap: 22px;
   }
 
   &__img-desktop {
     display: none;
   }
 
-  &--center {
-    width: 100%;
-    @extend %flexbox-items-centered;
-    justify-content: center;
-    gap: math.div(37, 358) * 100%;
-    padding-top: toRem(20px);
+  &__img {
+    margin: auto;
   }
 }
 
 @media (min-width: 1440px) {
 
-
-  .brand--center {
-    display: none;
+  .brand__wrapper {
+    justify-content: space-between;
+    gap: 22px;
   }
 
   .brand__img {
