@@ -1,18 +1,8 @@
 .evaluate-product {
-  @extend %flexbox-items-centered;
-  width: 100%;
-  gap: toRem(4.44px);
+  margin-bottom: 4px;
 
   &__img {
-    @include img-size(toRem(15.47px));
-  }
-
-  &__num {
-    font-size: 0.6rem;
-  }
-
-  &__desc {
-    color: $primary-color;
+    @include img-size(toRem(15.47px),toRem(15.47px));
   }
 }
 
@@ -25,20 +15,20 @@
 
 @media (min-width: 1440px) {
   .evaluate-product {
-    gap: toRem(5.31px);
+  //   gap: toRem(5.31px);
 
     &__img {
-      @include img-size(toRem(18.49px));
+      @include img-size(toRem(18.49px),toRem(18.49px));
     }
 
-    &__num {
-      font-size: toRem(14px);
-    }
-  }
+  //   &__num {
+  //     font-size: toRem(14px);
+  //   }
+  // }
 
-  .evaluate-comment {
-    &__img {
-      @include img-size(toRem(22.58px));
-    }
+  // .evaluate-comment {
+  //   &__img {
+  //     @include img-size(toRem(22.58px));
+  //   }
   }
 }

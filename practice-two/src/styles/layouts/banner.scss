@@ -11,25 +11,30 @@
 
   &__title {
     width: 100%;
+    margin: 0 auto;
   }
 
   &__content {
     @extend %flexbox-items-wraped;
     padding: toRem(40px) math.div(16, 390) * 100% 0;
     gap: toRem(20px);
-    margin: 0 auto;
   }
 
   &__btn {
     margin-top: toRem(4px);
+    padding: 15px 141.5px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   &__desc {
-    max-width: toRem(545px);
+    // max-width: toRem(545px);
+    width: 100%;
+    margin: auto;
   }
 
   &__img {
-    background-image: url('../assets/images/banners/bg-banner.svg');
+    background-image: url('../assets/images/banners/Rectangle 2.svg');
     background-repeat: no-repeat;
     @include min-size(toRem(390px), toRem(448px));
     @extend %flexbox-items-space-between;

@@ -1,47 +1,63 @@
 .product {
-  margin: toRem(40px) auto 0;
-  text-align: center;
-  font-family: Satoshi;
-  padding-bottom: 15px;
-  margin-left: math.div(16, 390)*100%;
+  min-width: 198px;
 
-  &__list {
-    gap: toRem(16px);
-    margin-top: toRem(32px);
-    margin-bottom: toRem(24px);
-    overflow: auto;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  &--center {
-    padding-bottom: toRem(40px);
-    border-bottom: 1px solid $line-color;
+  &__img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
   }
 
   &__name {
-    margin-top: toRem(10px);
+    font-family: Satoshi;
     margin-bottom: toRem(4px);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__feedback-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  &__feedback-score {
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__feedback-score-max {
+    color: $primary-color;
+  }
+
+  &__price {
+    display: flex;
+    gap:5px;
   }
 }
 
 @media (min-width: 1440px) {
   .product {
-    margin: toRem(62px) auto 0;
 
-    &--center {
-      padding-bottom: toRem(64px);
-    }
-
-    &__list {
-      overflow: none;
+    &__img {
+      margin-bottom: 16px;
     }
 
     &__name {
-      margin-top: toRem(16px);
-      margin-bottom: toRem(8px);
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    &__feedback-wrapper{
+      margin-bottom: 8px;
+    }
+
+    &__feedback-score {
+      font-size: 14px;
+    }
+
+    &__price {
+      gap:10px;
     }
   }
 }

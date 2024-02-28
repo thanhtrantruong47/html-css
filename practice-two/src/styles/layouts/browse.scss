@@ -1,17 +1,15 @@
 .browse {
   background-color: $bg-secondary;
-  margin: toRem(35px) auto;
   text-align: center;
   border-radius: 1rem;
+  margin: 0 auto;
   padding: toRem(40px) 0 toRem(13px) 0;
-  font-family: Satoshi;
-  font-weight: 700;
   width: math.div(358, 390) * 100%;
+  margin-bottom: 50px;
 
   &__title {
-    padding: 0 toRem(56px);
+    padding: 0 56px;
   }
-
 
   &__wrapper {
     flex-wrap: wrap;
@@ -21,39 +19,38 @@
     @extend %flexbox-items-centered;
   }
 
-  &__desc {
-    position: absolute;
-    padding: toRem(16px) toRem(24px);
-    font-size: toRem(24px);
-  }
-
   &__img {
     border-radius: toRem(20px);
-    @include min-size(toRem(310px), toRem(190px));
-    @include max-size(toRem(310px), toRem(190px));
+    flex-basis: 50%;
+
+  }
+
+  &__wrapper-desktop {
+    display: none;
   }
 }
 
 @media (min-width: 1440px) {
   .browse {
+    padding: toRem(70px) 64px toRem(76px) 64px;
     width: 100%;
-    text-align: center;
-    margin: toRem(65px) 0;
-
-    &__wrapper {
-      padding-top: toRem(64px);
-      gap: toRem(20px);
-      padding: toRem(64px) toRem(64px) toRem(76px) toRem(64px);
-    }
+    margin-bottom: 80px;
 
     &__img {
-      @include min-size(toRem(407px), toRem(190px));
-      @include max-size(toRem(684px), toRem(289px));
+      flex-basis: 0;
+      max-width: 100%;
     }
 
-    &__desc {
-      font-size: toRem(36px);
-      padding: toRem(25px) toRem(36px);
+    &__wrapper-desktop {
+      display: flex;
+      gap: toRem(20px);
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 64px;
+    }
+
+    &__wrapper {
+      display: none;
     }
   }
 }

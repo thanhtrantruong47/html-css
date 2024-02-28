@@ -4,8 +4,6 @@
   border: none;
   font-weight: 500;
   font-size: toRem(14px);
-  width: toRem(358px);
-  height: toRem(52px);
 
   &:hover {
     background-color: $btn-primary;
@@ -22,14 +20,13 @@
   }
 
   &--contact {
-    @include max-size(toRem(311px), toRem(42px));
+    padding: 12px 80.5px;
   }
 }
 
 @media (min-width: 1440px) {
   .btn {
     font-size: toRem(16px);
-    width: toRem(218px);
 
     &--contact {
       @include min-size(toRem(349px), toRem(48px));

@@ -1,9 +1,6 @@
 .price {
-  @extend %flexbox-items-centered;
-  font-size: 1rem;
+  font-family: Satoshi;
   font-weight: 700;
-  margin-top: toRem(4px);
-  gap: toRem(5px);
 
   &__sell {
     color: $decs-color;
@@ -21,10 +18,7 @@
 }
 
 @media (min-width: 1440px) {
-
   .price {
-    gap: toRem(10px);
-    margin-top: toRem(8px);
     font-size: toRem(24px);
   }
 }

@@ -1,6 +1,6 @@
 .brand {
   background-color: $bg-color;
-  padding: toRem(39px) 0;
+  padding: toRem(39px) toRem(16px);
   min-width: toRem(390px);
 
   &__wrapper {

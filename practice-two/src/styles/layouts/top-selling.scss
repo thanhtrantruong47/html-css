@@ -1,0 +1,49 @@
+.top-selling {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-left: math.div(16, 390) * 100%;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__product {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  &__btn {
+    padding: 13.5px 153.5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top-selling {
+    padding: 64px 0 80px 0;
+
+    &__title {
+      margin-bottom: 55px;
+    }
+
+    &__product {
+      margin-bottom: 36px;
+    }
+
+    &__btn {
+      padding: 15px 80px;
+    }
+  }
+}
