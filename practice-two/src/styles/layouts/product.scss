@@ -3,6 +3,7 @@
   text-align: center;
   font-family: Satoshi;
   padding-bottom: 15px;
+  margin-left: math.div(16, 390)*100%;
 
   &__list {
     gap: toRem(16px);
@@ -19,6 +20,11 @@
     padding-bottom: toRem(40px);
     border-bottom: 1px solid $line-color;
   }
+
+  &__name {
+    margin-top: toRem(10px);
+    margin-bottom: toRem(4px);
+  }
 }
 
 @media (min-width: 1440px) {
@@ -31,6 +37,11 @@
 
     &__list {
       overflow: none;
+    }
+
+    &__name {
+      margin-top: toRem(16px);
+      margin-bottom: toRem(8px);
     }
   }
 }

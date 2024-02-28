@@ -6,6 +6,7 @@
   padding: toRem(40px) 0 toRem(13px) 0;
   font-family: Satoshi;
   font-weight: 700;
+  width: math.div(358, 390) * 100%;
 
   &__title {
     padding: 0 toRem(56px);
@@ -28,8 +29,8 @@
 
   &__img {
     border-radius: toRem(20px);
-    @include min-size(toRem(310px),toRem(190px));
-    @include max-size(toRem(310px),toRem(190px));
+    @include min-size(toRem(310px), toRem(190px));
+    @include max-size(toRem(310px), toRem(190px));
   }
 }
 
@@ -45,8 +46,8 @@
     }
 
     &__img {
-      @include min-size(toRem(407px),toRem(190px));
-      @include max-size(toRem(684px),toRem(289px));
+      @include min-size(toRem(407px), toRem(190px));
+      @include max-size(toRem(684px), toRem(289px));
     }
 
     &__desc {

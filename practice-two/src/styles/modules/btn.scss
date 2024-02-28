@@ -4,34 +4,32 @@
   border: none;
   font-weight: 500;
   font-size: toRem(14px);
+  width: toRem(358px);
+  height: toRem(52px);
 
   &:hover {
     background-color: $btn-primary;
   }
 
   &--primary {
-    width: 358px;
-    height: 52px;
     background-color: $bg-color;
     color: $text-color;
   }
 
   &--secondary {
-    width: 358px;
-    height: 52px;
     color: $text-color;
     color: $bg-color;
   }
 
   &--contact {
-    @include min-size(toRem(311px), toRem(42px));
+    @include max-size(toRem(311px), toRem(42px));
   }
 }
 
 @media (min-width: 1440px) {
   .btn {
     font-size: toRem(16px);
-    width: 218px;
+    width: toRem(218px);
 
     &--contact {
       @include min-size(toRem(349px), toRem(48px));

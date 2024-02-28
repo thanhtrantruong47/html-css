@@ -6,6 +6,7 @@
   &__wrapper {
     flex-wrap: wrap;
     @extend %flexbox-items-space-between;
+    width: math.div(358, 390) * 100%;
   }
 
   &__img-desktop {

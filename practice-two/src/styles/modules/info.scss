@@ -1,7 +1,7 @@
 .info {
   @extend %flexbox-items-space-between;
   flex-wrap: wrap;
-  padding: 0 40px;
+  padding: 0 toRem(40px);
   gap: toRem(12px);
   column-gap: auto;
   margin: 0 auto;
@@ -13,11 +13,11 @@
 
   &__line {
     padding: 0 0 0 27.5px;
-      border-left: 1px solid $line-color;
+    border-left: 1px solid $line-color;
   }
 
   &__head {
-    font-size: 1.2rem;
+    font-size: toRem(24px);
     font-weight: 700;
     padding: toRem(6px) 0;
     margin-right: auto;
@@ -39,7 +39,7 @@
     }
 
     &__line {
-      padding: 0 36px;
+      padding: 0 toRem(36px);
       border-right: 1px solid $line-color;
     }
 

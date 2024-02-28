@@ -2,6 +2,8 @@
   margin: toRem(15px) 0 toRem(50px) 0;
   font-family: Satoshi;
   overflow: hidden;
+  width: math.div(358, 390) * 100%;
+  margin: 0 auto;
 
   &__box {
     display: grid;
