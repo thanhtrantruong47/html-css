@@ -36,13 +36,14 @@
 
 @media (min-width: 1440px) {
   .browse {
+    width: 100%;
     text-align: center;
-    margin: toRem(65px) auto;
-    padding: toRem(70px) 0 toRem(74px) 0;
+    margin: toRem(65px) 0;
 
     &__wrapper {
       padding-top: toRem(64px);
       gap: toRem(20px);
+      padding: toRem(64px) toRem(64px) toRem(76px) toRem(64px);
     }
 
     &__img {
