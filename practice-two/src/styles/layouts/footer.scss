@@ -36,6 +36,7 @@
       background-position: 10px 10px;
       @include min-size(toRem(311px), toRem(42px));
       padding: 2px 50px;
+      border: 1px solid $secondary-color;
     }
   }
 

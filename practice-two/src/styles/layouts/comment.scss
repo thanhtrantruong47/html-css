@@ -33,6 +33,7 @@
 
 @media (min-width: 1440px) {
   .comment {
+    width: 100%;
     margin: toRem(10px) 0 toRem(80px) 0;
 
     &__list {
