@@ -1,49 +1,87 @@
 .comment {
-  margin: toRem(15px) 0 toRem(50px) 0;
   font-family: Satoshi;
-  overflow: hidden;
-  width: math.div(358, 390) * 100%;
-  margin: 0 auto;
+  margin-bottom: toRem(49.81px);
+  width: math.div(358, 390) *100%;
 
-  &__box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: toRem(20px);
-  }
-
-  &__head {
-    @extend %flexbox-items-space-between;
-    align-items: flex-end;
+  &__heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: toRem(24px);
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
     gap: toRem(20px);
-    margin-top: toRem(24px);
+
   }
 
-  &__list-name {
-    margin-top: toRem(15.5px);
+  &-item {
+    padding: toRem(24px);
+    border: 1px solid $line-color;
+    border-radius: toRem(20px);
+    min-width: toRem(358px);
+    align-items: center;
+  }
+
+  &-feedback {
+    margin-bottom: toRem(12px);
+  }
+
+  &-item__name {
+    font-size: toRem(16px);
+    font-weight: 700;
     margin-bottom: toRem(11.5px);
+    display: flex;
+    align-items: center;
   }
 
-  &__action {
-    display: flex;
+  &-item__img {
+    @include img-size(toRem(19px), toRem(19px));
+    margin-left: toRem(5.75px);
+  }
+
+  &-item__desc {
+    font-size: (14px);
+    font-weight: 400;
+    line-height: toRem(20px);
   }
 }
 
 @media (min-width: 1440px) {
   .comment {
     width: 100%;
-    margin: toRem(10px) 0 toRem(80px) 0;
+    margin-bottom: toRem(80.42px);
 
-    &__list {
-      gap: toRem(20px);
-      margin-top: toRem(40px);
+    &__heading {
+      margin-bottom: toRem(20px);
     }
 
-    &__list-name {
-      margin-top: toRem(15px);
+    &-item {
+      padding: toRem(28px) toRem(32px);
+    }
+
+    &-feedback {
+      margin-bottom: toRem(15px);
+    }
+
+    &-item__name {
+      font-size: toRem(20px);
       margin-bottom: toRem(12px);
+    }
+
+    &-item__img {
+      @include img-size(toRem(19.5px), toRem(19.5px));
+      margin-left: toRem(6.25px);
+    }
+
+
+    &-item__desc {
+      font-size: toRem(14px);
+      font-weight: 400;
+      line-height: toRem(22px);
     }
   }
 }

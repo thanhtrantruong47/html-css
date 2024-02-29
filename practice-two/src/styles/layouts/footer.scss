@@ -3,6 +3,11 @@
   margin-top: toRem(49.81px);
   font-family: Satoshi;
 
+  &__title {
+    margin: auto;
+    font-size: toRem(32px);
+  }
+
   &__contact {
     @extend %flexbox-items-space-between;
     @extend %flexbox-items-centered;
@@ -112,6 +117,12 @@
 @media (min-width: 1440px) {
   .footer {
     margin-top: toRem(80.42px);
+
+    &__title {
+      margin: 0;
+      font-size: toRem(40px);
+      padding-right:212px ;
+    }
 
     &__contact {
       padding: toRem(43px) toRem(64px);

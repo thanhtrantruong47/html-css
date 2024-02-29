@@ -2,12 +2,11 @@
   margin-bottom: 4px;
 
   &__img {
-    @include img-size(toRem(15.47px),toRem(15.47px));
+    @include img-size(toRem(15.47px), toRem(15.47px));
   }
 }
 
 .evaluate-comment {
-  width: auto;
   &__img {
     @include img-size(toRem(19.19px));
   }
@@ -15,20 +14,14 @@
 
 @media (min-width: 1440px) {
   .evaluate-product {
-  //   gap: toRem(5.31px);
-
     &__img {
-      @include img-size(toRem(18.49px),toRem(18.49px));
+      @include img-size(toRem(18.49px), toRem(18.49px));
     }
+  }
 
-  //   &__num {
-  //     font-size: toRem(14px);
-  //   }
-  // }
-
-  // .evaluate-comment {
-  //   &__img {
-  //     @include img-size(toRem(22.58px));
-  //   }
+  .evaluate-comment {
+    &__img {
+      @include img-size(toRem(22.58px));
+    }
   }
 }
