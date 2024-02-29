@@ -5,10 +5,10 @@
   margin: 0 auto;
   padding: toRem(40px) 0 toRem(13px) 0;
   width: math.div(358, 390) * 100%;
-  margin-bottom: 50px;
+  margin-bottom: toRem(50px);
 
   &__title {
-    padding: 0 56px;
+    padding: toRem(0px) toRem(56px);
   }
 
   &__wrapper {
@@ -32,9 +32,9 @@
 
 @media (min-width: 1440px) {
   .browse {
-    padding: toRem(70px) 64px toRem(76px) 64px;
+    padding: toRem(70px) toRem(64px) toRem(76px) toRem(64px);
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: toRem(80px);
 
     &__img {
       flex-basis: 0;
@@ -46,7 +46,7 @@
       gap: toRem(20px);
       flex-wrap: wrap;
       justify-content: center;
-      padding-top: 64px;
+      padding-top: toRem(64px);
     }
 
     &__wrapper {

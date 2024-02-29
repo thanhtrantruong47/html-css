@@ -1,5 +1,5 @@
 .evaluate-product {
-  margin-bottom: 4px;
+  margin-bottom: toRem(4px);
 
   &__img {
     @include img-size(toRem(15.47px), toRem(15.47px));

@@ -1,12 +1,12 @@
 .brand {
   background-color: $bg-color;
   padding: toRem(39px) toRem(16px);
-  min-width: toRem(390px);
 
   &__wrapper {
     flex-wrap: wrap;
     @extend %flexbox-items-centered;
-    gap: 22px;
+    gap: toRem(22px);
+    justify-content: center;
   }
 
   &__img-desktop {
@@ -22,7 +22,6 @@
 
   .brand__wrapper {
     justify-content: space-between;
-    gap: 22px;
   }
 
   .brand__img {

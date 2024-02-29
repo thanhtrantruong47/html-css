@@ -1,28 +1,28 @@
 .product {
-  min-width: 198px;
+  min-width: toRem(189px);
 
   &__img {
     width: 100%;
-    margin-bottom: 10px;
-    border-radius: 20px;
+    margin-bottom: toRem(10px);
+    border-radius: toRem(20px);
   }
 
   &__name {
     font-family: Satoshi;
     margin-bottom: toRem(4px);
     font-weight: 700;
-    font-size: 16px;
+    font-size: toRem(16px);
   }
 
   &__feedback-wrapper{
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: toRem(11px);
   }
 
   &__feedback-score {
     font-family: Satoshi;
-    font-size: 12px;
+    font-size: toRem(12px);
     font-weight: 400;
   }
 
@@ -32,7 +32,7 @@
 
   &__price {
     display: flex;
-    gap:5px;
+    gap:toRem(5px);
   }
 }
 
@@ -40,24 +40,24 @@
   .product {
 
     &__img {
-      margin-bottom: 16px;
+      margin-bottom: toRem(16px);
     }
 
     &__name {
-      margin-bottom: 8px;
-      font-size: 20px;
+      margin-bottom: toRem(8px);
+      font-size: toRem(20px);
     }
 
     &__feedback-wrapper{
-      margin-bottom: 8px;
+      margin-bottom:toRem(8px);
     }
 
     &__feedback-score {
-      font-size: 14px;
+      font-size: toRem(14px);
     }
 
     &__price {
-      gap:10px;
+      gap:toRem(10px);
     }
   }
 }

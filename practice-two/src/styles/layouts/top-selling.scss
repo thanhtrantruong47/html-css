@@ -5,13 +5,13 @@
   text-align: center;
 
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: toRem(32px);
   }
 
   &__products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 16px;
+    gap: toRem(16px);
 
     overflow: auto;
 
@@ -21,29 +21,30 @@
   }
 
   &__product {
-    margin-bottom: 24px;
+    margin-bottom: toRem(24px);
     text-align: left;
   }
 
   &__btn {
-    padding: 13.5px 153.5px;
+    padding: toRem(13.5px)toRem(153.5px);
   }
 }
 
 @media (min-width: 1440px) {
   .top-selling {
-    padding: 64px 0 80px 0;
+
+    padding: toRem(64px) toRem(0px) toRem(80px) toRem(0px);
 
     &__title {
-      margin-bottom: 55px;
+      margin-bottom: toRem(55px);
     }
 
     &__product {
-      margin-bottom: 36px;
+      margin-bottom: toRem(36px);
     }
 
     &__btn {
-      padding: 15px 80px;
+      padding: (15px) toRem(80px);
     }
   }
 }
