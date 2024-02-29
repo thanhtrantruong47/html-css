@@ -2,28 +2,5 @@
   font-family: Satoshi;
   color: $primary-color;
   font-weight: 400;
-  font-size: toRem(12px);
   display: block;
-
-  &--primary {
-    font-size: toRem(14px);
-  }
-
-  &--secondary {
-    font-size: toRem(14px);
-  }
-}
-
-@media (min-width : 1440px) {
-  .desc {
-    font-size: toRem(16px);
-
-    &--primary {
-      font-size: toRem(16px);
-    }
-
-    &--secondary {
-      font-size: toRem(14px);
-    }
-  }
 }

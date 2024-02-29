@@ -1,11 +1,5 @@
 .link {
   text-decoration: none;
-  color: $bg-color;
-}
-
-.link-primary {
-  @extend .link ;
   color: $primary-color;
-  display: block;
 }
 

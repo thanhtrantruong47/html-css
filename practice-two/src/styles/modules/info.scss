@@ -9,13 +9,20 @@
   width: 100%;
 
   &__item {
-    padding: auto;
-    margin: auto;
+    padding: 0;
+
+    &--center {
+      margin: auto;
+    }
 
     &--line {
-      float: right;
-      // border-right:1px solid $line-color;
+      padding-left: toRem(27.5px);
+      border-left: 1px solid $line-color;
     }
+  }
+
+  &__desc {
+    font-size: toRem(12px);
   }
 
   &__head {
@@ -36,9 +43,24 @@
     justify-content: space-between;
     padding: 0 0px;
 
-    &__head {
-      font-size: toRem(40px);
-      font-weight: 700;
+    &__item {
+
+      &--center {
+        margin: 0;
+      }
+
+      &--line {
+        padding: 0 toRem(32px);
+        border-right: 1px solid $line-color;
+      }
+    }
+
+      &__head {
+        font-size: toRem(40px);
+      }
+
+    &__desc {
+      font-size: toRem(16px);
     }
   }
 }

@@ -8,6 +8,10 @@
     font-size: toRem(20px);
   }
 
+  &__link {
+    color: $bg-color;
+  }
+
   &__desc {
     font-size: 0.6rem;
     color: $text-color;
