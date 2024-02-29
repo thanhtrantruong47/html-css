@@ -18,18 +18,10 @@
     color: $text-color;
     color: $bg-color;
   }
-
-  &--contact {
-    padding: 12px 80.5px;
-  }
 }
 
 @media (min-width: 1440px) {
   .btn {
     font-size: toRem(16px);
-
-    &--contact {
-      @include min-size(toRem(349px), toRem(48px));
-    }
   }
 }
