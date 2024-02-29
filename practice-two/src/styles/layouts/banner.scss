@@ -6,12 +6,10 @@
   &__wrapper {
     @extend %flexbox-items-space-between;
     @extend %flexbox-items-wraped;
-    margin: auto;
-    width: 390px;
+    margin: 0 auto;
   }
 
   &__title {
-    width: 100%;
     margin: 0 auto;
   }
 
@@ -19,23 +17,25 @@
     @extend %flexbox-items-wraped;
     padding: toRem(40px) math.div(16, 390) * 100% 0;
     gap: toRem(20px);
+    margin: 0 auto;
   }
 
   &__btn {
     margin-top: toRem(4px);
     padding: toRem(15px)toRem(141.5px);
+    margin: 0 auto;
   }
 
   &__desc {
-    width: 100%;
-    margin: auto;
     font-size: toRem(16px);
+    text-align: left;
   }
 
   &__img {
     background-image: url('../assets/images/banners/bg-banner.png');
     background-repeat: no-repeat;
     @include min-size(toRem(390px), toRem(448px));
+    max-width: 100%;
     @extend %flexbox-items-space-between;
     margin: 0 auto;
   }
@@ -68,7 +68,6 @@
       padding: toRem(103px) 0;
       min-width: toRem(596px);
       gap: toRem(32px);
-      width: math.div(358, 390) * 50%;
       text-align: left;
     }
 
@@ -77,6 +76,7 @@
       margin-top: toRem(0px);
       margin-bottom: toRem(16px);
       @include min-size(toRem(211px),toRem(52px));
+      margin: 0;
     }
 
     &__img {
