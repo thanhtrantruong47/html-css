@@ -1,6 +1,4 @@
 .btn {
-  width: 358px;
-  height: 52px;
   border-radius: toRem(62px);
   font-family: Satoshi;
   border: none;
@@ -10,33 +8,20 @@
   &:hover {
     background-color: $btn-primary;
   }
-}
 
-.btn-primary {
-  @extend .btn;
-  background-color: $bg-color;
-  color: $text-color;
-}
+  &--primary {
+    background-color: $bg-color;
+    color: $text-color;
+  }
 
-.btn-secondary {
-  @extend .btn;
-  color: $text-color;
-  color: $bg-color;
-}
-
-.btn-contact {
-  @extend .btn;
-  @include max-size(toRem(311px), toRem(42px));
+  &--secondary {
+    color: $text-color;
+    color: $bg-color;
+  }
 }
 
 @media (min-width: 1440px) {
   .btn {
     font-size: toRem(16px);
-    width: 218px;
-
-  }
-
-  .btn-contact {
-    @include min-size(toRem(349px), toRem(48px));
   }
 }

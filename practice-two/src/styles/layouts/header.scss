@@ -3,6 +3,8 @@
   padding: toRem(20px) 0;
   gap: toRem(12px);
   @extend %flexbox-items-centered;
+  width: math.div(358, 390) * 100%;
+  margin: 0 auto;
 
   &__option {
     display: flex;
@@ -36,9 +38,8 @@
     }
 
     &__option {
-      margin-left: 0;
-      gap: 0;
       justify-content: space-around;
+      margin-left: 0;
     }
 
     &__logo {

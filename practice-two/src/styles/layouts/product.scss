@@ -1,124 +1,63 @@
 .product {
-  margin: toRem(40px) auto 0;
-  text-align: center;
-  font-family: Satoshi;
-  padding-bottom: 15px;
+  min-width: toRem(189px);
 
-  &__item {
-    margin-top: toRem(32px);
-    margin-bottom: toRem(24px);
-    @extend %flexbox-items-centered;
-    gap: toRem(16px);
-    overflow: auto;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  &__card {
-    text-align: left;
-
-    &-img {
-      margin-bottom: toRem(10px);
-      width: toRem(198px);
-      max-height: toRem(200px);
-      border-radius: toRem(12.42px);
-    }
+  &__img {
+    width: 100%;
+    margin-bottom: toRem(10px);
+    border-radius: toRem(20px);
   }
 
   &__name {
-    font-size: toRem(16px);
+    font-family: Satoshi;
+    margin-bottom: toRem(4px);
     font-weight: 700;
+    font-size: toRem(16px);
   }
 
-  &__evaluate {
-    @extend %flexbox-items-centered;
-    gap: toRem(4.44px);
-    padding: toRem(4px) 0;
+  &__feedback-wrapper{
+    display: flex;
+    align-items: center;
+    gap: toRem(11px);
+  }
 
-    &-img {
-      @include img-size(toRem(15.47px));
-    }
+  &__feedback-score {
+    font-family: Satoshi;
+    font-size: toRem(12px);
+    font-weight: 400;
+  }
 
-    &-num {
-      font-size: 0.6rem;
-    }
-
-    &-desc {
-      color: $primary-color;
-    }
+  &__feedback-score-max {
+    color: $primary-color;
   }
 
   &__price {
-    @extend %flexbox-items-centered;
-    font-size: 1rem;
-    font-weight: 700;
-    gap: toRem(5px);
-
-    &-sell {
-      color: $decs-color;
-      text-decoration: line-through;
-    }
-
-    &-precent {
-      background-color: $bg-product;
-      font-size: 0.5rem;
-      border-radius: toRem(62px);
-      color: $product-color;
-      font-weight: 500;
-      padding: toRem(6px) toRem(14px);
-    }
-  }
-
-  &--bottom {
-    padding-bottom: toRem(40px);
-    border-bottom: 1px solid $line-color;
+    display: flex;
+    gap:toRem(5px);
   }
 }
 
+@media (min-width: 1440px) {
+  .product {
 
-  @media (min-width: 1440px) {
-    .product {
-      margin: toRem(62px) auto 0;
-      &__item {
-        margin-top: toRem(55px);
-        margin-bottom: toRem(36px);
-        justify-content: space-between;
-        overflow: none;
-      }
+    &__img {
+      margin-bottom: toRem(16px);
+    }
 
-      &__card {
-        &-img {
-          width: toRem(295px);
-          max-height: toRem(298px);
-          border-radius: toRem(20px);
-        }
-      }
+    &__name {
+      margin-bottom: toRem(8px);
+      font-size: toRem(20px);
+    }
 
-      &__name {
-        font-size: toRem(20px);
-      }
+    &__feedback-wrapper{
+      margin-bottom:toRem(8px);
+    }
 
-      &__evaluate {
-        gap: toRem(5.31px);
-        padding: toRem(8px) 0;
+    &__feedback-score {
+      font-size: toRem(14px);
+    }
 
-        &-img {
-          @include img-size(toRem(18.49px));
-        }
-
-        &-num {
-          font-size: toRem(14px);
-        }
-      }
-
-      &__price {
-        font-size: toRem(24px);
-      }
-
-      &--bottom {
-        padding-bottom: toRem(64px);
-      }
+    &__price {
+      gap:toRem(10px);
     }
   }
+}

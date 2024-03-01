@@ -5,9 +5,11 @@
 
   &__item {
     margin: 0 auto;
-    font-size: 20px;
-    min-width: toRem(390px);
-    width: math.div(1240, 1440) * 100%;
+    font-size: toRem(20px);
+  }
+
+  &__link {
+    color: $bg-color;
   }
 
   &__desc {

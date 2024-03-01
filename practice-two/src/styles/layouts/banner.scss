@@ -3,121 +3,104 @@
   font-family: Satoshi;
   min-width: toRem(390px);
 
-  &__item {
-    @extend .container;
+  &__wrapper {
+    @extend %flexbox-items-space-between;
+    @extend %flexbox-items-wraped;
   }
 
-  &__desc {
-    padding-top: toRem(40px);
+  &__title {
+    font-size: toRem(36px);
   }
 
   &__content {
-    max-width: toRem(315px);
-    font-size: 0.7rem;
-    padding: toRem(20px) 0;
-    color: $primary-color;
+    @extend %flexbox-items-wraped;
+    padding: toRem(40px) math.div(16, 390) * 100% 0;
+    gap: toRem(20px);
+    max-width: toRem(596px);
+    margin-left: auto;
   }
 
-  &__info {
-    @extend %flexbox-items-space-between;
-    flex-wrap: wrap;
-    max-width: toRem(278px);
-    padding: toRem(20px) 0;
-    margin: 0 toRem(40px);
+  &__btn {
+    margin-top: toRem(4px);
+    padding: toRem(15px)toRem(141.5px);
+    max-height: 48px;
   }
 
-  &__info-num {
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: toRem(6px) 0;
-
-    &--special {
-      border-left: 1px solid $line-color;
-      padding-left: toRem(27.5px);
-    }
-  }
-
-  &__info-desc {
-    display: block;
-    font-size: 0.6rem;
-    color: $primary-color;
-    font-weight: 400;
-  }
-
-  &__info--center {
-    margin: 0 auto;
+  &__desc {
+    font-size: toRem(14px);
   }
 
   &__img {
-    width: 100%;
-    max-width: toRem(390px);
+    background-image: url('../assets/images/banners/bg-banner.png');
+    background-repeat: no-repeat;
+    @include min-size(toRem(390px), toRem(448px));
+    @include max-size(toRem(596px), toRem(448px));
+    @extend %flexbox-items-space-between;
+    margin: 0 auto;
+    height: 100%;
   }
 
-  &__star {
-    display: none;
+  &__img-left {
+    margin: toRem(137px) 0 0 toRem(27px);
+    @include img-size(toRem(44px), toRem(44px));
+  }
+
+  &__img-right {
+    @include img-size(toRem(76px), toRem(76px));
+    margin: toRem(40px) toRem(21px) 0 0;
   }
 }
 
 @media (min-width: 1440px) {
- .banner {
+  .banner {
     background-image: url('../assets/images/banners/rectangle.png');
     background-repeat: no-repeat;
-    &__desc {
-      padding: toRem(103px) 0;
-    }
+    background-position: center;
+    flex-wrap: nowrap;
 
-    &__item {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    &__wrapper {
+      margin: 0 auto;
+      flex-wrap: nowrap;
+      width: 100%;
     }
 
     &__content {
-      font-size: toRem(16px);
-      padding: toRem(32px) 0;
-      max-width: toRem(545px);
-      color: $primary-color;
+      padding: toRem(103px) 0;
+      min-width: toRem(596px);
+      gap: toRem(32px);
+      text-align: left;
     }
 
-    &__info {
-      flex-wrap: nowrap;
-      padding: toRem(48px) 0 0 0;
-      max-width: toRem(596px);
-      text-align: left;
-      gap: 1rem;
+    &__title {
+      font-size: toRem(64px);
+    }
+
+    &__btn {
+      padding: toRem(15px) toRem(67.5px);
+      margin-top: toRem(0px);
+      margin-bottom: toRem(16px);
+      @include min-size(toRem(211px),toRem(52px));
       margin: 0;
     }
 
-    &__info-num {
-      font-size: toRem(40px);
-      font-weight: 700;
-
-      &--special {
-        padding-right: toRem(37.5px);
-        border-right: 1px solid $line-color;
-      }
-    }
-
-    &__info-desc {
+    &__desc {
       font-size: toRem(16px);
     }
 
     &__img {
-      display: none;
+      background-image: none;
+      min-width: toRem(744px);
     }
 
-    &__star {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: end;
+    &__img-left {
+      @include img-size(toRem(56px), toRem(56px));
+      margin-top: toRem(325px);
     }
 
-    &__star--center {
-      margin-top: toRem(297px);
-    }
-
-    &__star--right {
-      margin-left: auto;
+    &__img-right {
+      @include img-size(toRem(104px), toRem(104px));
       margin-top: toRem(86px);
+      margin-right: math.div(137, 1440) * 100%;
     }
   }
 }

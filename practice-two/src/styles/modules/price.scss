@@ -1,0 +1,24 @@
+.price {
+  font-family: Satoshi;
+  font-weight: 700;
+
+  &__sell {
+    color: $decs-color;
+    text-decoration: line-through;
+  }
+
+  &__precent {
+    background-color: $bg-product;
+    font-size: 0.5rem;
+    border-radius: toRem(62px);
+    color: $product-color;
+    font-weight: 500;
+    padding: toRem(6px) toRem(14px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .price {
+    font-size: toRem(24px);
+  }
+}

@@ -1,0 +1,27 @@
+.evaluate-product {
+  margin-bottom: toRem(4px);
+
+  &__img {
+    @include img-size(toRem(15.47px), toRem(15.47px));
+  }
+}
+
+.evaluate-comment {
+  &__img {
+    @include img-size(toRem(19.19px));
+  }
+}
+
+@media (min-width: 1440px) {
+  .evaluate-product {
+    &__img {
+      @include img-size(toRem(18.49px), toRem(18.49px));
+    }
+  }
+
+  .evaluate-comment {
+    &__img {
+      @include img-size(toRem(22.58px));
+    }
+  }
+}
