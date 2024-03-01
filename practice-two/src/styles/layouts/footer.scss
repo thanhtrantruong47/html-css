@@ -36,14 +36,14 @@
       background-repeat: no-repeat;
       background-position: center left;
       background-position: toRem(10px);
-      padding: toRem(11.5px)toRem(112px)toRem(11.5px)toRem(48px);
+      padding: toRem(11.5px) toRem(112px) toRem(11.5px) toRem(48px);
       border: 1px solid $secondary-color;
       min-height: toRem(42px);
     }
   }
 
   &__btn {
-    padding: toRem(11.5px) toRem(80.5px);
+    padding: toRem(12px) toRem(80.5px);
   }
 
   &__action {
