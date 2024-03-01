@@ -2,8 +2,8 @@
   margin: 0 auto;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $xxl) {
   .container {
-    max-width: 1240px;
+    max-width: $xxl;
   }
 }

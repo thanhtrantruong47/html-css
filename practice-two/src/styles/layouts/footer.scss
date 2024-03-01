@@ -116,7 +116,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $xxl) {
   .footer {
     &__title {
       margin: 0;

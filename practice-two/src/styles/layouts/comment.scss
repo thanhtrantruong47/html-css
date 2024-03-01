@@ -10,6 +10,10 @@
     margin-bottom: toRem(24px);
   }
 
+  &__action {
+    display: flex;
+  }
+
   &__title {
     font-size: toRem(32px);
   }
@@ -55,7 +59,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $xxl) {
   .comment {
     width: 100%;
     margin-bottom: toRem(80.42px);
