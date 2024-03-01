@@ -23,7 +23,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $xxl) {
   .navbar {
     display: grid;
     grid-template-columns: toRem(160px) toRem(321px) 1fr toRem(62px);

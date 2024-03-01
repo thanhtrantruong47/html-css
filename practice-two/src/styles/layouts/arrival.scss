@@ -29,10 +29,11 @@
 
   &__btn {
     padding: toRem(15px) toRem(153.5px);
+    width: 100%;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $xxl) {
   .arrival {
     padding: toRem(72px) toRem(0px) toRem(64px) toRem(0px);
 
@@ -47,6 +48,7 @@
 
     &__btn {
       padding: (15px) toRem(80px);
+      max-width: toRem(218px);
     }
   }
 }

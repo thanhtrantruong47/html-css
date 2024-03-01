@@ -20,7 +20,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $xxl) {
   .btn {
     font-size: toRem(16px);
   }

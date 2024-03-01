@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $xxl) {
   .browse {
     padding: toRem(70px) toRem(64px) toRem(76px) toRem(64px);
     width: 100%;

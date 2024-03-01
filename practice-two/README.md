@@ -18,7 +18,7 @@
 
 ## TIMELINE
 
-- 6 days (2024/02/15 - 2024/02/22)
+- 11 days (2024/02/15 - 2024/02/29)
 
 ## TECHNICAL NOTES
 
@@ -29,7 +29,7 @@
 
 - Work fine on Chrome browser latest version
 - Getting the code to work cross browser latest version (Chrome, MS Edge)
-- Use Parcel  for development
+- Use Parcel for development
 - Mobile/first for responsive web design
 - Support responsive for device mobile & desktop
 
