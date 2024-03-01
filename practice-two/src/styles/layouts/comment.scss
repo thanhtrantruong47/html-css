@@ -10,6 +10,10 @@
     margin-bottom: toRem(24px);
   }
 
+  &__title {
+    font-size: toRem(32px);
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,6 +62,10 @@
 
     &__heading {
       margin-bottom: toRem(20px);
+    }
+
+    &__title {
+      font-size: toRem(48px);
     }
 
     &-item {

@@ -1,27 +1,4 @@
 .title {
   font-family: Integral CF;
   font-weight: 700;
-
-  &--primary {
-    font-size: toRem(32px);
-  }
-
-  &--secondary {
-    font-size: toRem(36px);
-    font-weight: 700;
-  }
-
-}
-
-@media (min-width: 1440px) {
-  .title {
-
-    &--primary {
-      font-size: toRem(48px);
-    }
-
-    &--secondary {
-      font-size: toRem(64px);
-    }
-  }
 }

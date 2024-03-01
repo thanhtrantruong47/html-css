@@ -7,9 +7,10 @@
     @extend %flexbox-items-centered;
     gap: toRem(22px);
     justify-content: center;
+    max-width: 480px;
   }
 
-  &__img-desktop {
+  &__wrapper-xxl {
     display: none;
   }
 
@@ -20,15 +21,20 @@
 
 @media (min-width: 1440px) {
 
+  .brand {
+    max-width: 100%;
+  }
+
   .brand__wrapper {
+    display: none;
+  }
+
+  .brand__wrapper-xxl {
+    display: flex;
     justify-content: space-between;
   }
 
   .brand__img {
-    display: none;
-  }
-
-  .brand__img-desktop {
-    display: block;
+    margin: 0;
   }
 }

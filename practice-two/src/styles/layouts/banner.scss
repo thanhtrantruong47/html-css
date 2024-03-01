@@ -6,39 +6,38 @@
   &__wrapper {
     @extend %flexbox-items-space-between;
     @extend %flexbox-items-wraped;
-    margin: 0 auto;
   }
 
   &__title {
-    margin: 0 auto;
+    font-size: toRem(36px);
   }
 
   &__content {
     @extend %flexbox-items-wraped;
     padding: toRem(40px) math.div(16, 390) * 100% 0;
     gap: toRem(20px);
-    margin: 0 auto;
+    max-width: toRem(596px);
+    margin-left: auto;
   }
 
   &__btn {
     margin-top: toRem(4px);
     padding: toRem(15px)toRem(141.5px);
-    margin: 0 auto;
+    max-height: 48px;
   }
 
   &__desc {
     font-size: toRem(14px);
-    text-align: left;
-    margin: 0 auto;
   }
 
   &__img {
     background-image: url('../assets/images/banners/bg-banner.png');
     background-repeat: no-repeat;
     @include min-size(toRem(390px), toRem(448px));
-    max-width: 100%;
+    @include max-size(toRem(596px), toRem(448px));
     @extend %flexbox-items-space-between;
     margin: 0 auto;
+    height: 100%;
   }
 
   &__img-left {
@@ -70,6 +69,10 @@
       min-width: toRem(596px);
       gap: toRem(32px);
       text-align: left;
+    }
+
+    &__title {
+      font-size: toRem(64px);
     }
 
     &__btn {
