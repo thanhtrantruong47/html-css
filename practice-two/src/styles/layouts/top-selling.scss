@@ -11,7 +11,7 @@
 
   &__products {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: toRem(16px);
 
     overflow: auto;
@@ -27,9 +27,10 @@
   }
 
   &__btn {
-    padding: toRem(15px)toRem(153.5px);
+    padding: toRem(13.5px)toRem(153.5px);
     margin-right: math.div(16, 390) * 100%;
     width:  math.div(358, 374) * 100%;
+    min-height: toRem(46px);
   }
 }
 

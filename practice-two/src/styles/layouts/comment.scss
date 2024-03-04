@@ -25,20 +25,16 @@
     gap: toRem(20px);
 
   }
+}
 
-  &-item {
-    padding: toRem(24px);
-    border: 1px solid $line-color;
-    border-radius: toRem(20px);
-    min-width: toRem(358px);
-    align-items: center;
-  }
+.comment-item {
+  padding: toRem(24px);
+  border: 1px solid $line-color;
+  border-radius: toRem(20px);
+  min-width: toRem(358px);
+  align-items: center;
 
-  &-feedback {
-    margin-bottom: toRem(12px);
-  }
-
-  &-item__name {
+  &__name {
     font-size: toRem(16px);
     font-weight: 700;
     margin-bottom: toRem(11.5px);
@@ -46,18 +42,23 @@
     align-items: center;
   }
 
-  &-item__img {
+  &__img {
     @include img-size(toRem(19px), toRem(19px));
     margin-left: toRem(5.75px);
   }
 
-  &-item__desc {
+  &__desc {
     font-size: (14px);
     font-weight: 400;
     line-height: toRem(20px);
     color: $primary-color;
   }
 }
+
+.comment-feedback {
+  margin-bottom: toRem(12px);
+}
+
 
 @media (min-width: $desktop) {
   .comment {
@@ -71,30 +72,29 @@
     &__title {
       font-size: toRem(48px);
     }
+  }
 
-    &-item {
-      padding: toRem(28px) toRem(32px);
-    }
+  .comment-item {
+    padding: toRem(28px) toRem(32px);
 
-    &-feedback {
-      margin-bottom: toRem(15px);
-    }
-
-    &-item__name {
+    &__name {
       font-size: toRem(20px);
       margin-bottom: toRem(12px);
     }
 
-    &-item__img {
+    &__img {
       @include img-size(toRem(19.5px), toRem(19.5px));
       margin-left: toRem(6.25px);
     }
 
-
-    &-item__desc {
+    &__desc {
       font-size: toRem(14px);
       font-weight: 400;
       line-height: toRem(22px);
     }
+  }
+
+  .comment-feedback {
+    margin-bottom: toRem(15px);
   }
 }

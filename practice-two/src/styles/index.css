@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.footer .copyright, .footer__contact, .browse__wrapper, .browse__wrapper-xxl, .brand__wrapper, .navbar {
+.copyright, .footer__contact, .browse__wrapper, .browse__wrapper-xxl, .brand__wrapper, .navbar {
   display: flex;
   align-items: center;
 }
@@ -158,12 +158,12 @@ html {
   src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
   src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff") format("woff"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular") format("svg");
 }
-.container, .footer .copyright {
+.container, .copyright {
   margin: 0 auto;
 }
 
 @media (min-width: 1440px) {
-  .container, .footer .copyright {
+  .container, .copyright {
     max-width: 1240px;
   }
 }
@@ -259,7 +259,9 @@ html {
     background-repeat: no-repeat;
     background-position: 0.6rem 0.6rem;
     padding: 0.1rem 2.6rem;
-    border: 1px solid #f0f0f0;
+    border: 1px solid white;
+    background-color: #f0f0f0;
+    outline: none;
   }
 }
 .banner {
@@ -270,7 +272,7 @@ html {
 .banner__title {
   font-size: 1.8rem;
   margin: 0 auto;
-  line-height: 57px;
+  line-height: 34px;
 }
 .banner__content {
   padding: 2rem 4.1025641026% 0;
@@ -281,7 +283,7 @@ html {
 .banner__btn {
   margin-top: 0.2rem;
   padding: 0.75rem 7.075rem;
-  max-height: 48px;
+  min-height: 52px;
   width: 100%;
 }
 .banner__desc {
@@ -327,14 +329,13 @@ html {
   }
   .banner__title {
     font-size: 3.2rem;
+    line-height: 57px;
   }
   .banner__btn {
     padding: 0.75rem 3.375rem;
     margin-top: 0rem;
     margin-bottom: 0.8rem;
-    min-width: 10.55rem;
-    min-height: 2.6rem;
-    max-width: 10.9rem;
+    width: max-content;
   }
   .banner__desc {
     font-size: 0.8rem;
@@ -412,7 +413,7 @@ html {
 }
 .browse__img {
   border-radius: 1rem;
-  width: 50%;
+  flex-basis: 50%;
   min-height: max-content;
 }
 .browse__wrapper-xxl {
@@ -465,15 +466,13 @@ html {
   overflow: hidden;
   gap: 1rem;
 }
+
 .comment-item {
   padding: 1.2rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   min-width: 17.9rem;
   align-items: center;
-}
-.comment-feedback {
-  margin-bottom: 0.6rem;
 }
 .comment-item__name {
   font-size: 0.8rem;
@@ -494,6 +493,10 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.comment-feedback {
+  margin-bottom: 0.6rem;
+}
+
 @media (min-width: 1440px) {
   .comment {
     width: 100%;
@@ -508,9 +511,6 @@ html {
   .comment-item {
     padding: 1.4rem 1.6rem;
   }
-  .comment-feedback {
-    margin-bottom: 0.75rem;
-  }
   .comment-item__name {
     font-size: 1rem;
     margin-bottom: 0.6rem;
@@ -524,6 +524,9 @@ html {
     font-size: 0.7rem;
     font-weight: 400;
     line-height: 1.1rem;
+  }
+  .comment-feedback {
+    margin-bottom: 0.75rem;
   }
 }
 .footer {
@@ -563,6 +566,7 @@ html {
   padding: 0.575rem 5.6rem 0.575rem 2.4rem;
   border: 1px solid #f0f0f0;
   min-height: 2.1rem;
+  outline: none;
 }
 .footer__btn {
   padding: 0.6rem 4.025rem;
@@ -608,11 +612,12 @@ html {
   display: flex;
   gap: 0.6rem;
 }
-.footer .footer__icon {
+.footer__icon {
   width: 1.4rem;
   height: 1.4rem;
 }
-.footer .copyright {
+
+.copyright {
   margin-bottom: 3.863rem;
   margin-top: 0.8rem;
   flex-wrap: wrap;
@@ -622,7 +627,7 @@ html {
   font-size: 0.7rem;
   color: rgba(0, 0, 0, 0.6);
 }
-.footer .copyright__img {
+.copyright__img {
   width: 1.998rem;
   height: 1.287rem;
 }
@@ -676,14 +681,14 @@ html {
     grid-template-rows: auto;
     gap: 5.6575rem;
   }
-  .footer .copyright {
+  .copyright {
     flex-direction: row;
     font-size: 0.8rem;
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 4.0985rem;
   }
-  .footer .copyright__img {
+  .copyright__img {
     width: 2.3305rem;
     height: 1.5015rem;
   }
@@ -699,7 +704,7 @@ html {
 }
 .arrival__products {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
   overflow: auto;
 }
@@ -716,8 +721,9 @@ html {
   width: 95.7219251337%;
 }
 .arrival__btn {
-  padding: 0.75rem 7.675rem;
+  padding: 0.675rem 7.675rem;
   width: 100%;
+  min-height: 2.3rem;
 }
 
 @media (min-width: 1440px) {
@@ -753,7 +759,7 @@ html {
 }
 .top-selling__products {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
   overflow: auto;
 }
@@ -765,9 +771,10 @@ html {
   text-align: left;
 }
 .top-selling__btn {
-  padding: 0.75rem 7.675rem;
+  padding: 0.675rem 7.675rem;
   margin-right: 4.1025641026%;
   width: 95.7219251337%;
+  min-height: 2.3rem;
 }
 
 @media (min-width: 1440px) {
@@ -846,9 +853,6 @@ html {
 }
 .info__item {
   width: max-content;
-  text-align: left;
-  display: grid;
-  grid-template-columns: auto;
   margin: 0 auto;
 }
 

@@ -10,9 +10,8 @@
 
   &__products {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: toRem(16px);
-
     overflow: auto;
 
     &::-webkit-scrollbar {
@@ -32,8 +31,9 @@
   }
 
   &__btn {
-    padding: toRem(15px) toRem(153.5px);
+    padding: toRem(13.5px) toRem(153.5px);
     width: 100%;
+    min-height: toRem(46px);
   }
 }
 

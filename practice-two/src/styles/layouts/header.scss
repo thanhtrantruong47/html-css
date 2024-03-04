@@ -61,7 +61,9 @@
       background-repeat: no-repeat;
       background-position: toRem(12px) toRem(12px);
       padding: toRem(2px) toRem(52px);
-      border: 1px solid $secondary-color;
+      border: 1px solid white;
+      background-color: $secondary-color;
+      outline: none;
     }
   }
 }

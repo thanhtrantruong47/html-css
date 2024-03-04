@@ -20,26 +20,27 @@
     gap: toRem(32px);
     width: math.div(358, 390) * 100%;
     margin-bottom: toRem(31.58px);
+  }
 
-    &-box {
-      display: flex;
-      flex-direction: column;
-      gap: toRem(12px);
-      margin: 0 auto;
-      max-width: toRem(311px);
-      font-size: toRem(14px);
-    }
+  &__contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(12px);
+    margin: 0 auto;
+    max-width: toRem(311px);
+    font-size: toRem(14px);
+  }
 
-    &-form {
-      border-radius: toRem(62px);
-      background-image: url("../assets/images/footers/email-icon.svg");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-position: toRem(10px);
-      padding: toRem(11.5px) toRem(112px) toRem(11.5px) toRem(48px);
-      border: 1px solid $secondary-color;
-      min-height: toRem(42px);
-    }
+  &__contact-form {
+    border-radius: toRem(62px);
+    background-image: url("../assets/images/footers/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position: toRem(10px);
+    padding: toRem(11.5px) toRem(112px) toRem(11.5px) toRem(48px);
+    border: 1px solid $secondary-color;
+    min-height: toRem(42px);
+    outline: none;
   }
 
   &__btn {
@@ -80,13 +81,13 @@
     flex-direction: column;
     justify-content: space-around;
     gap: toRem(14px);
+  }
 
-    &-head {
-      font-weight: 500;
-      letter-spacing: toRem(3px);
-      text-transform: uppercase;
-      color: $bg-color;
-    }
+  &__item-head {
+    font-weight: 500;
+    letter-spacing: toRem(3px);
+    text-transform: uppercase;
+    color: $bg-color;
   }
 
   &__social {
@@ -94,25 +95,25 @@
     gap: toRem(12px);
   }
 
-  .footer__icon {
+  &__icon {
     @include img-size(toRem(28px));
   }
+}
 
-  .copyright {
-    @extend .container;
-    margin-bottom: toRem(77.26px);
-    margin-top: toRem(16px);
-    @extend %flexbox-items-centered;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    gap: toRem(16px);
-    font-size: toRem(14px);
-    color: $primary-color;
+.copyright {
+  @extend .container;
+  margin-bottom: toRem(77.26px);
+  margin-top: toRem(16px);
+  @extend %flexbox-items-centered;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: toRem(16px);
+  font-size: toRem(14px);
+  color: $primary-color;
 
-    &__img {
-      @include img-size(toRem(39.96px), toRem(25.74px))
-    }
+  &__img {
+    @include img-size(toRem(39.96px), toRem(25.74px))
   }
 }
 
@@ -128,18 +129,18 @@
       padding: toRem(36px) toRem(64px);
       margin-bottom: toRem(50px);
       font-size: toRem(16px);
+    }
 
-      &-box {
-        min-width: toRem(349px);
-        gap: toRem(14px);
-        margin: 0;
-        font-size: toRem(16px);
-      }
+    &__contact-box {
+      min-width: toRem(349px);
+      gap: toRem(14px);
+      margin: 0;
+      font-size: toRem(16px);
+    }
 
-      &-form {
-        min-height: toRem(52px);
-        font-weight: 400;
-      }
+    &__contact-form {
+      min-height: toRem(52px);
+      font-weight: 400;
     }
 
     &__btn {
@@ -174,17 +175,17 @@
       grid-template-rows: auto;
       gap: toRem(113.15px);
     }
+  }
 
-    .copyright {
-      flex-direction: row;
-      font-size: toRem(16px);
-      justify-content: space-between;
-      margin-top: toRem(20px);
-      margin-bottom: toRem(81.97px);
+  .copyright {
+    flex-direction: row;
+    font-size: toRem(16px);
+    justify-content: space-between;
+    margin-top: toRem(20px);
+    margin-bottom: toRem(81.97px);
 
-      &__img {
-        @include img-size(toRem(46.61px), toRem(30.03px))
-      }
+    &__img {
+      @include img-size(toRem(46.61px), toRem(30.03px))
     }
   }
 }

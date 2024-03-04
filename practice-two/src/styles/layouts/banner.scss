@@ -11,7 +11,7 @@
   &__title {
     font-size: toRem(36px);
     margin: 0 auto;
-    line-height: 57px;
+    line-height: 34px;
   }
 
   &__content {
@@ -25,7 +25,7 @@
   &__btn {
     margin-top: toRem(4px);
     padding: toRem(15px)toRem(141.5px);
-    max-height: 48px;
+    min-height: 52px;
     width: 100%;
   }
 
@@ -76,14 +76,14 @@
 
     &__title {
       font-size: toRem(64px);
+      line-height: 57px;
     }
 
     &__btn {
       padding: toRem(15px) toRem(67.5px);
       margin-top: toRem(0px);
       margin-bottom: toRem(16px);
-      @include min-size(toRem(211px), toRem(52px));
-      max-width: toRem(218px);
+      width: max-content;
     }
 
     &__desc {
