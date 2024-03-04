@@ -12,7 +12,7 @@
   }
 }
 
-@media (min-width: $xxl) {
+@media (min-width: $desktop) {
   .evaluate-product {
     &__img {
       @include img-size(toRem(18.49px), toRem(18.49px));

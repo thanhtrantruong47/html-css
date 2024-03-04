@@ -1,5 +1,7 @@
 .product {
   min-width: toRem(189px);
+  flex-direction: column;
+  align-self: flex-end;
 
   &__img {
     width: 100%;
@@ -36,7 +38,7 @@
   }
 }
 
-@media (min-width: $xxl) {
+@media (min-width: $desktop) {
   .product {
 
     &__img {

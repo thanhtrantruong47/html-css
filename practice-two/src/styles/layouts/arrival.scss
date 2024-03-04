@@ -37,7 +37,7 @@
   }
 }
 
-@media (min-width: $xxl) {
+@media (min-width: $desktop) {
   .arrival {
     margin: 0;
     padding: toRem(72px) toRem(0px) 0 toRem(0px);
@@ -58,7 +58,7 @@
 
     &__btn {
       padding: (15px) toRem(80px);
-      max-width: toRem(218px);
+      width: max-content;
     }
   }
 }

@@ -22,8 +22,8 @@
 
   &__img {
     border-radius: toRem(20px);
-    flex-basis: 50%;
-
+    width: 50%;
+    min-height: max-content;
   }
 
   &__wrapper-xxl {
@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width: $xxl) {
+@media (min-width: $desktop) {
   .browse {
     padding: toRem(70px) toRem(64px) toRem(76px) toRem(64px);
     width: 100%;
@@ -43,7 +43,8 @@
 
     &__img {
       flex-basis: 0;
-      max-width: 100%;
+      width: 100%;
+      height: max-content;
     }
 
     &__wrapper-xxl {

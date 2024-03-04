@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width: $xxl) {
+@media (min-width: $desktop) {
   .top-selling {
     margin: 0;
 
@@ -50,7 +50,8 @@
 
     &__btn {
       padding: (15px) toRem(80px);
-      max-width: toRem(218px);
+      width: max-content;
+      margin-right: 0;
     }
   }
 }
