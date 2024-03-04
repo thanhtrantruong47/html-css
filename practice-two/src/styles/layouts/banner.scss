@@ -34,7 +34,7 @@
   }
 
   &__img {
-    background-image: url('../assets/images/banners/bg-banner.png');
+    background-image: url('../assets/images/banners/bg-banner.svg');
     background-repeat: no-repeat;
     @include min-size(toRem(390px), toRem(448px));
     @include max-size(toRem(596px), toRem(448px));
@@ -83,7 +83,6 @@
       margin-top: toRem(0px);
       margin-bottom: toRem(16px);
       @include min-size(toRem(211px),toRem(52px));
-      margin: 0;
       max-width: toRem(218px);
     }
 

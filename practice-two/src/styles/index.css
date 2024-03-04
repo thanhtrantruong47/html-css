@@ -288,7 +288,7 @@ html {
   margin: 0 auto;
 }
 .banner__img {
-  background-image: url("../assets/images/banners/bg-banner.png");
+  background-image: url("../assets/images/banners/bg-banner.svg");
   background-repeat: no-repeat;
   min-width: 19.5rem;
   min-height: 22.4rem;
@@ -335,7 +335,6 @@ html {
     margin-bottom: 0.8rem;
     min-width: 10.55rem;
     min-height: 2.6rem;
-    margin: 0;
     max-width: 10.9rem;
   }
   .banner__desc {
@@ -736,10 +735,8 @@ html {
 }
 .arrival {
   padding-top: 2.5rem;
-  padding-bottom: 2rem;
   margin-left: 4.1025641026%;
   text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .arrival__title {
   margin-bottom: 1.6rem;
@@ -758,6 +755,11 @@ html {
   margin-bottom: 1.2rem;
   text-align: left;
 }
+.arrival__box-btn {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 95.7219251337%;
+}
 .arrival__btn {
   padding: 0.75rem 7.675rem;
   width: 100%;
@@ -765,7 +767,8 @@ html {
 
 @media (min-width: 1240px) {
   .arrival {
-    padding: 3.6rem 0rem 3.2rem 0rem;
+    margin: 0;
+    padding: 3.6rem 0rem 0 0rem;
   }
   .arrival__title {
     margin-bottom: 2.75rem;
@@ -773,6 +776,10 @@ html {
   }
   .arrival__product {
     margin-bottom: 1.8rem;
+  }
+  .arrival__box-btn {
+    width: 100%;
+    padding-bottom: 3.2rem;
   }
   .arrival__btn {
     padding: 15px 4rem;
@@ -804,11 +811,13 @@ html {
 }
 .top-selling__btn {
   padding: 0.75rem 7.675rem;
-  width: 100%;
+  margin-right: 4.1025641026%;
+  width: 95.7219251337%;
 }
 
 @media (min-width: 1240px) {
   .top-selling {
+    margin: 0;
     padding: 3.2rem 0rem 4rem 0rem;
   }
   .top-selling__title {
