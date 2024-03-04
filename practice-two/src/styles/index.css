@@ -162,7 +162,7 @@ html {
   margin: 0 auto;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .container, .footer .copyright {
     max-width: 1240px;
   }
@@ -193,7 +193,7 @@ html {
   padding: 0.45rem 0;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .sign-up__item {
     display: flex;
     line-height: normal;
@@ -226,7 +226,7 @@ html {
   background-color: #fff;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .navbar {
     display: grid;
     grid-template-columns: 8rem 16.05rem 1fr 3.1rem;
@@ -308,7 +308,7 @@ html {
   margin: 2rem 1.05rem 0 0;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .banner {
     background-image: url("../assets/images/banners/rectangle.png");
     background-repeat: no-repeat;
@@ -373,7 +373,7 @@ html {
   margin: auto;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .brand {
     max-width: 100%;
   }
@@ -420,7 +420,7 @@ html {
   gap: 0.25rem;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .product__img {
     margin-bottom: 0.8rem;
   }
@@ -465,7 +465,7 @@ html {
   display: none;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .browse {
     padding: 3.5rem 3.2rem 3.8rem 3.2rem;
     width: 100%;
@@ -539,7 +539,7 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .comment {
     width: 100%;
     margin-bottom: 4.021rem;
@@ -672,7 +672,7 @@ html {
   height: 1.287rem;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .footer__title {
     margin: 0;
     font-size: 2rem;
@@ -765,7 +765,7 @@ html {
   width: 100%;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .arrival {
     margin: 0;
     padding: 3.6rem 0rem 0 0rem;
@@ -815,7 +815,7 @@ html {
   width: 95.7219251337%;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .top-selling {
     margin: 0;
     padding: 3.2rem 0rem 4rem 0rem;
@@ -851,7 +851,7 @@ html {
   color: black;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .btn {
     font-size: 0.8rem;
   }
@@ -896,7 +896,7 @@ html {
   margin: 0 auto;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .info {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -936,7 +936,7 @@ html {
   height: 0.9595rem;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .evaluate-product__img {
     width: 0.9245rem;
     height: 0.9245rem;
@@ -963,7 +963,7 @@ html {
   padding: 0.3rem 0.7rem;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .price {
     font-size: 1.2rem;
   }
