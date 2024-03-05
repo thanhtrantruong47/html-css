@@ -895,6 +895,10 @@ html {
   width: 0.7735rem;
   height: 0.7735rem;
 }
+.evaluate-product__img--half {
+  width: 0.368rem;
+  height: 0.6995rem;
+}
 
 .evaluate-comment__img {
   width: 0.9595rem;
@@ -905,6 +909,10 @@ html {
   .evaluate-product__img {
     width: 0.9245rem;
     height: 0.9245rem;
+  }
+  .evaluate-product__img--half {
+    width: 0.4895rem;
+    height: 0.836rem;
   }
   .evaluate-comment__img {
     width: 1.129rem;
