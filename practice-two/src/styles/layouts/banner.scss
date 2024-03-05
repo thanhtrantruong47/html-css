@@ -37,7 +37,7 @@
   &__img {
     background-image: url('../assets/images/banners/bg-banner.svg');
     @extend %flexbox-items-space-between;
-    @include min-size(toRem(390px), toRem(448px));
+    @include min-size(toRem(390px), toRem(447px));
     margin: 0 auto;
     height: 100%;
   }

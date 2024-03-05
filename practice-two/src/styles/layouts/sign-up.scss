@@ -17,11 +17,12 @@
     color: $text-color;
     text-align: center;
     padding: toRem(9px) 0;
-
   }
 
   &__advertise {
     color: $text-color;
+    text-decoration: none;
+    border-bottom: 1px solid;
   }
 
   &__off {

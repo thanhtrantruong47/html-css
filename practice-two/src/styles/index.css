@@ -187,6 +187,8 @@ html {
 }
 .sign-up__advertise {
   color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 .sign-up__off {
   display: none;
@@ -293,7 +295,7 @@ html {
 .banner__img {
   background-image: url("../assets/images/banners/bg-banner.svg");
   min-width: 19.5rem;
-  min-height: 22.4rem;
+  min-height: 22.35rem;
   margin: 0 auto;
   height: 100%;
 }
