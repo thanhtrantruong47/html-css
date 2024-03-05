@@ -5,7 +5,7 @@
 
   &__wrapper {
     @extend %flexbox-items-space-between;
-    @extend %flexbox-items-wraped;
+    @extend %flexbox-items-wrapped;
   }
 
   &__title {
@@ -15,7 +15,7 @@
   }
 
   &__content {
-    @extend %flexbox-items-wraped;
+    @extend %flexbox-items-wrapped;
     padding: toRem(40px) math.div(16, 390) * 100% 0;
     gap: toRem(20px);
     margin-left: auto;
