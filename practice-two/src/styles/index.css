@@ -714,6 +714,7 @@ html {
 .arrival__product {
   margin-bottom: 1.2rem;
   text-align: left;
+  height: max-content;
 }
 .arrival__box-btn {
   padding-bottom: 2rem;
@@ -761,6 +762,7 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
+  height: max-content;
   overflow: auto;
 }
 .top-selling__products::-webkit-scrollbar {
@@ -929,7 +931,7 @@ html {
   }
 }
 .product {
-  min-width: 9.45rem;
+  min-width: 9.9rem;
   flex-direction: column;
   align-self: flex-end;
 }
