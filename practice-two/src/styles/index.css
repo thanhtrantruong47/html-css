@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.copyright, .footer__contact, .browse__wrapper, .browse__wrapper-xxl, .brand__wrapper, .navbar {
+.navbar, .copyright, .footer__contact, .browse__wrapper, .browse__wrapper-xxl, .brand__wrapper {
   display: flex;
   align-items: center;
 }
@@ -208,63 +208,15 @@ html {
     display: block;
   }
 }
-.navbar {
+.header {
   font-family: Satoshi;
   padding: 1rem 0;
-  gap: 0.6rem;
-  width: 91.7948717949%;
   margin: 0 auto;
-}
-.navbar__option {
-  display: flex;
-  margin-left: auto;
-  gap: 0.5rem;
-}
-.navbar__list, .navbar__search {
-  display: none;
-}
-.navbar__nav {
-  border: none;
-  background-color: #fff;
 }
 
 @media (min-width: 1440px) {
-  .navbar {
-    display: grid;
-    grid-template-columns: 8rem 16.05rem 1fr 3.1rem;
-    gap: 2rem;
-    font-size: 0.5rem;
-    font-size: 0.8rem;
-    align-items: center;
+  .header {
     padding: 1.2rem 0;
-  }
-  .navbar__nav, .navbar__option-search {
-    display: none;
-  }
-  .navbar__option {
-    justify-content: space-around;
-    margin-left: 0;
-  }
-  .navbar__logo {
-    width: 100%;
-  }
-  .navbar__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar__search {
-    display: block;
-    height: 2.4rem;
-    border-radius: 3.1rem;
-    width: 100%;
-    background-image: url("../assets/images/headers/search.svg");
-    background-repeat: no-repeat;
-    background-position: 0.6rem 0.6rem;
-    padding: 0.1rem 2.6rem;
-    border: 1px solid white;
-    background-color: #f0f0f0;
-    outline: none;
   }
 }
 .banner {
@@ -996,6 +948,61 @@ html {
   }
   .product__price {
     gap: 0.5rem;
+  }
+}
+.navbar {
+  gap: 0.6rem;
+  width: 91.7948717949%;
+  gap: 0.6rem;
+}
+.navbar__option {
+  display: flex;
+  margin-left: auto;
+  gap: 0.5rem;
+}
+.navbar__list, .navbar__search {
+  display: none;
+}
+.navbar__nav {
+  border: none;
+  background-color: #fff;
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 8rem 16.05rem 1fr 3.1rem;
+    gap: 2rem;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .navbar__nav, .navbar__option-search {
+    display: none;
+  }
+  .navbar__option {
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  .navbar__logo {
+    width: 100%;
+  }
+  .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__search {
+    display: block;
+    height: 2.4rem;
+    border-radius: 3.1rem;
+    width: 100%;
+    background-image: url("../assets/images/headers/search.svg");
+    background-repeat: no-repeat;
+    background-position: 0.6rem 0.6rem;
+    padding: 0.1rem 2.6rem;
+    border: 1px solid white;
+    background-color: #f0f0f0;
+    outline: none;
   }
 }
 
