@@ -283,13 +283,12 @@ html {
 .banner__btn {
   margin-top: 0.2rem;
   padding: 0.75rem 7.075rem;
-  min-height: 52px;
+  height: 52px;
   width: 100%;
 }
 .banner__desc {
   font-size: 0.7rem;
   margin: 0 auto;
-  line-height: 1rem;
 }
 .banner__img {
   background-image: url("../assets/images/banners/bg-banner.svg");
@@ -339,7 +338,6 @@ html {
   }
   .banner__desc {
     font-size: 0.8rem;
-    line-height: 1.1rem;
   }
   .banner__img {
     background-image: none;
@@ -489,7 +487,6 @@ html {
 .comment-item__desc {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1rem;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -521,9 +518,8 @@ html {
     margin-left: 0.3125rem;
   }
   .comment-item__desc {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    line-height: 1.1rem;
   }
   .comment-feedback {
     margin-bottom: 0.75rem;
@@ -637,6 +633,7 @@ html {
     margin: 0;
     font-size: 2rem;
     flex-basis: 50%;
+    line-height: 45px;
   }
   .footer__contact {
     padding: 1.8rem 3.2rem;
@@ -714,6 +711,7 @@ html {
 .arrival__product {
   margin-bottom: 1.2rem;
   text-align: left;
+  height: max-content;
 }
 .arrival__box-btn {
   padding-bottom: 2rem;
@@ -761,6 +759,7 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
+  height: max-content;
   overflow: auto;
 }
 .top-selling__products::-webkit-scrollbar {
@@ -881,14 +880,24 @@ html {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
   display: block;
+  line-height: 20px;
 }
 
+@media (min-width: 1440px) {
+  .desc {
+    line-height: 22px;
+  }
+}
 .evaluate-product {
   margin-bottom: 0.2rem;
 }
 .evaluate-product__img {
   width: 0.7735rem;
   height: 0.7735rem;
+}
+.evaluate-product__img--half {
+  width: 0.368rem;
+  height: 0.6995rem;
 }
 
 .evaluate-comment__img {
@@ -900,6 +909,10 @@ html {
   .evaluate-product__img {
     width: 0.9245rem;
     height: 0.9245rem;
+  }
+  .evaluate-product__img--half {
+    width: 0.4895rem;
+    height: 0.836rem;
   }
   .evaluate-comment__img {
     width: 1.129rem;
@@ -929,7 +942,7 @@ html {
   }
 }
 .product {
-  min-width: 9.45rem;
+  min-width: 9.9rem;
   flex-direction: column;
   align-self: flex-end;
 }
@@ -965,6 +978,8 @@ html {
 @media (min-width: 1440px) {
   .product__img {
     margin-bottom: 0.8rem;
+    width: 14.75rem;
+    height: 14.9rem;
   }
   .product__name {
     margin-bottom: 0.4rem;

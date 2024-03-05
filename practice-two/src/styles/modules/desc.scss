@@ -3,4 +3,11 @@
   color: $primary-color;
   font-weight: 400;
   display: block;
+  line-height: 20px;
+}
+
+@media (min-width: $desktop) {
+  .desc {
+    line-height: 22px;
+  }
 }
