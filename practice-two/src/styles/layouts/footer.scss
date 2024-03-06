@@ -1,5 +1,5 @@
 .footer {
-  background-color: $bg-secondary;
+  background-color: $bg-color;
   font-family: $font-secondary;
   min-width: 390;
 
@@ -14,8 +14,8 @@
     @extend %flexbox-items-centered;
     flex-wrap: wrap;
     border-radius: toRem(20px);
-    background-color: $bg-color;
-    color: $text-color;
+    background-color: $color-primary;
+    color: $color-text-secondary;
     padding: toRem(32px) toRem(24px);
     gap: toRem(32px);
     width: math.div(358, 390) * 100%;
@@ -38,7 +38,7 @@
     background-position: center left;
     background-position: toRem(10px);
     padding: toRem(11.5px) toRem(112px) toRem(11.5px) toRem(48px);
-    border: 1px solid $secondary-color;
+    border: 1px solid $color-secondary;
     min-height: toRem(42px);
     outline: none;
   }
@@ -52,8 +52,8 @@
     flex-wrap: wrap;
     gap: toRem(24.42px);
     font-size: toRem(14px);
-    color: $primary-color;
-    border-bottom: 1px solid $line-color;
+    color:  $color-text-primary;
+    border-bottom: 1px solid $color-line;
     width: math.div(358, 390) * 100%;
     margin: 0 auto;
     padding-bottom: toRem(40px);
@@ -87,7 +87,7 @@
     font-weight: 500;
     letter-spacing: toRem(3px);
     text-transform: uppercase;
-    color: $bg-color;
+    color: $color-primary;
   }
 
   &__social {
@@ -110,7 +110,7 @@
   justify-content: center;
   gap: toRem(16px);
   font-size: toRem(14px);
-  color: $primary-color;
+  color:  $color-text-primary;
 
   &__img {
     @include width-height(toRem(39.96px), toRem(25.74px))

@@ -6,33 +6,32 @@
   font-size: toRem(14px);
 
   &:hover {
-    background-color: $primary-color;
-    color: $secondary-color;
+    background-color: $color-text-primary;
+    color: $color-secondary;
   }
 
   &:active {
-    box-shadow: toRem(2px) toRem(2px) toRem(5px) $primary-color;
+    box-shadow: toRem(2px) toRem(2px) toRem(5px) $color-text-primary;
   }
 
   &--primary {
-    background-color: $bg-color;
-    color: $text-color;
+    background-color: $color-primary;
+    color: $color-text-secondary;
   }
 
   &--secondary {
-    color: $text-color;
-    color: $bg-color;
+    color: $color-primary;
   }
 
   &--light {
 
     &:hover {
-      background-color: $secondary-color;
-      color: $primary-color;
+      background-color: $color-secondary;
+      color: $color-text-primary;
     }
 
     &:active {
-      box-shadow: toRem(2px) toRem(2px) toRem(5px) $btn-primary;
+      box-shadow: toRem(2px) toRem(2px) toRem(5px) $color-btn;
     }
   }
 }

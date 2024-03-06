@@ -1,5 +1,5 @@
 .sign-up {
-  background-color: $bg-color;
+  background-color: $color-primary;
   font-family: $font-secondary;
   min-width: toRem(390px);
 
@@ -9,18 +9,18 @@
   }
 
   &__link {
-    color: $bg-color;
+    color: $color-primary;
   }
 
   &__desc {
     font-size: 0.6rem;
-    color: $text-color;
+    color: $color-text-secondary;
     text-align: center;
     padding: toRem(9px) 0;
   }
 
   &__advertise {
-    color: $text-color;
+    color: $color-text-secondary;
     text-decoration: none;
     border-bottom: 1px solid;
   }

@@ -16,7 +16,7 @@
   }
 
   &__box--line {
-    border-left: 1px solid $line-color;
+    border-left: 1px solid $color-line;
   }
 
   &__box {
@@ -50,7 +50,7 @@
 
     &__box--line {
       width: toRem(220px);
-      border-right: 1px solid $line-color ;
+      border-right: 1px solid $color-line;
     }
   }
 }
