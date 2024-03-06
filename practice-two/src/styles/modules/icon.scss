@@ -1,0 +1,59 @@
+.icon {
+  display: flex;
+}
+
+.icon-off {
+  @include width-height(toRem(20px), toRem(20px));
+  background-image: url('../assets/images/headers/off.svg');
+}
+
+.icon-search {
+  @include width-height(toRem(24px), toRem(24px));
+  background-image: url('../assets/images/headers/search-icon.png');
+}
+
+.icon-cart {
+  @include width-height(toRem(24px), toRem(24px));
+  background-image: url('../assets/images/headers/cart.svg');
+}
+
+.icon-login {
+  @include width-height(toRem(24px), toRem(24px));
+  background-image: url('../assets/images/headers/login.svg');
+}
+
+.icon-prev {
+  @include width-height(toRem(24px), toRem(24px));
+  background-image: url('../assets/images/comments/prev-icon.svg');
+}
+
+.icon-next {
+  @include width-height(toRem(24px), toRem(24px));
+  background-image: url('../assets/images/comments/next-icon.svg');
+}
+
+.icon-twitter {
+  @include width-height(toRem(28px), toRem(28px));
+  background-image: url('../assets/images/footers/twitter.png');
+}
+
+.icon-fb {
+  @include width-height(toRem(28px), toRem(28px));
+  background-image: url('../assets/images/footers/fb.svg');
+}
+
+.icon-intagram {
+  @include width-height(toRem(28px), toRem(28px));
+  background-image: url('../assets/images/footers/intagram.png');
+}
+
+.icon-github {
+  @include width-height(toRem(28px), toRem(28px));
+  background-image: url('../assets/images/footers/github.png');
+}
+
+@include desktop {
+  .icon-search {
+    display: none;
+  }
+}

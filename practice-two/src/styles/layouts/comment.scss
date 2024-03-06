@@ -18,6 +18,7 @@
   &__btn {
     border: 1px solid $color-text-secondary;
     background-color: $color-text-secondary;
+    padding: 0;
 
     &:hover {
       background-color: $color-text-primary;
