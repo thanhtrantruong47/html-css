@@ -1,7 +1,7 @@
 .arrival {
   padding-top: toRem(50px);
-  margin-left: math.div(16, 390) * 100%;
   text-align: center;
+  margin-left: math.div(16, 390) * 100%;
 
   &__title {
     margin-bottom: toRem(32px);
@@ -27,7 +27,7 @@
 
   &__box-btn {
     padding-bottom: toRem(40px);
-    border-bottom: 1px solid $color-line;
+    border-bottom: toRem(1px) solid $color-line;
     width: math.div(358, 374) * 100%;
   }
 
@@ -41,7 +41,8 @@
 
 @include desktop {
   .arrival {
-    margin: 0;
+    max-width: toRem(1240px);
+    margin: 0 auto;
     padding: toRem(72px) toRem(0px) 0 toRem(0px);
 
     &__title {

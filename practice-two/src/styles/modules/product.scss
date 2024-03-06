@@ -61,7 +61,7 @@
 
     &__price {
       gap:toRem(10px);
-      font-size: 1.2rem;
+      font-size: toRem(24px);;
     }
   }
 }

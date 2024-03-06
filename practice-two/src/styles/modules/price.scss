@@ -10,7 +10,7 @@
 
   &--precent {
     background-color: $bg-product;
-    font-size: 0.5rem;
+    font-size: toRem(10px);;
     border-radius: toRem(62px);
     color: $product-color;
     font-weight: 500;

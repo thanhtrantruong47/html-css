@@ -1,10 +1,9 @@
 .browse {
   background-color: $bg-primary;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: toRem(20px);
   margin: 0 auto;
   padding: toRem(40px) 0 toRem(13px) 0;
-  width: math.div(358, 390) * 100%;
   margin-bottom: toRem(50px);
 
   &__title {

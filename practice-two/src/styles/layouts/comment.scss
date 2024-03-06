@@ -1,7 +1,6 @@
 .comment {
   font-family: $font-secondary;
   margin-bottom: toRem(49.81px);
-  width: math.div(358, 390) *100%;
 
   &__heading {
     display: flex;
@@ -16,7 +15,7 @@
   }
 
   &__btn {
-    border: 1px solid $color-text-secondary;
+    border: toRem(1px) solid $color-text-secondary;
     background-color: $color-text-secondary;
     padding: 0;
 
@@ -44,7 +43,7 @@
 
 .comment-item {
   padding: toRem(24px);
-  border: 1px solid $color-line;
+  border: toRem(1px) solid $color-line;
   border-radius: toRem(20px);
   min-width: toRem(358px);
   align-items: center;

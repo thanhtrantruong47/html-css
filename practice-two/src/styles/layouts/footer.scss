@@ -18,7 +18,6 @@
     color: $color-text-secondary;
     padding: toRem(32px) toRem(24px);
     gap: toRem(32px);
-    width: math.div(358, 390) * 100%;
     margin-bottom: toRem(31.58px);
   }
 
@@ -48,8 +47,7 @@
   }
 
   &__action {
-    @extend %flexbox-items-space-between;
-    flex-wrap: wrap;
+    @extend %flexbox-items-wrapped;
     gap: toRem(24.42px);
     font-size: toRem(14px);
     color:  $color-text-primary;
@@ -71,7 +69,7 @@
   &__group {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: toRem(146px) toRem(146px);
     gap: toRem(24px);
   }

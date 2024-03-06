@@ -14,7 +14,7 @@
   }
 
   &__desc {
-    font-size: 0.6rem;
+    font-size: toRem(12px);;
     color: $color-text-secondary;
     text-align: center;
     padding: toRem(9px) 0;
@@ -23,7 +23,7 @@
   &__advertise {
     color: $color-text-secondary;
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: toRem(1px) solid;
   }
 
   &__off {
