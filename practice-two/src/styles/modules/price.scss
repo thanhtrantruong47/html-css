@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .price {
     font-size: toRem(24px);
 

@@ -60,7 +60,7 @@
   }
 
   &__logo {
-    @include img-size(toRem(144px), toRem(20px))
+    @include width-height(toRem(144px), toRem(20px))
   }
 
   &__desc {
@@ -96,7 +96,7 @@
   }
 
   &__icon {
-    @include img-size(toRem(28px));
+    @include width-height(toRem(28px));
   }
 }
 
@@ -113,17 +113,17 @@
   color: $primary-color;
 
   &__img {
-    @include img-size(toRem(39.96px), toRem(25.74px))
+    @include width-height(toRem(39.96px), toRem(25.74px))
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .footer {
     &__title {
       margin: 0;
       font-size: toRem(40px);
       flex-basis: 50%;
-      line-height: 45px;
+      line-height: toRem(45px);
     }
 
     &__contact {
@@ -157,7 +157,7 @@
     }
 
     &__logo {
-      @include img-size(toRem(167px), toRem(23px))
+      @include width-height(toRem(167px), toRem(23px))
     }
 
     &__desc {
@@ -186,7 +186,7 @@
     margin-bottom: toRem(81.97px);
 
     &__img {
-      @include img-size(toRem(46.61px), toRem(30.03px))
+      @include width-height(toRem(46.61px), toRem(30.03px))
     }
   }
 }

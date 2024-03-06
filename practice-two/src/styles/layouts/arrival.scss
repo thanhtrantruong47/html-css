@@ -28,7 +28,7 @@
   &__box-btn {
     padding-bottom: toRem(40px);
     border-bottom: 1px solid $line-color;
-    width:  math.div(358, 374) * 100%;
+    width: math.div(358, 374) * 100%;
   }
 
   &__btn {
@@ -38,7 +38,8 @@
   }
 }
 
-@media (min-width: $desktop) {
+
+@include desktop {
   .arrival {
     margin: 0;
     padding: toRem(72px) toRem(0px) 0 toRem(0px);
@@ -58,7 +59,7 @@
     }
 
     &__btn {
-      padding: (15px) toRem(80px);
+      padding: toRem(15px) toRem(80px);
       width: max-content;
     }
   }

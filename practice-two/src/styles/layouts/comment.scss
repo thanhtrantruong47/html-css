@@ -57,7 +57,7 @@
   }
 
   &__img {
-    @include img-size(toRem(19px), toRem(19px));
+    @include width-height(toRem(19px), toRem(19px));
     margin-left: toRem(5.75px);
   }
 
@@ -73,7 +73,7 @@
 }
 
 
-@media (min-width: $desktop) {
+@include desktop {
   .comment {
     width: 100%;
     margin-bottom: toRem(80.42px);
@@ -96,7 +96,7 @@
     }
 
     &__img {
-      @include img-size(toRem(19.5px), toRem(19.5px));
+      @include width-height(toRem(19.5px), toRem(19.5px));
       margin-left: toRem(6.25px);
     }
 

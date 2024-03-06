@@ -7,7 +7,7 @@
     @extend %flexbox-items-centered;
     gap: toRem(22px);
     justify-content: center;
-    max-width: 480px;
+    max-width: toRem(480px);
   }
 
   &__wrapper-xxl {
@@ -19,7 +19,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
 
   .brand {
     max-width: 100%;

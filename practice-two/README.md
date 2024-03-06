@@ -2,7 +2,7 @@
 
 ## OVERVIEW
 
-- This document provides the estimation for the HTML/CSS practice two
+- Apply the knowledge after read about HTML/CSS and responsive web to practice-two
 
 ## TARGET
 

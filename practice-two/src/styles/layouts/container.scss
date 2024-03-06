@@ -2,8 +2,8 @@
   margin: 0 auto;
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .container {
-    max-width: 1240px;
+    max-width: toRem(1240px);
   }
 }

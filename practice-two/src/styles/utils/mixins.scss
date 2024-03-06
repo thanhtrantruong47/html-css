@@ -1,4 +1,4 @@
-@mixin img-size($width, $height: $width) {
+@mixin width-height($width, $height: $width) {
   width: $width;
   height: $height;
 }
@@ -11,4 +11,8 @@
 @mixin max-size($width, $height) {
   max-width: $width;
   max-height: $height;
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) { @content; }
 }

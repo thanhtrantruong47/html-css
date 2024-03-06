@@ -38,12 +38,12 @@
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .product {
 
     &__img {
       margin-bottom: toRem(16px);
-      @include img-size(toRem(295px),toRem(298px));
+      @include width-height(toRem(295px),toRem(298px));
     }
 
     &__name {

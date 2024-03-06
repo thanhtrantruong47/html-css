@@ -11,7 +11,7 @@
   }
 
   &:active {
-    box-shadow: 2px 2px 5px $primary-color
+    box-shadow: toRem(2px) toRem(2px) toRem(5px) $primary-color;
   }
 
   &--primary {
@@ -32,12 +32,12 @@
     }
 
     &:active {
-      box-shadow: 2px 2px 5px $btn-primary;
+      box-shadow: toRem(2px) toRem(2px) toRem(5px) $btn-primary;
     }
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .btn {
     font-size: toRem(16px);
   }

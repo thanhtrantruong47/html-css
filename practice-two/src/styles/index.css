@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.copyright, .footer__contact, .browse__wrapper, .browse__wrapper-xxl, .brand__wrapper, .navbar {
+.navbar, .copyright, .footer__contact, .browse__wrapper, .browse__wrapper-xxl, .brand__wrapper {
   display: flex;
   align-items: center;
 }
@@ -164,7 +164,7 @@ html {
 
 @media (min-width: 1440px) {
   .container, .copyright {
-    max-width: 1240px;
+    max-width: 62rem;
   }
 }
 .sign-up {
@@ -187,6 +187,8 @@ html {
 }
 .sign-up__advertise {
   color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 .sign-up__off {
   display: none;
@@ -206,62 +208,15 @@ html {
     display: block;
   }
 }
-.navbar {
+.header {
   font-family: Satoshi;
   padding: 1rem 0;
-  gap: 0.6rem;
-  width: 91.7948717949%;
   margin: 0 auto;
-}
-.navbar__option {
-  display: flex;
-  margin-left: auto;
-  gap: 0.5rem;
-}
-.navbar__list, .navbar__search {
-  display: none;
-}
-.navbar__nav {
-  border: none;
-  background-color: #fff;
 }
 
 @media (min-width: 1440px) {
-  .navbar {
-    display: grid;
-    grid-template-columns: 8rem 16.05rem 1fr 3.1rem;
-    gap: 2rem;
-    font-size: 0.5rem;
-    font-size: 0.8rem;
-    align-items: center;
-  }
-  .navbar__nav, .navbar__option-search {
-    display: none;
-  }
-  .navbar__option {
-    justify-content: space-around;
-    margin-left: 0;
-  }
-  .navbar__logo {
-    width: 100%;
-  }
-  .navbar__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar__search {
-    display: block;
-    height: 2.4rem;
-    border-radius: 3.1rem;
-    width: 100%;
-    background-image: url("../assets/images/headers/search.svg");
-    background-repeat: no-repeat;
-    background-position: 0.6rem 0.6rem;
-    padding: 0.1rem 2.6rem;
-    border: 1px solid white;
-    background-color: #f0f0f0;
-    outline: none;
+  .header {
+    padding: 1.2rem 0;
   }
 }
 .banner {
@@ -292,7 +247,7 @@ html {
 .banner__img {
   background-image: url("../assets/images/banners/bg-banner.svg");
   min-width: 19.5rem;
-  min-height: 22.4rem;
+  min-height: 22.35rem;
   margin: 0 auto;
   height: 100%;
 }
@@ -364,7 +319,7 @@ html {
   flex-wrap: wrap;
   gap: 1.1rem;
   justify-content: center;
-  max-width: 480px;
+  max-width: 24rem;
 }
 .brand__wrapper-xxl {
   display: none;
@@ -643,7 +598,7 @@ html {
     margin: 0;
     font-size: 2rem;
     flex-basis: 50%;
-    line-height: 45px;
+    line-height: 2.25rem;
   }
   .footer__contact {
     padding: 1.8rem 3.2rem;
@@ -751,13 +706,13 @@ html {
     padding-bottom: 3.2rem;
   }
   .arrival__btn {
-    padding: 15px 4rem;
+    padding: 0.75rem 4rem;
     width: max-content;
   }
 }
 .top-selling {
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
   margin-left: 4.1025641026%;
   text-align: center;
 }
@@ -816,7 +771,7 @@ html {
   color: #f0f0f0;
 }
 .btn:active {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.6);
 }
 .btn--primary {
   background-color: black;
@@ -831,7 +786,7 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 .btn--light:active {
-  box-shadow: 2px 2px 5px #e7e7e7;
+  box-shadow: 0.1rem 0.1rem 0.25rem #e7e7e7;
 }
 
 @media (min-width: 1440px) {
@@ -907,12 +862,12 @@ html {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
   display: block;
-  line-height: 20px;
+  line-height: 1rem;
 }
 
 @media (min-width: 1440px) {
   .desc {
-    line-height: 22px;
+    line-height: 1.1rem;
   }
 }
 .evaluate-product {
@@ -1024,6 +979,61 @@ html {
   .product__price {
     gap: 0.5rem;
     font-size: 1.2rem;
+  }
+}
+.navbar {
+  gap: 0.6rem;
+  width: 91.7948717949%;
+  gap: 0.6rem;
+}
+.navbar__option {
+  display: flex;
+  margin-left: auto;
+  gap: 0.5rem;
+}
+.navbar__list, .navbar__search {
+  display: none;
+}
+.navbar__nav {
+  border: none;
+  background-color: #fff;
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 8rem 16.05rem 1fr 3.1rem;
+    gap: 2rem;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .navbar__nav, .navbar__option-search {
+    display: none;
+  }
+  .navbar__option {
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  .navbar__logo {
+    width: 100%;
+  }
+  .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__search {
+    display: block;
+    height: 2.4rem;
+    border-radius: 3.1rem;
+    width: 100%;
+    background-image: url("../assets/images/headers/search.svg");
+    background-repeat: no-repeat;
+    background-position: 0.6rem 0.6rem;
+    padding: 0.1rem 2.6rem;
+    border: 1px solid white;
+    background-color: #f0f0f0;
+    outline: none;
   }
 }
 
