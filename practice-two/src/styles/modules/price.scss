@@ -1,13 +1,14 @@
 .price {
-  font-family: Satoshi;
+  font-family: $font-secondary;
   font-weight: 700;
 
-  &__sell {
+
+  &--sell {
     color: $decs-color;
     text-decoration: line-through;
   }
 
-  &__precent {
+  &--precent {
     background-color: $bg-product;
     font-size: 0.5rem;
     border-radius: toRem(62px);
@@ -20,5 +21,9 @@
 @media (min-width: $desktop) {
   .price {
     font-size: toRem(24px);
+
+    &--precent {
+      font-size: toRem(12px);
+    }
   }
 }

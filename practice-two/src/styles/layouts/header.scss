@@ -1,5 +1,5 @@
 .navbar {
-  font-family: Satoshi;
+  font-family: $font-secondary;
   padding: toRem(20px) 0;
   gap: toRem(12px);
   @extend %flexbox-items-centered;

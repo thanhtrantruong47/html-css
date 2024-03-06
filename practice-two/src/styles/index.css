@@ -272,7 +272,6 @@ html {
 .banner__title {
   font-size: 1.8rem;
   margin: 0 auto;
-  line-height: 34px;
 }
 .banner__content {
   padding: 2rem 4.1025641026% 0;
@@ -313,6 +312,7 @@ html {
     background-image: url("../assets/images/banners/rectangle.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     flex-wrap: nowrap;
   }
   .banner__wrapper {
@@ -328,7 +328,7 @@ html {
   }
   .banner__title {
     font-size: 3.2rem;
-    line-height: 57px;
+    line-height: 3.2rem;
   }
   .banner__btn {
     padding: 0.75rem 3.375rem;
@@ -342,9 +342,7 @@ html {
   .banner__img {
     background-image: none;
     min-width: 37.2rem;
-    height: 663px;
-    min-width: 37.2rem;
-    min-height: 33.15rem;
+    height: 100%;
   }
   .banner__img-left {
     width: 2.8rem;
@@ -454,6 +452,18 @@ html {
 }
 .comment__action {
   display: flex;
+  gap: 0.8rem;
+}
+.comment__btn {
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+.comment__btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+}
+.comment__btn:active {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 .comment__title {
   font-size: 1.6rem;
@@ -500,7 +510,7 @@ html {
     margin-bottom: 4.021rem;
   }
   .comment__heading {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .comment__title {
     font-size: 2.4rem;
@@ -802,7 +812,11 @@ html {
   font-size: 0.7rem;
 }
 .btn:hover {
-  background-color: #e7e7e7;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+}
+.btn:active {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 .btn--primary {
   background-color: black;
@@ -811,6 +825,13 @@ html {
 .btn--secondary {
   color: #fff;
   color: black;
+}
+.btn--light:hover {
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.btn--light:active {
+  box-shadow: 2px 2px 5px #e7e7e7;
 }
 
 @media (min-width: 1440px) {
@@ -826,6 +847,12 @@ html {
 .link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link:active {
+  color: black;
 }
 
 .info {
@@ -871,7 +898,7 @@ html {
     margin: 0;
   }
   .info__box--line {
-    width: 36.9%;
+    width: 11rem;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
@@ -923,11 +950,11 @@ html {
   font-family: Satoshi;
   font-weight: 700;
 }
-.price__sell {
+.price--sell {
   color: rgba(0, 0, 0, 0.4);
   text-decoration: line-through;
 }
-.price__precent {
+.price--precent {
   background-color: rgba(255, 51, 51, 0.1);
   font-size: 0.5rem;
   border-radius: 3.1rem;
@@ -939,6 +966,9 @@ html {
 @media (min-width: 1440px) {
   .price {
     font-size: 1.2rem;
+  }
+  .price--precent {
+    font-size: 0.6rem;
   }
 }
 .product {
@@ -993,6 +1023,7 @@ html {
   }
   .product__price {
     gap: 0.5rem;
+    font-size: 1.2rem;
   }
 }
 

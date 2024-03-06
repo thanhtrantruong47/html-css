@@ -1,6 +1,6 @@
 .sign-up {
   background-color: $bg-color;
-  font-family: Satoshi;
+  font-family: $font-secondary;
   min-width: toRem(390px);
 
   &__item {

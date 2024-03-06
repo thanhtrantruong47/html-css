@@ -34,7 +34,7 @@
         <li><a class="link" href="javascrip:void(0)">Brand</a></li>
       </ul>
       <form action="index.html">
-        <input class="navbar__search" type="text" placeholder="Search for products...">
+        <input class="navbar__search" type="text" maxlength="20" placeholder="Search for products...">
       </form>
       <div class="navbar__option">
         <a href="javascrip:void(0)"><img class="navbar__option-search" src="assets/images/headers/search-icon.png"
@@ -140,10 +140,10 @@
             </div>
             <p class="product__feedback-score">3.5/<span class="product__feedback-score-max">5</span></p>
           </div>
-          <div class="product__price price">
-            <p>&#36;240</p>
-            <p class="price__sell">&#36;260</p>
-            <p class="price__precent">-20%</p>
+          <div class="product__price">
+            <p class="price">&#36;240</p>
+            <p class="price price--sell">&#36;260</p>
+            <p class="price price--precent">-20%</p>
           </div>
         </div>
         <div class="arrival__product product">
@@ -178,10 +178,10 @@
             </div>
             <p class="product__feedback-score">4.5/<span class="product__feedback-score-max">5</span></p>
           </div>
-          <div class="product__price price">
-            <p>&#36;130</p>
-            <p class="price__sell">&#36;160</p>
-            <p class="price__precent">-30%</p>
+          <div class="product__price">
+            <p class="price">&#36;130</p>
+            <p class="price price--sell">&#36;160</p>
+            <p class="price price--precent">-30%</p>
           </div>
         </div>
       </div>
@@ -206,10 +206,10 @@
             </div>
             <p class="product__feedback-score">5.0/<span class="product__feedback-score-max">5</span></p>
           </div>
-          <div class="product__price price">
-            <p>&#36;212</p>
-            <p class="price__sell">&#36;232</p>
-            <p class="price__precent">-20%</p>
+          <div class="product__price">
+            <p class="price">&#36;212</p>
+            <p class="price price--sell">&#36;232</p>
+            <p class="price price--precent">-20%</p>
           </div>
         </div>
         <div class="top-selling__product product">
@@ -289,8 +289,8 @@
       <div class="comment__heading">
         <h2 class="comment__title title title--primary">OUR HAPPY CUSTOMERS</h2>
         <div class="comment__action">
-          <img src="./assets/images/comments/next-icon.svg" alt="next-icon">
-          <img src="./assets/images/comments/prev-icon.svg" alt="prev-icon">
+          <button class="comment__btn"><img src="./assets/images/comments/next-icon.svg" alt="next-icon"></button>
+          <button class="comment__btn"><img src="./assets/images/comments/prev-icon.svg" alt="prev-icon"></button>
         </div>
       </div>
       <div class="comment__list">
@@ -354,8 +354,8 @@
       <legend class="footer__contact container">
         <h2 class="footer__title title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
         <form class="footer__contact-box" action="">
-          <input class="footer__contact-form" type="text" name="email" placeholder="Enter your email address">
-          <button class="footer__btn btn">Subscribe to Newsletter</button>
+          <input class="footer__contact-form" type="text" name="" maxlength="20" placeholder="Enter your email address">
+          <button class="footer__btn btn btn--light">Subscribe to Newsletter</button>
         </form>
       </legend>
       <div class="footer__action container">

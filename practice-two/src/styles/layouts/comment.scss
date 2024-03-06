@@ -1,5 +1,5 @@
 .comment {
-  font-family: Satoshi;
+  font-family: $font-secondary;
   margin-bottom: toRem(49.81px);
   width: math.div(358, 390) *100%;
 
@@ -12,6 +12,21 @@
 
   &__action {
     display: flex;
+    gap: toRem(16px);
+  }
+
+  &__btn {
+    border: 1px solid $text-color;
+    background-color: $text-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+
+    &:active {
+      box-shadow: 2px 2px 5px $primary-color
+    }
   }
 
   &__title {
@@ -64,7 +79,7 @@
     margin-bottom: toRem(80.42px);
 
     &__heading {
-      margin-bottom: toRem(20px);
+      margin-bottom: toRem(40px);
     }
 
     &__title {

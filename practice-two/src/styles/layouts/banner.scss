@@ -1,6 +1,6 @@
 .banner {
   background-color: $bg-secondary;
-  font-family: Satoshi;
+  font-family: $font-secondary;
   min-width: toRem(390px);
 
   &__wrapper {
@@ -11,7 +11,7 @@
   &__title {
     font-size: toRem(36px);
     margin: 0 auto;
-    line-height: 34px;
+    // line-height: toRem(34px);
   }
 
   &__content {
@@ -58,6 +58,7 @@
     background-image: url('../assets/images/banners/rectangle.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     flex-wrap: nowrap;
 
     &__wrapper {
@@ -75,7 +76,7 @@
 
     &__title {
       font-size: toRem(64px);
-      line-height: 57px;
+      line-height: toRem(64px);
     }
 
     &__btn {
@@ -92,8 +93,7 @@
     &__img {
       background-image: none;
       min-width: toRem(744px);
-      height: 663px;
-      @include min-size(toRem(744px), toRem(663px));
+      height: 100%;
     }
 
     &__img-left {

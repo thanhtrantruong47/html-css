@@ -49,7 +49,7 @@
     }
 
     &__box--line {
-      width: 36.9%;
+      width: toRem(220px);
       border-right: 1px solid $line-color ;
     }
   }
