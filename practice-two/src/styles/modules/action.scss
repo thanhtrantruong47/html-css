@@ -1,0 +1,76 @@
+.action {
+  @extend %flexbox-items-wrapped;
+  gap: toRem(24.42px);
+  font-size: toRem(14px);
+  color: $color-text-primary;
+  border-bottom: 1px solid $color-line;
+  width: math.div(358, 390) * 100%;
+  margin: 0 auto;
+  padding-bottom: toRem(40px);
+
+  &__logo {
+    @include width-height(toRem(144px), toRem(20px))
+  }
+
+  &__desc {
+    width: 100%;
+    font-size: toRem(14px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: toRem(14px);
+  }
+
+  &__item-head {
+    font-weight: 500;
+    letter-spacing: toRem(3px);
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &__social {
+    display: flex;
+    gap: toRem(12px);
+  }
+
+  &__group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: toRem(146px) toRem(146px);
+    gap: toRem(24px);
+  }
+}
+
+@include desktop {
+  .action {
+    flex-wrap: nowrap;
+    gap: toRem(113.15px);
+    font-size: toRem(16px);
+    padding-bottom: toRem(50px);
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: toRem(14px);
+    }
+
+    &__logo {
+      @include width-height(toRem(167px), toRem(23px))
+    }
+
+    &__desc {
+      width: toRem(248px);
+    }
+
+    &__group {
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto;
+      gap: toRem(113.15px);
+    }
+  }
+}

@@ -6,6 +6,7 @@
   &__wrapper {
     @extend %flexbox-items-space-between;
     @extend %flexbox-items-wrapped;
+    max-width: toRem(1240px);
   }
 
   &__title {
@@ -57,7 +58,7 @@
     background-image: url('../assets/images/banners/rectangle.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:  contain;
+    background-size: cover;
     flex-wrap: nowrap;
 
     &__wrapper {
@@ -91,7 +92,7 @@
 
     &__img {
       background-image: none;
-      min-width: toRem(744px);
+      min-width: toRem(700px);
       height: 100%;
     }
 

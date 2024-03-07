@@ -1,0 +1,30 @@
+.copyright {
+  @extend .container;
+  margin-bottom: toRem(77.26px);
+  margin-top: toRem(16px);
+  @extend %flexbox-items-centered;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: toRem(16px);
+  font-size: toRem(14px);
+  color: $color-text-primary;
+
+  &__img {
+    @include width-height(toRem(39.96px), toRem(25.74px))
+  }
+}
+
+@include desktop {
+  .copyright {
+    flex-direction: row;
+    font-size: toRem(16px);
+    justify-content: space-between;
+    margin-top: toRem(20px);
+    margin-bottom: toRem(81.97px);
+
+    &__img {
+      @include width-height(toRem(46.61px), toRem(30.03px))
+    }
+  }
+}

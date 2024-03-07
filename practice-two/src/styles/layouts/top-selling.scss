@@ -27,6 +27,10 @@
     text-align: left;
   }
 
+  &__box-btn {
+    margin-right: toRem(16px);
+  }
+
   &__btn {
     padding: toRem(13.5px)toRem(153.5px);
     width: 100%;
@@ -50,10 +54,14 @@
       margin-bottom: toRem(36px);
     }
 
+    &__box-btn {
+      width: 100%;
+      margin-right: 0;
+    }
+
     &__btn {
       padding: (15px) toRem(80px);
       width: max-content;
-      margin-right: 0;
     }
   }
 }
