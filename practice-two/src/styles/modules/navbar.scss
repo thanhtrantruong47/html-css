@@ -4,6 +4,7 @@
   @extend %flexbox-items-centered;
   margin: 0 toRem(16px);
   gap: toRem(12px);
+  margin: 0 auto;
 
   &__option {
     display: flex;
