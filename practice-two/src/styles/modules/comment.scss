@@ -1,0 +1,12 @@
+.comment {
+  padding: 28px 32px;
+  border: 1px solid $color-line;
+  border-radius: 20px;
+  margin: 0;
+  min-width: 358px;
+
+
+  &__date {
+    margin-top: 24px;
+  }
+}

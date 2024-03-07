@@ -1,9 +1,11 @@
 .container {
-  margin: 0 math.div(16, 390) * 100%;
+  margin: 0 math.div(16, 390) * 100% ;
+
 }
 
 @include desktop {
   .container {
+    margin: 0 auto;
     max-width: toRem(1240px);
   }
 }
