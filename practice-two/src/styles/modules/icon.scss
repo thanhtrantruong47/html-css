@@ -6,6 +6,11 @@
   @include width-height(toRem(20px), toRem(20px));
   background-image: url('../assets/images/headers/off.svg');
 }
+.icon-nav {
+  @include width-height(toRem(18.75px), toRem(14.25px));
+  background-image: url('../assets/images/headers/nav.png');
+}
+
 
 .icon-search {
   @include width-height(toRem(24px), toRem(24px));
