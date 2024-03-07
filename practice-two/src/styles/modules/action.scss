@@ -47,6 +47,7 @@
 
 @include desktop {
   .action {
+    margin: 0 auto;
     flex-wrap: nowrap;
     gap: toRem(113.15px);
     font-size: toRem(16px);
