@@ -4,8 +4,8 @@
   font-size: toRem(14px);
   color: $color-text-primary;
   border-bottom: 1px solid $color-line;
-  width: math.div(358, 390) * 100%;
-  margin: 0 auto;
+
+  margin: 0 toRem(16px);;
   padding-bottom: toRem(40px);
 
   &__logo {
