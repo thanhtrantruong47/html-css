@@ -27,6 +27,10 @@
     text-align: left;
   }
 
+  &__box-btn {
+    width: math.div(358, 374) * 100%;
+  }
+
   &__btn {
     padding: toRem(13.5px)toRem(153.5px);
     width: 100%;

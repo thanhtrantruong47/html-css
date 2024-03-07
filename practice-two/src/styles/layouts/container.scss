@@ -1,7 +1,6 @@
 .container {
-  margin: 0 math.div(16, 390) * 100% ;
+  margin: 0 toRem(16px);
   font-family: Satoshi;
-
 }
 
 @include desktop {
