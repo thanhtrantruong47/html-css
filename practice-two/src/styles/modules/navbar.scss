@@ -2,7 +2,7 @@
 .navbar {
   gap: toRem(12px);
   @extend %flexbox-items-centered;
-  width: math.div(358, 390) * 100%;
+  margin: 0 toRem(16px);
   gap: toRem(12px);
 
   &__option {

@@ -15,7 +15,7 @@
 
   &__content {
     @extend %flexbox-items-wrapped;
-    padding: toRem(40px) math.div(16, 390)* 100%;
+    padding: toRem(40px) toRem(16px);
     gap: toRem(20px);
     margin-left: auto;
     width: 100%;

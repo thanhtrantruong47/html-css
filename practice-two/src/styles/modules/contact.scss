@@ -7,7 +7,8 @@
   color: $color-text-secondary;
   padding: toRem(32px) toRem(24px);
   gap: toRem(32px);
-  margin-bottom: toRem(31.58px);
+  margin: 0 auto toRem(31.58px);
+  width: math.div(358,390)*100%;
 
   &__box {
     display: flex;
@@ -22,8 +23,7 @@
     border-radius: toRem(62px);
     background-image: url("../assets/images/footers/email-icon.svg");
     background-repeat: no-repeat;
-    background-position: center left;
-    background-position: toRem(10px);
+    background-position: center left toRem(10px);
     padding: toRem(11.5px) toRem(112px) toRem(11.5px) toRem(48px);
     border: 1px solid $color-secondary;
     min-height: toRem(42px);

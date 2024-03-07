@@ -1,7 +1,7 @@
 .top-selling {
   padding-top: toRem(40px);
   padding-bottom: toRem(50px);
-  margin-left: math.div(16, 390) * 100%;
+  margin-left: toRem(16px);
   text-align: center;
 
   &__title {
