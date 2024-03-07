@@ -70,8 +70,13 @@
     gap: 16px;
     font-size: 14px;
     padding-bottom: 24px;
+<<<<<<< Updated upstream
     border-bottom: 1px solid $color-line;
     margin-bottom: 24px;
+=======
+    gap: 16px;
+    border-bottom: 1px solid $color-line;
+>>>>>>> Stashed changes
   }
 
   &__check {
@@ -83,7 +88,7 @@
   }
 
   &__btn--large {
-    padding: 15px 80px;
+    padding: 14px 36px;
   }
 
   &__number {
@@ -101,6 +106,16 @@
     border-radius: 62px;
   }
 
+<<<<<<< Updated upstream
+=======
+  &__color {
+    display: grid;
+    padding-bottom: 24px;
+    gap: 16px;
+    border-bottom: 1px solid $color-line;
+  }
+
+>>>>>>> Stashed changes
   &__action {
     display: flex;
     margin-top: 50px;
@@ -186,5 +201,12 @@
     }
 
     &__number {}
+<<<<<<< Updated upstream
+=======
+
+    &__btn--large {
+      padding: 15px 45px;
+    }
+>>>>>>> Stashed changes
   }
 }
