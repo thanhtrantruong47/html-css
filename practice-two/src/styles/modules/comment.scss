@@ -26,6 +26,12 @@
     font-size: (14px);
   }
 
+  &__name {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 11.5px;
+  }
+
 }
 
 @include desktop {
@@ -52,9 +58,9 @@
     }
 
 
-  &__date {
-    margin-top: toRem(24px);
-    font-size: (16px);
-  }
+    &__date {
+      margin-top: toRem(24px);
+      font-size: (16px);
+    }
   }
 }
