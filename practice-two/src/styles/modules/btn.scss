@@ -3,7 +3,6 @@
   font-family: $font-secondary;
   border: none;
   font-weight: 500;
-  font-size: toRem(14px);
 
   &:hover {
     background-color: $color-text-primary;
@@ -17,10 +16,14 @@
   &--primary {
     background-color: $color-primary;
     color: $color-text-secondary;
+    font-size: toRem(14px);
+
   }
 
   &--secondary {
     color: $color-primary;
+    font-size: toRem(14px);
+
   }
 
   &--light {

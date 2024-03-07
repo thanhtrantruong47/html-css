@@ -8,21 +8,20 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 14px;
-    margin: 0 16px 0 0;
   }
-
 
   &__img-list {
     max-width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 14px;
-    display: none;
   }
 
   &__evalute {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-bottom: 12px;
   }
 
   &__wrapper {
@@ -32,32 +31,55 @@
   }
 
   &__title {
-    font-size: 40px;
-    font-family: Integral CF;
+    font-size: 24px;
+    margin-bottom: 12px;
+    padding-right: 100px;
+  }
+
+  &__price {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 24px;
+    gap: 10px;
   }
 
   &__desc {
-    font-size: 16px;
-    font-family: Satoshi;
+    font-size: 14px;
     padding-bottom: 24px;
     border-bottom: 1px solid $color-line;
-    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+
+  &__color {
+    display: grid;
+    padding-bottom: 24px;
+    gap: 12.3px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  &__color-group {
+    display: flex;
+    gap: 12.3px;
   }
 
   &__choose {
     display: grid;
+    gap: 16px;
+    font-size: 14px;
     padding-bottom: 24px;
-    gap:16px;
-    border-bottom: 1px solid  $color-line;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
   }
 
   &__check {
-    @include width-height(toRem(37px),toRem(37px));
+    @include width-height(toRem(37px), toRem(37px));
   }
 
   &__btn {
-    padding: 12px 24px;
-    border-radius: 62px;
+    padding: 10px 20px;
   }
 
   &__btn--large {
@@ -66,37 +88,30 @@
 
   &__number {
     padding: 12px 52px;
-    border-radius: 62px;
   }
 
   &__add {
     display: flex;
+    gap: 12px;
   }
 
   &__number-num {
+    width: 100%;
     padding: 12.5px 81px;
     border-radius: 62px;
   }
 
-  &__color {
-    display: grid;
-    padding-bottom: 24px;
-    gap:16px;
-    border-bottom: 1px solid $color-line;
-  }
-
   &__action {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 80px;
-    text-align: center;
-  }
-
-  &__item {
-    display: none;
+    display: flex;
+    margin-top: 50px;
+    gap: 45px;
     border-bottom: 1px solid $color-line;
     padding-bottom: 24px;
     margin-bottom: 24px;
+  }
+
+  &__item {
+    font-size: 16px;
   }
 
   &__btn-product {
@@ -107,24 +122,41 @@
 
 .choose__list {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .detail-option {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .option-info {
   display: flex;
-  gap: 8px;
+  gap: 6px;
+  font-weight: 700;
+  &__num {
+    font-size: 14px;
+  }
 }
 
 .option-choose {
+  height: 40px;
   display: flex;
   gap: 10px;
+
+  &__select {
+    display: none;
+  }
+
+  &__btn {
+    font-size: 12px;
+    padding: 12px 16px;
+    border-radius: toRem(62px);
+    background-color: $color-primary;
+    color: $color-text-secondary;
+  }
 }
 
 .detail-info {
@@ -135,20 +167,24 @@
   margin-bottom: 36.42px;
 }
 
+.detail__products {
+  @extend .top-selling__products;
+  margin-top: 40px;
+}
+
 @include desktop {
   .detail {
-     grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-     &__img {
+    &__img {
       flex-direction: row;
       width: 100%;
-     }
+    }
 
-     &__img-list {
+    &__img-list {
       flex-direction: column;
-     }
+    }
 
-     &__number {
-     }
+    &__number {}
   }
 }

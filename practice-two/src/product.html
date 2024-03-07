@@ -10,17 +10,17 @@
 
 <body>
   <div class="container">
-    <div class="detail container">
+    <div class="detail">
       <div class="detail__img">
         <div class="detail__img-list">
-          <img src="./assets/images/details/image 2.svg" alt="">
-          <img src="./assets/images/details/image 5 (1).png" alt="">
-          <img src="./assets/images/details/image 6 (1).png" alt="">
+          <img class="img" src="./assets/images/details/image 2.svg" alt="">
+          <img class="img" src="./assets/images/details/image 5 (1).png" alt="">
+          <img class="img" src="./assets/images/details/image 6 (1).png" alt="">
         </div>
         <img class="img" src="./assets/images/details/image 1.svg" alt="">
       </div>
       <div class="detail__wrapper">
-        <h1 class="detail__title">One Life Graphic T-shirt</h1>
+        <h1 class="detail__title title">ONE LIFE GRAPHIC T-SHIRT</h1>
         <div class="detail__evalute">
           <div class="product__evaluate evaluate-product">
             <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
@@ -31,24 +31,24 @@
           </div>
           <p class="product__feedback-score">4.5/<span class="product__feedback-score-max">5</span></p>
         </div>
-        <div class="product__price price">
-          <p>&#36;240</p>
-          <p class="price__sell">&#36;260</p>
-          <p class="price__precent">-20%</p>
+        <div class="detail__price price">
+          <p class="price">&#36;240</p>
+          <p class="price price--sell">&#36;260</p>
+          <p class="price price--precent desc-small">-20%</p>
         </div>
-        <p class="detail__desc">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and
+        <p class="detail__desc desc">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and
           breathable
           fabric, it offers superior comfort and style.</p>
         <div class="detail__color">
-          <p>Select Color</p>
-          <form action="">
-            <input class="detail__check" type="radio" name="Color">
-            <input class="detail__check" type="radio" name="Color">
-            <input class="detail__check" type="radio" name="Color">
+          <p class="desc">Select Color</p>
+          <form class="detail__color-group" action="">
+              <input type="radio" id="radio01" name="radio">
+              <input type="radio" id="radio02" name="radio">
+              <input type="radio" id="radio02" name="radio">
           </form>
         </div>
         <div class="detail__choose">
-          <p>Choose Size</p>
+          <p class="desc">Choose Size</p>
           <div class="choose__list">
             <button class="detail__btn btn btn--secondary">Small</button>
             <button class="detail__btn btn btn--secondary">Media</button>
@@ -56,153 +56,226 @@
             <button class="detail__btn btn btn--secondary">X-Large</button>
           </div>
         </div>
-        <div class="">
+        <div class="detail__add">
           <button class="detail__number btn btn--secondary">1</button>
-          <button class="detail__number-num btn btn--secondary">add to cart</button>
+          <button class="detail__number-num btn btn--primary">add to cart</button>
         </div>
       </div>
     </div>
     <div>
       <div class="detail__action">
-        <div class="detail__item">
+        <div class="detail__item desc">
           Product Details
         </div>
-        <div class="detail__item">
-          Product Details
+        <div class="detail__item  desc">
+          Rating & Reviews
         </div>
-        <div class="detail__item">
-          Product Details
+        <div class="detail__item  desc">
+          FAQs
         </div>
       </div>
     </div>
-    <div class=" detail-option">
+    <div class="detail-option">
       <div class="option-info">
-        <p>all riview</p>
-        <p>(451)</p>
+        <p>All Review</p>
+        <p class="option-info__num desc">(451)</p>
       </div>
       <div class="option-choose">
         <img src="./assets/images/details/Frame 19.svg" alt="">
-        <select name="" id="">
+        <select class="option-choose__select" name="" id="">
           <option value="">later</option>
           <option value="">new</option>
         </select>
-        <button>write a review</button>
+        <button class="option-choose__btn btn">Write a Review</button>
       </div>
     </div>
     <div class="detail-info">
       <div class="comment">
-        <div class="comment-feedback evaluate-comment">
+        <div class="comment__feedback evaluate-comment">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
         </div>
-        <div class="comment-item__name">
+        <div class="comment__name">
           <p>Sarah M.</p>
-          <img class="comment-item__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
+          <img class="comment__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
         </div>
-        <p class="comment-item__desc desc">"I'm blown away by the quality and style of the clothes I
+        <p class="comment__desc desc">"I'm blown away by the quality and style of the clothes I
           received from Shop.co.
           From
           casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-        <p class="comment__date">Posted on August 16, 2023</p>
+        <p class="comment__date desc">Posted on August 14, 2023</p>
       </div>
       <div class="comment">
-        <div class="comment-feedback evaluate-comment">
+        <div class="comment__feedback evaluate-comment">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
         </div>
-        <div class="comment-item__name">
+        <div class="comment__name">
           <p>Sarah M.</p>
-          <img class="comment-item__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
+          <img class="comment__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
         </div>
-        <p class="comment-item__desc desc">"I'm blown away by the quality and style of the clothes I
+        <p class="comment__desc desc">"I'm blown away by the quality and style of the clothes I
           received from Shop.co.
           From
           casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-        <p class="comment__date">Posted on August 16, 2023</p>
+        <p class="comment__date desc">Posted on August 14, 2023</p>
       </div>
       <div class="comment">
-        <div class="comment-feedback evaluate-comment">
+        <div class="comment__feedback evaluate-comment">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
         </div>
-        <div class="comment-item__name">
+        <div class="comment__name">
           <p>Sarah M.</p>
-          <img class="comment-item__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
+          <img class="comment__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
         </div>
-        <p class="comment-item__desc desc">"I'm blown away by the quality and style of the clothes I
+        <p class="comment__desc desc">"I'm blown away by the quality and style of the clothes I
           received from Shop.co.
           From
           casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-        <p class="comment__date">Posted on August 16, 2023</p>
+        <p class="comment__date desc">Posted on August 14, 2023</p>
       </div>
       <div class="comment">
-        <div class="comment-feedback evaluate-comment">
+        <div class="comment__feedback evaluate-comment">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
         </div>
-        <div class="comment-item__name">
+        <div class="comment__name">
           <p>Sarah M.</p>
-          <img class="comment-item__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
+          <img class="comment__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
         </div>
-        <p class="comment-item__desc desc">"I'm blown away by the quality and style of the clothes I
+        <p class="comment__desc desc">"I'm blown away by the quality and style of the clothes I
           received from Shop.co.
           From
           casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-        <p class="comment__date">Posted on August 16, 2023</p>
+        <p class="comment__date desc">Posted on August 14, 2023</p>
       </div>
       <div class="comment">
-        <div class="comment-feedback evaluate-comment">
+        <div class="comment__feedback evaluate-comment">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
         </div>
-        <div class="comment-item__name">
+        <div class="comment__name">
           <p>Sarah M.</p>
-          <img class="comment-item__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
+          <img class="comment__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
         </div>
-        <p class="comment-item__desc desc">"I'm blown away by the quality and style of the clothes I
+        <p class="comment__desc desc">"I'm blown away by the quality and style of the clothes I
           received from Shop.co.
           From
           casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-        <p class="comment__date">Posted on August 16, 2023</p>
+        <p class="comment__date desc">Posted on August 14, 2023</p>
       </div>
       <div class="comment">
-        <div class="comment-feedback evaluate-comment">
+        <div class="comment__feedback evaluate-comment">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
           <img class="evaluate-comment__img" src="./assets/images/products/star-full.svg" alt="star-full">
         </div>
-        <div class="comment-item__name">
+        <div class="comment__name">
           <p>Sarah M.</p>
-          <img class="comment-item__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
+          <img class="comment__img" src="./assets/images/comments/blue-check-mark.svg" alt="blue-check-mark">
         </div>
-        <p class="comment-item__desc desc">"I'm blown away by the quality and style of the clothes I
+        <p class="comment__desc desc">"I'm blown away by the quality and style of the clothes I
           received from Shop.co.
           From
           casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-        <p class="comment__date">Posted on August 16, 2023</p>
+        <p class="comment__date desc">Posted on August 14, 2023</p>
       </div>
     </div>
-    <div class="detail__btn-product">
-    <button class="detail__btn detail__btn--large btn btn--secondary">asdsada</button>
   </div>
+  <div class="detail__btn-product">
+    <button class="detail__btn detail__btn--large btn btn--secondary">Load More Reviews</button>
   </div>
+
+  <section class="top-selling">
+    <h2 class="browse__title title title--primary">YOU MIGHT ALSO LIKE</h2>
+    <div class="detail__products">
+      <div class="top-selling__product product">
+        <img class="product__img" src="./assets/images/products/veritical.png" alt="veritical">
+        <p class="product__name">Vertical Striped Shirt</p>
+        <div class="product__feedback-wrapper">
+          <div class="product__evaluate evaluate-product">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+          </div>
+          <p class="product__feedback-score">5.0/<span class="product__feedback-score-max">5</span></p>
+        </div>
+        <div class="product__price">
+          <p class="price">&#36;212</p>
+          <p class="price price--sell">&#36;232</p>
+          <p class="price price--precent">-20%</p>
+        </div>
+      </div>
+      <div class="top-selling__product product">
+        <img class="product__img" src="./assets/images/products/courage.png" alt="courage">
+        <p class="product__name">Courage Graphic T-Shirt</p>
+        <div class="product__feedback-wrapper">
+          <div class="product__evaluate evaluate-product">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+          </div>
+          <p class="product__feedback-score">4.0/<span class="product__feedback-score-max">5</span></p>
+        </div>
+        <div class="product__price price">
+          <p>&#36;145</p>
+        </div>
+      </div>
+      <div class="top-selling__product product">
+        <img class="product__img" src="./assets/images/products/loose-fit.png" alt="loose-fit">
+        <p class="product__name">Loose Fit Bermuda Shorts</p>
+        <div class="product__feedback-wrapper">
+          <div class="product__evaluate evaluate-product">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+          </div>
+          <p class="product__feedback-score">3.0/<span class="product__feedback-score-max">5</span></p>
+        </div>
+        <div class="product__price price">
+          <p>&#36;80</p>
+        </div>
+      </div>
+      <div class="top-selling__product product">
+        <img class="product__img" src="./assets/images/products/faded-skinny.svg" alt="faded-skinny">
+        <p class="product__name">Faded Skinny Jeans</p>
+        <div class="product__feedback-wrapper">
+          <div class="product__evaluate evaluate-product">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-product__img evaluate-product__img--half" src="./assets/images/products/star-half.svg"
+              alt="star-full">
+          </div>
+          <p class="product__feedback-score">4.5/<span class="product__feedback-score-max">5</span></p>
+        </div>
+        <div class="product__price price">
+          <p>&#36;120</p>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
