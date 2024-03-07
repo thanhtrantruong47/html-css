@@ -1,7 +1,7 @@
 .top-selling {
-  padding-top: 40px;
-  padding-bottom: 50px;
-  margin-left: math.div(16, 390) * 100%;
+  padding-top: toRem(40px);
+  padding-bottom: toRem(50px);
+  margin-left: toRem(16px);
   text-align: center;
 
   &__title {
@@ -27,17 +27,21 @@
     text-align: left;
   }
 
+  &__box-btn {
+    margin-right: toRem(16px);
+  }
+
   &__btn {
     padding: toRem(13.5px)toRem(153.5px);
-    margin-right: math.div(16, 390) * 100%;
-    width:  math.div(358, 374) * 100%;
+    width: 100%;
     min-height: toRem(46px);
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .top-selling {
-    margin: 0;
+    max-width: toRem(1240px);
+    margin: 0 auto;
 
     padding: toRem(64px) toRem(0px) toRem(80px) toRem(0px);
 
@@ -50,10 +54,14 @@
       margin-bottom: toRem(36px);
     }
 
+    &__box-btn {
+      width: 100%;
+      margin-right: 0;
+    }
+
     &__btn {
       padding: (15px) toRem(80px);
       width: max-content;
-      margin-right: 0;
     }
   }
 }

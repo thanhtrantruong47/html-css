@@ -1,13 +1,13 @@
 .desc {
-  font-family: Satoshi;
-  color: $primary-color;
+  font-family: $font-secondary;
+  color: $color-text-primary;
   font-weight: 400;
   display: block;
-  line-height: 20px;
+  line-height: toRem(20px);
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .desc {
-    line-height: 22px;
+    line-height: toRem(22px);
   }
 }

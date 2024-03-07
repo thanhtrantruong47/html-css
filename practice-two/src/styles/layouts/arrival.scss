@@ -1,8 +1,7 @@
 .arrival {
   padding-top: toRem(50px);
-  margin-left: math.div(16, 390) * 100%;
   text-align: center;
-
+  margin-left: toRem(16px);
   &__title {
     margin-bottom: toRem(32px);
     font-size: toRem(32px);
@@ -26,9 +25,9 @@
   }
 
   &__box-btn {
+    border-bottom: toRem(1px) solid $color-line;
     padding-bottom: toRem(40px);
-    border-bottom: 1px solid $line-color;
-    width:  math.div(358, 374) * 100%;
+    margin-right: toRem(16px);
   }
 
   &__btn {
@@ -38,9 +37,11 @@
   }
 }
 
-@media (min-width: $desktop) {
+
+@include desktop {
   .arrival {
-    margin: 0;
+    max-width: toRem(1240px);
+    margin: 0 auto;
     padding: toRem(72px) toRem(0px) 0 toRem(0px);
 
     &__title {
@@ -55,10 +56,11 @@
     &__box-btn {
       width: 100%;
       padding-bottom: toRem(64px);
+      margin-right: 0;
     }
 
     &__btn {
-      padding: (15px) toRem(80px);
+      padding: toRem(15px) toRem(80px);
       width: max-content;
     }
   }

@@ -1,28 +1,29 @@
 .sign-up {
-  background-color: $bg-color;
-  font-family: Satoshi;
+  background-color: $color-primary;
+  font-family: $font-secondary;
   min-width: toRem(390px);
 
   &__item {
     margin: 0 auto;
     font-size: toRem(20px);
+    align-items: center;
   }
 
   &__link {
-    color: $bg-color;
+    color: $color-primary;
   }
 
   &__desc {
-    font-size: 0.6rem;
-    color: $text-color;
+    font-size: toRem(12px);;
+    color: $color-text-secondary;
     text-align: center;
     padding: toRem(9px) 0;
   }
 
   &__advertise {
-    color: $text-color;
+    color: $color-text-secondary;
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: toRem(1px) solid;
   }
 
   &__off {
@@ -31,7 +32,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .sign-up {
 
     &__item {

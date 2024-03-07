@@ -16,7 +16,7 @@
   }
 
   &__box--line {
-    border-left: 1px solid $line-color;
+    border-left: toRem(1px) solid $color-line;
   }
 
   &__box {
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .info {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -49,8 +49,8 @@
     }
 
     &__box--line {
-      width: 36.9%;
-      border-right: 1px solid $line-color ;
+      width: toRem(220px);
+      border-right: toRem(1px) solid $color-line;
     }
   }
 }

@@ -1,0 +1,56 @@
+.comment {
+  padding: toRem(24px);
+  border: toRem(1px) solid $color-line;
+  border-radius: toRem(20px);
+  min-width: toRem(358px);
+  align-items: center;
+
+  &__name {
+    font-size: toRem(16px);
+    font-weight: 700;
+    margin-bottom: toRem(11.5px);
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    @include width-height(toRem(19px), toRem(19px));
+    margin-left: toRem(5.75px);
+  }
+
+  &__desc {
+    font-size: (14px);
+    font-weight: 400;
+    color: $color-text-primary;
+  }
+
+  &__feedback {
+    margin-bottom: toRem(12px);
+  }
+
+}
+
+@include desktop {
+  .comment {
+    padding: toRem(28px) toRem(32px);
+
+    &__name {
+      font-size: toRem(20px);
+      margin-bottom: toRem(12px);
+    }
+
+    &__img {
+      @include width-height(toRem(19.5px), toRem(19.5px));
+      margin-left: toRem(6.25px);
+    }
+
+    &__desc {
+      font-size: toRem(16px);
+      font-weight: 400;
+    }
+
+    &__feedback {
+      margin-bottom: toRem(15px);
+    }
+  }
+}

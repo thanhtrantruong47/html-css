@@ -1,5 +1,13 @@
 .link {
   text-decoration: none;
-  color: $primary-color;
+  color:  $color-text-primary;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
 }
 

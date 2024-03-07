@@ -10,7 +10,7 @@
   }
 
   &__name {
-    font-family: Satoshi;
+    font-family: $font-secondary;
     margin-bottom: toRem(4px);
     font-weight: 700;
     font-size: toRem(16px);
@@ -23,13 +23,13 @@
   }
 
   &__feedback-score {
-    font-family: Satoshi;
+    font-family: $font-secondary;
     font-size: toRem(12px);
     font-weight: 400;
   }
 
   &__feedback-score-max {
-    color: $primary-color;
+    color: $color-text-primary;
   }
 
   &__price {
@@ -38,12 +38,12 @@
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
   .product {
 
     &__img {
       margin-bottom: toRem(16px);
-      @include img-size(toRem(295px),toRem(298px));
+      @include width-height(toRem(295px),toRem(298px));
     }
 
     &__name {
@@ -61,6 +61,7 @@
 
     &__price {
       gap:toRem(10px);
+      font-size: toRem(24px);;
     }
   }
 }

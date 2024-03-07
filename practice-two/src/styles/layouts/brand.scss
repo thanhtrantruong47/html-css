@@ -1,13 +1,15 @@
 .brand {
-  background-color: $bg-color;
+  background-color: $color-primary;
   padding: toRem(39px) toRem(16px);
+  width: 100%;
 
   &__wrapper {
     flex-wrap: wrap;
     @extend %flexbox-items-centered;
     gap: toRem(22px);
     justify-content: center;
-    max-width: 480px;
+    max-width: toRem(480px);
+    margin: 0 auto;
   }
 
   &__wrapper-xxl {
@@ -19,7 +21,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@include desktop {
 
   .brand {
     max-width: 100%;
