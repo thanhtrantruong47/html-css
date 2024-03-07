@@ -34,9 +34,9 @@
 
 @include desktop {
   .contact {
-      padding: toRem(36px) toRem(64px);
-      margin-bottom: toRem(50px);
-      font-size: toRem(16px);
+    padding: toRem(36px) toRem(64px);
+    margin-bottom: toRem(50px);
+    font-size: toRem(16px);
 
     &__box {
       min-width: toRem(349px);

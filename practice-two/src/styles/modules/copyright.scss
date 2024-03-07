@@ -1,10 +1,7 @@
 .copyright {
-  @extend .container;
   margin-bottom: toRem(77.26px);
   margin-top: toRem(16px);
-  @extend %flexbox-items-centered;
-  flex-wrap: wrap;
-  flex-direction: column;
+  @extend %flexbox-items-wrapped;
   justify-content: center;
   gap: toRem(16px);
   font-size: toRem(14px);
@@ -17,7 +14,6 @@
 
 @include desktop {
   .copyright {
-    flex-direction: row;
     font-size: toRem(16px);
     justify-content: space-between;
     margin-top: toRem(20px);
