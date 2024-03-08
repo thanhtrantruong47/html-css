@@ -9,7 +9,51 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="sign-up">
+    <div class="sign-up__item container">
+      <p class="sign-up__desc">Sign up and get 20% off to your first order. <a class="sign-up__advertise"
+          href="javascript:void(0)">Sign Up
+          Now</a></p>
+      <a class="sign-up__off icon-off" aria-label="icon-off" href="javascript:void(0)"></a>
+    </div>
+  </div>
+  <!-- sign up end  -->
+
+  <!-- header start  -->
+  <header class="header">
+    <nav class="navbar container">
+      <a class="navbar__nav icon-nav" aria-label="icon-nav" href="javascript:void(0)"></a>
+      <h1><a class="sign-up__link" href="product.html"><img class="navbar__logo"
+            src="./assets/images/headers/shopco.png" alt="shopco"></a></h1>
+      <ul class="navbar__list">
+        <li><a class="link" href="javascrip:void(0)">Shop</a></li>
+        <li><a class="link" href="javascrip:void(0)">On Sale</a></li>
+        <li><a class="link" href="javascrip:void(0)">New Arrivals</a></li>
+        <li><a class="link" href="javascrip:void(0)">Brand</a></li>
+      </ul>
+      <form action="index.html">
+        <input class="navbar__search" type="text" name="search" maxlength="20" placeholder="Search for products...">
+      </form>
+      <div class="navbar__option icon">
+        <a class="link icon-search" aria-label="icon-search" href="javascrip:void(0)"></a>
+        <a class="link icon-cart" aria-label="icon-cart" href="javascrip:void(0)"></a>
+        <a class="link icon-login" aria-label="icon-login" href="javascrip:void(0)"></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <aside class="sidebar">
+      <div class="sidebar__wrapper">
+        <p>Home</p>
+        <p>></p>
+        <p>Shop</p>
+        <p>></p>
+        <p>Men</p>
+        <p>></p>
+        <p class="sidebar__item">T-Shirt</p>
+      </div>
+    </aside>
     <div class="detail">
       <div class="detail__img">
         <div class="detail__img-list">
@@ -17,17 +61,17 @@
           <img class="img" src="./assets/images/details/image 5 (1).png" alt="">
           <img class="img" src="./assets/images/details/image 6 (1).png" alt="">
         </div>
-        <img class="img" src="./assets/images/details/image 1.svg" alt="">
+        <img class="img img-detail" src="./assets/images/details/image 1 (1).svg" alt="">
       </div>
       <div class="detail__wrapper">
         <h1 class="detail__title title">ONE LIFE GRAPHIC T-SHIRT</h1>
         <div class="detail__evalute">
-          <div class="product__evaluate evaluate-product">
-            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
-            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
-            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
-            <img class="evaluate-product__img" src="./assets/images/products/star-full.svg" alt="star-full">
-            <img class="evaluate-product__img" src="./assets/images/products/star-half.svg" alt="star-full">
+          <div class="product__evaluate evaluate-detail">
+            <img class="evaluate-detail__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-detail__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-detail__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-detail__img" src="./assets/images/products/star-full.svg" alt="star-full">
+            <img class="evaluate-detail__img--half" src="./assets/images/products/star-half.svg" alt="star-full">
           </div>
           <p class="product__feedback-score">4.5/<span class="product__feedback-score-max">5</span></p>
         </div>
@@ -40,11 +84,11 @@
           breathable
           fabric, it offers superior comfort and style.</p>
         <div class="detail__color">
-          <p class="desc">Select Color</p>
+          <p class=" desc">Select Color</p>
           <form class="detail__color-group" action="">
-              <input type="radio" id="radio01" name="radio">
-              <input type="radio" id="radio02" name="radio">
-              <input type="radio" id="radio02" name="radio">
+            <input type="radio" id="radio01" name="radio">
+            <input type="radio" id="radio02" name="radio">
+            <input type="radio" id="radio02" name="radio">
           </form>
         </div>
         <div class="detail__choose">
@@ -64,15 +108,15 @@
     </div>
     <div>
       <div class="detail__action">
-        <div class="detail__item desc">
+        <button class="detail__item  desc">
           Product Details
-        </div>
-        <div class="detail__item  desc">
+        </button>
+        <a class="desc detail__item detail__item--center">
           Rating & Reviews
-        </div>
-        <div class="detail__item  desc">
+        </a>
+        <a class="detail__item detail__item--right desc">
           FAQs
-        </div>
+        </a>
       </div>
     </div>
     <div class="detail-option">
@@ -82,7 +126,7 @@
       </div>
       <div class="option-choose">
         <img src="./assets/images/details/Frame 19.svg" alt="">
-        <select class="option-choose__select" name="" id="">
+        <select class="option-choose__select btn" name="" id="">
           <option value="">later</option>
           <option value="">new</option>
         </select>
@@ -199,7 +243,7 @@
         <p class="comment__date desc">Posted on August 14, 2023</p>
       </div>
     </div>
-  </div>
+  </section>
   <div class="detail__btn-product">
     <button class="detail__btn detail__btn--large btn btn--secondary">Load More Reviews</button>
   </div>
@@ -276,6 +320,78 @@
         </div>
       </div>
     </div>
+  </section>
+
+
+  <!-- footer start  -->
+  <footer>
+    <fieldset class="footer">
+      <legend class="contact container">
+        <h2 class="footer__title title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+        <form class="contact__box">
+          <input class="contact__form" type="text" maxlength="20" placeholder="Enter your email address">
+          <button class="footer__btn btn btn--light">Subscribe to Newsletter</button>
+        </form>
+      </legend>
+      <div class="action container">
+        <div class="action__item">
+          <img class="action__logo" src="./assets/images/headers/shopco.png" alt="shopco">
+          <p class="action__desc desc">We have clothes that suits your style and which you’re proud to
+            wear. From
+            women
+            to
+            men.</p>
+          <div class="action__social">
+            <a class="link icon-twitter" aria-label="icon-twitter" href="javascript:void(0)"></a>
+            <a class="link icon-fb" aria-label="icon-fb" href="javascript:void(0)"></a>
+            <a class="link icon-intagram" aria-label="icon-intagram" href="javascript:void(0)"></a>
+            <a class="link icon-github" aria-label="icon-github" href="javascript:void(0)"></a>
+          </div>
+        </div>
+        <div class="action__group">
+          <ul class="action__item">
+            <li class="action__item-head">Company</li>
+            <li><a class="link" href="javascript:void(0)">About</a></li>
+            <li><a class="link" href="javascript:void(0)">Features</a></li>
+            <li><a class="link" href="javascript:void(0)">Works</a></li>
+            <li><a class="link" href="javascript:void(0)">Career</a></li>
+          </ul>
+          <ul class="action__item">
+            <li class="action__item-head">Help</li>
+            <li><a class="link" href="javascript:void(0)">Customer Support</a></li>
+            <li><a class="link" href="javascript:void(0)">Delivery Details</a></li>
+            <li><a class="link" href="javascript:void(0)">Terms & Conditions</a></li>
+            <li><a class="link" href="javascript:void(0)">Privacy Policy</a></li>
+          </ul>
+          <ul class="action__item">
+            <li class="action__item-head">FAQ</li>
+            <li><a class="link" href="javascript:void(0)">Account</a></li>
+            <li><a class="link" href="javascript:void(0)">Manage Deliveries</a></li>
+            <li><a class="link" href="javascript:void(0)">Orders</a></li>
+            <li><a class="link" href="javascript:void(0)">Payments</a></li>
+          </ul>
+          <ul class="action__item">
+            <li class="action__item-head">Resources</li>
+            <li><a class="link" href="javascript:void(0)">Free eBooks</a></li>
+            <li><a class="link" href="javascript:void(0)">Development Tutoria</a></li>
+            <li><a class="link" href="javascript:void(0)">How to - Blog</a></li>
+            <li><a class="link" href="javascript:void(0)">Youtube Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright container">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+        <div>
+          <img class="copyright__img" src="./assets/images/footers/visa.svg" alt="visa">
+          <img class="copyright__img" src="./assets/images/footers/master.svg" alt="paypal">
+          <img class="copyright__img" src="./assets/images/footers/paypal.svg" alt="">
+          <img class="copyright__img" src="./assets/images/footers/ip-pay.svg" alt="">
+          <img class="copyright__img" src="./assets/images/footers/g-pay.svg" alt="">
+        </div>
+      </div>
+    </fieldset>
+  </footer>
+  <!-- footer end  -->
 </body>
 
 </html>

@@ -1,3 +1,13 @@
 .img {
   width: 100%;
 }
+
+@include desktop {
+  .img {
+    @include width-height(toRem(152px), toRem(167px));
+  }
+
+  .img-detail {
+    @include width-height(toRem(444px), toRem(530px));
+  }
+}

@@ -26,3 +26,10 @@ input:is([type="checkbox"], [type="radio"]) {
 input:is([type="radio"]) {
 	border-radius: 50%;
 }
+
+@include desktop {
+  input:is([type="checkbox"], [type="radio"]) {
+    width: 37px;
+    height: 37px;
+  }
+}

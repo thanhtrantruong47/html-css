@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: 40px;
   margin: 0 auto;
+  padding-top: 20px;
 
   &__img {
     display: flex;
@@ -112,15 +113,41 @@
 
   &__action {
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
-    gap: 45px;
-    border-bottom: 1px solid $color-line;
     padding-bottom: 24px;
-    margin-bottom: 24px;
   }
 
   &__item {
     font-size: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid $color-line;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
+
+    &:hover {
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+
+    }
+
+    &:visited {
+      color: $color-primary;
+    }
+
+    &:active {
+      box-shadow: toRem(2px) toRem(2px) toRem(5px) $color-text-primary;
+    }
   }
 
   &__btn-product {
@@ -183,15 +210,47 @@
 
 @include desktop {
   .detail {
+    padding-top: 36px;
     grid-template-columns: 1fr 1fr;
 
     &__img {
       flex-direction: row;
-      width: 100%;
+      min-height: 530px;
+    }
+
+    &__title {
+      font-size: 40px;
+      padding-right: 0;
+      margin-bottom: 14px;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+
+    &__color{
+      font-size: 16px;
+    }
+
+    &__choose {
+      font-size: 16px;
     }
 
     &__img-list {
-      flex-direction: column;
+      grid-template-columns: auto;
+    }
+
+    &__action {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 50px;
+    }
+
+    &__item {
+      font-size: 20px;
+      padding-bottom: 24px;
+      margin-bottom: 46px;
+      text-align: center;
     }
 
     &__number {}
@@ -199,5 +258,43 @@
     &__btn--large {
       padding: 15px 45px;
     }
+
+    &__btn {
+      padding: 12px 24px;
+    }
+
+    &__number {
+      min-width: 170px;
+    }
+
+    &__number-num {
+      max-width: 400px;
+    }
   }
+
+  .option-info {
+    gap: 8px;
+    font-size: 24px;
+    align-items: center;
+
+    &__num {
+      font-size: 16px;
+    }
+  }
+
+  .option-choose {
+  height: 48px;
+  font-size: 16px;
+  margin-bottom: 24px;
+
+  &__select {
+    display: block;
+    // padding: 13px 21px;
+    width: 120px;
+      padding: 10px 21px;
+    border: none;
+    background-color: $color-secondary;
+  }
+
+}
 }
