@@ -14,6 +14,10 @@
     margin-bottom: toRem(4px);
     font-weight: 700;
     font-size: toRem(16px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
   }
 
   &__feedback-wrapper{
@@ -36,6 +40,12 @@
     display: flex;
     gap:toRem(5px);
   }
+}
+
+.product-ctg {
+  min-width: toRem(172px);
+  flex-direction: column;
+  align-self: flex-end;
 }
 
 @include desktop {

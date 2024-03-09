@@ -62,3 +62,42 @@
     display: none;
   }
 }
+
+.icon-right {
+  @include width-height(toRem(16px), toRem(16px));
+  background-image: url('../assets/images/categorys/Vector (1).png');
+  background-repeat: no-repeat;
+}
+
+.icon-up {
+  @include width-height(toRem(16px), toRem(16px));
+  background-image: url('../assets/images/categorys/Vector (1).png');
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+}
+
+.icon-ctg {
+  @include width-height(toRem(32px), toRem(32px));
+  background-image: url('../assets/images/categorys/Frame 19 (1).svg');
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+.icon-ctg-prev {
+  @include width-height(toRem(16px), toRem(12px));
+  background-image: url('../assets/images/categorys/Icon.svg');
+  background-repeat: no-repeat;
+  transform: rotate(-180deg);
+}
+
+.icon-ctg-next {
+  @include width-height(toRem(16px), toRem(12px));
+  background-image: url('../assets/images/categorys/Icon.svg');
+  background-repeat: no-repeat;
+}
+
+@include desktop {
+  .icon-ctg {
+    display: none;
+  }
+}

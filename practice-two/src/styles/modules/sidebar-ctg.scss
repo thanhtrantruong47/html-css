@@ -1,0 +1,117 @@
+.sidebar-ctg {
+  padding: 20px 24px 29px;
+  border: 1px solid $color-line;
+  border-radius: 20px;
+  margin-bottom: 187px;
+  @extend .product__name;
+
+  &__fill {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+
+  &__price {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+
+    &-head {
+     align-items: center;
+     padding-bottom: 24px;
+    }
+
+    &-title {
+     @extend .product__name;
+      margin-bottom: 0;
+    }
+
+    &-slider {
+      width: 100%;
+    }
+  }
+
+  &__color {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+
+    &-title {
+      @extend .product__name;
+      margin-bottom: 24px
+    }
+
+    &-group {
+      @extend .detail__color-group;
+      display: grid;
+      grid-template-columns: repeat(5, 37px);
+      justify-content: space-between;
+    }
+  }
+
+  &__range {
+    width: 100%;
+    display: block;
+  }
+
+  &__size {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+
+  &__dress {
+    padding-bottom: 0px;
+
+    &-list {
+      @extend .sidebar-ctg__list;
+      padding-bottom: 0;
+      border: none;
+    }
+  }
+}
+
+.dola {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 40px;
+}
+
+input[type="range" i] {
+  appearance: auto;
+  cursor: default;
+  color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+  padding: initial;
+  border: initial;
+  margin: 2px;
+  width: 100%;
+}
+
+@include desktop {
+  .sidebar-ctg {
+    display: block;
+  }
+}
