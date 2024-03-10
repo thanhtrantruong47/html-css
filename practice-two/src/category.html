@@ -57,10 +57,11 @@
       </div>
     </aside>
     <div class="ctg">
-      <article class="sidebar-ctg" id="myID">
+      <article id="mySidenav" class="sidebar-ctg">
         <div class="sidebar-ctg__fill">
           <p class="">Filters</p>
-          <img src="./assets/images/categorys/Frame.png" alt="">
+          <a class="icon-filter" href=""></a>
+          <a href="javascript:void(0)" class="icon-close sidebar-ctg-a" onclick="closeNav()">&times;</a>
         </div>
         <div class="sidebar-ctg__list">
           <div class="sidebar-ctg__list-item">
@@ -152,6 +153,17 @@
           <button class="detail__number-num btn btn--primary">Apply Filter</button>
         </div>
       </article>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "390px";
+          document.getElementById("mySidenav").style.padding = "20px 18px 25px";
+          document.getElementById("mySidenav").style.height = "1220px";
+        }
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mySidenav").style.padding = "0";
+        }
+      </script>
       <section class="arrival-ctg">
         <div class="ctg__head">
           <h2 class="ctg__title">Casual</h2>
@@ -167,10 +179,7 @@
               </select>
             </div>
           </div>
-          <a href="javascript:void(0);" class="icon-ctg" onclick="myFunction()">
-            <i class="icon-ctg"></i>
-          </a>
-          </label>
+          <p class="icon-ctg" style="font-size:30px;cursor:pointer" onclick="openNav()"></p>
         </div>
         <div class="ctg__product">
           <div class="arrival__product product-ctg">

@@ -1,9 +1,55 @@
 .sidebar-ctg {
-  padding: 20px 24px 29px;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  overflow: auto;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding: 0;
+  width: 100%;
+  position: sticky;
+}
+
+element.style,
+#mySidenav {
+  width: 100%;
+  padding: 20px 18px 25px;
+}
+
+.sidebar-ctg-a {
+  text-decoration: white;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar-ctg-a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar-ctg {
+  z-index: 0;
+  background-color: none;
+  width: 0;
+  margin-top:93px;
+  padding-top: 60px;
+  transition: all .5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.sidebar-ctg {
   border: 1px solid $color-line;
   border-radius: 20px;
-  margin-bottom: 187px;
   @extend .product__name;
+
+  &__head {
+    display: flex;
+  }
+
 
   &__fill {
     display: flex;
@@ -26,6 +72,10 @@
       align-items: center;
       font-size: 16px;
     }
+
+    &__head-desc {
+      display: flex;
+    }
   }
 
   &__price {
@@ -34,12 +84,12 @@
     margin-bottom: 24px;
 
     &-head {
-     align-items: center;
-     padding-bottom: 24px;
+      align-items: center;
+      padding-bottom: 24px;
     }
 
     &-title {
-     @extend .product__name;
+      @extend .product__name;
       margin-bottom: 0;
     }
 
@@ -61,7 +111,7 @@
     &-group {
       @extend .detail__color-group;
       display: grid;
-      grid-template-columns: repeat(5, 37px);
+      grid-template-columns: repeat(7, 37px);
       justify-content: space-between;
     }
   }
@@ -110,8 +160,26 @@ input[type="range" i] {
   width: 100%;
 }
 
+
 @include desktop {
   .sidebar-ctg {
     display: block;
+    max-width: 295px;
+    position: static;
+    margin-bottom: 187px;
+    margin-top:0px;
   }
+
+  .sidebar-ctg__color-group{
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .sidebar-ctg-a {
+    display: none;
+  }
+
+
+.sidebar-ctg {
+  overflow: visible;
+}
 }

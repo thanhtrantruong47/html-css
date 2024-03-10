@@ -80,7 +80,7 @@
   @include width-height(toRem(32px), toRem(32px));
   background-image: url('../assets/images/categorys/Frame 19 (1).svg');
   background-repeat: no-repeat;
-  margin-left: auto;
+  margin-left: auto
 }
 
 .icon-ctg-prev {
@@ -96,8 +96,33 @@
   background-repeat: no-repeat;
 }
 
+.icon-close {
+  @include width-height(toRem(16px), toRem(16px));
+  background-repeat: no-repeat;
+  color: black;
+  float: right;
+}
+
+.icon-filter {
+  @include width-height(toRem(16px), toRem(16px));
+  background-image: url("../assets/images/categorys/Frame.png");
+  background-repeat: no-repeat;
+  display: none;
+}
+
+
+
+
 @include desktop {
   .icon-ctg {
+    display: none;
+  }
+
+  .icon-filter {
+    display: block;
+  }
+
+  .icon-close {
     display: none;
   }
 }
