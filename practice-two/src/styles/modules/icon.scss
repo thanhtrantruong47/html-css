@@ -6,6 +6,7 @@
   @include width-height(toRem(20px), toRem(20px));
   background-image: url('../assets/images/headers/off.svg');
 }
+
 .icon-nav {
   @include width-height(toRem(18.75px), toRem(14.25px));
   background-image: url('../assets/images/headers/nav.png');
@@ -56,15 +57,55 @@
   @include width-height(toRem(28px), toRem(28px));
   background-image: url('../assets/images/footers/github.png');
 }
+
 .icon-delete {
   @include width-height(toRem(20px), toRem(20px));
   background-image: url('../assets/images/carts/delete.svg');
 }
 
+.icon-plus {
+  @include width-height(toRem(20px), toRem(20px));
+  background-image: url('../assets/images/details/plus.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-span {
+  @include width-height(toRem(20px), toRem(20px));
+  background-image: url('../assets/images/details/span.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.icon-plus-cart {
+  @include width-height(toRem(16px), toRem(16px));
+  background-image: url('../assets/images/details/plus.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-span-cart {
+  @include width-height(toRem(16px), toRem(16px));
+  background-image: url('../assets/images/details/span.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 @include desktop {
   .icon-search {
     display: none;
   }
+
+  .icon-plus-cart {
+    @include width-height(toRem(20px), toRem(20px));
+  }
+
+  .icon-span-cart {
+    @include width-height(toRem(20px), toRem(20px));
+  }
+
 }
 
 .icon-right {
@@ -132,5 +173,14 @@
 
   .icon-close {
     display: none;
+  }
+
+
+  .icon-plus {
+    @include width-height(toRem(24px), toRem(24px));
+  }
+
+  .icon-span {
+    @include width-height(toRem(24px), toRem(24px));
   }
 }
