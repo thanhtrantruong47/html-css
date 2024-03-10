@@ -56,6 +56,10 @@
   @include width-height(toRem(28px), toRem(28px));
   background-image: url('../assets/images/footers/github.png');
 }
+.icon-delete {
+  @include width-height(toRem(20px), toRem(20px));
+  background-image: url('../assets/images/carts/delete.svg');
+}
 
 @include desktop {
   .icon-search {
@@ -64,7 +68,7 @@
 }
 
 .icon-right {
-  @include width-height(toRem(16px), toRem(16px));
+  @include width-height(toRem(20px), toRem(20px));
   background-image: url('../assets/images/categorys/Vector (1).png');
   background-repeat: no-repeat;
 }
@@ -110,7 +114,11 @@
   display: none;
 }
 
-
+.icon-promo {
+  @include width-height(toRem(17.5px), toRem(17.5px));
+  background-image: url("../assets/images/carts/promo.png");
+  background-repeat: no-repeat;
+}
 
 
 @include desktop {

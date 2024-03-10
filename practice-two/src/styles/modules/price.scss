@@ -16,6 +16,10 @@
     font-weight: 500;
     padding: toRem(6px) toRem(14px);
   }
+
+  &--cart {
+    color: $color-sell;
+  }
 }
 
 @include desktop {
