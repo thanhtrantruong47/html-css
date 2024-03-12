@@ -1,0 +1,303 @@
+.detail {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  &__img {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
+
+  &__img-list {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+  }
+
+  &__evalute {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    padding-right: 100px;
+  }
+
+  &__price {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+  }
+
+
+  &__color {
+    display: grid;
+    padding-bottom: 24px;
+    gap: 12.3px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  &__color-group {
+    display: flex;
+    gap: 12.3px;
+  }
+
+  &__choose {
+    display: grid;
+    gap: 16px;
+    font-size: 14px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-line;
+    margin-bottom: 24px;
+    gap: 16px;
+    border-bottom: 1px solid $color-line;
+  }
+
+  &__check {
+    @include width-height(toRem(37px), toRem(37px));
+  }
+
+  &__btn {
+    padding: 10px 20px;
+  }
+
+  &__btn--large {
+    padding: 14px 36px;
+  }
+
+  &__number {
+    padding: 12px 52px;
+  }
+
+  &__add {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__number-num {
+    width: 100%;
+    padding: 12.5px 81px;
+    border-radius: 62px;
+  }
+
+  &__color {
+    display: grid;
+    padding-bottom: 24px;
+    gap: 16px;
+    border-bottom: 1px solid $color-line;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 24px;
+  }
+
+  &__item {
+    font-size: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid $color-line;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
+
+    &:hover {
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+
+    }
+
+    &:visited {
+      color: $color-primary;
+    }
+
+    &:active {
+      box-shadow: toRem(2px) toRem(2px) toRem(5px) $color-text-primary;
+    }
+  }
+
+  &__btn-product {
+    text-align: center;
+  }
+}
+
+
+.choose__list {
+  display: flex;
+  gap: 10px;
+}
+
+.detail-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.option-info {
+  display: flex;
+  gap: 6px;
+  font-weight: 700;
+  &__num {
+    font-size: 14px;
+  }
+}
+
+.option-choose {
+  height: 40px;
+  display: flex;
+  gap: 10px;
+
+  &__select {
+    display: none;
+  }
+
+  &__btn {
+    font-size: 12px;
+    padding: 12px 16px;
+    border-radius: toRem(62px);
+    background-color: $color-primary;
+    color: $color-text-secondary;
+  }
+}
+
+.detail-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  gap: 20px;
+  margin-bottom: 36.42px;
+}
+
+.detail__products {
+  @extend .top-selling__products;
+  margin-top: 40px;
+}
+
+@include desktop {
+  .detail {
+    padding-top: 36px;
+    grid-template-columns: 1fr 1fr;
+
+    &__img {
+      flex-direction: row;
+      height: 530px;
+    }
+
+    &__title {
+      font-size: 40px;
+      padding-right: 0;
+      margin-bottom: 14px;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+
+    &__color{
+      font-size: 16px;
+    }
+
+    &__choose {
+      font-size: 16px;
+    }
+
+    &__img-list {
+      grid-template-columns: auto;
+    }
+
+    &__img-list-item {
+      max-height: 167px;
+    }
+
+    &__action {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 50px;
+    }
+
+    &__item {
+      font-size: 20px;
+      padding-bottom: 24px;
+      margin-bottom: 46px;
+      text-align: center;
+    }
+
+
+    &__btn--large {
+      padding: 15px 45px;
+    }
+
+    &__btn {
+      padding: 12px 24px;
+    }
+
+    &__number {
+      min-width: 170px;
+    }
+
+    &__number-num {
+      max-width: 400px;
+    }
+  }
+
+  .option-info {
+    gap: 8px;
+    font-size: 24px;
+    align-items: center;
+
+    &__num {
+      font-size: 16px;
+    }
+  }
+
+  .option-choose {
+  height: 48px;
+  font-size: 16px;
+  margin-bottom: 24px;
+
+  &__select {
+    display: block;
+    // padding: 13px 21px;
+    width: 120px;
+      padding: 10px 21px;
+    border: none;
+    background-color: $color-secondary;
+  }
+
+}
+}

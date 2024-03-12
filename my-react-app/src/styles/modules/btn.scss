@@ -1,0 +1,46 @@
+.btn {
+  border-radius: toRem(62px);
+  font-family: $font-secondary;
+  border: none;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $color-text-primary;
+    color: $color-secondary;
+  }
+
+  &:active {
+    box-shadow: toRem(2px) toRem(2px) toRem(5px) $color-text-primary;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-text-secondary;
+    font-size: toRem(14px);
+
+  }
+
+  &--secondary {
+    color: $color-primary;
+    font-size: toRem(14px);
+
+  }
+
+  &--light {
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-text-primary;
+    }
+
+    &:active {
+      box-shadow: toRem(2px) toRem(2px) toRem(5px) $color-btn;
+    }
+  }
+}
+
+@include desktop {
+  .btn {
+    font-size: toRem(16px);
+  }
+}

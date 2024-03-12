@@ -1,0 +1,33 @@
+.price {
+  font-family: $font-secondary;
+  font-weight: 700;
+
+
+  &--sell {
+    color: $product-color-secondary;
+    text-decoration: line-through;
+  }
+
+  &--precent {
+    background-color: $bg-product;
+    font-size: 0.5em;
+    border-radius: toRem(62px);
+    color: $product-color;
+    font-weight: 500;
+    padding: toRem(6px) toRem(14px);
+  }
+
+  &--cart {
+    color: $color-sell;
+  }
+}
+
+@include desktop {
+  .price {
+    font-size: toRem(24px);
+
+    &--precent {
+      font-size: toRem(12px);
+    }
+  }
+}

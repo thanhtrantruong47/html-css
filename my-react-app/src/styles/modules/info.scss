@@ -1,0 +1,56 @@
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  row-gap: toRem(12px);
+
+  &__head {
+    font-size: toRem(24px);
+    font-weight: 700;
+    padding: toRem(6px) 0;
+  }
+
+  &__desc {
+    font-size: toRem(12px);
+  }
+
+  &__box--line {
+    border-left: toRem(1px) solid $color-line;
+  }
+
+  &__box {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+@include desktop {
+  .info {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__head {
+      font-size: toRem(40px);
+    }
+
+    &__desc {
+      font-size: toRem(16px);
+    }
+
+    &__box {
+      width: auto;
+      margin: 0;
+    }
+
+    &__box--line {
+      width: toRem(220px);
+      border-right: toRem(1px) solid $color-line;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.sign-up {
+  background-color: $color-primary;
+  font-family: $font-secondary;
+  min-width: toRem(390px);
+
+  &__item {
+    margin: 0 auto;
+    font-size: toRem(20px);
+    align-items: center;
+  }
+
+  &__link {
+    color: $color-primary;
+  }
+
+  &__desc {
+    font-size: toRem(12px);;
+    color: $color-text-secondary;
+    text-align: center;
+    padding: toRem(9px) 0;
+  }
+
+  &__advertise {
+    color: $color-text-secondary;
+    text-decoration: none;
+    border-bottom: toRem(1px) solid;
+  }
+
+  &__off {
+    display: none;
+    padding: toRem(9px) 0;
+  }
+}
+
+@include desktop {
+  .sign-up {
+
+    &__item {
+      display: flex;
+      line-height: normal;
+    }
+
+    &__desc {
+      font-size: toRem(14px);
+      margin: 0 auto;
+
+    }
+
+    &__off {
+      display: block;
+    }
+  }
+}

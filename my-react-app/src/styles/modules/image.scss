@@ -1,0 +1,19 @@
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+@include desktop {
+  .img {
+    @include width-height(toRem(152px), toRem(167px));
+    width: auto;
+    height: auto;
+  //   // max-height: 167px;
+  }
+
+  .img-detail {
+    @include width-height(toRem(444px), toRem(530px));
+    width: auto;
+    height: auto;
+  }
+}

@@ -1,0 +1,42 @@
+.brand {
+  background-color: $color-primary;
+  padding: toRem(39px) toRem(16px);
+  width: 100%;
+
+  &__wrapper {
+    flex-wrap: wrap;
+    @extend %flexbox-items-centered;
+    gap: toRem(22px);
+    justify-content: center;
+    max-width: toRem(480px);
+    margin: 0 auto;
+  }
+
+  &__wrapper-xxl {
+    display: none;
+  }
+
+  &__img {
+    margin: auto;
+  }
+}
+
+@include desktop {
+
+  .brand {
+    max-width: 100%;
+  }
+
+  .brand__wrapper {
+    display: none;
+  }
+
+  .brand__wrapper-xxl {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand__img {
+    margin: 0;
+  }
+}

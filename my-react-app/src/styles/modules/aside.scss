@@ -1,0 +1,26 @@
+.sidebar {
+  padding-top:20px;
+
+
+  &__item {
+    color: $color-primary;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 8.6px;
+    @extend .desc;
+    font-size: 14px;
+    align-items: center;
+  }
+}
+
+@include desktop {
+  .sidebar {
+    padding-top:24px;
+
+    &__wrapper {
+      font-size: 16px;
+    }
+  }
+}

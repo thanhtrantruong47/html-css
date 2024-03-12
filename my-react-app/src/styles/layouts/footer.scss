@@ -1,0 +1,30 @@
+.footer {
+  background-color: $bg-primary;
+  font-family: $font-secondary;
+
+  &__title {
+    font-size: toRem(32px);
+    margin: 0 auto;
+    line-height: toRem(35px);
+  }
+
+  &__btn {
+    padding: toRem(12px) toRem(80.5px);
+  }
+}
+
+@include desktop {
+  .footer {
+    &__title {
+      margin: 0;
+      font-size: toRem(40px);
+      flex-basis: 50%;
+      line-height: toRem(45px);
+    }
+
+    &__btn {
+      padding: toRem(15.5px) toRem(88.5px);
+      max-height: toRem(52px);
+    }
+  }
+}

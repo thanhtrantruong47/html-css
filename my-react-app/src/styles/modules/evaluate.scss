@@ -1,0 +1,60 @@
+.evaluate-product {
+  margin-bottom: toRem(4px);
+
+  &__img {
+    @include width-height(toRem(15.47px), toRem(15.47px));
+  }
+
+  &__img--half {
+    @include width-height(toRem(7.36px), toRem(13.99px));
+  }
+}
+
+.evaluate-detail {
+  margin-bottom: toRem(4px);
+
+  &__img {
+    @include width-height(toRem(18.67px), toRem(18.67px));
+  }
+
+  &__img--half {
+    @include width-height(toRem(8.88px), toRem(16.89px));
+  }
+}
+
+.evaluate-comment {
+  &__img {
+    @include width-height(toRem(19.19px));
+  }
+}
+
+@include desktop {
+  .evaluate-product {
+
+    &__img {
+      @include width-height(toRem(18.49px), toRem(18.49px));
+    }
+
+    &__img--half {
+      @include width-height(toRem(9.79px), toRem(16.72px));
+    }
+  }
+
+  .evaluate-detail {
+    margin-bottom: toRem(4px);
+
+    &__img {
+      @include width-height(toRem(24.71px), toRem(24.71px));
+    }
+
+    &__img--half {
+      @include width-height(toRem(11.75px), toRem(22.35px));
+    }
+  }
+
+  .evaluate-comment {
+    &__img {
+      @include width-height(toRem(22.58px));
+    }
+  }
+}
