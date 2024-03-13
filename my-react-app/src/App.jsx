@@ -1,9 +1,11 @@
-import Category from "./category";
-// import Index from "./index";
+
+import Home from "./home";
 
 function App() {
   return (
-    <Category/>
+    <>
+    <Home/>
+    </>
   );
 }
 

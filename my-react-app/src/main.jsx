@@ -5,13 +5,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Product from "./product";
-import Index from ".";
 import Category from "./category";
+import Home from "./home";
+import Cart from "./cart";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:  <Index />,
+    element:  <Home />,
   },
   {
     path: "/product",
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
     path: "/category",
     element:  <Category />,
   },
+  {
+    path: "/cart",
+    element:  <Cart />,
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

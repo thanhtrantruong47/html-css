@@ -5,7 +5,7 @@ import Header from "./header";
 import Footer from "./footer";
 import "./index"
 
-function Index() {
+function Home() {
   return (
     <>
     <Header/>
@@ -637,4 +637,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;

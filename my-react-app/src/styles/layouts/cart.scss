@@ -11,12 +11,10 @@
   }
 
   &__img {
-    @extend .product__img;
     min-width: 99px;
     min-height: 99px;
     margin-bottom: 0px !important;
-    max-width: 124px;
-    max-height: 124px;
+    border-radius: 20px;
   }
 
   &__info {
@@ -161,6 +159,11 @@
 
     &__title {
       margin: 24px 0;
+    }
+
+    &__img{
+      min-width: 124px;
+      height: 124px;
     }
   }
 
