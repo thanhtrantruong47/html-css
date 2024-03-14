@@ -50,6 +50,10 @@
   align-self: flex-end;
 }
 
+.product-ctg > .product__img {
+  min-width: toRem(172px);
+}
+
 @include desktop {
   .product {
 

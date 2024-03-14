@@ -23,13 +23,13 @@ function Header() {
               aria-label="icon-nav"
               href="javascript:void(0)"
             ></a>
-            <a className="sign-up__link" href="/product">
+            <a className="sign-up__link" href="/">
               <h1 className="icon-logo"></h1>
             </a>
   
             <ul className="navbar__list">
               <li>
-                <a className="link" href="/category">
+                <a className="link" href="/product">
                   Shop
                 </a>
               </li>
@@ -67,7 +67,7 @@ function Header() {
               <a
                 className="link icon-cart"
                 aria-label="icon-cart"
-                href="/"
+                href="/cart"
               ></a>
               <a
                 className="link icon-login"

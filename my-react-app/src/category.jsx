@@ -1,9 +1,15 @@
+import { useState } from "react";
 import Footer from "./footer";
 import Header from "./header";
 import IMAGES from "./img";
 
 function Category() {
-    
+  const [value, setValue] = useState(50);
+  const dola = ' $';
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
   return (
     <>
       <Header />
@@ -11,11 +17,11 @@ function Category() {
         <aside className="sidebar">
           <div className="sidebar__wrapper">
             <p>Home</p>
-            {/* <p>></p> */}
+            <p>{'>'}</p>
             <p>Shop</p>
-            {/* <p>></p> */}
+            <p>{'>'}</p>
             <p>Men</p>
-            {/* <p>></p> */}
+            <p>{'>'}</p>
             <p className="sidebar__item">T-Shirt</p>
           </div>
         </aside>
@@ -28,11 +34,10 @@ function Category() {
                 href="javascript:void(0)"
                 className="icon-close sidebar-ctg-a"
                 onClick={function () {
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("mySidenav").style.padding = "0";
+                  document.getElementById("mySidenav").style.width = "0";
+                  document.getElementById("mySidenav").style.padding = "0";
                 }}
-                >
-                </a>
+              ></a>
             </div>
             <div className="sidebar-ctg__list">
               <div className="sidebar-ctg__list-item">
@@ -62,15 +67,15 @@ function Category() {
                 <a className="icon-up" href=""></a>
               </div>
               <div>
+             
                 <input
                   type="range"
-                  value="24"
-                  min="1"
+                  min="0"
                   max="999"
-                  onInput="this.nextElementSibling.value = this.value"
+                  value={value}
+                  onChange={handleChange}
                 />
-                <output className="sidebar-ctg__range">24</output>
-                <p className="dola">$</p>
+                <p>{value+dola}</p>
               </div>
             </div>
             <div className="sidebar-ctg__color">
@@ -165,11 +170,15 @@ function Category() {
                   </select>
                 </div>
               </div>
-              <p className="icon-ctg" onClick={function () {
-                 document.getElementById("mySidenav").style.width = "390px";
-                 document.getElementById("mySidenav").style.padding = "20px 18px 25px";
-                 document.getElementById("mySidenav").style.height = "1220px";
-              }}></p>
+              <p
+                className="icon-ctg"
+                onClick={function () {
+                  document.getElementById("mySidenav").style.width = "390px";
+                  document.getElementById("mySidenav").style.padding =
+                    "20px 18px 25px";
+                  document.getElementById("mySidenav").style.height = "1220px";
+                }}
+              ></p>
             </div>
             <div className="ctg__product">
               <div className="arrival__product  product-ctg">

@@ -1,8 +1,18 @@
+import { useState } from "react";
 import Footer from "./footer";
 import Header from "./header";
 import IMAGES from "./img";
 
 function Cart() {
+  const [count, setCount] = useState(1);
+  const increment = () => {
+  setCount((prevCount) => prevCount + 1);
+};
+const decrement = () => {
+  if (count > 0) {
+    setCount((prevCount) => prevCount - 1);
+  }
+}
   return (
     <>
     <Header/>
@@ -43,9 +53,12 @@ function Cart() {
                     <p>&#36;120</p>
                   </div>
                   <div className="wrapper-cart">
-                    <span className="minus icon-span-cart"></span>
+                    {/* <span className="minus icon-span-cart"></span>
                     <span className="num">1</span>
-                    <span className="plus icon-plus-cart"></span>
+                    <span className="plus icon-plus-cart"></span> */}
+                    <button onClick={decrement} className=" btn icon-span-cart"></button>
+                    <div className="num">{count}</div>
+                    <button className="btn icon-plus-cart" onClick={increment}></button>
                   </div>
                 </div>
               </div>
@@ -76,9 +89,9 @@ function Cart() {
                     <p>&#36;120</p>
                   </div>
                   <div className="wrapper-cart">
-                    <span className="minus icon-span-cart"></span>
-                    <span className="num">1</span>
-                    <span className="plus icon-plus-cart"></span>
+                  <button onClick={decrement} className=" btn icon-span-cart"></button>
+                    <div className="num">{count}</div>
+                    <button className="btn icon-plus-cart" onClick={increment}></button>
                   </div>
                 </div>
               </div>
@@ -105,9 +118,9 @@ function Cart() {
                     <p>&#36;120</p>
                   </div>
                   <div className="wrapper-cart">
-                    <span className="minus icon-span-cart"></span>
-                    <span className="num">1</span>
-                    <span className="plus icon-plus-cart"></span>
+                  <button onClick={decrement} className=" btn icon-span-cart"></button>
+                    <div className="num">{count}</div>
+                    <button className="btn icon-plus-cart" onClick={increment}></button>
                   </div>
                 </div>
               </div>

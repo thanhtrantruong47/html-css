@@ -1,27 +1,21 @@
+import { useState } from "react";
 import Footer from "./footer";
 import Header from "./header";
 import IMAGES from "./img";
 
 function Product() {
-   
-    window.addEventListener("DOMContentLoaded", () => { const plus = document.querySelector(".plus"),
-        minus = document.querySelector(".minus"),
-        num = document.querySelector(".num")
-        let a = 1
-        plus.addEventListener("click", () => {
-            a++;
-            a = a < 10 ?  + a : a;
-            num.innerText = a;
-        });
+  const [count, setCount] = useState(1);
 
-        minus.addEventListener("click", () => {
-            if (a > 1) {
-            a--;
-            a = a < 10 ?  + a : a;
-            num.innerText = a;
-            }
-    })});
-    return (
+  const increment = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  const decrement = () => {
+    if (count > 0) {
+      setCount((prevCount) => prevCount - 1);
+    }
+  };
+  return (
     <>
       <Header />
       <section className="container">
@@ -40,13 +34,25 @@ function Product() {
           <div className="detail__img">
             <div className="detail__img-list">
               <div>
-                <img className="detail__img-list-item img" src={IMAGES.stripedT} alt="" />
+                <img
+                  className="detail__img-list-item img"
+                  src={IMAGES.stripedT}
+                  alt=""
+                />
               </div>
               <div>
-                <img className="detail__img-list-item img" src={IMAGES.stripedT} alt="" />
+                <img
+                  className="detail__img-list-item img"
+                  src={IMAGES.stripedT}
+                  alt=""
+                />
               </div>
               <div>
-                <img className="detail__img-list-item img" src={IMAGES.stripedT} alt="" />
+                <img
+                  className="detail__img-list-item img"
+                  src={IMAGES.stripedT}
+                  alt=""
+                />
               </div>
             </div>
             <img className="img-detail" src={IMAGES.stripedT} alt="" />
@@ -122,9 +128,9 @@ function Product() {
             </div>
             <div className="detail__add">
               <div className="wrapper">
-                <span className="icon-span"></span>
-                <span className="num">1</span>
-                <span className="plus icon-plus"></span>
+                <button onClick={decrement} className=" btn icon-span"></button>
+                <h2 className="num">{count}</h2>
+                <button className="btn icon-plus" onClick={increment}></button>
               </div>
               <button className="detail__number-num btn btn--primary">
                 add to cart
@@ -589,4 +595,4 @@ function Product() {
   );
 }
 
-export default Product
+export default Product;
