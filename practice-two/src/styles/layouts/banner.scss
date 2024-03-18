@@ -45,6 +45,7 @@
   &__img-left {
     margin: toRem(137px) 0 0 toRem(27px);
     @include width-height(toRem(44px), toRem(44px));
+
   }
 
   &__img-right {
